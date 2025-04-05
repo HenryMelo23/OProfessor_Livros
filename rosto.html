@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>O PROFESSOR</title>
+  <style>
+    body { font-family: sans-serif; text-align: center; background: #f0f0f0; padding: 30px; }
+    input { width: 300px; padding: 10px; font-size: 16px; }
+    button { padding: 10px 20px; font-size: 16px; cursor: pointer; }
+    #resultado { margin-top: 30px; }
+    .disponivel { color: green; font-weight: bold; }
+    .nao-disponivel { color: red; font-weight: bold; }
+    img { width: 150px; margin: 10px auto; border-radius: 8px; box-shadow: 2px 2px 8px #888; }
+    .card { background: white; padding: 20px; border-radius: 12px; display: inline-block; box-shadow: 0 0 10px rgba(0,0,0,0.1); max-width: 400px; margin: auto; }
+    .whatsapp-button {
+      display: inline-block;
+      margin-top: 15px;
+      background-color: #25D366;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>📚 O Professor</h1>
+  <input id="busca" placeholder="Digite o nome do livro" onkeydown="checarEnter(event)">
+  <button onclick="buscar()">Pesquisar</button>
+
+  <div id="resultado"></div>
+
+  <script>
+    function checarEnter(event) {
+      if (event.key === 'Enter') {
+        buscar();
+      }
+    }
+
+    async function buscar() {
+      const titulo = document.getElementById('busca').value;
+      const res = await fetch(`http://localhost:5000/buscar?titulo=${titulo}`);
+      const data = await res.json();
+      
+      const resultado = document.getElementById('resultado');
+      resultado.innerHTML = '';
+
+      if ('autor' in data) {
+        const status = data.disponivel ? 
+          `<p class="disponivel">✅ Tem no catálogo</p>` : 
+          `<p class="nao-disponivel">❌ Não tem</p>`;
+
+        resultado.innerHTML = `
+          <div class="card">
+            <img src="${data.imagem}" alt="Capa do livro">
+            <h2>${data.titulo}</h2>
+            <p><strong>Autor:</strong> ${data.autor}</p>
+            <p><strong>Sinopse:</strong> ${data.sinopse}</p>
+            ${status}
+            <a class="whatsapp-button" href="https://wa.me/+5561995948789?text=Olá,%20quero%20saber%20sobre%20o%20livro%20${encodeURIComponent(data.titulo)}" target="_blank">
+              📲 Falar no WhatsApp
+            </a>
+          </div>
+        `;
+      } else {
+        resultado.innerHTML = `
+          <p class="nao-disponivel">Livro não encontrado no catálogo</p>
+        `;
+      }
+    }
+  </script>
+</body>
+</html>
