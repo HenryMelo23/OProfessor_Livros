@@ -46,7 +46,7 @@
                 return;
             }
 
-            const response = await fetch(`https://oprofessor-livros.onrender.com/buscar?titulo=${encodeURIComponent(titulo)}`);
+            const url = await fetch(`https://oprofessor-livros.onrender.com/buscar?titulo=${encodeURIComponent(titulo)}`);
 
 
             try {
