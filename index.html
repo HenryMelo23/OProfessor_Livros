@@ -3,29 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <title>Catálogo de Livros</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
             font-family: Arial, sans-serif;
-            padding: 30px;
+            padding: 20px;
+            margin: 0;
+            background-color: #f9f9f9;
+            text-align: center;
         }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
         input, button {
-            font-size: 18px;
-            padding: 10px;
+            font-size: 16px;
+            padding: 12px;
+            margin: 5px 0;
+            width: 100%;
+            max-width: 400px;
         }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
         #resultado {
             margin-top: 30px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
         }
+
         .disponivel {
             color: green;
             font-weight: bold;
+            margin-top: 15px;
         }
+
         .indisponivel {
             color: red;
             font-weight: bold;
+            margin-top: 15px;
         }
+
         img {
-            max-width: 150px;
-            margin-top: 10px;
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        #whatsapp {
+            margin-top: 25px;
+        }
+
+        #whatsapp a {
+            background-color: #25D366;
+            color: white;
+            padding: 14px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+
+        #whatsapp a:hover {
+            background-color: #1ebe5b;
+        }
+
+        @media (max-width: 500px) {
+            h1 {
+                font-size: 20px;
+            }
+
+            input, button {
+                font-size: 15px;
+                padding: 10px;
+            }
+
+            #resultado {
+                padding: 15px;
+            }
         }
     </style>
 </head>
@@ -45,7 +126,7 @@
                 resultado.innerHTML = "<p>Digite o título de um livro.</p>";
                 return;
             }
-    
+
             const url = `https://oprofessor-livros.onrender.com/buscar?titulo=${encodeURIComponent(titulo)}`;
     
             try {
@@ -54,11 +135,18 @@
     
                 if (dados.titulo) {
                     const cor = dados.disponivel ? 'disponivel' : 'indisponivel';
+                    const imagem = `https://raw.githubusercontent.com/HenryMelo23/OProfessor_Livros/main/imagens/${encodeURIComponent(dados.titulo)}.png`;
+
                     resultado.innerHTML = `
+                        <img src="${imagem}" alt="${dados.titulo}">
                         <h2>${dados.titulo}</h2>
                         <p><strong>Autor:</strong> ${dados.autor}</p>
+                        <p><strong>Sinopse:</strong> ${dados.sinopse || 'Sinopse não disponível.'}</p>
                         <p class="${cor}">${dados.disponivel ? 'Disponível' : 'Indisponível'}</p>
-                        <img src="https://oprofessor-livros.onrender.com/imagens/${encodeURIComponent(dados.titulo)}.jpg" alt="${dados.titulo}">
+
+                        <div id="whatsapp">
+                            <a href="https://wa.me/5511999999999" target="_blank">Entrar em contato via WhatsApp</a>
+                        </div>
                     `;
                 } else {
                     resultado.innerHTML = "<p class='indisponivel'>Livro não encontrado ou indisponível.</p>";
