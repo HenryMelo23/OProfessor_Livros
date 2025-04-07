@@ -1,74 +1,73 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>O PROFESSOR</title>
-  <style>
-    body { font-family: sans-serif; text-align: center; background: #f0f0f0; padding: 30px; }
-    input { width: 300px; padding: 10px; font-size: 16px; }
-    button { padding: 10px 20px; font-size: 16px; cursor: pointer; }
-    #resultado { margin-top: 30px; }
-    .disponivel { color: green; font-weight: bold; }
-    .nao-disponivel { color: red; font-weight: bold; }
-    img { width: 150px; margin: 10px auto; border-radius: 8px; box-shadow: 2px 2px 8px #888; }
-    .card { background: white; padding: 20px; border-radius: 12px; display: inline-block; box-shadow: 0 0 10px rgba(0,0,0,0.1); max-width: 400px; margin: auto; }
-    .whatsapp-button {
-      display: inline-block;
-      margin-top: 15px;
-      background-color: #25D366;
-      color: white;
-      padding: 10px 20px;
-      text-decoration: none;
-      border-radius: 6px;
-      font-weight: bold;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>Catálogo de Livros</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 30px;
+        }
+        input, button {
+            font-size: 18px;
+            padding: 10px;
+        }
+        #resultado {
+            margin-top: 30px;
+        }
+        .disponivel {
+            color: green;
+            font-weight: bold;
+        }
+        .indisponivel {
+            color: red;
+            font-weight: bold;
+        }
+        img {
+            max-width: 150px;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
-  <h1>📚 O Professor</h1>
-  <input id="busca" placeholder="Digite o nome do livro" onkeydown="checarEnter(event)">
-  <button onclick="buscar()">Pesquisar</button>
+    <h1>Buscar Livro</h1>
+    <input type="text" id="titulo" placeholder="Digite o título do livro">
+    <button onclick="buscarLivro()">Buscar</button>
 
-  <div id="resultado"></div>
+    <div id="resultado"></div>
 
-  <script>
-    function checarEnter(event) {
-      if (event.key === 'Enter') {
-        buscar();
-      }
-    }
+    <script>
+        async function buscarLivro() {
+            const titulo = document.getElementById("titulo").value;
+            const resultado = document.getElementById("resultado");
 
-    async function buscar() {
-      const titulo = document.getElementById('busca').value;
-      const res = await fetch(`http://localhost:5000/buscar?titulo=${titulo}`);
-      const data = await res.json();
-      
-      const resultado = document.getElementById('resultado');
-      resultado.innerHTML = '';
+            if (!titulo) {
+                resultado.innerHTML = "<p>Digite o título de um livro.</p>";
+                return;
+            }
 
-      if ('autor' in data) {
-        const status = data.disponivel ? 
-          `<p class="disponivel">✅ Tem no catálogo</p>` : 
-          `<p class="nao-disponivel">❌ Não tem</p>`;
+            const url = `https://oprofessor-livros.onrender.com/buscar?titulo=${encodeURIComponent(titulo)}`;
 
-        resultado.innerHTML = `
-          <div class="card">
-            <img src="${data.imagem}" alt="Capa do livro">
-            <h2>${data.titulo}</h2>
-            <p><strong>Autor:</strong> ${data.autor}</p>
-            <p><strong>Sinopse:</strong> ${data.sinopse}</p>
-            ${status}
-            <a class="whatsapp-button" href="https://wa.me/+5561995948789?text=Olá,%20quero%20saber%20sobre%20o%20livro%20${encodeURIComponent(data.titulo)}" target="_blank">
-              📲 Falar no WhatsApp
-            </a>
-          </div>
-        `;
-      } else {
-        resultado.innerHTML = `
-          <p class="nao-disponivel">Livro não encontrado no catálogo</p>
-        `;
-      }
-    }
-  </script>
+            try {
+                const resposta = await fetch(url);
+                const dados = await resposta.json();
+
+                if (dados.disponivel) {
+                    const cor = dados.disponivel ? 'disponivel' : 'indisponivel';
+                    resultado.innerHTML = `
+                        <h2>${dados.titulo}</h2>
+                        <p><strong>Autor:</strong> ${dados.autor}</p>
+                        <p class="${cor}">${dados.disponivel ? 'Disponível' : 'Indisponível'}</p>
+                        <img src="imagens/${dados.titulo}.jpg" alt="${dados.titulo}">
+                    `;
+                } else {
+                    resultado.innerHTML = "<p class='indisponivel'>Livro não encontrado ou indisponível.</p>";
+                }
+            } catch (erro) {
+                resultado.innerHTML = "<p class='indisponivel'>Erro ao buscar o livro.</p>";
+                console.error(erro);
+            }
+        }
+    </script>
 </body>
 </html>
