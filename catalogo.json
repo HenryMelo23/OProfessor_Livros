@@ -10,5 +10,35 @@
     "autor": "George Orwell",
     "sinopse": "Um regime totalitário vigia todos os passos dos cidadãos. Uma crítica ao autoritarismo e à manipulação.",
     "disponivel": false
+  },
+  {
+    "titulo": "A teoria de Tudo",
+    "autor": "Jane Hawking",
+    "sinopse": "Baseado na história de Stephen Hawking, o filme expõe como o astrofísico fez descobertas relevantes para o mundo da ciência, inclusive relacionadas ao tempo. Também retrata seu romance com Jane Wilde, uma estudante de Cambridge que viria a se tornar sua esposa. Aos 21 anos de idade, Hawking descobriu que sofria de uma doença motora degenerativa, mas isso não o impediu de se tornar um dos maiores cientistas da atualidade.",
+    "disponivel": true
+  },
+  {
+    "titulo": "Bird Box",
+    "autor": "Josh Malerman",
+    "sinopse": "Após quatro anos trancados, Malorie e as crianças fogem da casa em um barco a remo na esperança de encontrar um lugar distante do surto que matou todos ao seu redor. De olhos tapados, os três encaram uma viagem assustadora rumo ao desconhecido.",
+    "disponivel": true
+  },
+  {
+    "titulo": "Extraordinário",
+    "autor": "R. J. Palacio",
+    "sinopse": "A história de Auggie Pullman, um menino com uma severa deformidade facial que precisa enfrentar o estranhamento e o preconceito de crianças e adultos, se tornou uma ode à empatia, à tolerância e à gentileza. “Escolha ser gentil”: um mantra, uma atitude, uma mensagem valiosa para a atualidade. R.J.",
+    "disponivel": true
+  },
+  {
+    "titulo": "Jogador N°1",
+    "autor": "Ernest Cline",
+    "sinopse": "Wade Watts é mais um dos que escapa da desanimadora realidade passando horas e horas conectado ao OASIS ? uma utopia virtual global que permite aos usuários ser o que quiserem, um lugar onde se pode viver e se apaixonar em qualquer um dos mundos inspirados nos filmes, videogames e cultura pop dos anos 1980.",
+    "disponivel": true
+  },
+  {
+    "titulo": "Crepúsculo",
+    "autor": "Stephenie Meyer",
+    "sinopse": "A estudante Bella Swan conhece Edward Cullen, um belo mas misterioso adolescente. Edward é um vampiro, cuja família não bebe sangue, e Bella, longe de ficar assustada, se envolve em um romance perigoso com sua alma gêmea imortal.",
+    "disponivel": true
   }
 ]
