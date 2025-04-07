@@ -40,26 +40,25 @@
         async function buscarLivro() {
             const titulo = document.getElementById("titulo").value;
             const resultado = document.getElementById("resultado");
-
+    
             if (!titulo) {
                 resultado.innerHTML = "<p>Digite o título de um livro.</p>";
                 return;
             }
-
-            const resposta = await fetch(`https://oprofessor-livros.onrender.com/buscar?titulo=${encodeURIComponent(titulo)}`);
-
-
+    
+            const url = `https://oprofessor-livros.onrender.com/buscar?titulo=${encodeURIComponent(titulo)}`;
+    
             try {
-                const resposta = await fetch(resposta);
+                const resposta = await fetch(url);
                 const dados = await resposta.json();
-
-                if (dados.disponivel) {
+    
+                if (dados.titulo) {
                     const cor = dados.disponivel ? 'disponivel' : 'indisponivel';
                     resultado.innerHTML = `
                         <h2>${dados.titulo}</h2>
                         <p><strong>Autor:</strong> ${dados.autor}</p>
                         <p class="${cor}">${dados.disponivel ? 'Disponível' : 'Indisponível'}</p>
-                        <img src="imagens/${dados.titulo}.jpg" alt="${dados.titulo}">
+                        <img src="https://oprofessor-livros.onrender.com/imagens/${encodeURIComponent(dados.titulo)}.jpg" alt="${dados.titulo}">
                     `;
                 } else {
                     resultado.innerHTML = "<p class='indisponivel'>Livro não encontrado ou indisponível.</p>";
