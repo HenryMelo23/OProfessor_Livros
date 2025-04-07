@@ -26,8 +26,8 @@ def buscar():
     return jsonify({"disponivel": False})
 
 @app.route('/imagens/<path:filename>')
-def imagem(filename):
-    return send_from_directory('imagens', filename)
+def imagens(filename):
+    return send_from_directory(os.path.join(app.root_path, 'imagens'), filename)
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=10000)
