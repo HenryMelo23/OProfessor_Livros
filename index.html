@@ -136,6 +136,7 @@
                 if (dados.titulo) {
                     const cor = dados.disponivel ? 'disponivel' : 'indisponivel';
                     const imagem = `https://raw.githubusercontent.com/HenryMelo23/OProfessor_Livros/main/imagens/${encodeURIComponent(dados.titulo)}.png`;
+                    const mensagemWhatsApp = encodeURIComponent(`Olá! Tenho interesse no livro "${dados.titulo}". Poderia me dar mais informações?`);
 
                     resultado.innerHTML = `
                         <img src="${imagem}" alt="${dados.titulo}">
@@ -145,7 +146,9 @@
                         <p class="${cor}">${dados.disponivel ? 'Disponível' : 'Indisponível'}</p>
 
                         <div id="whatsapp">
-                            <a href="https://wa.me/5561995948789" target="_blank">Entrar em contato via WhatsApp</a>
+                            <a href="https://wa.me/5561995948789?text=${mensagemWhatsApp}" target="_blank">
+                                Entrar em contato via WhatsApp
+                            </a>
                         </div>
                     `;
                 } else {
