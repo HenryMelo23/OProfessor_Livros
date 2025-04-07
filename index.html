@@ -46,11 +46,11 @@
                 return;
             }
 
-            const url = await fetch(`https://oprofessor-livros.onrender.com/buscar?titulo=${encodeURIComponent(titulo)}`);
+            const resposta = await fetch(`https://oprofessor-livros.onrender.com/buscar?titulo=${encodeURIComponent(titulo)}`);
 
 
             try {
-                const resposta = await fetch(url);
+                const resposta = await fetch(resposta);
                 const dados = await resposta.json();
 
                 if (dados.disponivel) {
