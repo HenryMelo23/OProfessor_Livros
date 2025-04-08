@@ -6,6 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
+        @media (min-width: 768px) {
+            body {
+                background-image: url('https://raw.githubusercontent.com/HenryMelo23/OProfessor_Livros/Professor-1.1.1/imagens/planof.png');
+                background-size: 100% 100%;  /* cobre toda a tela */
+                background-position: center;
+                background-repeat: no-repeat;
+                min-height: 100vh; /* garante que o body cubra 100% da altura da janela */
+            }
+            h1 {
+                color: white;
+            }
+        }
         * {
             box-sizing: border-box;
         }
@@ -126,7 +138,7 @@
                 resultado.innerHTML = "<p>Digite o título de um livro.</p>";
                 return;
             }
-
+    
             const url = `https://oprofessor-livros.onrender.com/buscar?titulo=${encodeURIComponent(titulo)}`;
     
             try {
@@ -137,14 +149,14 @@
                     const cor = dados.disponivel ? 'disponivel' : 'indisponivel';
                     const imagem = `https://raw.githubusercontent.com/HenryMelo23/OProfessor_Livros/main/imagens/${encodeURIComponent(dados.titulo)}.png`;
                     const mensagemWhatsApp = encodeURIComponent(`Olá! Tenho interesse no livro "${dados.titulo}". Poderia me dar mais informações?`);
-
+    
                     resultado.innerHTML = `
                         <img src="${imagem}" alt="${dados.titulo}">
                         <h2>${dados.titulo}</h2>
                         <p><strong>Autor:</strong> ${dados.autor}</p>
                         <p><strong>Sinopse:</strong> ${dados.sinopse || 'Sinopse não disponível.'}</p>
                         <p class="${cor}">${dados.disponivel ? 'Disponível' : 'Indisponível'}</p>
-
+    
                         <div id="whatsapp">
                             <a href="https://wa.me/5561995948789?text=${mensagemWhatsApp}" target="_blank">
                                 Entrar em contato via WhatsApp
@@ -159,6 +171,15 @@
                 console.error(erro);
             }
         }
+    
+        // Detecta ENTER no campo de texto e inicia busca
+        document.getElementById("titulo").addEventListener("keydown", function(event) {
+            if (event.key === "Enter") {
+                event.preventDefault();
+                buscarLivro();
+            }
+        });
     </script>
+    
 </body>
 </html>
