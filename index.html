@@ -3,39 +3,188 @@
 <head>
     <meta charset="UTF-8">
     <title>Catálogo de Livros</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <style>
+        @media (min-width: 768px) {
+            body {
+                background-image: url('https://raw.githubusercontent.com/HenryMelo23/OProfessor_Livros/Professor-1.1.1/imagens/planof.png');
+                background-size: 100% 100%;  /* cobre toda a tela */
+                background-position: center;
+                background-repeat: no-repeat;
+                min-height: 100vh; /* garante que o body cubra 100% da altura da janela */
+            }
+            h1 {
+                color: white;
+            }
+            p {
+                white-space: pre-wrap; /* Mantém quebras de linha e espaços */
+                text-align: justify;   /* Deixa mais agradável de ler */
+            }
+            .sidebar {
+                position: fixed;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 180px;
+                background-color: #343a40;
+                padding-top: 60px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                z-index: 1000;
+            }
+
+            .sidebar a {
+                padding: 15px 10px;
+                text-decoration: none;
+                color: white;
+                width: 100%;
+                text-align: center;
+                transition: background 0.3s;
+                font-weight: bold;
+            }
+
+            .sidebar a:hover {
+                background-color: #495057;
+            }
+
+            /* Empurra o conteúdo para o lado para não ficar atrás da sidebar */
+            body {
+                margin-left: 180px;
+            }
+                }
+
+        
+        #contador-livros {
+        position: fixed;
+        top: 15px;
+        right: 20px;
+        color: white;
+        font-weight: bold;
+        font-size: 16px;
+        z-index: 1001;
+        }              
+
+
+        * {
+            box-sizing: border-box;
+        }
+
         body {
             font-family: Arial, sans-serif;
-            padding: 30px;
+            padding: 20px;
+            margin: 0;
+            background-color: #f9f9f9;
+            text-align: center;
         }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
         input, button {
-            font-size: 18px;
-            padding: 10px;
+            font-size: 16px;
+            padding: 12px;
+            margin: 5px 0;
+            width: 100%;
+            max-width: 400px;
         }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
         #resultado {
             margin-top: 30px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
         }
+
         .disponivel {
             color: green;
             font-weight: bold;
+            margin-top: 15px;
         }
+
         .indisponivel {
             color: red;
             font-weight: bold;
+            margin-top: 15px;
         }
+
         img {
-            max-width: 150px;
-            margin-top: 10px;
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        #whatsapp {
+            margin-top: 25px;
+        }
+
+        #whatsapp a {
+            background-color: #25D366;
+            color: white;
+            padding: 14px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+
+        #whatsapp a:hover {
+            background-color: #1ebe5b;
+        }
+
+        @media (max-width: 500px) {
+            h1 {
+                font-size: 20px;
+            }
+
+            input, button {
+                font-size: 15px;
+                padding: 10px;
+            }
+
+            #resultado {
+                padding: 15px;
+            }
         }
     </style>
 </head>
 <body>
-    <h1>Buscar Livro</h1>
+    <h1> 📚O Professor👴</h1>
     <input type="text" id="titulo" placeholder="Digite o título do livro">
     <button onclick="buscarLivro()">Buscar</button>
+    <div id="contador-livros">Temos disponíveis: ...</div>
 
     <div id="resultado"></div>
-
+    <div class="sidebar">
+        <a href="#">Estante</a>
+        <a href="#">Contato</a>
+        <a href="#">Informações</a>
+        <a href="https://instagram.com/seu_usuario" target="_blank">Instagram</a>
+    </div>
+    
     <script>
         async function buscarLivro() {
             const titulo = document.getElementById("titulo").value;
@@ -54,11 +203,21 @@
     
                 if (dados.titulo) {
                     const cor = dados.disponivel ? 'disponivel' : 'indisponivel';
+                    const imagem = `https://raw.githubusercontent.com/HenryMelo23/OProfessor_Livros/main/imagens/${encodeURIComponent(dados.titulo)}.png`;
+                    const mensagemWhatsApp = encodeURIComponent(`Olá! Tenho interesse no livro "${dados.titulo}". Poderia me dar mais informações?`);
+    
                     resultado.innerHTML = `
+                        <img src="${imagem}" alt="${dados.titulo}">
                         <h2>${dados.titulo}</h2>
                         <p><strong>Autor:</strong> ${dados.autor}</p>
+                        <p><strong>Sinopse:</strong> ${dados.sinopse || 'Sinopse não disponível.'}</p>
                         <p class="${cor}">${dados.disponivel ? 'Disponível' : 'Indisponível'}</p>
-                        <img src="https://oprofessor-livros.onrender.com/imagens/${encodeURIComponent(dados.titulo)}.jpg" alt="${dados.titulo}">
+    
+                        <div id="whatsapp">
+                            <a href="https://wa.me/5561995948789?text=${mensagemWhatsApp}" target="_blank">
+                                Entrar em contato via WhatsApp
+                            </a>
+                        </div>
                     `;
                 } else {
                     resultado.innerHTML = "<p class='indisponivel'>Livro não encontrado ou indisponível.</p>";
@@ -68,6 +227,27 @@
                 console.error(erro);
             }
         }
+        async function contarLivrosDisponiveis() {
+            try {
+                const resposta = await fetch("https://oprofessor-livros.onrender.com/contar");
+                const dados = await resposta.json();
+                document.getElementById("contador-livros").innerText = `Temos disponíveis: ${dados.total_disponiveis}`;
+            } catch (erro) {
+                console.error("Erro ao contar livros:", erro);
+                document.getElementById("contador-livros").innerText = `Erro ao carregar contador.`;
+            }
+        }
+
+        window.onload = contarLivrosDisponiveis;
+    
+        // Detecta ENTER no campo de texto e inicia busca
+        document.getElementById("titulo").addEventListener("keydown", function(event) {
+            if (event.key === "Enter") {
+                event.preventDefault();
+                buscarLivro();
+            }
+        });
     </script>
+    
 </body>
 </html>
