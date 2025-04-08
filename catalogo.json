@@ -3,12 +3,216 @@
     "titulo": "Dom Casmurro",
     "autor": "Machado de Assis",
     "sinopse": "Dom Casmurro conta a história de Bento Santiago (Bentinho), apelidado de Dom Casmurro por ser calado e introvertido. Na adolescência, apaixona-se por Capítu, abandonando o seminário e, com ele, os desígnios traçados por sua mãe, Dona Glória, para que se tornasse padre. Casam-se e tudo corre bem, até o amor se tornar ciúme e desconfiança. É esta a grande questão que magistralmente Dom Casmurro expõe ao longo de 148 capítulos: a dúvida que paira ao longo de toda a obra sobre a possibilidade de traição de Capítu, agravada pela extraordinária semelhança do filho de ambos, Ezequiel, com o grande amigo de Bentinho, Escobar.",
+    "tema": "Romance psicológico",
+    "caracteristica": "romance",
     "disponivel": true
   },
   {
     "titulo": "1984",
     "autor": "George Orwell",
-    "sinopse": "Um regime totalitário vigia todos os passos dos cidadãos. Uma crítica ao autoritarismo e à manipulação.",
+    "sinopse": "1984 é um famoso romance inglês escrito pelo autor modernista George Orwell. Publicado pela primeira vez em 1949, ele conta a história de Winston Smith, um cidadão inserido em um contexto de repressão. Ele vive na Inglaterra de 1984, chamada de Oceânia. Nesse regime totalitarista, todos são vigiados pelo Grande Irmão.",
+    "tema": "Distopia",
+    "caracteristica": "ficção",
     "disponivel": false
+  },
+  {
+    "titulo": "A teoria de Tudo",
+    "autor": "Jane Hawking",
+    "sinopse": "Baseado na história de Stephen Hawking...",
+    "tema": "Biografia / Drama",
+    "caracteristica": "biografia",
+    "disponivel": true
+  },
+  {
+    "titulo": "Bird Box",
+    "autor": "Josh Malerman",
+    "sinopse": "Após quatro anos trancados, Malorie e as crianças fogem...",
+    "tema": "Suspense / Terror",
+    "caracteristica": "terror",
+    "disponivel": true
+  },
+  {
+    "titulo": "Extraordinário",
+    "autor": "R. J. Palacio",
+    "sinopse": "A história de Auggie Pullman, um menino com uma severa deformidade facial...",
+    "tema": "Drama / Infantojuvenil",
+    "caracteristica": "drama",
+    "disponivel": true
+  },
+  {
+    "titulo": "Jogador N°1",
+    "autor": "Ernest Cline",
+    "sinopse": "Wade Watts é mais um dos que escapa da desanimadora realidade...",
+    "tema": "Ficção científica / Aventura",
+    "caracteristica": "ficção",
+    "disponivel": true
+  },
+  {
+    "titulo": "Crepúsculo",
+    "autor": "Stephenie Meyer",
+    "sinopse": "A estudante Bella Swan conhece Edward Cullen...",
+    "tema": "Romance / Fantasia",
+    "caracteristica": "romance",
+    "disponivel": true
+  },
+  {
+    "titulo": "Paixão",
+    "autor": "Lauren Kate",
+    "sinopse": "",
+    "tema": "Romance sobrenatural",
+    "caracteristica": "romance",
+    "disponivel": true
+  },
+  {
+    "titulo": "Tormenta",
+    "autor": "Lauren Kate",
+    "sinopse": "",
+    "tema": "Romance sobrenatural",
+    "caracteristica": "romance",
+    "disponivel": true
+  },
+  {
+    "titulo": "Os Viúvos",
+    "autor": "Mario Prata",
+    "sinopse": "",
+    "tema": "Ficção contemporânea / Humor",
+    "caracteristica": "ficção",
+    "disponivel": true
+  },
+  {
+    "titulo": "A Batalha do Apocalipse",
+    "autor": "Eduardo Spohr",
+    "sinopse": "",
+    "tema": "Fantasia épica",
+    "caracteristica": "fantasia",
+    "disponivel": true
+  },
+  {
+    "titulo": "Lua Nova",
+    "autor": "Stephenie Meyer",
+    "sinopse": "",
+    "tema": "Romance / Fantasia",
+    "caracteristica": "romance",
+    "disponivel": true
+  },
+  {
+    "titulo": "Despertar ao Amanhecer",
+    "autor": "C.C. Hunter",
+    "sinopse": "",
+    "tema": "Fantasia / Romance sobrenatural",
+    "caracteristica": "fantasia",
+    "disponivel": true
+  },
+  {
+    "titulo": "Do Mil ao Milhão",
+    "autor": "Thiago Nigro",
+    "sinopse": "",
+    "tema": "Finanças pessoais / Desenvolvimento",
+    "caracteristica": "negócios",
+    "disponivel": true
+  },
+  {
+    "titulo": "O Vendedor de Sonhos",
+    "autor": "Augusto Cury",
+    "sinopse": "",
+    "tema": "Filosofia / Desenvolvimento pessoal",
+    "caracteristica": "autoajuda",
+    "disponivel": true
+  },
+  {
+    "titulo": "A Menina que Fazia Nevar",
+    "autor": "Grace McCleen",
+    "sinopse": "",
+    "tema": "Drama psicológico / Fé",
+    "caracteristica": "drama",
+    "disponivel": true
+  },
+  {
+    "titulo": "O Código Da Vinci",
+    "autor": "Dan Brown",
+    "sinopse": "",
+    "tema": "Suspense / Conspiração religiosa",
+    "caracteristica": "suspense",
+    "disponivel": true
+  },
+  {
+    "titulo": "Anjos e Demônios",
+    "autor": "Dan Brown",
+    "sinopse": "",
+    "tema": "Suspense / Thriller religioso",
+    "caracteristica": "suspense",
+    "disponivel": true
+  },
+  {
+    "titulo": "O Símbolo Perdido",
+    "autor": "Dan Brown",
+    "sinopse": "",
+    "tema": "Suspense / Conspiração",
+    "caracteristica": "suspense",
+    "disponivel": true
+  },
+  {
+    "titulo": "Ponto de Impacto",
+    "autor": "Dan Brown",
+    "sinopse": "",
+    "tema": "Suspense / Thriller político",
+    "caracteristica": "suspense",
+    "disponivel": true
+  },
+  {
+    "titulo": "O Mapa dos Ossos",
+    "autor": "James Rollins",
+    "sinopse": "",
+    "tema": "Aventura / Thriller científico",
+    "caracteristica": "ação",
+    "disponivel": true
+  },
+  {
+    "titulo": "Paixão sem Limite",
+    "autor": "Abbi Glines",
+    "sinopse": "",
+    "tema": "Romance contemporâneo",
+    "caracteristica": "romance",
+    "disponivel": true
+  },
+  {
+    "titulo": "A Arte da Guerra",
+    "autor": "Sun Tzu",
+    "sinopse": "",
+    "tema": "Estratégia / Filosofia",
+    "caracteristica": "autoajuda",
+    "disponivel": true
+  },
+  {
+    "titulo": "O Lado Mais Sombrio",
+    "autor": "A.G. Howard",
+    "sinopse": "",
+    "tema": "Fantasia sombria / Releitura de conto",
+    "caracteristica": "fantasia",
+    "disponivel": true
+  },
+  {
+    "titulo": "Rangers: Ordem dos Arqueiros",
+    "autor": "John Flanagan",
+    "sinopse": "",
+    "tema": "Fantasia / Aventura medieval",
+    "caracteristica": "aventura",
+    "disponivel": true
+  },
+  {
+    "titulo": "A Morte e Vida de Charlie St. Cloud",
+    "autor": "Ben Sherwood",
+    "sinopse": "",
+    "tema": "Drama / Sobrenatural",
+    "caracteristica": "drama",
+    "disponivel": true
+  },
+  {
+    "titulo": "A Escolhida",
+    "autor": "Lois Lowry",
+    "sinopse": "",
+    "tema": "Distopia / Fantasia",
+    "caracteristica": "ficção",
+    "disponivel": true
   }
 ]
