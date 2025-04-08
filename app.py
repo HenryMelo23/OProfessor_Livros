@@ -31,7 +31,3 @@ def imagens(filename):
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=10000)
-
-git add app.py
-git commit -m "forçando redeploy para imagens"
-git push
