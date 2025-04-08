@@ -2,43 +2,57 @@
   {
     "titulo": "Dom Casmurro",
     "autor": "Machado de Assis",
-    "sinopse": "Dom Casmurro conta a história de Bento Santiago (Bentinho), apelidado de Dom Casmurro por ser calado e introvertido. Na adolescência, apaixona-se por Capítu, abandonando o seminário e, com ele, os desígnios traçados por sua mãe, Dona Glória, para que se tornasse padre. Casam-se e tudo corre bem, até o amor se tornar ciúme e desconfiança. É esta a grande questão que magistralmente Dom Casmurro expõe ao longo de 148 capítulos: a dúvida que paira ao longo de toda a obra sobre a possibilidade de traição de Capítu, agravada pela extraordinária semelhança do filho de ambos, Ezequiel, com o grande amigo de Bentinho, Escobar.",
+    "sinopse": "Dom Casmurro conta a história de Bento Santiago (Bentinho)...",
+    "tema": "Romance psicológico",
+    "caracteristica": "romance",
     "disponivel": true
   },
   {
     "titulo": "1984",
     "autor": "George Orwell",
-    "sinopse": "Um regime totalitário vigia todos os passos dos cidadãos. Uma crítica ao autoritarismo e à manipulação.",
+    "sinopse": "Um regime totalitário vigia todos os passos dos cidadãos...",
+    "tema": "Distopia",
+    "caracteristica": "ficção",
     "disponivel": false
   },
   {
     "titulo": "A teoria de Tudo",
     "autor": "Jane Hawking",
-    "sinopse": "Baseado na história de Stephen Hawking, o filme expõe como o astrofísico fez descobertas relevantes para o mundo da ciência, inclusive relacionadas ao tempo. Também retrata seu romance com Jane Wilde, uma estudante de Cambridge que viria a se tornar sua esposa. Aos 21 anos de idade, Hawking descobriu que sofria de uma doença motora degenerativa, mas isso não o impediu de se tornar um dos maiores cientistas da atualidade.",
+    "sinopse": "Baseado na história de Stephen Hawking...",
+    "tema": "Biografia / Drama",
+    "caracteristica": "biografia",
     "disponivel": true
   },
   {
     "titulo": "Bird Box",
     "autor": "Josh Malerman",
-    "sinopse": "Após quatro anos trancados, Malorie e as crianças fogem da casa em um barco a remo na esperança de encontrar um lugar distante do surto que matou todos ao seu redor. De olhos tapados, os três encaram uma viagem assustadora rumo ao desconhecido.",
+    "sinopse": "Após quatro anos trancados, Malorie e as crianças fogem...",
+    "tema": "Suspense / Terror",
+    "caracteristica": "terror",
     "disponivel": true
   },
   {
     "titulo": "Extraordinário",
     "autor": "R. J. Palacio",
-    "sinopse": "A história de Auggie Pullman, um menino com uma severa deformidade facial que precisa enfrentar o estranhamento e o preconceito de crianças e adultos, se tornou uma ode à empatia, à tolerância e à gentileza. “Escolha ser gentil”: um mantra, uma atitude, uma mensagem valiosa para a atualidade. R.J.",
+    "sinopse": "A história de Auggie Pullman, um menino com uma severa deformidade facial...",
+    "tema": "Drama / Infantojuvenil",
+    "caracteristica": "drama",
     "disponivel": true
   },
   {
     "titulo": "Jogador N°1",
     "autor": "Ernest Cline",
-    "sinopse": "Wade Watts é mais um dos que escapa da desanimadora realidade passando horas e horas conectado ao OASIS ? uma utopia virtual global que permite aos usuários ser o que quiserem, um lugar onde se pode viver e se apaixonar em qualquer um dos mundos inspirados nos filmes, videogames e cultura pop dos anos 1980.",
+    "sinopse": "Wade Watts é mais um dos que escapa da desanimadora realidade...",
+    "tema": "Ficção científica / Aventura",
+    "caracteristica": "ficção",
     "disponivel": true
   },
   {
     "titulo": "Crepúsculo",
     "autor": "Stephenie Meyer",
-    "sinopse": "A estudante Bella Swan conhece Edward Cullen, um belo mas misterioso adolescente. Edward é um vampiro, cuja família não bebe sangue, e Bella, longe de ficar assustada, se envolve em um romance perigoso com sua alma gêmea imortal.",
+    "sinopse": "A estudante Bella Swan conhece Edward Cullen...",
+    "tema": "Romance / Fantasia",
+    "caracteristica": "romance",
     "disponivel": true
   }
 ]
