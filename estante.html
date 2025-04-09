@@ -145,16 +145,15 @@
   <div class="livros-container" id="livros"></div>
 
   <script>
-    async function mostrarLivros(genero) {
-      if (window.innerWidth <= 768) return; // Só para desktop
+async function carregarLivrosPorGenero(genero) {
+    if (window.innerWidth <= 768) return; // Apenas para desktop
 
-      try {
+    try {
         const resposta = await fetch("https://oprofessor-livros.onrender.com/catalogo");
         const catalogo = await resposta.json();
 
-        const livrosFiltrados = catalogo.filter(livro =>
-          livro.disponivel &&
-          livro.caracteristica.toLowerCase() === genero.toLowerCase()
+        const filtrados = catalogo.filter(livro => 
+            livro.caracteristica.toLowerCase() === genero && livro.disponivel
         );
 
         const container = document.getElementById("livros");
@@ -163,20 +162,20 @@
         generos.style.display = "none";
         container.style.display = "grid";
 
-        container.innerHTML = livrosFiltrados.map(livro => {
-          const imagem = `https://raw.githubusercontent.com/HenryMelo23/OProfessor_Livros/main/imagens/${encodeURIComponent(livro.titulo)}.png`;
-          return `
-            <div class="livro">
-              <img src="${imagem}" alt="${livro.titulo}">
-              <div class="titulo" title="${livro.titulo}">${livro.titulo}</div>
-            </div>
-          `;
+        container.innerHTML = filtrados.map(livro => {
+            const imagem = `https://raw.githubusercontent.com/HenryMelo23/OProfessor_Livros/main/imagens/${encodeURIComponent(livro.titulo)}.png`;
+            return `
+                <div class="livro">
+                    <img src="${imagem}" alt="${livro.titulo}">
+                    <div class="titulo" title="${livro.titulo}">${livro.titulo}</div>
+                </div>
+            `;
         }).join('');
 
-      } catch (erro) {
-        console.error("Erro ao carregar os livros:", erro);
-      }
+    } catch (erro) {
+        console.error("Erro ao carregar o catálogo:", erro);
     }
-  </script>
+}
+</script>
 </body>
 </html>
