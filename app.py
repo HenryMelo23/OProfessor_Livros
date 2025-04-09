@@ -41,6 +41,11 @@ def obter_catalogo():
     catalogo = carregar_catalogo()
     return jsonify(catalogo)
 
+@app.route('/todos', methods=['GET'])
+def listar_todos():
+    catalogo = carregar_catalogo()
+    return jsonify(catalogo)
+
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=10000)
