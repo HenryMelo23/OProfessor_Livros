@@ -46,6 +46,25 @@ def listar_todos():
     catalogo = carregar_catalogo()
     return jsonify(catalogo)
 
+@app.route('/atualizar', methods=['POST'])
+def atualizar_livro():
+    data = request.get_json()
+    if not data or 'titulo' not in data:
+        return jsonify({'erro': 'Requisição inválida'}), 400
+
+    catalogo = carregar_catalogo()
+
+    titulo = data['titulo']
+    if titulo in catalogo:
+        catalogo[titulo] = data  # substitui os dados
+    else:
+        return jsonify({'erro': 'Livro não encontrado'}), 404
+
+    with open('catalogo.json', 'w', encoding='utf-8') as f:
+        json.dump(catalogo, f, ensure_ascii=False, indent=2)
+
+    return jsonify({'mensagem': 'Livro atualizado com sucesso'})
+
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=10000)
