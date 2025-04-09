@@ -1,6 +1,7 @@
 from flask import Flask, request, jsonify, send_from_directory
 from flask_cors import CORS
 import json
+import os
 
 app = Flask(__name__)
 CORS(app)
@@ -29,9 +30,17 @@ def buscar():
 def imagens(filename):
     return send_from_directory(os.path.join(app.root_path, 'imagens'), filename)
 
+@app.route('/contar')
+def contar_disponiveis():
+    catalogo = carregar_catalogo()
+    total_disponiveis = sum(1 for livro in catalogo if livro.get('disponivel', False))
+    return jsonify({"total_disponiveis": total_disponiveis})
+
+@app.route('/catalogo')
+def obter_catalogo():
+    catalogo = carregar_catalogo()
+    return jsonify(catalogo)
+
+
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=10000)
-
-git add app.py
-git commit -m "forçando redeploy para imagens"
-git push
