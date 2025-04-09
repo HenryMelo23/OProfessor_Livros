@@ -46,6 +46,7 @@ def listar_todos():
     catalogo = carregar_catalogo()
     return jsonify(catalogo)
 
+
 @app.route('/atualizar', methods=['POST'])
 def atualizar_livro():
     data = request.get_json()
@@ -53,11 +54,15 @@ def atualizar_livro():
         return jsonify({'erro': 'Requisição inválida'}), 400
 
     catalogo = carregar_catalogo()
+    livro_encontrado = False
 
-    titulo = data['titulo']
-    if titulo in catalogo:
-        catalogo[titulo] = data  # substitui os dados
-    else:
+    for i, livro in enumerate(catalogo):
+        if livro['titulo'] == data['titulo']:
+            catalogo[i] = data
+            livro_encontrado = True
+            break
+
+    if not livro_encontrado:
         return jsonify({'erro': 'Livro não encontrado'}), 404
 
     with open('catalogo.json', 'w', encoding='utf-8') as f:
