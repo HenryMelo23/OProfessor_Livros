@@ -165,6 +165,42 @@
                 padding: 15px;
             }
         }
+        /* NAVBAR MOBILE */
+        .mobile-navbar {
+        display: none;
+        }
+
+        @media (max-width: 768px) {
+        .sidebar {
+            display: none !important;
+        }
+
+        .mobile-navbar {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 60px;
+            background-color: #222;
+            color: white;
+            z-index: 9999;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+        }
+
+        .mobile-navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        body {
+            padding-top: 70px; /* espaço para a navbar não cobrir o conteúdo */
+        }
+        }
     </style>
 </head>
 <body>
@@ -181,6 +217,13 @@
         <a href="#">Informações</a>
         <a href="https://www.instagram.com/seuluiz_livros/" target="_blank">Instagram</a>
     </div>
+    <nav class="mobile-navbar">
+        <a href="index.html">Início</a>
+        <a href="estante.html">Estante</a>
+        <a href="https://wa.me/5561995948789" target="_blank">Contato</a>
+        <a href="https://www.instagram.com/seuluiz_livros/" target="_blank">Instagram</a>
+        <a href="#">Informações</a>
+      </nav>
 
     <script>
         async function buscarLivro() {
