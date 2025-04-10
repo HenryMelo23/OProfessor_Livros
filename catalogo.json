@@ -1,495 +1,484 @@
 [
   {
-    "titulo": "Dom Casmurro",
     "autor": "Machado de Assis",
+    "caracteristica": "romance",
+    "disponivel": true,
     "sinopse": "Dom Casmurro conta a história de Bento Santiago (Bentinho), apelidado de Dom Casmurro por ser calado e introvertido. Na adolescência, apaixona-se por Capítu, abandonando o seminário e, com ele, os desígnios traçados por sua mãe, Dona Glória, para que se tornasse padre. Casam-se e tudo corre bem, até o amor se tornar ciúme e desconfiança. É esta a grande questão que magistralmente Dom Casmurro expõe ao longo de 148 capítulos: a dúvida que paira ao longo de toda a obra sobre a possibilidade de traição de Capítu, agravada pela extraordinária semelhança do filho de ambos, Ezequiel, com o grande amigo de Bentinho, Escobar.",
     "tema": "Romance psicológico",
-    "caracteristica": "romance",
-    "disponivel": true
+    "titulo": "Dom Casmurro"
   },
   {
-    "titulo": "1984",
     "autor": "George Orwell",
+    "caracteristica": "ficção",
+    "disponivel": false,
     "sinopse": "1984 é um famoso romance inglês escrito pelo autor modernista George Orwell. Publicado pela primeira vez em 1949, ele conta a história de Winston Smith, um cidadão inserido em um contexto de repressão. Ele vive na Inglaterra de 1984, chamada de Oceânia. Nesse regime totalitarista, todos são vigiados pelo Grande Irmão.",
     "tema": "Distopia",
-    "caracteristica": "ficção",
-    "disponivel": false
+    "titulo": "1984"
   },
   {
-    "titulo": "A teoria de Tudo",
     "autor": "Jane Hawking",
+    "caracteristica": "biografia",
+    "disponivel": true,
     "sinopse": "Baseado na história de Stephen Hawking, o filme expõe como o astrofísico fez descobertas relevantes para o mundo da ciência, inclusive relacionadas ao tempo. Também retrata seu romance com Jane Wilde, uma estudante de Cambridge que viria a se tornar sua esposa. Aos 21 anos de idade, Hawking descobriu que sofria de uma doença motora degenerativa, mas isso não o impediu de se tornar um dos maiores cientistas da atualidade.",
     "tema": "Biografia / Drama",
-    "caracteristica": "biografia",
-    "disponivel": true
+    "titulo": "A teoria de Tudo"
   },
   {
-    "titulo": "Bird Box",
     "autor": "Josh Malerman",
+    "caracteristica": "terror",
+    "disponivel": true,
     "sinopse": "Entidades misteriosas invadem a Terra com sua terrível presença. Aqueles que as veem, se matam instantaneamente. O mundo entra em colapso, mas uma mãe luta para encontrar um lugar seguro para viver com seus filhos.",
     "tema": "Suspense / Terror",
-    "caracteristica": "terror",
-    "disponivel": true
+    "titulo": "Bird Box"
   },
   {
-    "titulo": "Extraordinário",
     "autor": "R. J. Palacio",
+    "caracteristica": "drama",
+    "disponivel": true,
     "sinopse": "Auggie Pullman é um garoto que nasceu com uma deformidade facial e precisou passar por 27 cirurgias plásticas. Aos 10 anos, ele finalmente começa a frequentar uma escola regular, como qualquer outra criança, pela primeira vez. No quinto ano, ele precisa se esforçar para conseguir se encaixar em sua nova realidade.",
     "tema": "Drama / Infantojuvenil",
-    "caracteristica": "drama",
-    "disponivel": true
+    "titulo": "Extraordinário"
   },
   {
-    "titulo": "Jogador N°1",
     "autor": "Ernest Cline",
+    "caracteristica": "ficção",
+    "disponivel": true,
     "sinopse": "Em 2045, Wade Watts, assim como o resto da humanidade, prefere a realidade virtual do jogo OASIS ao mundo real. James Halliday, o excêntrico criador do jogo, morre e deixa sua fortuna inestimável para a primeira pessoa que descobrir a chave de um quebra-cabeça diabólico que ele arquitetou. Para vencer, Watts precisa abandonar a existência virtual e experimentar o amor e a realidade.",
     "tema": "Ficção científica / Aventura",
-    "caracteristica": "ficção",
-    "disponivel": true
+    "titulo": "Jogador N°1"
   },
   {
-    "titulo": "Crepúsculo",
     "autor": "Stephenie Meyer",
+    "caracteristica": "romance",
+    "disponivel": true,
     "sinopse": "A estudante Bella Swan conhece Edward Cullen, um belo mas misterioso adolescente. Edward é um vampiro, cuja família não bebe sangue, e Bella, longe de ficar assustada, se envolve em um romance perigoso com sua alma gêmea imortal.",
     "tema": "Romance / Fantasia",
-    "caracteristica": "romance",
-    "disponivel": true
+    "titulo": "Crepúsculo"
   },
   {
-    "titulo": "Paixão",
     "autor": "Lauren Kate",
+    "caracteristica": "romance",
+    "disponivel": true,
     "sinopse": "O amor de Luce por Daniel é mais forte do que tudo, exceto, talvez, pela necessidade de saber mais sobre a história dos dois e as razões por trás da maldição que atormenta suas vidas. Levada por um impulso irracional, Luce se arrisca ao mergulhar em um Anunciador e começa a atravessar os séculos.",
     "tema": "Romance sobrenatural",
-    "caracteristica": "romance",
-    "disponivel": true
+    "titulo": "Paixão"
   },
   {
-    "titulo": "Tormenta",
     "autor": "Lauren Kate",
+    "caracteristica": "romance",
+    "disponivel": true,
     "sinopse": "Tormenta é a sequência de Fallen , uma história envolvente repleta de mitologia, romance e suspense. Inferno na terra. É assim que Luce se sente quando está longe de seu namorado, um anjo caído, Daniel. Demorou uma eternidade até que eles se encontrassem, mas agora ele lhe diz que precisam se separar novamente.",
     "tema": "Romance sobrenatural",
-    "caracteristica": "romance",
-    "disponivel": true
+    "titulo": "Tormenta"
   },
   {
-    "titulo": "Os Viúvos",
     "autor": "Mario Prata",
+    "caracteristica": "ficção",
+    "disponivel": true,
     "sinopse": "Além da tumultuada rotina de uma investigação criminal, Fiora ainda precisa lidar com um triângulo amoroso envolvendo uma ex-namorada e sua filha, e resolver os problemas matrimoniais de Darwin, seu assistente.",
     "tema": "Ficção contemporânea / Humor",
-    "caracteristica": "ficção",
-    "disponivel": true
+    "titulo": "Os Viúvos"
   },
   {
-    "titulo": "A Batalha do Apocalipse",
     "autor": "Eduardo Spohr",
+    "caracteristica": "fantasia",
+    "disponivel": true,
     "sinopse": "Há muitos e muitos anos, tantos quanto o número de estrelas no céu, o paraíso celeste foi palco de um terrível levante. Um grupo de anjos guerreiros, amantes da justiça e da liberdade, desafiou a tirania dos poderosos arcanjos, levantando armas contra seus opressores.",
     "tema": "Fantasia épica",
-    "caracteristica": "fantasia",
-    "disponivel": true
+    "titulo": "A Batalha do Apocalipse"
   },
   {
-    "titulo": "Lua Nova",
     "autor": "Stephenie Meyer",
+    "caracteristica": "romance",
+    "disponivel": true,
     "sinopse": "Para Bella Swan, há um coisa mais importante do que a própria vida: Edward Cullen. Mas estar apaixonada por um vampiro é ainda mais perigoso do que ela poderia ter imaginado. Edward já resgatara Bella das garras de um monstro cruel, mas agora, quando o relacionamento ousado do casal ameaça tudo o que lhes é próximo e querido, eles percebem que seus problemas podem estar apenas começando...",
     "tema": "Romance / Fantasia",
-    "caracteristica": "romance",
-    "disponivel": true
+    "titulo": "Lua Nova"
   },
   {
-    "titulo": "Despertar ao Amanhecer",
     "autor": "C.C. Hunter",
+    "caracteristica": "fantasia",
+    "disponivel": true,
     "sinopse": "Kylie continua sua jornada em um acampamento nada comum, onde criaturas sobrenaturais escondem verdades perigosas — inclusive sobre ela mesma. Em meio a mistérios, descobertas e emoções intensas, ela precisa encontrar seu lugar em um mundo onde nem tudo é o que parece. Um romance envolvente repleto de suspense, magia e reviravoltas.",
     "tema": "Fantasia / Romance sobrenatural",
-    "caracteristica": "fantasia",
-    "disponivel": true
+    "titulo": "Despertar ao Amanhecer"
   },
   {
-    "titulo": "Do Mil ao Milhão",
     "autor": "Thiago Nigro",
+    "caracteristica": "negócios",
+    "disponivel": true,
     "sinopse": "Sem promessas milagrosas, Thiago Nigro revela o caminho real para conquistar a liberdade financeira. Com linguagem clara e estratégias práticas, ele mostra como gastar bem, investir melhor e ganhar mais. Um guia essencial para quem quer transformar sua relação com o dinheiro e construir um futuro próspero.",
     "tema": "Finanças pessoais / Desenvolvimento",
-    "caracteristica": "negócios",
-    "disponivel": true
+    "titulo": "Do Mil ao Milhão"
   },
   {
-    "titulo": "O Vendedor de Sonhos",
     "autor": "Augusto Cury",
+    "caracteristica": "autoajuda",
+    "disponivel": true,
     "sinopse": "Um homem desconhecido tenta salvar da morte um suicida. Ninguém sabe sua origem, seu nome sua história. Proclama aos quatro ventos que a sociedades modernas se converteram num hospício Global. Com uma eloquência cativante, começa a chamar seguidores para vender sonhos.",
     "tema": "Filosofia / Desenvolvimento pessoal",
-    "caracteristica": "autoajuda",
-    "disponivel": true
+    "titulo": "O Vendedor de Sonhos"
   },
   {
-    "titulo": "A Menina que Fazia Nevar",
     "autor": "Grace McCleen",
+    "caracteristica": "drama",
+    "disponivel": true,
     "sinopse": "Judith McPherson é uma menina de dez anos que vive com o pai numa pequena cidade do Reino Unido. Mas entre o bullying a que é sujeita na escola e a relação distante que o pai, um homem de grande fervor religioso, tem com ela, os seus dias são bastante solitários e sombrios.",
     "tema": "Drama psicológico / Fé",
-    "caracteristica": "drama",
-    "disponivel": true
+    "titulo": "A Menina que Fazia Nevar"
   },
   {
-    "titulo": "O Código Da Vinci",
     "autor": "Dan Brown",
+    "caracteristica": "suspense",
+    "disponivel": true,
     "sinopse": "Em meio a uma misteriosa morte em Paris, o renomado simbologista Robert Langdon se vê envolvido em uma trama repleta de códigos, arte, segredos históricos e sociedades ocultas. Cada pista o aproxima de uma verdade escondida há séculos — uma revelação capaz de mudar tudo o que conhecemos. Um thriller eletrizante que prende do início ao fim.",
     "tema": "Suspense / Conspiração religiosa",
-    "caracteristica": "suspense",
-    "disponivel": true
+    "titulo": "O Código Da Vinci"
   },
   {
-    "titulo": "Anjos e Demônios",
     "autor": "Dan Brown",
+    "caracteristica": "suspense",
+    "disponivel": true,
     "sinopse": "Quando uma antiga irmandade ressurge das sombras, o simbologista Robert Langdon é chamado para desvendar um mistério que ameaça o coração do Vaticano. Entre símbolos ocultos e uma corrida contra o tempo, ele mergulha em uma trama eletrizante onde ciência e fé se chocam em uma batalha mortal.",
     "tema": "Suspense / Thriller religioso",
-    "caracteristica": "suspense",
-    "disponivel": true
+    "titulo": "Anjos e Demônios"
   },
   {
-    "titulo": "O Símbolo Perdido",
     "autor": "Dan Brown",
+    "caracteristica": "suspense",
+    "disponivel": true,
     "sinopse": "Em uma corrida alucinante por Washington, Robert Langdon precisa decifrar símbolos antigos e proteger um segredo guardado por séculos. Entre sociedades secretas, rituais enigmáticos e revelações surpreendentes, ele enfrenta um inimigo implacável e um mistério que desafia os limites do conhecimento humano.",
     "tema": "Suspense / Conspiração",
-    "caracteristica": "suspense",
-    "disponivel": true
+    "titulo": "O Símbolo Perdido"
   },
   {
-    "titulo": "Ponto de Impacto",
     "autor": "Dan Brown",
+    "caracteristica": "suspense",
+    "disponivel": true,
     "sinopse": "Quando a NASA faz uma descoberta impressionante no Ártico, a analista Rachel Sexton é enviada para verificar sua autenticidade. Mas o que parecia um triunfo científico logo se transforma em uma conspiração mortal. Em meio a verdades encobertas e ameaças invisíveis, cada revelação pode mudar o destino da humanidade.",
     "tema": "Suspense / Thriller político",
-    "caracteristica": "suspense",
-    "disponivel": true
+    "titulo": "Ponto de Impacto"
   },
   {
-    "titulo": "O Mapa dos Ossos",
     "autor": "James Rollins",
+    "caracteristica": "ação",
+    "disponivel": true,
     "sinopse": "Um ataque brutal a uma catedral revela pistas sobre um segredo antigo ligado aos Três Reis Magos. A força-tarefa SIGMA entra em ação e mergulha em uma caçada global por um poder ancestral que pode mudar o rumo da civilização. Um thriller eletrizante, onde ciência, história e ação se cruzam a cada página.",
     "tema": "Aventura / Thriller científico",
-    "caracteristica": "ação",
-    "disponivel": true
+    "titulo": "O Mapa dos Ossos"
   },
-  
-
-  
   {
-    "titulo": "Paixão sem Limite",
     "autor": "Abbi Glines",
+    "caracteristica": "romance",
+    "disponivel": true,
     "sinopse": "Blaire está recomeçando a vida após uma perda devastadora, mas não esperava cruzar o caminho de Rush — misterioso, provocante e totalmente proibido. Entre segredos, atração intensa e corações em conflito, ela descobre que o amor pode ser tão perigoso quanto irresistível. Um romance ardente que vai mexer com suas emoções.",
     "tema": "Romance contemporâneo",
-    "caracteristica": "romance",
-    "disponivel": true
+    "titulo": "Paixão sem Limite"
   },
   {
-    "titulo": "A Arte da Guerra",
     "autor": "Sun Tzu",
+    "caracteristica": "autoajuda",
+    "disponivel": true,
     "sinopse": "Muito além do campo de batalha, A Arte da Guerra é um manual atemporal sobre estratégia, liderança e sabedoria. Com ensinamentos breves e poderosos, Sun Tzu mostra como vencer com inteligência, prever movimentos e agir com precisão — lições valiosas para a vida, os negócios e os desafios do dia a dia.",
     "tema": "Estratégia / Filosofia",
-    "caracteristica": "autoajuda",
-    "disponivel": true
+    "titulo": "A Arte da Guerra"
   },
   {
-    "titulo": "O Lado Mais Sombrio",
     "autor": "A.G. Howard",
+    "caracteristica": "fantasia",
+    "disponivel": true,
     "sinopse": "Alyssa sempre teve uma conexão estranha com o mundo de Alice no País das Maravilhas — e agora, ela precisa mergulhar nesse universo sombrio para quebrar uma maldição que assombra sua família há gerações. Criaturas distorcidas, escolhas perigosas e um reino à beira do caos a esperam. Uma fantasia sombria e sedutora onde nada é o que parece.",
     "tema": "Fantasia sombria / Releitura de conto",
-    "caracteristica": "fantasia",
-    "disponivel": true
+    "titulo": "O Lado Mais Sombrio"
   },
   {
-    "titulo": "Rangers Ordem dos Arqueiros",
     "autor": "John Flanagan",
+    "caracteristica": "aventura",
+    "disponivel": true,
     "sinopse": "Will sempre sonhou em ser um guerreiro, mas seu destino o leva a um caminho diferente — o de um arqueiro da misteriosa e lendária Ordem dos Rangers. Treinado para se mover nas sombras, ele descobre que coragem e inteligência podem valer mais que força. Uma aventura épica repleta de ação, lealdade e desafios inesperados.",
     "tema": "Fantasia / Aventura medieval",
-    "caracteristica": "aventura",
-    "disponivel": true
+    "titulo": "Rangers Ordem dos Arqueiros"
   },
   {
-    "titulo": "A Morte e Vida de Charlie St. Cloud",
     "autor": "Ben Sherwood",
+    "caracteristica": "drama",
+    "disponivel": true,
     "sinopse": "Marcado por uma perda trágica, Charlie vive entre o passado e o presente, preso a promessas que não consegue quebrar. Mas quando um novo amor entra em sua vida, ele é desafiado a escolher entre o que foi e o que ainda pode ser. Uma história comovente sobre laços eternos, redenção e a força de seguir em frente.",
     "tema": "Drama / Sobrenatural",
-    "caracteristica": "drama",
-    "disponivel": true
+    "titulo": "A Morte e Vida de Charlie St. Cloud"
   },
   {
-    "titulo": "A Escolhida",
     "autor": "Lois Lowry",
+    "caracteristica": "ficção",
+    "disponivel": true,
     "sinopse": "Em uma sociedade onde a perfeição é exigida a qualquer custo, Kira, uma jovem com uma habilidade única, luta para encontrar seu lugar. Cercada por segredos e regras rígidas, ela descobre que seu dom pode mudar tudo ao seu redor. Uma distopia poderosa sobre coragem, escolhas e a verdadeira força que vem de dentro.",
     "tema": "Distopia / Fantasia",
-    "caracteristica": "ficção",
-    "disponivel": true
+    "titulo": "A Escolhida"
   },
   {
-    "titulo": "Os Homens que Não Amavam as Mulheres",
     "autor": "Stieg Larsson",
+    "caracteristica": "suspense",
+    "disponivel": true,
     "sinopse": "Um jornalista em queda e uma hacker brilhante se unem para investigar o desaparecimento de uma jovem décadas atrás. O que começa como um mistério familiar se transforma em uma teia sombria de corrupção, violência e segredos enterrados. Um thriller envolvente e inteligente que revela o lado mais obscuro da natureza humana.",
     "tema": "Suspense / Thriller investigativo",
-    "caracteristica": "suspense",
-    "disponivel": true
+    "titulo": "Os Homens que Não Amavam as Mulheres"
   },
   {
-    "titulo": "Por Trás do Espelho",
     "autor": "Jaqueline Sales",
+    "caracteristica": "suspense",
+    "disponivel": true,
     "sinopse": "Ao cruzar o limite entre realidade e reflexo, uma jovem descobre que os espelhos escondem mais do que sua imagem — guardam segredos, dores e verdades que ela jamais imaginou enfrentar. Em uma jornada intensa de autoconhecimento e superação, ela precisa confrontar o passado para reencontrar a si mesma.",
     "tema": "Suspense / Drama psicológico",
-    "caracteristica": "suspense",
-    "disponivel": true
+    "titulo": "Por Trás do Espelho"
   },
   {
-    "titulo": "A Inquisição",
     "autor": "Taran Matharu",
+    "caracteristica": "fantasia",
+    "disponivel": true,
     "sinopse": "Acusado injustamente e cercado por inimigos, Fletcher enfrenta os perigos de um julgamento implacável enquanto tenta proteger aqueles que ama. Em um mundo onde magia, demônios e intrigas políticas se entrelaçam, ele precisará dominar seus poderes e descobrir verdades ocultas para sobreviver. Uma fantasia épica repleta de ação, tensão e reviravoltas.",
     "tema": "Fantasia / Aventura épica",
-    "caracteristica": "fantasia",
-    "disponivel": true
+    "titulo": "A Inquisição"
   },
   {
-    "titulo": "A Menina que Brincava com Fogo",
     "autor": "Stieg Larsson",
+    "caracteristica": "suspense",
+    "disponivel": true,
     "sinopse": "Lisbeth Salander se torna o centro de uma investigação explosiva após uma série de assassinatos ligados ao tráfico humano. Perseguida pela polícia e caçada por inimigos do passado, ela precisa provar sua inocência enquanto enfrenta os fantasmas mais sombrios de sua história. Um suspense eletrizante e profundo, onde nada é o que parece.",
     "tema": "Suspense / Thriller investigativo",
-    "caracteristica": "suspense",
-    "disponivel": true
+    "titulo": "A Menina que Brincava com Fogo"
   },
   {
-    "titulo": "A Rainha do Castelo de Ar",
     "autor": "Stieg Larsson",
+    "caracteristica": "suspense",
+    "disponivel": true,
     "sinopse": "Ferida, isolada e sob vigilância, Lisbeth Salander enfrenta seu maior desafio: provar sua inocência e desmascarar uma conspiração poderosa que a persegue desde a infância. Com a ajuda do jornalista Mikael Blomkvist, ela inicia uma luta por justiça em um jogo mortal contra o sistema. Um desfecho brilhante para uma trilogia intensa e inesquecível.",
     "tema": "Suspense / Conspiração",
-    "caracteristica": "suspense",
-    "disponivel": true
+    "titulo": "A Rainha do Castelo de Ar"
   },
   {
-    "titulo": "O Princípio de Peter",
     "autor": "Laurence J. Peter",
+    "caracteristica": "negócios",
+    "disponivel": true,
     "sinopse": "Com humor afiado e observações certeiras, este clássico revela uma verdade desconcertante sobre o mundo corporativo: em toda hierarquia, as pessoas tendem a ser promovidas até alcançarem seu nível de incompetência. Uma leitura provocadora e atual, que mistura crítica social e reflexão sobre o funcionamento das organizações.",
     "tema": "Psicologia organizacional / Crítica social",
-    "caracteristica": "negócios",
-    "disponivel": true
+    "titulo": "O Princípio de Peter"
   },
   {
-    "titulo": "Cidades de Papel",
     "autor": "John Green",
+    "caracteristica": "romance",
+    "disponivel": true,
     "sinopse": "Quentin sempre foi fascinado por Margo, sua vizinha misteriosa. Quando ela desaparece, deixando pistas enigmáticas para trás, ele embarca em uma jornada inesperada em busca de respostas — e talvez de si mesmo. Uma história sensível e divertida sobre amizade, identidade e a beleza de enxergar além das aparências.",
     "tema": "Romance adolescente / Mistério",
-    "caracteristica": "romance",
-    "disponivel": true
+    "titulo": "Cidades de Papel"
   },
   {
-    "titulo": "O Monge e o Executivo",
     "autor": "James C. Hunter",
+    "caracteristica": "autoajuda",
+    "disponivel": true,
     "sinopse": "Em busca de respostas sobre liderança e propósito, um executivo participa de um retiro em um mosteiro, onde aprende que liderar é servir. Entre diálogos profundos e reflexões transformadoras, ele descobre que o verdadeiro poder está na empatia, no respeito e no caráter. Uma leitura essencial para quem quer liderar com alma e coração.",
     "tema": "Liderança / Desenvolvimento pessoal",
-    "caracteristica": "autoajuda",
-    "disponivel": true
+    "titulo": "O Monge e o Executivo"
   },
   {
-    "titulo": "A Bruxa Não Vai para a Fogueira Neste Livro",
     "autor": "Amanda Lovelace",
+    "caracteristica": "poesia",
+    "disponivel": true,
     "sinopse": "Um grito de resistência em forma de poesia. Neste livro poderoso, Amanda Lovelace transforma dor em força, queimando expectativas e reacendendo a voz feminina com cada verso. É sobre ser mulher, ser livre, ser fogo — e jamais pedir desculpas por isso. Um manifesto lírico de empoderamento e cura.    ",
     "tema": "Poesia / Feminismo",
-    "caracteristica": "poesia",
-    "disponivel": true
+    "titulo": "A Bruxa Não Vai para a Fogueira Neste Livro"
   },
   {
-    "titulo": "Eleanor & Park",
     "autor": "Rainbow Rowell",
+    "caracteristica": "romance",
+    "disponivel": true,
     "sinopse": "Dois adolescentes diferentes em tudo, unidos pela música, quadrinhos e sentimentos que crescem em silêncio. Em meio a dificuldades, descobrem no outro um refúgio inesperado. Eleanor & Park é uma história doce, real e arrebatadora sobre o primeiro amor — aquele que a gente nunca esquece.",
     "tema": "Romance adolescente / Drama",
-    "caracteristica": "romance",
-    "disponivel": true
+    "titulo": "Eleanor & Park"
   },
   {
-    "titulo": "Fora de Série",
     "autor": "Malcolm Gladwell",
+    "caracteristica": "negócios",
+    "disponivel": true,
     "sinopse": "O que torna alguém verdadeiramente excepcional? Malcolm Gladwell mergulha nas histórias por trás do sucesso e revela que talento é só parte da equação. Cultura, oportunidades e timing também moldam os grandes nomes do mundo. Uma leitura provocadora que redefine tudo o que achamos saber sobre conquistas extraordinárias.",
     "tema": "Sociologia / Sucesso pessoal",
-    "caracteristica": "negócios",
-    "disponivel": true
+    "titulo": "Fora de Série"
   },
   {
-    "titulo": "O Cemitério",
     "autor": "Stephen King",
+    "caracteristica": "terror",
+    "disponivel": true,
     "sinopse": "Ao se mudar com a família para uma casa tranquila no interior, Louis Creed descobre um antigo cemitério escondido na floresta — um lugar onde a morte nem sempre é o fim. Quando a tragédia bate à porta, ele será forçado a fazer escolhas aterradoras. Um terror psicológico inquietante sobre amor, perda e as consequências de desafiar a natureza.",
     "tema": "Terror psicológico",
-    "caracteristica": "terror",
-    "disponivel": true
+    "titulo": "O Cemitério"
   },
   {
-    "titulo": "O Código da Inteligência",
     "autor": "Augusto Cury",
+    "caracteristica": "autoajuda",
+    "disponivel": true,
     "sinopse": "Neste livro transformador, Augusto Cury revela os segredos da inteligência multifocal — uma forma profunda de entender, sentir e reagir ao mundo. Com reflexões acessíveis e exemplos do cotidiano, ele mostra como desenvolver o autoconhecimento, a gestão das emoções e a sabedoria necessária para viver com equilíbrio e propósito.",
     "tema": "Psicologia / Inteligência emocional",
-    "caracteristica": "autoajuda",
-    "disponivel": true
+    "titulo": "O Código da Inteligência"
   },
   {
-    "titulo": "Meu Livro Eu que Escrevi",
     "autor": "Duny",
+    "caracteristica": "humor",
+    "disponivel": true,
     "sinopse": "Com a língua afiada e zero paciência pra gente sonsa, Duny abre o jogo sobre a vida, os perrengues e os surtos com muito deboche e sinceridade. Um livro que é praticamente um tapa na cara com glitter — hilário, real e impossível de largar. Se a vida tá difícil, pelo menos dá pra rir com ela.",
     "tema": "Humor / Autobiografia",
-    "caracteristica": "humor",
-    "disponivel": true
+    "titulo": "Meu Livro Eu que Escrevi"
   },
-    {
-      "titulo": "O Conde de Monte Cristo",
-      "autor": "Alexandre Dumas",
-      "sinopse": "0",
-      "tema": "Clássico / Vingança",
-      "caracteristica": "aventura",
-      "disponivel": true
-    },
-    {
-      "titulo": "Canino Branco",
-      "autor": "Jack London",
-      "sinopse": "0",
-      "tema": "Natureza / Aventura",
-      "caracteristica": "aventura",
-      "disponivel": true
-    },
-    {
-      "titulo": "Vinte Mil Léguas Submarinas",
-      "autor": "Júlio Verne",
-      "sinopse": "0",
-      "tema": "Ficção científica / Aventura",
-      "caracteristica": "ficção",
-      "disponivel": true
-    },
-    {
-      "titulo": "A Volta ao Mundo em 80 Dias",
-      "autor": "Júlio Verne",
-      "sinopse": "0",
-      "tema": "Aventura / Viagem",
-      "caracteristica": "aventura",
-      "disponivel": true
-    },
-    {
-      "titulo": "As Aventuras de Robin Hood",
-      "autor": "Ana Maria Machado",
-      "sinopse": "0",
-      "tema": "Clássico / Aventura",
-      "caracteristica": "aventura",
-      "disponivel": true
-    },
-    {
-      "titulo": "O Fantasma da Ópera",
-      "autor": "Gaston Leroux",
-      "sinopse": "0",
-      "tema": "Suspense / Romance",
-      "caracteristica": "romance",
-      "disponivel": true
-    },
-    {
-      "titulo": "Mestres da Paixão",
-      "autor": "Domingos Pellegrini",
-      "sinopse": "0",
-      "tema": "Contos / Cotidiano",
-      "caracteristica": "drama",
-      "disponivel": true
-    },
-    {
-      "titulo": "Um Bairro Encantado",
-      "autor": "Rosana Rios",
-      "sinopse": "0",
-      "tema": "Fantasia / Infantojuvenil",
-      "caracteristica": "fantasia",
-      "disponivel": true
-    },
-    {
-      "titulo": "O Encafronhador de Trombilácios",
-      "autor": "Rosana Rios",
-      "sinopse": "0",
-      "tema": "Fantasia / Infantojuvenil",
-      "caracteristica": "fantasia",
-      "disponivel": true
-    },
-    {
-      "titulo": "A Máquina Fantabulástica",
-      "autor": "Simone Saueressig",
-      "sinopse": "0",
-      "tema": "Fantasia / Ficção juvenil",
-      "caracteristica": "fantasia",
-      "disponivel": true
-    },
-    {
-      "titulo": "Em Algum Lugar do Paraíso",
-      "autor": "Luis Fernando Verissimo",
-      "sinopse": "0",
-      "tema": "Crônicas / Humor",
-      "caracteristica": "humor",
-      "disponivel": true
-    },
-    {
-      "titulo": "Comédias para se Ler na Escola",
-      "autor": "Luis Fernando Verissimo",
-      "sinopse": "0",
-      "tema": "Crônicas / Humor",
-      "caracteristica": "humor",
-      "disponivel": true
-    },
-    {
-      "titulo": "Senhora",
-      "autor": "José de Alencar",
-      "sinopse": "0",
-      "tema": "Romance / Clássico brasileiro",
-      "caracteristica": "romance",
-      "disponivel": true
-    },
-    {
-      "titulo": "Lucíola",
-      "autor": "José de Alencar",
-      "sinopse": "0",
-      "tema": "Romance / Sociedade",
-      "caracteristica": "romance",
-      "disponivel": true
-    },
-    {
-      "titulo": "Quincas Borba",
-      "autor": "Machado de Assis",
-      "sinopse": "0",
-      "tema": "Romance / Crítica social",
-      "caracteristica": "clássico",
-      "disponivel": true
-    },
-    {
-      "titulo": "Peter Pan A Origem da Lenda",
-      "autor": "J.M. Barrie",
-      "sinopse": "0",
-      "tema": "Fantasia / Clássico infantil",
-      "caracteristica": "fantasia",
-      "disponivel": true
-    },
-    {
-      "titulo": "As Viagens de Gulliver",
-      "autor": "Jonathan Swift",
-      "sinopse": "0",
-      "tema": "Fantasia / Sátira política",
-      "caracteristica": "fantasia",
-      "disponivel": true
-    },
-    {
-      "titulo": "O Retrato de Dorian Gray",
-      "autor": "Oscar Wilde",
-      "sinopse": "0",
-      "tema": "Clássico / Filosofia moral",
-      "caracteristica": "drama",
-      "disponivel": true
-    },
-    {
-      "titulo": "O Morro dos Ventos Uivantes",
-      "autor": "Emily Brontë",
-      "sinopse": "0",
-      "tema": "Romance / Drama gótico",
-      "caracteristica": "romance",
-      "disponivel": true
-    },
-    {
-      "titulo": "Os Miseráveis",
-      "autor": "Victor Hugo",
-      "sinopse": "0",
-      "tema": "Clássico / Justiça social",
-      "caracteristica": "drama",
-      "disponivel": true
-    }
-  
-  
+  {
+    "autor": "Alexandre Dumas",
+    "disponivel": true,
+    "sinopse": "Traído por aqueles em quem mais confiava, Edmond Dantès é condenado injustamente e perde tudo. Anos depois, renasce como o misterioso Conde de Monte Cristo, determinado a executar um plano implacável de justiça. Uma história grandiosa de vingança, redenção e reviravoltas que atravessa o tempo como um clássico inesquecível.",
+    "titulo": "O Conde de Monte Cristo"
+  },
+  {
+    "autor": "Jack London",
+    "disponivel": true,
+    "sinopse": "Nas geladas e selvagens terras do norte, nasce Canino Branco — uma criatura entre o lobo e o cão, marcada pela luta pela sobrevivência. Em sua jornada da brutalidade à confiança, ele descobre o impacto do medo, da força… e do amor. Uma história poderosa sobre instinto, redenção e a conexão entre o homem e a natureza.",
+    "titulo": "Canino Branco"
+  },
+  {
+    "autor": "Júlio Verne",
+    "disponivel": true,
+    "sinopse": "Em uma expedição pelos mistérios do oceano, o Professor Aronnax é capturado pelo enigmático Capitão Nemo a bordo do submarino Nautilus. A bordo dessa máquina extraordinária, eles mergulham em paisagens marinhas deslumbrantes, criaturas desconhecidas e segredos das profundezas. Uma aventura visionária que atravessa o tempo e o fundo do mar.",
+    "titulo": "Vinte Mil Léguas Submarinas"
+  },
+  {
+    "autor": "Júlio Verne",
+    "caracteristica": "aventura",
+    "disponivel": true,
+    "sinopse": "0",
+    "tema": "Aventura / Viagem",
+    "titulo": "A Volta ao Mundo em 80 Dias"
+  },
+  {
+    "autor": "Ana Maria Machado",
+    "caracteristica": "aventura",
+    "disponivel": true,
+    "sinopse": "0",
+    "tema": "Clássico / Aventura",
+    "titulo": "As Aventuras de Robin Hood"
+  },
+  {
+    "autor": "Gaston Leroux",
+    "caracteristica": "romance",
+    "disponivel": true,
+    "sinopse": "0",
+    "tema": "Suspense / Romance",
+    "titulo": "O Fantasma da Ópera"
+  },
+  {
+    "autor": "Domingos Pellegrini",
+    "caracteristica": "drama",
+    "disponivel": true,
+    "sinopse": "0",
+    "tema": "Contos / Cotidiano",
+    "titulo": "Mestres da Paixão"
+  },
+  {
+    "autor": "Rosana Rios",
+    "caracteristica": "fantasia",
+    "disponivel": true,
+    "sinopse": "0",
+    "tema": "Fantasia / Infantojuvenil",
+    "titulo": "Um Bairro Encantado"
+  },
+  {
+    "autor": "Rosana Rios",
+    "caracteristica": "fantasia",
+    "disponivel": true,
+    "sinopse": "0",
+    "tema": "Fantasia / Infantojuvenil",
+    "titulo": "O Encafronhador de Trombilácios"
+  },
+  {
+    "autor": "Simone Saueressig",
+    "caracteristica": "fantasia",
+    "disponivel": true,
+    "sinopse": "0",
+    "tema": "Fantasia / Ficção juvenil",
+    "titulo": "A Máquina Fantabulástica"
+  },
+  {
+    "autor": "Luis Fernando Verissimo",
+    "caracteristica": "humor",
+    "disponivel": true,
+    "sinopse": "0",
+    "tema": "Crônicas / Humor",
+    "titulo": "Em Algum Lugar do Paraíso"
+  },
+  {
+    "autor": "Luis Fernando Verissimo",
+    "caracteristica": "humor",
+    "disponivel": true,
+    "sinopse": "0",
+    "tema": "Crônicas / Humor",
+    "titulo": "Comédias para se Ler na Escola"
+  },
+  {
+    "autor": "José de Alencar",
+    "caracteristica": "romance",
+    "disponivel": true,
+    "sinopse": "0",
+    "tema": "Romance / Clássico brasileiro",
+    "titulo": "Senhora"
+  },
+  {
+    "autor": "José de Alencar",
+    "caracteristica": "romance",
+    "disponivel": true,
+    "sinopse": "0",
+    "tema": "Romance / Sociedade",
+    "titulo": "Lucíola"
+  },
+  {
+    "autor": "Machado de Assis",
+    "caracteristica": "clássico",
+    "disponivel": true,
+    "sinopse": "0",
+    "tema": "Romance / Crítica social",
+    "titulo": "Quincas Borba"
+  },
+  {
+    "autor": "J.M. Barrie",
+    "caracteristica": "fantasia",
+    "disponivel": true,
+    "sinopse": "0",
+    "tema": "Fantasia / Clássico infantil",
+    "titulo": "Peter Pan A Origem da Lenda"
+  },
+  {
+    "autor": "Jonathan Swift",
+    "caracteristica": "fantasia",
+    "disponivel": true,
+    "sinopse": "0",
+    "tema": "Fantasia / Sátira política",
+    "titulo": "As Viagens de Gulliver"
+  },
+  {
+    "autor": "Oscar Wilde",
+    "caracteristica": "drama",
+    "disponivel": true,
+    "sinopse": "0",
+    "tema": "Clássico / Filosofia moral",
+    "titulo": "O Retrato de Dorian Gray"
+  },
+  {
+    "autor": "Emily Brontë",
+    "caracteristica": "romance",
+    "disponivel": true,
+    "sinopse": "0",
+    "tema": "Romance / Drama gótico",
+    "titulo": "O Morro dos Ventos Uivantes"
+  },
+  {
+    "autor": "Victor Hugo",
+    "caracteristica": "drama",
+    "disponivel": true,
+    "sinopse": "0",
+    "tema": "Clássico / Justiça social",
+    "titulo": "Os Miseráveis"
+  }
 ]
