@@ -160,6 +160,7 @@
 
         const livrosFiltrados = catalogo.filter(livro =>
           livro.disponivel &&
+          livro.caracteristica &&
           livro.caracteristica.toLowerCase() === genero.toLowerCase()
         );
 
