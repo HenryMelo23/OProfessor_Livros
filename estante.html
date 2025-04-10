@@ -47,11 +47,12 @@
 
     .livros-container {
       display: none;
-      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
       gap: 20px;
-      padding: 30px;
       max-width: 1000px;
       margin: auto;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)) !important;
+      padding: 20px;
+
     }
 
     .livro {
@@ -109,21 +110,109 @@
       margin-left: 180px;
     }
 
-    @media (max-width: 768px) {
-      body {
-        margin-left: 0;
-        padding: 10px;
+    
+      .mobile-navbar {
+        display: none;
       }
-      .sidebar {
-        display: none !important;
-        visibility: hidden;
-        position: absolute;
-        left: -9999px;
+
+      @media (max-width: 768px) {
+        html, body {
+          width: 100%;
+          height: 100%;
+          margin: 0;
+          padding: 0;
+          overflow-x: hidden;
+          background-color: #111;
+        }
+
+        /* Oculta sidebar no mobile */
+        .sidebar {
+          display: none !important;
+        }
+
+        /* Navbar superior para mobile */
+        .mobile-navbar {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          height: 60px;
+          background-color: #222;
+          color: white;
+          z-index: 9999;
+          box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+        }
+
+        .mobile-navbar a {
+          color: white;
+          text-decoration: none;
+          font-size: 14px;
+          font-weight: bold;
+        }
+
+        body {
+          padding-top: 70px; /* espaço para a navbar fixa */
+        }
+
+        /* Gêneros em 2 colunas centralizadas */
+        .generos-container {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 20px;
+          justify-content: center;
+          padding: 10px;
+          margin: 0 auto 20px auto;
+          max-width: 100%;
+        }
+
+        /* Livros em 2 colunas centralizadas */
+        .livros-container {
+          display: grid !important;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 20px;
+          justify-content: center;
+          padding: 10px;
+          max-width: 100%;
+          margin: auto;
+        }
+
+        .livro {
+          width: 100%;
+          max-width: 140px;
+          background-color: #1c1c1c;
+          padding: 10px;
+          border-radius: 10px;
+          text-align: center;
+        }
+
+        .livro img {
+          width: 100%;
+          border-radius: 8px;
+        }
+
+        .livro p {
+          margin-top: 10px;
+          font-size: 14px;
+          color: white;
+        }
       }
-    }
+    
+
   </style>
 </head>
 <body>
+  <!-- NAVBAR MOBILE -->
+  <nav class="mobile-navbar">
+    <a href="index.html">Início</a>
+    <a href="estante.html">Estante</a>
+    <a href="https://wa.me/5561995948789" target="_blank">Contato</a>
+    <a href="https://www.instagram.com/seuluiz_livros/" target="_blank">Instagram</a>
+    <a href="#">Informações</a>
+  </nav>
+
 
   <div class="sidebar">
     <a href="index.html">Início</a>
@@ -152,7 +241,7 @@
 
   <script>
     async function mostrarLivros(genero) {
-      if (window.innerWidth <= 768) return;
+      
 
       try {
         const resposta = await fetch("https://oprofessor-livros.onrender.com/catalogo");
@@ -163,6 +252,7 @@
           livro.caracteristica &&
           livro.caracteristica.toLowerCase() === genero.toLowerCase()
         );
+
 
         const container = document.getElementById("livros");
         const generos = document.getElementById("generos");
