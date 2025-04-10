@@ -2,6 +2,7 @@ from flask import Flask, request, jsonify, send_from_directory
 from flask_cors import CORS
 import json
 import os
+import unicodedata
 
 app = Flask(__name__)
 CORS(app)
@@ -10,12 +11,20 @@ def carregar_catalogo():
     with open('catalogo.json', 'r', encoding='utf-8') as f:
         return json.load(f)
 
+def normalizar(texto):
+    return ''.join(
+        c for c in unicodedata.normalize('NFD', texto)
+        if unicodedata.category(c) != 'Mn'
+    ).lower()
+
 @app.route('/buscar')
 def buscar():
-    titulo = request.args.get('titulo', '').lower()
+    titulo = request.args.get('titulo', '').strip()
+    titulo_normalizado = normalizar(titulo)
     catalogo = carregar_catalogo()
+    
     for livro in catalogo:
-        if titulo in livro['titulo'].lower():
+        if titulo_normalizado in normalizar(livro['titulo']):
             imagem = f"/imagens/{livro['titulo']}.png"
             return jsonify({
                 "titulo": livro['titulo'],
@@ -24,6 +33,7 @@ def buscar():
                 "disponivel": livro['disponivel'],
                 "imagem": imagem
             })
+
     return jsonify({"disponivel": False})
 
 @app.route('/imagens/<path:filename>')
@@ -46,7 +56,6 @@ def listar_todos():
     catalogo = carregar_catalogo()
     return jsonify(catalogo)
 
-
 @app.route('/atualizar', methods=['POST'])
 def atualizar_livro():
     data = request.get_json()
@@ -54,22 +63,18 @@ def atualizar_livro():
         return jsonify({'erro': 'Requisição inválida'}), 400
 
     catalogo = carregar_catalogo()
-    livro_encontrado = False
 
     for i, livro in enumerate(catalogo):
         if livro['titulo'] == data['titulo']:
             catalogo[i] = data
-            livro_encontrado = True
             break
-
-    if not livro_encontrado:
+    else:
         return jsonify({'erro': 'Livro não encontrado'}), 404
 
     with open('catalogo.json', 'w', encoding='utf-8') as f:
         json.dump(catalogo, f, ensure_ascii=False, indent=2)
 
     return jsonify({'mensagem': 'Livro atualizado com sucesso'})
-
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=10000)
