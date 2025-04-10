@@ -329,5 +329,166 @@
     "tema": "Humor / Autobiografia",
     "caracteristica": "humor",
     "disponivel": true
+  },
+  {
+    "titulo": "O Conde de Monte Cristo",
+    "autor": "Alexandre Dumas",
+    "sinopse": "0",
+    "tema": "Clássico / Vingança",
+    "caracteristica": "aventura",
+    "disponivel": true
+  },
+  {
+    "titulo": "Canino Branco",
+    "autor": "Jack London",
+    "sinopse": "0",
+    "tema": "Natureza / Aventura",
+    "caracteristica": "aventura",
+    "disponivel": true
+  },
+  {
+    "titulo": "Vinte Mil Léguas Submarinas",
+    "autor": "Júlio Verne",
+    "sinopse": "0",
+    "tema": "Ficção científica / Aventura",
+    "caracteristica": "ficção",
+    "disponivel": true
+  },
+  {
+    "titulo": "A Volta ao Mundo em 80 Dias",
+    "autor": "Júlio Verne",
+    "sinopse": "0",
+    "tema": "Aventura / Viagem",
+    "caracteristica": "aventura",
+    "disponivel": true
+  },
+  {
+    "titulo": "As Aventuras de Robin Hood",
+    "autor": "Editora FTD",
+    "sinopse": "0",
+    "tema": "Clássico / Aventura",
+    "caracteristica": "aventura",
+    "disponivel": true
+  },
+  {
+    "titulo": "O Fantasma da Ópera",
+    "autor": "Gaston Leroux",
+    "sinopse": "0",
+    "tema": "Suspense / Romance",
+    "caracteristica": "romance",
+    "disponivel": true
+  },
+  {
+    "titulo": "Mestres da Paixão",
+    "autor": "Domingos Pellegrini",
+    "sinopse": "0",
+    "tema": "Contos / Cotidiano",
+    "caracteristica": "drama",
+    "disponivel": true
+  },
+  {
+    "titulo": "Um Bairro Encantado",
+    "autor": "Rosana Rios",
+    "sinopse": "0",
+    "tema": "Fantasia / Infantojuvenil",
+    "caracteristica": "fantasia",
+    "disponivel": true
+  },
+  {
+    "titulo": "O Encafronhador de Trombilácios",
+    "autor": "Rosana Rios",
+    "sinopse": "0",
+    "tema": "Fantasia / Infantojuvenil",
+    "caracteristica": "fantasia",
+    "disponivel": true
+  },
+  {
+    "titulo": "A Máquina Fantabulástica",
+    "autor": "Simone Saueressig",
+    "sinopse": "0",
+    "tema": "Fantasia / Ficção juvenil",
+    "caracteristica": "fantasia",
+    "disponivel": true
+  },
+  {
+    "titulo": "Em Algum Lugar do Paraíso",
+    "autor": "Luis Fernando Verissimo",
+    "sinopse": "0",
+    "tema": "Crônicas / Humor",
+    "caracteristica": "humor",
+    "disponivel": true
+  },
+  {
+    "titulo": "Comédias para se Ler na Escola",
+    "autor": "Luis Fernando Verissimo",
+    "sinopse": "0",
+    "tema": "Crônicas / Humor",
+    "caracteristica": "humor",
+    "disponivel": true
+  },
+  {
+    "titulo": "Senhora",
+    "autor": "José de Alencar",
+    "sinopse": "0",
+    "tema": "Romance / Clássico brasileiro",
+    "caracteristica": "romance",
+    "disponivel": true
+  },
+  {
+    "titulo": "Lucíola",
+    "autor": "José de Alencar",
+    "sinopse": "0",
+    "tema": "Romance / Sociedade",
+    "caracteristica": "romance",
+    "disponivel": true
+  },
+  {
+    "titulo": "Quincas Borba",
+    "autor": "Machado de Assis",
+    "sinopse": "0",
+    "tema": "Romance / Crítica social",
+    "caracteristica": "clássico",
+    "disponivel": true
+  },
+  {
+    "titulo": "Peter Pan: A Origem da Lenda",
+    "autor": "J.M. Barrie",
+    "sinopse": "0",
+    "tema": "Fantasia / Clássico infantil",
+    "caracteristica": "fantasia",
+    "disponivel": true
+  },
+  {
+    "titulo": "As Viagens de Gulliver",
+    "autor": "Jonathan Swift",
+    "sinopse": "0",
+    "tema": "Fantasia / Sátira política",
+    "caracteristica": "fantasia",
+    "disponivel": true
+  },
+  {
+    "titulo": "O Retrato de Dorian Gray",
+    "autor": "Oscar Wilde",
+    "sinopse": "0",
+    "tema": "Clássico / Filosofia moral",
+    "caracteristica": "drama",
+    "disponivel": true
+  },
+  {
+    "titulo": "O Morro dos Ventos Uivantes",
+    "autor": "Emily Brontë",
+    "sinopse": "0",
+    "tema": "Romance / Drama gótico",
+    "caracteristica": "romance",
+    "disponivel": true
+  },
+  {
+    "titulo": "Os Miseráveis",
+    "autor": "Victor Hugo",
+    "sinopse": "0",
+    "tema": "Clássico / Justiça social",
+    "caracteristica": "drama",
+    "disponivel": true
   }
+
 ]
