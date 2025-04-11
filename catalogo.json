@@ -816,7 +816,7 @@
     "autor": "Julian Barnes",
     "sinopse": "0",
     "tema": "Conflito entre arte e política na vida de Shostakovich",
-    "caracteristica": "ficção histórica"
+    "caracteristica": "ficção"
   },
   {
     "titulo": "Frankenstein",
@@ -837,7 +837,7 @@
     "autor": "Jostein Gaarder",
     "sinopse": "0",
     "tema": "História da filosofia contada de forma literária",
-    "caracteristica": "ficção filosófica"
+    "caracteristica": "ficção"
   },
   {
     "titulo": "O Poder da Ação",
@@ -884,14 +884,6 @@
     "autor": "Augusto Cury",
     "sinopse": "0",
     "tema": "Reflexão crítica sobre ética, política e espiritualidade",
-    "caracteristica": "autoajuda",
-    "disponivel": true
-  },
-  {
-    "titulo": "O Vendedor de Sonhos",
-    "autor": "Augusto Cury",
-    "sinopse": "0",
-    "tema": "Transformação pessoal através de um guia misterioso que inspira a vida de um suicida",
     "caracteristica": "autoajuda",
     "disponivel": true
   },
@@ -948,7 +940,7 @@
     "autor": "John Grisham",
     "sinopse": "0",
     "tema": "História de um advogado que desafia o sistema jurídico tradicional",
-    "caracteristica": "drama jurídico",
+    "caracteristica": "drama",
     "disponivel": true
   },
   {
@@ -996,7 +988,7 @@
     "autor": "J.D. Robb",
     "sinopse": "0",
     "tema": "Investigação futurista com uma detetive em um caso de assassinato",
-    "caracteristica": "ficção científica",
+    "caracteristica": "ficção",
     "disponivel": true
   },
   {
@@ -1012,7 +1004,7 @@
     "autor": "J.D. Robb",
     "sinopse": "0",
     "tema": "Crimes brutais investigados em um cenário futurista",
-    "caracteristica": "ficção científica",
+    "caracteristica": "ficção",
     "disponivel": true
   },
   {
@@ -1093,7 +1085,7 @@
     "sinopse": "0",
     "disponivel": true,
     "tema": "Mistério e invenções",
-    "caracteristica": "ficção histórica"
+    "caracteristica": "ficção"
   },
   {
     "titulo": "A História da Máfia",
@@ -1117,7 +1109,7 @@
     "sinopse": "0",
     "disponivel": true,
     "tema": "Ética e valores morais",
-    "caracteristica": "reflexão"
+    "caracteristica": "filosofia"
   },
   {
     "titulo": "Heartstopper Vol 2",
@@ -1125,7 +1117,7 @@
     "sinopse": "0",
     "disponivel": true,
     "tema": "Relacionamentos LGBTQ+ e amadurecimento",
-    "caracteristica": "drama adolescente"
+    "caracteristica": "drama"
   },
   {
     "titulo": "Teatro Seleto",
@@ -1133,7 +1125,7 @@
     "sinopse": "0",
     "disponivel": true,
     "tema": "Cultura e expressão dramática",
-    "caracteristica": "teatro"
+    "caracteristica": "documental"
   },
   {
     "titulo": "Contos e Fábulas",
@@ -1165,7 +1157,7 @@
     "sinopse": "0",
     "disponivel": true,
     "tema": "Tomada de decisão e psicologia",
-    "caracteristica": "psicologia"
+    "caracteristica": "autoajuda"
   },
   {
     "titulo": "Do Outro Lado da Cruz",
@@ -1173,7 +1165,7 @@
     "sinopse": "0",
     "disponivel": true,
     "tema": "Reflexões cristãs e fé",
-    "caracteristica": "religioso"
+    "caracteristica": "religião"
   },
   {
     "titulo": "A Montanha da Alma",
@@ -1181,7 +1173,7 @@
     "sinopse": "0",
     "disponivel": true,
     "tema": "Busca interior e espiritualidade",
-    "caracteristica": "filosófico"
+    "caracteristica": "filosofia"
   },
   {
     "titulo": "Manual do Foca",
@@ -1205,7 +1197,7 @@
     "sinopse": "0",
     "disponivel": true,
     "tema": "Emoções e desenvolvimento pessoal",
-    "caracteristica": "psicologia"
+    "caracteristica": "autoajuda"
   },
   {
     "titulo": "De Gênio e Louco Todo Mundo Tem um Pouco",
@@ -1311,7 +1303,7 @@
     "autor": "Mauro Halfeld",
     "sinopse": "0",
     "tema": "Dicas práticas para aplicar dinheiro e alcançar segurança financeira.",
-    "caracteristica": "finanças"
+    "caracteristica": "negócios"
   },
   {
     "titulo": "Dinheiro é Possível Ter Muito Mais",
@@ -1374,7 +1366,7 @@
     "autor": "Sergio Klein",
     "sinopse": "0",
     "tema": "Continuação da série infantojuvenil com reflexões filosóficas e aventuras escolares.",
-    "caracteristica": "infantojuvenil"
+    "caracteristica": "fantasia"
   },
   {
     "titulo": "A Batalha Contra Ender Dragon",
@@ -1409,7 +1401,7 @@
     "autor": "Augusto Cury",
     "sinopse": "0",
     "tema": "autoajuda",
-    "caracteristica": "desenvolvimento pessoal"
+    "caracteristica": "autoajuda"
   },
   {
     "titulo": "12 Semanas Para Mudar de Vida",
@@ -1486,7 +1478,7 @@
     "autor": "Laurentino Gomes",
     "sinopse": "0",
     "tema": "história",
-    "caracteristica": "não ficção"
+    "caracteristica": "história"
   },
   {
     "titulo": "Inteligência Multifocal",
