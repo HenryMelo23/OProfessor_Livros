@@ -268,11 +268,11 @@
         const resposta = await fetch("https://oprofessor-livros.onrender.com/catalogo");
         const catalogo = await resposta.json();
 
-        const livrosFiltrados = catalogo.filter(livro =>
-          livro.disponivel &&
-          livro.caracteristica &&
-          livro.caracteristica.toLowerCase() === genero.toLowerCase()
-        );
+        const livrosFiltrados = catalogo.filter(livro => {
+          if (!livro.disponivel) return false;
+          if (genero.toLowerCase() === "todos") return true;
+          return livro.caracteristica && livro.caracteristica.toLowerCase() === genero.toLowerCase();
+        });
 
 
 
