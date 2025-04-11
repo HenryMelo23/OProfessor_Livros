@@ -86,16 +86,23 @@ def atualizar_livro():
 
     catalogo = carregar_catalogo()
 
-    titulo = data['titulo']
-    if titulo in catalogo:
-        catalogo[titulo] = data  # substitui os dados
-    else:
+    titulo_normalizado = normalizar(data['titulo'])
+    atualizado = False
+
+    for i, livro in enumerate(catalogo):
+        if normalizar(livro.get('titulo', '')) == titulo_normalizado:
+            catalogo[i] = data
+            atualizado = True
+            break
+
+    if not atualizado:
         return jsonify({'erro': 'Livro não encontrado'}), 404
 
     with open('catalogo.json', 'w', encoding='utf-8') as f:
         json.dump(catalogo, f, ensure_ascii=False, indent=2)
 
     return jsonify({'mensagem': 'Livro atualizado com sucesso'})
+
 
 
 if __name__ == "__main__":
