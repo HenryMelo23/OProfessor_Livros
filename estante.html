@@ -157,6 +157,15 @@
           padding-top: 70px; /* espaço para a navbar fixa */
         }
 
+        .genero.genero-todos {
+          background-color: #007BFF; /* Azul */
+          color: white;
+        }
+        .genero.genero-todos:hover {
+          background-color: #0056b3; /* Azul mais escuro no hover */
+        }
+
+        
         /* Gêneros em 2 colunas centralizadas */
         .generos-container {
           display: grid;
@@ -225,6 +234,7 @@
   <h1>📚 Gêneros Literários</h1>
 
   <div class="generos-container" id="generos">
+    <div class="genero genero-todos" onclick="mostrarLivros('todos')">Todos</div>
     <div class="genero" onclick="mostrarLivros('romance')">Romance</div>
     <div class="genero" onclick="mostrarLivros('ficção')">Ficção</div>
     <div class="genero" onclick="mostrarLivros('terror')">Terror</div>
@@ -263,6 +273,7 @@
           livro.caracteristica &&
           livro.caracteristica.toLowerCase() === genero.toLowerCase()
         );
+
 
 
         const container = document.getElementById("livros");
