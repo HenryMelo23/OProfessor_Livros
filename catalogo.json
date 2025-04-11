@@ -329,59 +329,59 @@
   },
   {
     "autor": "Alexandre Dumas",
+    "caracteristica": "drama",
     "disponivel": true,
     "sinopse": "Traído por aqueles em quem mais confiava, Edmond Dantès é condenado injustamente e perde tudo. Anos depois, renasce como o misterioso Conde de Monte Cristo, determinado a executar um plano implacável de justiça. Uma história grandiosa de vingança, redenção e reviravoltas que atravessa o tempo como um clássico inesquecível.",
-    "titulo": "O Conde de Monte Cristo",
     "tema": "Clássico / Aventura / Vingança",
-    "caracteristica": "drama"
+    "titulo": "O Conde de Monte Cristo"
   },
   {
     "autor": "Jack London",
+    "caracteristica": "aventura",
     "disponivel": true,
     "sinopse": "Nas geladas e selvagens terras do norte, nasce Canino Branco — uma criatura entre o lobo e o cão, marcada pela luta pela sobrevivência. Em sua jornada da brutalidade à confiança, ele descobre o impacto do medo, da força… e do amor. Uma história poderosa sobre instinto, redenção e a conexão entre o homem e a natureza.",
-    "titulo": "Canino Branco",
     "tema": "Aventura / Drama",
-    "caracteristica": "aventura"
+    "titulo": "Canino Branco"
   },
   {
     "autor": "Júlio Verne",
+    "caracteristica": "ficção",
     "disponivel": true,
     "sinopse": "Em uma expedição pelos mistérios do oceano, o Professor Aronnax é capturado pelo enigmático Capitão Nemo a bordo do submarino Nautilus. A bordo dessa máquina extraordinária, eles mergulham em paisagens marinhas deslumbrantes, criaturas desconhecidas e segredos das profundezas. Uma aventura visionária que atravessa o tempo e o fundo do mar.",
-    "titulo": "Vinte Mil Léguas Submarinas",
     "tema": "Ficção científica / Aventura",
-    "caracteristica": "ficção"
+    "titulo": "Vinte Mil Léguas Submarinas"
   },
   {
     "autor": "Júlio Verne",
+    "caracteristica": "aventura",
     "disponivel": true,
     "sinopse": "Quando o metódico Phileas Fogg aposta que pode dar a volta ao mundo em apenas 80 dias, começa uma corrida contra o tempo repleta de imprevistos, culturas fascinantes e desafios surpreendentes. Ao lado de seu fiel criado Passepartout, ele embarca em uma jornada extraordinária que prova que o impossível só precisa de coragem — e pontualidade.",
-    "titulo": "A Volta ao Mundo em 80 Dias",
     "tema": "Aventura / Clássico",
-    "caracteristica": "aventura"
+    "titulo": "A Volta ao Mundo em 80 Dias"
   },
   {
     "autor": "Ana Maria Machado",
+    "caracteristica": "aventura",
     "disponivel": true,
     "sinopse": "Robin Hood é um herói ousado que vive escondido na floresta de Sherwood, sempre pronto para ajudar os mais pobres e enfrentar as injustiças dos poderosos. Com coragem, esperteza e um arco certeiro, ele transforma cada aventura em um ato de bravura e generosidade. Uma história cheia de ação, amizade e coragem, contada de forma leve e encantadora por Ana Maria Machado.",
-    "titulo": "As Aventuras de Robin Hood",
     "tema": "Aventura / Clássico",
-    "caracteristica": "aventura"
+    "titulo": "As Aventuras de Robin Hood"
   },
   {
     "autor": "Gaston Leroux",
+    "caracteristica": "suspense",
     "disponivel": true,
     "sinopse": "Nos bastidores da grandiosa Ópera de Paris, rumores de um misterioso fantasma se misturam a eventos estranhos e inexplicáveis. Uma jovem cantora, prestes a conquistar os palcos, se vê envolvida em uma trama de paixão, medo e segredos ocultos. Uma história de mistério, emoção e beleza que atravessa o tempo.",
-    "titulo": "O Fantasma da Ópera",
     "tema": "Mistério / Romance / Clássico",
-    "caracteristica": "suspense"
+    "titulo": "O Fantasma da Ópera"
   },
   {
     "autor": "Domingos Pellegrini",
+    "caracteristica": "drama",
     "disponivel": true,
     "sinopse": "Critica a escola tradicional, sem compromisso com a vida, mas realça o trabalho daqueles mestres que se envolveram de modo apaixonado no exercício do magistério e que o ajudaram a compreender o mundo e a si mesmo.",
-    "titulo": "Mestres da Paixão",
     "tema": "Educacional / Autobiográfico",
-    "caracteristica": "drama"
+    "titulo": "Mestres da Paixão"
   },
   {
     "autor": "Rosana Rios",
@@ -403,7 +403,7 @@
     "autor": "Simone Saueressig",
     "caracteristica": "fantasia",
     "disponivel": true,
-    "sinopse": "0",
+    "sinopse": "Em uma história cheia de magia e aventura, um menino descobre um mundo fantástico ao parar no 13º andar do prédio onde mora. Com uma mistura de fantasia, curiosidade e descoberta, o livro leva os jovens leitores em uma jornada emocionante, explorando temas como imaginação, criatividade e a busca por novos mundos.",
     "tema": "Fantasia / Ficção juvenil",
     "titulo": "A Máquina Fantabulástica"
   },
@@ -488,1031 +488,1031 @@
     "titulo": "Os Miseráveis"
   },
   {
-    "titulo": "Coração Perverso",
     "autor": "Leisa Rayven",
+    "caracteristica": "romance",
+    "disponivel": true,
     "sinopse": "0",
     "tema": "Romance / Drama",
-    "caracteristica": "romance",
-    "disponivel": true
+    "titulo": "Coração Perverso"
   },
   {
-    "titulo": "Mr. Romance",
     "autor": "Leisa Rayven",
+    "caracteristica": "romance",
+    "disponivel": true,
     "sinopse": "0",
     "tema": "Romance / Comédia",
-    "caracteristica": "romance",
-    "disponivel": true
+    "titulo": "Mr. Romance"
   },
   {
-    "titulo": "Acordando Outra Vez",
     "autor": "Joshua Ferris",
+    "caracteristica": "drama",
+    "disponivel": true,
     "sinopse": "0",
     "tema": "Ficção / Contemporâneo",
-    "caracteristica": "drama",
-    "disponivel": true
+    "titulo": "Acordando Outra Vez"
   },
   {
-    "titulo": "A Filha do Capitão",
     "autor": "José Rodrigues dos Santos",
+    "caracteristica": "drama",
+    "disponivel": true,
     "sinopse": "0",
     "tema": "Histórico / Romance",
-    "caracteristica": "drama",
-    "disponivel": true
+    "titulo": "A Filha do Capitão"
   },
   {
-    "titulo": "Tragam os Corpos",
     "autor": "Hilary Mantel",
+    "caracteristica": "drama",
+    "disponivel": true,
     "sinopse": "0",
     "tema": "Histórico / Drama",
-    "caracteristica": "drama",
-    "disponivel": true
+    "titulo": "Tragam os Corpos"
   },
   {
-    "titulo": "Amanhecer",
     "autor": "Stephenie Meyer",
+    "caracteristica": "romance",
+    "disponivel": true,
     "sinopse": "0",
     "tema": "Romance / Fantasia",
-    "caracteristica": "romance",
-    "disponivel": true
+    "titulo": "Amanhecer"
   },
   {
-    "titulo": "A Hospedeira",
     "autor": "Stephenie Meyer",
+    "caracteristica": "ficção",
+    "disponivel": true,
     "sinopse": "0",
     "tema": "Ficção científica / Romance",
-    "caracteristica": "ficção",
-    "disponivel": true
+    "titulo": "A Hospedeira"
   },
   {
-    "titulo": "Cilada",
     "autor": "Harlan Coben",
+    "caracteristica": "suspense",
+    "disponivel": true,
     "sinopse": "0",
     "tema": "Suspense / Mistério",
-    "caracteristica": "suspense",
-    "disponivel": true
+    "titulo": "Cilada"
   },
   {
-    "titulo": "A Primeira Luz da Manhã",
     "autor": "Virginia Baily",
+    "caracteristica": "drama",
+    "disponivel": true,
     "sinopse": "0",
     "tema": "Drama / Romance",
-    "caracteristica": "drama",
-    "disponivel": true
+    "titulo": "A Primeira Luz da Manhã"
   },
   {
-    "titulo": "O Jogo de Ripper",
     "autor": "Isabel Allende",
+    "caracteristica": "suspense",
+    "disponivel": true,
     "sinopse": "0",
     "tema": "Suspense / Mistério",
-    "caracteristica": "suspense",
-    "disponivel": true
+    "titulo": "O Jogo de Ripper"
   },
   {
-    "titulo": "A Casa dos Espíritos",
     "autor": "Isabel Allende",
+    "caracteristica": "drama",
+    "disponivel": true,
     "sinopse": "0",
     "tema": "Realismo mágico / Drama familiar",
-    "caracteristica": "drama",
-    "disponivel": true
+    "titulo": "A Casa dos Espíritos"
   },
   {
-    "titulo": "Kurt Seyit & Shura",
     "autor": "Nermin Bezmen",
+    "caracteristica": "romance",
+    "disponivel": true,
     "sinopse": "0",
     "tema": "Romance histórico",
-    "caracteristica": "romance",
-    "disponivel": true
+    "titulo": "Kurt Seyit & Shura"
   },
   {
-    "titulo": "Eclipse",
     "autor": "Stephenie Meyer",
+    "caracteristica": "romance",
+    "disponivel": true,
     "sinopse": "0",
     "tema": "Romance / Fantasia",
-    "caracteristica": "romance",
-    "disponivel": true
+    "titulo": "Eclipse"
   },
   {
-    "titulo": "Pequena Londres",
     "autor": "Maria Angélica Constantino",
+    "caracteristica": "romance",
+    "disponivel": true,
     "sinopse": "0",
     "tema": "Juvenil / Romance",
-    "caracteristica": "romance",
-    "disponivel": true
+    "titulo": "Pequena Londres"
   },
   {
-    "titulo": "O Caçador de Pipas",
     "autor": "Khaled Hosseini",
+    "caracteristica": "drama",
+    "disponivel": true,
     "sinopse": "0",
     "tema": "Drama / Amizade",
-    "caracteristica": "drama",
-    "disponivel": true
+    "titulo": "O Caçador de Pipas"
   },
   {
-    "titulo": "O Médico e o Monstro",
     "autor": "Robert Louis Stevenson",
+    "caracteristica": "suspense",
+    "disponivel": true,
     "sinopse": "0",
     "tema": "Suspense / Clássico",
-    "caracteristica": "suspense",
-    "disponivel": true
+    "titulo": "O Médico e o Monstro"
   },
   {
-    "titulo": "Professor Feelgood",
     "autor": "Leisa Rayven",
+    "caracteristica": "romance",
+    "disponivel": true,
     "sinopse": "0",
     "tema": "Romance / Erótico",
-    "caracteristica": "romance",
-    "disponivel": true
+    "titulo": "Professor Feelgood"
   },
   {
-    "titulo": "O Segredo Mais Bem Guardado",
     "autor": "Jeffrey Archer",
+    "caracteristica": "drama",
+    "disponivel": true,
     "sinopse": "0",
     "tema": "Drama / Suspense",
-    "caracteristica": "drama",
-    "disponivel": true
+    "titulo": "O Segredo Mais Bem Guardado"
   },
   {
-    "titulo": "Um Dia",
     "autor": "David Nicholls",
+    "caracteristica": "romance",
+    "disponivel": true,
     "sinopse": "0",
     "tema": "Romance / Drama",
-    "caracteristica": "romance",
-    "disponivel": true
+    "titulo": "Um Dia"
   },
   {
-    "titulo": "Geekerela",
     "autor": "Ashley Poston",
+    "caracteristica": "romance",
+    "disponivel": true,
     "sinopse": "0",
     "tema": "Romance / Jovem adulto",
-    "caracteristica": "romance",
-    "disponivel": true
+    "titulo": "Geekerela"
   },
   {
-    "titulo": "Contra Todas as Probabilidades do Amor",
     "autor": "Rebekah Crane",
+    "caracteristica": "romance",
+    "disponivel": true,
     "sinopse": "0",
     "tema": "Romance / Juvenil",
-    "caracteristica": "romance",
-    "disponivel": true
+    "titulo": "Contra Todas as Probabilidades do Amor"
   },
   {
-    "titulo": "A Promessa",
     "autor": "Harlan Coben",
+    "caracteristica": "suspense",
+    "disponivel": true,
     "sinopse": "0",
     "tema": "Suspense / Policial",
-    "caracteristica": "suspense",
-    "disponivel": true
+    "titulo": "A Promessa"
   },
   {
-    "titulo": "O Duque e Eu",
     "autor": "Julia Quinn",
+    "caracteristica": "romance",
+    "disponivel": true,
     "sinopse": "0",
     "tema": "Romance de época",
-    "caracteristica": "romance",
-    "disponivel": true
+    "titulo": "O Duque e Eu"
   },
   {
-    "titulo": "O Caçador de Pipas",
     "autor": "Khaled Hosseini",
+    "caracteristica": "drama",
     "sinopse": "0",
     "tema": "Amizade, lealdade e redenção no Afeganistão em tempos de guerra",
-    "caracteristica": "drama"
+    "titulo": "O Caçador de Pipas"
   },
   {
-    "titulo": "Sem Deixar Rastros",
     "autor": "Harlan Coben",
+    "caracteristica": "suspense",
     "sinopse": "0",
     "tema": "Suspense envolvendo o desaparecimento de uma pessoa próxima",
-    "caracteristica": "suspense"
+    "titulo": "Sem Deixar Rastros"
   },
   {
-    "titulo": "Win",
     "autor": "Harlan Coben",
+    "caracteristica": "suspense",
     "sinopse": "0",
     "tema": "Investigação pessoal com ação e reviravoltas",
-    "caracteristica": "suspense"
+    "titulo": "Win"
   },
   {
-    "titulo": "Apenas Um Olhar",
     "autor": "Harlan Coben",
+    "caracteristica": "suspense",
     "sinopse": "0",
     "tema": "Segredos do passado e mistérios envolvendo identidade",
-    "caracteristica": "suspense"
+    "titulo": "Apenas Um Olhar"
   },
   {
-    "titulo": "O Guardião de Memórias",
     "autor": "Kim Edwards",
+    "caracteristica": "drama",
     "sinopse": "0",
     "tema": "Decisões impactantes e seus efeitos ao longo dos anos",
-    "caracteristica": "drama"
+    "titulo": "O Guardião de Memórias"
   },
   {
-    "titulo": "De Bagdá com Muito Amor",
     "autor": "Jay Kopelman",
+    "caracteristica": "biografia",
     "sinopse": "0",
     "tema": "Resgate de um cão durante a guerra do Iraque",
-    "caracteristica": "biografia"
+    "titulo": "De Bagdá com Muito Amor"
   },
   {
-    "titulo": "Brotherband",
     "autor": "John Flanagan",
+    "caracteristica": "aventura",
     "sinopse": "0",
     "tema": "Jovens guerreiros em treinamento e aventuras épicas",
-    "caracteristica": "aventura"
+    "titulo": "Brotherband"
   },
   {
-    "titulo": "Cinquenta Tons de Liberdade",
     "autor": "E. L. James",
+    "caracteristica": "romance",
     "sinopse": "0",
     "tema": "Relações intensas e desafios conjugais",
-    "caracteristica": "romance"
+    "titulo": "Cinquenta Tons de Liberdade"
   },
   {
-    "titulo": "Cinquenta Tons de Cinza",
     "autor": "E. L. James",
+    "caracteristica": "romance",
     "sinopse": "0",
     "tema": "Relacionamento sensual e complexo entre dois protagonistas",
-    "caracteristica": "romance"
+    "titulo": "Cinquenta Tons de Cinza"
   },
   {
-    "titulo": "A Última Flecha",
     "autor": "Erwin McManus",
+    "caracteristica": "autoajuda",
     "sinopse": "0",
     "tema": "Motivação para viver com propósito e coragem",
-    "caracteristica": "autoajuda"
+    "titulo": "A Última Flecha"
   },
   {
-    "titulo": "Mentiras no Divã",
     "autor": "Irvin D. Yalom",
+    "caracteristica": "drama",
     "sinopse": "0",
     "tema": "Encontros e dilemas terapêuticos",
-    "caracteristica": "drama"
+    "titulo": "Mentiras no Divã"
   },
   {
-    "titulo": "Você Pode Realizar Seus Sonhos",
     "autor": "John C. Maxwell",
+    "caracteristica": "autoajuda",
     "sinopse": "0",
     "tema": "Desenvolvimento pessoal e sucesso",
-    "caracteristica": "autoajuda"
+    "titulo": "Você Pode Realizar Seus Sonhos"
   },
   {
-    "titulo": "Para as Solteiras com Amor",
     "autor": "Julia Faria",
+    "caracteristica": "crônica",
     "sinopse": "0",
     "tema": "Relacionamentos e reflexões femininas",
-    "caracteristica": "crônica"
+    "titulo": "Para as Solteiras com Amor"
   },
   {
-    "titulo": "A Vez da Minha Vida",
     "autor": "Cecelia Ahern",
+    "caracteristica": "romance",
     "sinopse": "0",
     "tema": "Reencontro consigo mesma e redescoberta da vida",
-    "caracteristica": "romance"
+    "titulo": "A Vez da Minha Vida"
   },
   {
-    "titulo": "A Guardiã da Minha Irmã",
     "autor": "Jodi Picoult",
+    "caracteristica": "drama",
     "sinopse": "0",
     "tema": "Drama familiar e dilemas médicos",
-    "caracteristica": "drama"
+    "titulo": "A Guardiã da Minha Irmã"
   },
   {
-    "titulo": "Acorda Pra Vida, Chloe Brown",
     "autor": "Talia Hibbert",
+    "caracteristica": "romance",
     "sinopse": "0",
     "tema": "Romance e superação pessoal",
-    "caracteristica": "romance"
+    "titulo": "Acorda Pra Vida, Chloe Brown"
   },
   {
-    "titulo": "Um Homem de Sorte",
     "autor": "Nicholas Sparks",
+    "caracteristica": "romance",
     "sinopse": "0",
     "tema": "Romance marcado por destino e encontros improváveis",
-    "caracteristica": "romance"
+    "titulo": "Um Homem de Sorte"
   },
   {
-    "titulo": "Tudo Que Deixamos Para Trás",
     "autor": "Kerry Lonsdale",
+    "caracteristica": "drama",
     "sinopse": "0",
     "tema": "Reconstrução após uma grande perda",
-    "caracteristica": "drama"
+    "titulo": "Tudo Que Deixamos Para Trás"
   },
   {
-    "titulo": "Transpatagônia Pumas Não Comem Ciclistas",
     "autor": "Guilherme Cavallari",
+    "caracteristica": "biografia",
     "sinopse": "0",
     "tema": "Viagem de bicicleta pela Patagônia e autodescoberta",
-    "caracteristica": "biografia"
+    "titulo": "Transpatagônia Pumas Não Comem Ciclistas"
   },
   {
-    "titulo": "Boa Garota, Segredo Mortal",
     "autor": "Holly Jackson",
+    "caracteristica": "suspense",
     "sinopse": "0",
     "tema": "Investigação adolescente de um crime não resolvido",
-    "caracteristica": "suspense"
+    "titulo": "Boa Garota, Segredo Mortal"
   },
   {
-    "titulo": "O Ruído do Tempo",
     "autor": "Julian Barnes",
+    "caracteristica": "ficção",
     "sinopse": "0",
     "tema": "Conflito entre arte e política na vida de Shostakovich",
-    "caracteristica": "ficção"
+    "titulo": "O Ruído do Tempo"
   },
   {
-    "titulo": "Frankenstein",
     "autor": "Mary Shelley",
+    "caracteristica": "terror",
     "sinopse": "0",
     "tema": "Criação da vida artificial e as consequências da ambição científica",
-    "caracteristica": "terror"
+    "titulo": "Frankenstein"
   },
   {
-    "titulo": "A Minha Versão da História",
     "autor": "Will Davis",
+    "caracteristica": "drama",
     "sinopse": "0",
     "tema": "Adolescência e autoconhecimento",
-    "caracteristica": "drama"
+    "titulo": "A Minha Versão da História"
   },
   {
-    "titulo": "O Mundo de Sofia",
     "autor": "Jostein Gaarder",
+    "caracteristica": "ficção",
     "sinopse": "0",
     "tema": "História da filosofia contada de forma literária",
-    "caracteristica": "ficção"
+    "titulo": "O Mundo de Sofia"
   },
   {
-    "titulo": "O Poder da Ação",
     "autor": "Paulo Vieira",
+    "caracteristica": "autoajuda",
+    "disponivel": true,
     "sinopse": "0",
     "tema": "Desenvolvimento pessoal e motivação para mudança de vida",
-    "caracteristica": "autoajuda",
-    "disponivel": true
+    "titulo": "O Poder da Ação"
   },
   {
-    "titulo": "A Ação da Cruz",
     "autor": "José Rodrigues",
+    "caracteristica": "religião",
+    "disponivel": true,
     "sinopse": "0",
     "tema": "Reflexão espiritual sobre o sacrifício de Jesus e seus impactos na vida cristã",
-    "caracteristica": "religião",
-    "disponivel": true
+    "titulo": "A Ação da Cruz"
   },
   {
-    "titulo": "Breve História de Sete Assassinatos",
     "autor": "Marlon James",
+    "caracteristica": "suspense",
+    "disponivel": true,
     "sinopse": "0",
     "tema": "Conspirações políticas e violência na Jamaica pós-tentativa de assassinato de Bob Marley",
-    "caracteristica": "suspense",
-    "disponivel": true
+    "titulo": "Breve História de Sete Assassinatos"
   },
   {
-    "titulo": "Graça Transformadora",
     "autor": "Luciano Subirá",
+    "caracteristica": "religião",
+    "disponivel": true,
     "sinopse": "0",
     "tema": "Exploração teológica sobre o poder redentor da graça divina",
-    "caracteristica": "religião",
-    "disponivel": true
+    "titulo": "Graça Transformadora"
   },
   {
-    "titulo": "Os Caçadores de Deus",
     "autor": "Tommy Tenney",
+    "caracteristica": "religião",
+    "disponivel": true,
     "sinopse": "0",
     "tema": "Busca espiritual intensa por experiências profundas com Deus",
-    "caracteristica": "religião",
-    "disponivel": true
+    "titulo": "Os Caçadores de Deus"
   },
   {
-    "titulo": "O Médico da Humanidade e a Cura da Corrupção",
     "autor": "Augusto Cury",
+    "caracteristica": "autoajuda",
+    "disponivel": true,
     "sinopse": "0",
     "tema": "Reflexão crítica sobre ética, política e espiritualidade",
-    "caracteristica": "autoajuda",
-    "disponivel": true
+    "titulo": "O Médico da Humanidade e a Cura da Corrupção"
   },
   {
-    "titulo": "O Futuro da Humanidade",
     "autor": "Augusto Cury",
+    "caracteristica": "drama",
+    "disponivel": true,
     "sinopse": "0",
     "tema": "Jornada de um jovem estudante de medicina em busca de sentido e empatia",
-    "caracteristica": "drama",
-    "disponivel": true
+    "titulo": "O Futuro da Humanidade"
   },
   {
-    "titulo": "Em Busca do Sentido da Vida",
     "autor": "Augusto Cury",
+    "caracteristica": "filosofia",
+    "disponivel": true,
     "sinopse": "0",
     "tema": "Reflexões filosóficas e emocionais sobre os propósitos da existência",
-    "caracteristica": "filosofia",
-    "disponivel": true
+    "titulo": "Em Busca do Sentido da Vida"
   },
   {
-    "titulo": "Arquitetura da Felicidade",
     "autor": "Alain de Botton",
+    "caracteristica": "filosofia",
+    "disponivel": true,
     "sinopse": "0",
     "tema": "Como o design e a arquitetura afetam nosso bem-estar e emoções",
-    "caracteristica": "filosofia",
-    "disponivel": true
+    "titulo": "Arquitetura da Felicidade"
   },
   {
-    "titulo": "Sina Tranã Um Homem Livre que Não se Curvou aos Grilhões da Sociedade",
     "autor": "Cústodia Walney",
+    "caracteristica": "biografia",
+    "disponivel": true,
     "sinopse": "0",
     "tema": "História de resistência e liberdade de um homem contra a opressão social",
-    "caracteristica": "biografia",
-    "disponivel": true
+    "titulo": "Sina Tranã Um Homem Livre que Não se Curvou aos Grilhões da Sociedade"
   },
   {
-    "titulo": "Os Fundamentos da Antitruste",
     "autor": "Paula A. Forgioni",
+    "caracteristica": "direito",
+    "disponivel": true,
     "sinopse": "0",
     "tema": "Estudo jurídico sobre práticas de concorrência e direito econômico",
-    "caracteristica": "direito",
-    "disponivel": true
+    "titulo": "Os Fundamentos da Antitruste"
   },
   {
-    "titulo": "Os Impostores",
     "autor": "Chris Pavone",
+    "caracteristica": "suspense",
+    "disponivel": true,
     "sinopse": "0",
     "tema": "Intriga internacional e espionagem envolvendo escritores e segredos obscuros",
-    "caracteristica": "suspense",
-    "disponivel": true
+    "titulo": "Os Impostores"
   },
   {
-    "titulo": "O Advogado Rebelde",
     "autor": "John Grisham",
+    "caracteristica": "drama",
+    "disponivel": true,
     "sinopse": "0",
     "tema": "História de um advogado que desafia o sistema jurídico tradicional",
-    "caracteristica": "drama",
-    "disponivel": true
+    "titulo": "O Advogado Rebelde"
   },
   {
-    "titulo": "Destino Tentador",
     "autor": "Nora Roberts",
+    "caracteristica": "romance",
+    "disponivel": true,
     "sinopse": "0",
     "tema": "Romance envolvente entre personagens de mundos opostos",
-    "caracteristica": "romance",
-    "disponivel": true
+    "titulo": "Destino Tentador"
   },
   {
-    "titulo": "As Calhoun Catherine & Amanda",
     "autor": "Nora Roberts",
+    "caracteristica": "romance",
+    "disponivel": true,
     "sinopse": "0",
     "tema": "História de duas irmãs Calhoun em busca de amor e descobertas familiares",
-    "caracteristica": "romance",
-    "disponivel": true
+    "titulo": "As Calhoun Catherine & Amanda"
   },
   {
-    "titulo": "Ilha de Vidro",
     "autor": "Nora Roberts",
+    "caracteristica": "fantasia",
+    "disponivel": true,
     "sinopse": "0",
     "tema": "Fantasia e romance com elementos místicos em uma trilogia mágica",
-    "caracteristica": "fantasia",
-    "disponivel": true
+    "titulo": "Ilha de Vidro"
   },
   {
-    "titulo": "Três Destinos",
     "autor": "Nora Roberts",
+    "caracteristica": "romance",
+    "disponivel": true,
     "sinopse": "0",
     "tema": "Três vidas entrelaçadas por um roubo e o poder da superação",
-    "caracteristica": "romance",
-    "disponivel": true
+    "titulo": "Três Destinos"
   },
   {
-    "titulo": "Refúgio",
     "autor": "Nora Roberts",
+    "caracteristica": "suspense",
+    "disponivel": true,
     "sinopse": "0",
     "tema": "Suspense e romance em meio a uma ameaça e a busca por proteção",
-    "caracteristica": "suspense",
-    "disponivel": true
+    "titulo": "Refúgio"
   },
   {
-    "titulo": "Origem (Mortal)",
     "autor": "J.D. Robb",
+    "caracteristica": "ficção",
+    "disponivel": true,
     "sinopse": "0",
     "tema": "Investigação futurista com uma detetive em um caso de assassinato",
-    "caracteristica": "ficção",
-    "disponivel": true
+    "titulo": "Origem (Mortal)"
   },
   {
-    "titulo": "Prazer (Mortal)",
     "autor": "J.D. Robb",
+    "caracteristica": "suspense",
+    "disponivel": true,
     "sinopse": "0",
     "tema": "Mistério e romance em um caso de assassinato em série",
-    "caracteristica": "suspense",
-    "disponivel": true
+    "titulo": "Prazer (Mortal)"
   },
   {
-    "titulo": "Imitação (Mortal)",
     "autor": "J.D. Robb",
+    "caracteristica": "ficção",
+    "disponivel": true,
     "sinopse": "0",
     "tema": "Crimes brutais investigados em um cenário futurista",
-    "caracteristica": "ficção",
-    "disponivel": true
+    "titulo": "Imitação (Mortal)"
   },
   {
-    "titulo": "Recordação (Mortal)",
     "autor": "J.D. Robb",
+    "caracteristica": "suspense",
+    "disponivel": true,
     "sinopse": "0",
     "tema": "Lembranças e traumas do passado ressurgem durante nova investigação",
-    "caracteristica": "suspense",
-    "disponivel": true
+    "titulo": "Recordação (Mortal)"
   },
   {
-    "titulo": "Ligação (Mortal)",
     "autor": "J.D. Robb",
+    "caracteristica": "suspense",
+    "disponivel": true,
     "sinopse": "0",
     "tema": "Assassinatos em série e conexões perigosas em uma Nova York futurista",
-    "caracteristica": "suspense",
-    "disponivel": true
+    "titulo": "Ligação (Mortal)"
   },
   {
-    "titulo": "Reencontro (Mortal)",
     "autor": "J.D. Robb",
+    "caracteristica": "suspense",
+    "disponivel": true,
     "sinopse": "0",
     "tema": "Investigações e emoções intensas enquanto antigos laços são reatados",
-    "caracteristica": "suspense",
-    "disponivel": true
+    "titulo": "Reencontro (Mortal)"
   },
   {
-    "titulo": "Inocência (Mortal)",
     "autor": "J.D. Robb",
+    "caracteristica": "suspense",
+    "disponivel": true,
     "sinopse": "0",
     "tema": "Busca por justiça em um caso de assassinato envolvendo pessoas inocentes",
-    "caracteristica": "suspense",
-    "disponivel": true
+    "titulo": "Inocência (Mortal)"
   },
   {
-    "titulo": "Traição (Mortal)",
     "autor": "J.D. Robb",
+    "caracteristica": "suspense",
+    "disponivel": true,
     "sinopse": "0",
     "tema": "Mentiras e traições vêm à tona durante investigação criminal",
-    "caracteristica": "suspense",
-    "disponivel": true
+    "titulo": "Traição (Mortal)"
   },
   {
-    "titulo": "Visão (Mortal)",
     "autor": "J.D. Robb",
+    "caracteristica": "suspense",
+    "disponivel": true,
     "sinopse": "0",
     "tema": "Casos intrigantes são resolvidos com intuição e visão de justiça",
-    "caracteristica": "suspense",
-    "disponivel": true
+    "titulo": "Visão (Mortal)"
   },
   {
-    "titulo": "O Renascer de um Príncipe",
     "autor": "Lolô Fonseca",
-    "sinopse": "0",
+    "caracteristica": "motivacional",
     "disponivel": true,
+    "sinopse": "0",
     "tema": "Crescimento pessoal e superação",
-    "caracteristica": "motivacional"
+    "titulo": "O Renascer de um Príncipe"
   },
   {
-    "titulo": "Maestria",
     "autor": "Robert Greene",
-    "sinopse": "0",
+    "caracteristica": "autoajuda",
     "disponivel": true,
+    "sinopse": "0",
     "tema": "Desenvolvimento de habilidades e excelência",
-    "caracteristica": "autoajuda"
+    "titulo": "Maestria"
   },
   {
-    "titulo": "A Cabeça de Steve Jobs",
     "autor": "Leander Kahney",
-    "sinopse": "0",
+    "caracteristica": "biografia",
     "disponivel": true,
+    "sinopse": "0",
     "tema": "Biografia e inovação tecnológica",
-    "caracteristica": "biografia"
+    "titulo": "A Cabeça de Steve Jobs"
   },
   {
-    "titulo": "A Máquina de Xadrez",
     "autor": "Robert Lohr",
-    "sinopse": "0",
+    "caracteristica": "ficção",
     "disponivel": true,
+    "sinopse": "0",
     "tema": "Mistério e invenções",
-    "caracteristica": "ficção"
+    "titulo": "A Máquina de Xadrez"
   },
   {
-    "titulo": "A História da Máfia",
     "autor": "Nigel Cawthorne",
-    "sinopse": "0",
+    "caracteristica": "documental",
     "disponivel": true,
+    "sinopse": "0",
     "tema": "Crime organizado e história",
-    "caracteristica": "documental"
+    "titulo": "A História da Máfia"
   },
   {
-    "titulo": "Sussurro",
     "autor": "Becca Fitzpatrick",
-    "sinopse": "0",
+    "caracteristica": "fantasia",
     "disponivel": true,
+    "sinopse": "0",
     "tema": "Anjos, romance e mistério",
-    "caracteristica": "fantasia"
+    "titulo": "Sussurro"
   },
   {
-    "titulo": "O Livro das Virtudes",
     "autor": "William J. Bennett",
-    "sinopse": "0",
+    "caracteristica": "filosofia",
     "disponivel": true,
+    "sinopse": "0",
     "tema": "Ética e valores morais",
-    "caracteristica": "filosofia"
+    "titulo": "O Livro das Virtudes"
   },
   {
-    "titulo": "Heartstopper Vol 2",
     "autor": "Alice Oseman",
-    "sinopse": "0",
+    "caracteristica": "drama",
     "disponivel": true,
+    "sinopse": "0",
     "tema": "Relacionamentos LGBTQ+ e amadurecimento",
-    "caracteristica": "drama"
+    "titulo": "Heartstopper Vol 2"
   },
   {
-    "titulo": "Teatro Seleto",
     "autor": "Chico de Assis",
-    "sinopse": "0",
+    "caracteristica": "documental",
     "disponivel": true,
+    "sinopse": "0",
     "tema": "Cultura e expressão dramática",
-    "caracteristica": "documental"
+    "titulo": "Teatro Seleto"
   },
   {
-    "titulo": "Contos e Fábulas",
     "autor": "Charles Perrault",
-    "sinopse": "0",
+    "caracteristica": "contos",
     "disponivel": true,
+    "sinopse": "0",
     "tema": "Moralidade e fantasia",
-    "caracteristica": "contos"
+    "titulo": "Contos e Fábulas"
   },
   {
-    "titulo": "Criação Imperfeita",
     "autor": "Marcelo Gleiser",
-    "sinopse": "0",
+    "caracteristica": "científico",
     "disponivel": true,
+    "sinopse": "0",
     "tema": "Ciência, filosofia e universo",
-    "caracteristica": "científico"
+    "titulo": "Criação Imperfeita"
   },
   {
-    "titulo": "Memórias de Nós",
     "autor": "Wilma Mendonça",
-    "sinopse": "0",
+    "caracteristica": "drama",
     "disponivel": true,
+    "sinopse": "0",
     "tema": "Relações familiares e afetivas",
-    "caracteristica": "drama"
+    "titulo": "Memórias de Nós"
   },
   {
-    "titulo": "Rápido e Devagar",
     "autor": "Daniel Kahneman",
-    "sinopse": "0",
+    "caracteristica": "autoajuda",
     "disponivel": true,
+    "sinopse": "0",
     "tema": "Tomada de decisão e psicologia",
-    "caracteristica": "autoajuda"
+    "titulo": "Rápido e Devagar"
   },
   {
-    "titulo": "Do Outro Lado da Cruz",
     "autor": "João Bosco Gomes",
-    "sinopse": "0",
+    "caracteristica": "religião",
     "disponivel": true,
+    "sinopse": "0",
     "tema": "Reflexões cristãs e fé",
-    "caracteristica": "religião"
+    "titulo": "Do Outro Lado da Cruz"
   },
   {
-    "titulo": "A Montanha da Alma",
     "autor": "Gao Xingjian",
-    "sinopse": "0",
+    "caracteristica": "filosofia",
     "disponivel": true,
+    "sinopse": "0",
     "tema": "Busca interior e espiritualidade",
-    "caracteristica": "filosofia"
+    "titulo": "A Montanha da Alma"
   },
   {
-    "titulo": "Manual do Foca",
     "autor": "Thais de Mendonça",
-    "sinopse": "0",
+    "caracteristica": "guia prático",
     "disponivel": true,
+    "sinopse": "0",
     "tema": "Jornalismo e primeiros passos na profissão",
-    "caracteristica": "guia prático"
+    "titulo": "Manual do Foca"
   },
   {
-    "titulo": "Quem Me Roubou de Mim",
     "autor": "Pe. Fábio de Melo",
-    "sinopse": "0",
+    "caracteristica": "espiritualidade",
     "disponivel": true,
+    "sinopse": "0",
     "tema": "Identidade e cura interior",
-    "caracteristica": "espiritualidade"
+    "titulo": "Quem Me Roubou de Mim"
   },
   {
-    "titulo": "Inteligência Emocional",
     "autor": "Daniel Goleman",
-    "sinopse": "0",
+    "caracteristica": "autoajuda",
     "disponivel": true,
+    "sinopse": "0",
     "tema": "Emoções e desenvolvimento pessoal",
-    "caracteristica": "autoajuda"
+    "titulo": "Inteligência Emocional"
   },
   {
-    "titulo": "De Gênio e Louco Todo Mundo Tem um Pouco",
     "autor": "Augusto Cury",
-    "sinopse": "0",
+    "caracteristica": "autoajuda",
     "disponivel": true,
+    "sinopse": "0",
     "tema": "Comportamento humano e reflexão",
-    "caracteristica": "autoajuda"
+    "titulo": "De Gênio e Louco Todo Mundo Tem um Pouco"
   },
   {
-    "titulo": "O Vendedor de Sonhos",
     "autor": "Augusto Cury",
-    "sinopse": "0",
+    "caracteristica": "motivacional",
     "disponivel": true,
+    "sinopse": "0",
     "tema": "Filosofia de vida e transformação",
-    "caracteristica": "motivacional"
+    "titulo": "O Vendedor de Sonhos"
   },
   {
-    "titulo": "Nunca Desista de Seus Sonhos",
     "autor": "Augusto Cury",
-    "sinopse": "0",
+    "caracteristica": "autoajuda",
     "disponivel": true,
+    "sinopse": "0",
     "tema": "Propósito de vida",
-    "caracteristica": "autoajuda"
+    "titulo": "Nunca Desista de Seus Sonhos"
   },
   {
-    "titulo": "Socorro Meu Filho Não Tem Limites",
     "autor": "Augusto Cury",
-    "sinopse": "0",
+    "caracteristica": "autoajuda",
     "disponivel": true,
+    "sinopse": "0",
     "tema": "Educação e limites",
-    "caracteristica": "autoajuda"
+    "titulo": "Socorro Meu Filho Não Tem Limites"
   },
   {
-    "titulo": "Garra",
     "autor": "Angela Duckworth",
-    "sinopse": "0",
+    "caracteristica": "motivacional",
     "disponivel": true,
+    "sinopse": "0",
     "tema": "Persistência e sucesso",
-    "caracteristica": "motivacional"
+    "titulo": "Garra"
   },
   {
-    "titulo": "Muito Longe de Casa",
     "autor": "Ishmael Beah",
-    "sinopse": "0",
+    "caracteristica": "biografia",
     "disponivel": true,
+    "sinopse": "0",
     "tema": "Guerra e superação",
-    "caracteristica": "biografia"
+    "titulo": "Muito Longe de Casa"
   },
   {
-    "titulo": "Garota, Esquecida",
     "autor": "Karin Slaughter",
-    "sinopse": "0",
+    "caracteristica": "thriller",
     "disponivel": true,
+    "sinopse": "0",
     "tema": "Suspense e identidade",
-    "caracteristica": "thriller"
+    "titulo": "Garota, Esquecida"
   },
   {
-    "titulo": "O Sol Também Se Levanta",
     "autor": "Ernest Hemingway",
+    "caracteristica": "drama",
+    "disponivel": true,
     "sinopse": "0",
     "tema": "A vida de expatriados americanos e europeus após a Primeira Guerra Mundial, explorando desilusões e buscas existenciais.",
-    "caracteristica": "drama",
-    "disponivel": true
+    "titulo": "O Sol Também Se Levanta"
   },
   {
-    "titulo": "Dunkirk",
     "autor": "Joshua Levine",
+    "caracteristica": "história",
     "sinopse": "0",
     "tema": "Relato histórico sobre a evacuação de Dunquerque na Segunda Guerra Mundial.",
-    "caracteristica": "história"
+    "titulo": "Dunkirk"
   },
   {
-    "titulo": "A Cabana",
     "autor": "William P. Young",
+    "caracteristica": "espiritualidade",
     "sinopse": "0",
     "tema": "Reflexão espiritual e superação do luto através de uma experiência com Deus.",
-    "caracteristica": "espiritualidade"
+    "titulo": "A Cabana"
   },
   {
-    "titulo": "Muito Prazer, Eu Sou a Morte",
     "autor": "Jorge Oliveira",
+    "caracteristica": "suspense",
     "sinopse": "0",
     "tema": "Narrativa que mistura suspense com questões existenciais e espirituais.",
-    "caracteristica": "suspense"
+    "titulo": "Muito Prazer, Eu Sou a Morte"
   },
   {
-    "titulo": "Criação de Riqueza",
     "autor": "Paulo Vieira",
+    "caracteristica": "autoajuda",
     "sinopse": "0",
     "tema": "Estratégias para conquistar a liberdade financeira e sucesso pessoal.",
-    "caracteristica": "autoajuda"
+    "titulo": "Criação de Riqueza"
   },
   {
-    "titulo": "Fator de Enriquecimento",
     "autor": "Paulo Vieira",
+    "caracteristica": "autoajuda",
     "sinopse": "0",
     "tema": "Caminhos práticos para o enriquecimento com base no coaching integral sistêmico.",
-    "caracteristica": "autoajuda"
+    "titulo": "Fator de Enriquecimento"
   },
   {
-    "titulo": "Investimento",
     "autor": "Mauro Halfeld",
+    "caracteristica": "negócios",
     "sinopse": "0",
     "tema": "Dicas práticas para aplicar dinheiro e alcançar segurança financeira.",
-    "caracteristica": "negócios"
+    "titulo": "Investimento"
   },
   {
-    "titulo": "Quem Pensa Enriquece",
     "autor": "Napoleon Hill",
+    "caracteristica": "autoajuda",
     "sinopse": "0",
     "tema": "Clássico sobre desenvolvimento pessoal e conquista de riqueza.",
-    "caracteristica": "autoajuda"
+    "titulo": "Quem Pensa Enriquece"
   },
   {
-    "titulo": "Legado de Cinzas",
     "autor": "Tim Weiner",
+    "caracteristica": "história",
     "sinopse": "0",
     "tema": "História crítica da CIA e dos bastidores da inteligência americana.",
-    "caracteristica": "história"
+    "titulo": "Legado de Cinzas"
   },
   {
-    "titulo": "O Enigma do Quatro",
     "autor": "Ian Caldwell",
+    "caracteristica": "suspense",
     "sinopse": "0",
     "tema": "Suspense literário envolvendo códigos antigos e conspirações.",
-    "caracteristica": "suspense"
+    "titulo": "O Enigma do Quatro"
   },
   {
-    "titulo": "Coaching Integral Sistêmico",
     "autor": "Paulo Vieira",
+    "caracteristica": "autoajuda",
     "sinopse": "0",
     "tema": "Desenvolvimento pessoal e profissional através de métodos de coaching.",
-    "caracteristica": "autoajuda"
+    "titulo": "Coaching Integral Sistêmico"
   },
   {
-    "titulo": "Belo Desastre",
     "autor": "Jamie McGuire",
+    "caracteristica": "romance",
     "sinopse": "0",
     "tema": "Romance universitário com drama e tensão emocional.",
-    "caracteristica": "romance"
+    "titulo": "Belo Desastre"
   },
   {
-    "titulo": "Desastre Iminente",
     "autor": "Jamie McGuire",
+    "caracteristica": "romance",
     "sinopse": "0",
     "tema": "A mesma história de Belo Desastre pela perspectiva masculina.",
-    "caracteristica": "romance"
+    "titulo": "Desastre Iminente"
   },
   {
-    "titulo": "Fingindo",
     "autor": "Cora Carmack",
+    "caracteristica": "romance",
     "sinopse": "0",
     "tema": "Romance leve com humor sobre encarar o passado e se permitir amar.",
-    "caracteristica": "romance"
+    "titulo": "Fingindo"
   },
   {
-    "titulo": "Poderosa 3",
     "autor": "Sergio Klein",
+    "caracteristica": "fantasia",
     "sinopse": "0",
     "tema": "Continuação da série infantojuvenil com reflexões filosóficas e aventuras escolares.",
-    "caracteristica": "fantasia"
+    "titulo": "Poderosa 3"
   },
   {
-    "titulo": "A Batalha Contra Ender Dragon",
     "autor": "AuthenticGames",
+    "caracteristica": "aventura",
     "sinopse": "0",
     "tema": "Aventura baseada em Minecraft com batalhas épicas e lições sobre amizade.",
-    "caracteristica": "aventura"
+    "titulo": "A Batalha Contra Ender Dragon"
   },
   {
-    "titulo": "O Último Samurai",
     "autor": "Helen DeWitt",
+    "caracteristica": "drama",
     "sinopse": "0",
     "tema": "Busca de um menino por seu pai enquanto desenvolve inteligência e autoconhecimento.",
-    "caracteristica": "drama"
+    "titulo": "O Último Samurai"
   },
   {
-    "titulo": "Frankenstein",
     "autor": "Mary Shelley",
+    "caracteristica": "terror",
     "sinopse": "0",
     "tema": "A criação de um monstro por um cientista e as consequências da ambição humana.",
-    "caracteristica": "terror"
+    "titulo": "Frankenstein"
   },
   {
-    "titulo": "Maze Runner Correr ou Morrer",
     "autor": "James Dashner",
+    "caracteristica": "ficção",
     "sinopse": "0",
     "tema": "ficção científica",
-    "caracteristica": "ficção"
+    "titulo": "Maze Runner Correr ou Morrer"
   },
   {
-    "titulo": "Felicidade Roubada",
     "autor": "Augusto Cury",
+    "caracteristica": "autoajuda",
     "sinopse": "0",
     "tema": "autoajuda",
-    "caracteristica": "autoajuda"
+    "titulo": "Felicidade Roubada"
   },
   {
-    "titulo": "12 Semanas Para Mudar de Vida",
     "autor": "Augusto Cury",
+    "caracteristica": "motivacional",
     "sinopse": "0",
     "tema": "autoajuda",
-    "caracteristica": "motivacional"
+    "titulo": "12 Semanas Para Mudar de Vida"
   },
   {
-    "titulo": "O Hobbit",
     "autor": "J.R.R. Tolkien",
+    "caracteristica": "ficção",
     "sinopse": "0",
     "tema": "fantasia",
-    "caracteristica": "ficção"
+    "titulo": "O Hobbit"
   },
   {
-    "titulo": "Justiça a Qualquer Preço",
     "autor": "John Grisham",
+    "caracteristica": "ficção",
     "sinopse": "0",
     "tema": "suspense jurídico",
-    "caracteristica": "ficção"
+    "titulo": "Justiça a Qualquer Preço"
   },
   {
-    "titulo": "Tempo de Matar",
     "autor": "John Grisham",
+    "caracteristica": "ficção",
     "sinopse": "0",
     "tema": "suspense jurídico",
-    "caracteristica": "ficção"
+    "titulo": "Tempo de Matar"
   },
   {
-    "titulo": "Acerto de Contas",
     "autor": "John Grisham",
+    "caracteristica": "ficção",
     "sinopse": "0",
     "tema": "suspense jurídico",
-    "caracteristica": "ficção"
+    "titulo": "Acerto de Contas"
   },
   {
-    "titulo": "Cartada Final",
     "autor": "John Grisham",
+    "caracteristica": "ficção",
     "sinopse": "0",
     "tema": "suspense jurídico",
-    "caracteristica": "ficção"
+    "titulo": "Cartada Final"
   },
   {
-    "titulo": "O Dilema",
     "autor": "John Grisham",
+    "caracteristica": "ficção",
     "sinopse": "0",
     "tema": "suspense jurídico",
-    "caracteristica": "ficção"
+    "titulo": "O Dilema"
   },
   {
-    "titulo": "A Delação",
     "autor": "John Grisham",
+    "caracteristica": "ficção",
     "sinopse": "0",
     "tema": "suspense jurídico",
-    "caracteristica": "ficção"
+    "titulo": "A Delação"
   },
   {
-    "titulo": "Tempo de Perdoar",
     "autor": "John Grisham",
+    "caracteristica": "ficção",
     "sinopse": "0",
     "tema": "suspense jurídico",
-    "caracteristica": "ficção"
+    "titulo": "Tempo de Perdoar"
   },
   {
-    "titulo": "A Herança",
     "autor": "John Grisham",
+    "caracteristica": "ficção",
     "sinopse": "0",
     "tema": "suspense jurídico",
-    "caracteristica": "ficção"
+    "titulo": "A Herança"
   },
   {
-    "titulo": "1808",
     "autor": "Laurentino Gomes",
+    "caracteristica": "história",
     "sinopse": "0",
     "tema": "história",
-    "caracteristica": "história"
+    "titulo": "1808"
   },
   {
-    "titulo": "Inteligência Multifocal",
     "autor": "Augusto Cury",
+    "caracteristica": "autoajuda",
     "sinopse": "0",
     "tema": "psicologia",
-    "caracteristica": "autoajuda"
+    "titulo": "Inteligência Multifocal"
   },
   {
-    "titulo": "Quando o Anjo Mora ao Lado",
     "autor": "Izabel Gomes",
+    "caracteristica": "ficção",
     "sinopse": "0",
     "tema": "romance",
-    "caracteristica": "ficção"
+    "titulo": "Quando o Anjo Mora ao Lado"
   },
   {
-    "titulo": "A Doçura do Mundo",
     "autor": "Thrity Umrigar",
+    "caracteristica": "ficção",
     "sinopse": "0",
     "tema": "drama",
-    "caracteristica": "ficção"
+    "titulo": "A Doçura do Mundo"
   },
   {
-    "titulo": "Amor & Orgulho",
     "autor": "Georges Ohnet",
+    "caracteristica": "ficção",
     "sinopse": "0",
     "tema": "romance",
-    "caracteristica": "ficção"
+    "titulo": "Amor & Orgulho"
   },
   {
-    "titulo": "A Montanha e o Rio",
     "autor": "Da Chen",
+    "caracteristica": "ficção",
     "sinopse": "0",
     "tema": "drama histórico",
-    "caracteristica": "ficção"
+    "titulo": "A Montanha e o Rio"
   },
   {
-    "titulo": "A Lista Negra",
     "autor": "Jennifer Brown",
+    "caracteristica": "ficção",
     "sinopse": "0",
     "tema": "drama juvenil",
-    "caracteristica": "ficção"
+    "titulo": "A Lista Negra"
   }
 ]
