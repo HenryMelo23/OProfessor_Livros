@@ -286,7 +286,7 @@
         container.style.display = "grid";
 
         container.innerHTML = livrosFiltrados.map(livro => {
-          const imagem = `https://raw.githubusercontent.com/HenryMelo23/OProfessor_Livros/Professor-1.1.3/imagens/${encodeURIComponent(livro.titulo)}.png`;
+          const imagem = `https://raw.githubusercontent.com/HenryMelo23/OProfessor_Livros/Professor-1.1.4/imagens/${encodeURIComponent(livro.titulo)}.png`;
           const link = `index.html?titulo=${encodeURIComponent(livro.titulo)}`;
           return `
             <a href="${link}" class="livro">
