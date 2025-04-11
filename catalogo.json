@@ -331,43 +331,57 @@
     "autor": "Alexandre Dumas",
     "disponivel": true,
     "sinopse": "Traído por aqueles em quem mais confiava, Edmond Dantès é condenado injustamente e perde tudo. Anos depois, renasce como o misterioso Conde de Monte Cristo, determinado a executar um plano implacável de justiça. Uma história grandiosa de vingança, redenção e reviravoltas que atravessa o tempo como um clássico inesquecível.",
-    "titulo": "O Conde de Monte Cristo"
+    "titulo": "O Conde de Monte Cristo",
+    "tema": "Clássico / Aventura / Vingança",
+    "caracteristica": "drama"
   },
   {
     "autor": "Jack London",
     "disponivel": true,
     "sinopse": "Nas geladas e selvagens terras do norte, nasce Canino Branco — uma criatura entre o lobo e o cão, marcada pela luta pela sobrevivência. Em sua jornada da brutalidade à confiança, ele descobre o impacto do medo, da força… e do amor. Uma história poderosa sobre instinto, redenção e a conexão entre o homem e a natureza.",
-    "titulo": "Canino Branco"
+    "titulo": "Canino Branco",
+    "tema": "Aventura / Drama",
+    "caracteristica": "aventura"
   },
   {
     "autor": "Júlio Verne",
     "disponivel": true,
     "sinopse": "Em uma expedição pelos mistérios do oceano, o Professor Aronnax é capturado pelo enigmático Capitão Nemo a bordo do submarino Nautilus. A bordo dessa máquina extraordinária, eles mergulham em paisagens marinhas deslumbrantes, criaturas desconhecidas e segredos das profundezas. Uma aventura visionária que atravessa o tempo e o fundo do mar.",
-    "titulo": "Vinte Mil Léguas Submarinas"
+    "titulo": "Vinte Mil Léguas Submarinas",
+    "tema": "Ficção científica / Aventura",
+    "caracteristica": "ficção"
   },
   {
     "autor": "Júlio Verne",
     "disponivel": true,
     "sinopse": "Quando o metódico Phileas Fogg aposta que pode dar a volta ao mundo em apenas 80 dias, começa uma corrida contra o tempo repleta de imprevistos, culturas fascinantes e desafios surpreendentes. Ao lado de seu fiel criado Passepartout, ele embarca em uma jornada extraordinária que prova que o impossível só precisa de coragem — e pontualidade.",
-    "titulo": "A Volta ao Mundo em 80 Dias"
+    "titulo": "A Volta ao Mundo em 80 Dias",
+    "tema": "Aventura / Clássico",
+    "caracteristica": "aventura"
   },
   {
     "autor": "Ana Maria Machado",
     "disponivel": true,
     "sinopse": "Robin Hood é um herói ousado que vive escondido na floresta de Sherwood, sempre pronto para ajudar os mais pobres e enfrentar as injustiças dos poderosos. Com coragem, esperteza e um arco certeiro, ele transforma cada aventura em um ato de bravura e generosidade. Uma história cheia de ação, amizade e coragem, contada de forma leve e encantadora por Ana Maria Machado.",
-    "titulo": "As Aventuras de Robin Hood"
+    "titulo": "As Aventuras de Robin Hood",
+    "tema": "Aventura / Clássico",
+    "caracteristica": "aventura"
   },
   {
     "autor": "Gaston Leroux",
     "disponivel": true,
     "sinopse": "Nos bastidores da grandiosa Ópera de Paris, rumores de um misterioso fantasma se misturam a eventos estranhos e inexplicáveis. Uma jovem cantora, prestes a conquistar os palcos, se vê envolvida em uma trama de paixão, medo e segredos ocultos. Uma história de mistério, emoção e beleza que atravessa o tempo.",
-    "titulo": "O Fantasma da Ópera"
+    "titulo": "O Fantasma da Ópera",
+    "tema": "Mistério / Romance / Clássico",
+    "caracteristica": "suspense"
   },
   {
     "autor": "Domingos Pellegrini",
     "disponivel": true,
     "sinopse": "Critica a escola tradicional, sem compromisso com a vida, mas realça o trabalho daqueles mestres que se envolveram de modo apaixonado no exercício do magistério e que o ajudaram a compreender o mundo e a si mesmo.",
-    "titulo": "Mestres da Paixão"
+    "titulo": "Mestres da Paixão",
+    "tema": "Educacional / Autobiográfico",
+    "caracteristica": "drama"
   },
   {
     "autor": "Rosana Rios",
