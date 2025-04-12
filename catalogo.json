@@ -760,9 +760,10 @@
   },
   {
     "autor": "John C. Maxwell",
-    "caracteristica": "autoajuda",
-    "sinopse": "0",
-    "tema": "Desenvolvimento pessoal e sucesso",
+    "caracteristica": "romance",
+    "disponivel": true,
+    "sinopse": "\"Você Pode Realizar Seus Sonhos\" de John C. Maxwell é um guia prático e inspirador que ajuda as pessoas a transformar seus sonhos em realidade. Com estratégias e dicas valiosas, o livro mostra como superar obstáculos, desenvolver habilidades e liderar com eficácia, permitindo que os leitores alcancem seu potencial máximo e realizem seus objetivos com confiança e determinação.",
+    "tema": "Romance de época",
     "titulo": "Você Pode Realizar Seus Sonhos"
   },
   {
