@@ -777,8 +777,9 @@
   {
     "autor": "Cecelia Ahern",
     "caracteristica": "romance",
-    "sinopse": "0",
-    "tema": "Reencontro consigo mesma e redescoberta da vida",
+    "disponivel": true,
+    "sinopse": "A história segue a vida de Holly, uma jovem que descobre que tem apenas um mês de vida. Com essa revelação, Holly decide criar uma lista de coisas que quer fazer antes de morrer.",
+    "tema": "Romance de época",
     "titulo": "A Vez da Minha Vida"
   },
   {
