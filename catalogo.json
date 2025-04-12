@@ -848,9 +848,10 @@
   },
   {
     "autor": "Will Davis",
-    "caracteristica": "drama",
-    "sinopse": "0",
-    "tema": "Adolescência e autoconhecimento",
+    "caracteristica": "romance",
+    "disponivel": true,
+    "sinopse": "\"A Minha Versão da História\" de Will Davis é um romance de formação que segue a vida de Jaz, um adolescente gay de 16 anos que mora em Londres. Quando seus pais descobrem sua orientação sexual, Jaz precisa lidar com as consequências e as reações de sua família, especialmente de sua mãe superprotetora e de sua irmã \"santa\" que não perde chance de julgá-lo.",
+    "tema": "Romance de época",
     "titulo": "A Minha Versão da História"
   },
   {
