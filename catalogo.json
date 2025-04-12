@@ -890,7 +890,7 @@
     "autor": "Luciano Subirá",
     "caracteristica": "religião",
     "disponivel": true,
-    "sinopse": "0",
+    "sinopse": "O livro reflete sobre o conceito de graça e como ela pode impactar a vida das pessoas, trazendo transformação e renovação. Com uma perspectiva cristã, o autor compartilha insights e reflexões sobre como a graça pode ser experimentada e vivida de forma prática.",
     "tema": "Exploração teológica sobre o poder redentor da graça divina",
     "titulo": "Graça Transformadora"
   },
@@ -1397,6 +1397,13 @@
     "sinopse": "0",
     "tema": "Busca de um menino por seu pai enquanto desenvolve inteligência e autoconhecimento.",
     "titulo": "O Último Samurai"
+  },
+  {
+    "autor": "Mary Shelley",
+    "caracteristica": "terror",
+    "sinopse": "0",
+    "tema": "A criação de um monstro por um cientista e as consequências da ambição humana.",
+    "titulo": "Frankenstein"
   },
   {
     "autor": "James Dashner",
