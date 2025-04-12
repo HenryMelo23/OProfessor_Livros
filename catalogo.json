@@ -801,8 +801,9 @@
   {
     "autor": "Nicholas Sparks",
     "caracteristica": "romance",
-    "sinopse": "0",
-    "tema": "Romance marcado por destino e encontros improváveis",
+    "disponivel": true,
+    "sinopse": "A história segue a vida de Logan Thibault, um homem que encontra um saco de dinheiro na praia e decide usá-lo para ajudar as pessoas necessitadas. Quando ele conhece Beth, uma mulher que está lutando para superar seus próprios desafios, Logan começa a questionar seu passado e a encontrar um novo propósito.",
+    "tema": "Romance de época",
     "titulo": "Um Homem de Sorte"
   },
   {
