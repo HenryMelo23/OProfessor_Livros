@@ -1273,9 +1273,10 @@
   },
   {
     "autor": "Joshua Levine",
-    "caracteristica": "história",
-    "sinopse": "0",
-    "tema": "Relato histórico sobre a evacuação de Dunquerque na Segunda Guerra Mundial.",
+    "caracteristica": "drama",
+    "disponivel": true,
+    "sinopse": "\"Dunkirk\" de Joshua Levine é um livro que narra a história da evacuação de Dunquerque, uma das operações militares mais importantes da Segunda Guerra Mundial. Em maio de 1940, as forças aliadas estavam cercadas pelas tropas alemãs na França, e a evacuação de Dunquerque se tornou uma operação crucial para salvar milhares de soldados.",
+    "tema": "A vida de expatriados americanos e europeus após a Primeira Guerra Mundial, explorando desilusões e buscas existenciais.",
     "titulo": "Dunkirk"
   },
   {
