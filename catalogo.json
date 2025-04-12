@@ -752,9 +752,10 @@
   },
   {
     "autor": "Irvin D. Yalom",
-    "caracteristica": "drama",
-    "sinopse": "0",
-    "tema": "Encontros e dilemas terapêuticos",
+    "caracteristica": "romance",
+    "disponivel": true,
+    "sinopse": "A história segue a terapia de Ernest Lash, um psiquiatra experiente, com sua paciente, Justine, que parece estar escondendo segredos. À medida que a terapia avança, Ernest se torna cada vez mais envolvido emocionalmente com Justine, questionando sua própria objetividade e ética profissional.",
+    "tema": "Romance de época",
     "titulo": "Mentiras no Divã"
   },
   {
