@@ -729,8 +729,9 @@
   {
     "autor": "E. L. James",
     "caracteristica": "romance",
-    "sinopse": "0",
-    "tema": "Relações intensas e desafios conjugais",
+    "disponivel": true,
+    "sinopse": "A história segue a vida de Anastasia Steele e Christian Grey, que estão casados e tentando construir uma vida juntos. No entanto, eles enfrentam desafios como a insegurança de Ana em relação ao passado de Christian e a necessidade dele de controlar.",
+    "tema": "Romance de época",
     "titulo": "Cinquenta Tons de Liberdade"
   },
   {
