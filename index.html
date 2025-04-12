@@ -92,7 +92,7 @@
             margin: 0;
             text-align: center;
 
-            background-image: url('https://raw.githubusercontent.com/HenryMelo23/OProfessor_Livros/Professor-1.1.4/imagens/planof.png');
+            background-image: url('https://raw.githubusercontent.com/HenryMelo23/OProfessor_Livros/Professor-1.1.5/imagens/planof.png');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -272,7 +272,7 @@
 
             if (resposta.ok && dados.tipo === "livro") {
                 const cor = dados.disponivel ? 'disponivel' : 'indisponivel';
-                const imagem = `https://raw.githubusercontent.com/HenryMelo23/OProfessor_Livros/Professor-1.1.4/imagens/${encodeURIComponent(dados.titulo)}.png`;
+                const imagem = `https://raw.githubusercontent.com/HenryMelo23/OProfessor_Livros/Professor-1.1.5/imagens/${encodeURIComponent(dados.titulo)}.png`;
                 const mensagemWhatsApp = encodeURIComponent(`Olá! Tenho interesse no livro "${dados.titulo}". Poderia me dar mais informações?`);
 
                 const livroObj = {
@@ -335,7 +335,7 @@
 
             } else if (resposta.ok && dados.tipo === "autor") {
                 resultado.innerHTML = `<h2>Livros de ${dados.autor}</h2>` + dados.livros.map(livro => {
-                    const imagem = `https://raw.githubusercontent.com/HenryMelo23/OProfessor_Livros/Professor-1.1.4/imagens/${encodeURIComponent(livro.titulo)}.png`;
+                    const imagem = `https://raw.githubusercontent.com/HenryMelo23/OProfessor_Livros/Professor-1.1.5/imagens/${encodeURIComponent(livro.titulo)}.png`;
                     const cor = livro.disponivel ? 'disponivel' : 'indisponivel';
                     const mensagemWhatsApp = encodeURIComponent(`Olá! Tenho interesse no livro "${livro.titulo}". Poderia me dar mais informações?`);
 
@@ -437,7 +437,7 @@
             });
 
             favoritos.forEach(livro => {
-                const imagem = `https://raw.githubusercontent.com/HenryMelo23/OProfessor_Livros/Professor-1.1.4/imagens/${encodeURIComponent(livro.titulo)}.png`;
+                const imagem = `https://raw.githubusercontent.com/HenryMelo23/OProfessor_Livros/Professor-1.1.5/imagens/${encodeURIComponent(livro.titulo)}.png`;
                 const link = `index.html?titulo=${encodeURIComponent(livro.titulo)}`;
 
                 const card = document.createElement("div");
