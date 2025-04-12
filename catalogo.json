@@ -840,9 +840,10 @@
   },
   {
     "autor": "Mary Shelley",
-    "caracteristica": "terror",
-    "sinopse": "0",
-    "tema": "Criação da vida artificial e as consequências da ambição científica",
+    "caracteristica": "romance",
+    "disponivel": true,
+    "sinopse": "A história segue o cientista Victor Frankenstein, que cria um ser vivo a partir de partes de corpos mortos. No entanto, o monstro escapa do controle de seu criador e busca vingança, levando a uma série de eventos trágicos.",
+    "tema": "Romance de época",
     "titulo": "Frankenstein"
   },
   {
