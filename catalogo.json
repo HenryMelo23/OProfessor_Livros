@@ -856,9 +856,10 @@
   },
   {
     "autor": "Jostein Gaarder",
-    "caracteristica": "ficção",
-    "sinopse": "0",
-    "tema": "História da filosofia contada de forma literária",
+    "caracteristica": "romance",
+    "disponivel": true,
+    "sinopse": "Sofia começa a receber cartas misteriosas que a levam a questionar a realidade e a buscar respostas sobre a origem do mundo e da humanidade. Ao longo do livro, ela aprende sobre os principais filósofos e suas teorias, desde os pré-socráticos até os pensadores modernos.",
+    "tema": "Romance de época",
     "titulo": "O Mundo de Sofia"
   },
   {
