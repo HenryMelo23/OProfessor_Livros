@@ -808,9 +808,10 @@
   },
   {
     "autor": "Kerry Lonsdale",
-    "caracteristica": "drama",
-    "sinopse": "0",
-    "tema": "Reconstrução após uma grande perda",
+    "caracteristica": "romance",
+    "disponivel": true,
+    "sinopse": "A história segue a vida de pessoas que estão conectadas por eventos do passado e precisam lidar com as consequências de suas escolhas. Com uma narrativa complexa e emocional, o livro explora como os segredos e mentiras podem afetar as relações familiares e pessoais.",
+    "tema": "Romance de época",
     "titulo": "Tudo Que Deixamos Para Trás"
   },
   {
