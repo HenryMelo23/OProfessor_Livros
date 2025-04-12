@@ -816,9 +816,10 @@
   },
   {
     "autor": "Guilherme Cavallari",
-    "caracteristica": "biografia",
-    "sinopse": "0",
-    "tema": "Viagem de bicicleta pela Patagônia e autodescoberta",
+    "caracteristica": "romance",
+    "disponivel": true,
+    "sinopse": "O livro segue a história de uma viagem pela Patagônia, região conhecida por sua beleza natural e desafios. Com um tom leve e divertido, o autor compartilha suas experiências e reflexões sobre a vida, a natureza e as pessoas que encontra pelo caminho.",
+    "tema": "Romance de época",
     "titulo": "Transpatagônia Pumas Não Comem Ciclistas"
   },
   {
