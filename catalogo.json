@@ -672,13 +672,6 @@
     "titulo": "O Duque e Eu"
   },
   {
-    "autor": "Khaled Hosseini",
-    "caracteristica": "drama",
-    "sinopse": "0",
-    "tema": "Amizade, lealdade e redenção no Afeganistão em tempos de guerra",
-    "titulo": "O Caçador de Pipas"
-  },
-  {
     "autor": "Harlan Coben",
     "caracteristica": "romance",
     "disponivel": true,
@@ -1232,14 +1225,6 @@
   },
   {
     "autor": "Augusto Cury",
-    "caracteristica": "motivacional",
-    "disponivel": true,
-    "sinopse": "0",
-    "tema": "Filosofia de vida e transformação",
-    "titulo": "O Vendedor de Sonhos"
-  },
-  {
-    "autor": "Augusto Cury",
     "caracteristica": "autoajuda",
     "disponivel": true,
     "sinopse": "0",
@@ -1397,13 +1382,6 @@
     "sinopse": "0",
     "tema": "Busca de um menino por seu pai enquanto desenvolve inteligência e autoconhecimento.",
     "titulo": "O Último Samurai"
-  },
-  {
-    "autor": "Mary Shelley",
-    "caracteristica": "terror",
-    "sinopse": "0",
-    "tema": "A criação de um monstro por um cientista e as consequências da ambição humana.",
-    "titulo": "Frankenstein"
   },
   {
     "autor": "James Dashner",
