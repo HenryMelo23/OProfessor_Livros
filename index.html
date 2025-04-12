@@ -44,6 +44,33 @@
                 margin-left: 180px;
             }
         }
+        .favorito-icone {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: transparent;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            outline: none;
+            padding: 0;
+            line-height: 1;
+            width: auto;
+            height: auto;
+            display: inline-block;
+        }
+
+        .favorito-icone:focus {
+            outline: none;
+            box-shadow: none;
+        }
+
+        .favorito-icone:hover {
+            background: none;
+        }
+        #resultado {
+            position: relative; /* necessário para posicionar o botão dentro dele */
+        }
 
         #contador-livros {
             position: fixed;
@@ -58,7 +85,7 @@
         * {
             box-sizing: border-box;
         }
-
+        
         body {
             font-family: Arial, sans-serif;
             padding: 20px;
@@ -217,12 +244,14 @@
         <a href="estante.html">Estante</a>
         <a href="#">Contato</a>
         <a href="#">Informações</a>
+        <a href="#" onclick="mostrarFavoritos()">Favoritos ❤️</a>
         <a href="https://www.instagram.com/seuluiz_livros/" target="_blank">Instagram</a>
     </div>
     <nav class="mobile-navbar">
         <a href="index.html">Início</a>
         <a href="estante.html">Estante</a>
         <a href="https://wa.me/5561995948789" target="_blank">Contato</a>
+        
         <a href="https://www.instagram.com/seuluiz_livros/" target="_blank">Instagram</a>
         <a href="#">Informações</a>
       </nav>
@@ -246,18 +275,64 @@
                 const imagem = `https://raw.githubusercontent.com/HenryMelo23/OProfessor_Livros/Professor-1.1.4/imagens/${encodeURIComponent(dados.titulo)}.png`;
                 const mensagemWhatsApp = encodeURIComponent(`Olá! Tenho interesse no livro "${dados.titulo}". Poderia me dar mais informações?`);
 
+                const livroObj = {
+                    titulo: dados.titulo,
+                    autor: dados.autor,
+                    sinopse: dados.sinopse,
+                    disponivel: dados.disponivel
+                };
+
                 resultado.innerHTML = `
                     <img src="${imagem}" alt="${dados.titulo}">
                     <h2>${dados.titulo}</h2>
                     <p><strong>Autor:</strong> ${dados.autor}</p>
                     <p><strong>Sinopse:</strong> ${dados.sinopse || 'Sinopse não disponível.'}</p>
                     <p class="${cor}">${dados.disponivel ? 'Disponível' : 'Indisponível'}</p>
+
+                    <button id="favoritar-btn"
+                        class="favorito-icone"
+                        data-titulo="${dados.titulo}"
+                        data-autor="${dados.autor}"
+                        data-sinopse="${dados.sinopse}"
+                        data-disponivel="${dados.disponivel}">
+                        🤍
+                    </button>
+
+
                     <div id="whatsapp">
                         <a href="https://wa.me/5561995948789?text=${mensagemWhatsApp}" target="_blank">
                             Entrar em contato via WhatsApp
                         </a>
                     </div>
                 `;
+                // Checar se já está favoritado ao carregar
+                const favoritos = JSON.parse(localStorage.getItem("favoritos")) || [];
+                const jaFavorito = favoritos.some(l => l.titulo === dados.titulo);
+                document.getElementById("favoritar-btn").innerText = jaFavorito ? "❤️" : "🤍";
+
+                document.getElementById("favoritar-btn").addEventListener("click", function () {
+                    const btn = this;
+                    const livro = {
+                        titulo: btn.dataset.titulo,
+                        autor: btn.dataset.autor,
+                        sinopse: btn.dataset.sinopse,
+                        disponivel: btn.dataset.disponivel === "true"
+                    };
+
+                    let favoritos = JSON.parse(localStorage.getItem("favoritos")) || [];
+                    const index = favoritos.findIndex(l => l.titulo === livro.titulo);
+
+                    if (index === -1) {
+                        favoritos.push(livro);
+                        btn.innerText = "❤️";
+                    } else {
+                        favoritos.splice(index, 1);
+                        btn.innerText = "🤍";
+                    }
+
+                    localStorage.setItem("favoritos", JSON.stringify(favoritos));
+                });
+
             } else if (resposta.ok && dados.tipo === "autor") {
                 resultado.innerHTML = `<h2>Livros de ${dados.autor}</h2>` + dados.livros.map(livro => {
                     const imagem = `https://raw.githubusercontent.com/HenryMelo23/OProfessor_Livros/Professor-1.1.4/imagens/${encodeURIComponent(livro.titulo)}.png`;
@@ -318,6 +393,79 @@
                 buscarLivro();
             }
         });
+
+        function adicionarAosFavoritos(livro) {
+            let favoritos = JSON.parse(localStorage.getItem("favoritos")) || [];
+            const existe = favoritos.some(l => l.titulo === livro.titulo);
+            if (!existe) {
+                favoritos.push(livro);
+                localStorage.setItem("favoritos", JSON.stringify(favoritos));
+                alert("Livro adicionado aos favoritos!");
+            } else {
+                alert("Este livro já está nos favoritos.");
+            }
+        }
+
+        function mostrarFavoritos() {
+            const favoritos = JSON.parse(localStorage.getItem("favoritos")) || [];
+            const resultado = document.getElementById("resultado");
+
+            if (favoritos.length === 0) {
+                resultado.innerHTML = "<p style='color:white;'>Você ainda não favoritou nenhum livro.</p>";
+                return;
+            }
+
+            resultado.style.backgroundColor = "transparent";
+            resultado.style.boxShadow = "none";
+            resultado.style.padding = "0";
+            resultado.innerHTML = `
+                <h2 style="color:white; margin-bottom: 20px;">📚 Seus Favoritos</h2>
+                <div id="grid-favoritos" class="livros-grid"></div>
+            `;
+
+            const grid = document.getElementById("grid-favoritos");
+
+            // Aplicar estilo diretamente no elemento
+            Object.assign(grid.style, {
+                display: "grid",
+                gridTemplateColumns: "repeat(auto-fit, minmax(120px, 1fr))",
+                gap: "20px",
+                padding: "20px",
+                borderRadius: "15px",
+                backgroundColor: "rgba(0, 0, 0, 0.5)", // cinza translúcido
+                boxShadow: "0 4px 10px rgba(0,0,0,0.8)"
+            });
+
+            favoritos.forEach(livro => {
+                const imagem = `https://raw.githubusercontent.com/HenryMelo23/OProfessor_Livros/Professor-1.1.4/imagens/${encodeURIComponent(livro.titulo)}.png`;
+                const link = `index.html?titulo=${encodeURIComponent(livro.titulo)}`;
+
+                const card = document.createElement("div");
+                card.className = "livro";
+                card.style.textAlign = "center";
+                card.style.textDecoration = "none";
+
+                card.innerHTML = `
+                    <img src="${imagem}" alt="${livro.titulo}" style="width:100%; max-width:120px; border-radius:8px; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+                    <div style="color:white; font-size:14px; margin-top:6px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;" title="${livro.titulo}">
+                        ${livro.titulo}
+                    </div>
+                    <button onclick="removerFavorito('${livro.titulo}')" style="margin-top:5px; padding:4px 10px; background:#dc3545; color:white; border:none; border-radius:5px; cursor:pointer; font-size:12px;">
+                        Remover
+                    </button>
+                `;
+            
+
+                grid.appendChild(card);
+            });
+        }
+        function removerFavorito(titulo) {
+            let favoritos = JSON.parse(localStorage.getItem("favoritos")) || [];
+            favoritos = favoritos.filter(livro => livro.titulo !== titulo);
+            localStorage.setItem("favoritos", JSON.stringify(favoritos));
+            mostrarFavoritos(); // atualiza a grade
+        }
+
     </script>
 </body>
 </html>

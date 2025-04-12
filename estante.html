@@ -16,6 +16,22 @@
 
       min-height: 100vh;
     }
+    .botao-favoritos {
+      background-color: #dc3545;
+      color: white;
+      padding: 12px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .botao-favoritos:hover {
+      background-color: #c82333;
+    }
+
 
     h1 {
       color: white;
@@ -238,6 +254,7 @@
 
   <div class="generos-container" id="generos">
     <div class="genero genero-todos" onclick="mostrarLivros('todos')">Todos</div>
+    <button onclick="mostrarFavoritos()" class="botao-favoritos">Favoritos ❤️</button>
     <div class="genero" onclick="mostrarLivros('romance')">Romance</div>
     <div class="genero" onclick="mostrarLivros('ficção')">Ficção</div>
     <div class="genero" onclick="mostrarLivros('terror')">Terror</div>
@@ -299,6 +316,66 @@
       } catch (erro) {
         console.error("Erro ao carregar os livros:", erro);
       }
+    }
+    function mostrarFavoritos() {
+      const favoritos = JSON.parse(localStorage.getItem("favoritos")) || [];
+      const container = document.getElementById("livros");
+      const generos = document.getElementById("generos");
+
+      generos.style.display = "none";
+      container.style.display = "block";
+
+      if (favoritos.length === 0) {
+        container.innerHTML = "<p style='color:white; text-align:center;'>Você ainda não favoritou nenhum livro.</p>";
+        return;
+      }
+
+      container.innerHTML = `
+        <h2 style="color:white; text-align:center;">📚 Seus Favoritos</h2>
+        <div id="grid-favoritos" class="livros-grid"></div>
+      `;
+
+      const grid = document.getElementById("grid-favoritos");
+
+      Object.assign(grid.style, {
+        display: "grid",
+        gridTemplateColumns: "repeat(auto-fit, minmax(120px, 1fr))",
+        gap: "20px",
+        padding: "20px",
+        borderRadius: "15px",
+        backgroundColor: "rgba(0, 0, 0, 0.5)",
+        boxShadow: "0 4px 10px rgba(0,0,0,0.8)"
+      });
+
+      favoritos.forEach(livro => {
+        const imagem = `https://raw.githubusercontent.com/HenryMelo23/OProfessor_Livros/Professor-1.1.4/imagens/${encodeURIComponent(livro.titulo)}.png`;
+        const link = `index.html?titulo=${encodeURIComponent(livro.titulo)}`;
+
+        const card = document.createElement("div");
+        card.className = "livro";
+        card.style.textAlign = "center";
+        card.style.textDecoration = "none";
+
+        card.innerHTML = `
+          <a href="${link}">
+            <img src="${imagem}" alt="${livro.titulo}" style="width:100%; max-width:120px; border-radius:8px; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+            <div style="color:white; font-size:14px; margin-top:6px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;" title="${livro.titulo}">
+              ${livro.titulo}
+            </div>
+          </a>
+          <button onclick="removerFavorito('${livro.titulo}')" style="margin-top:5px; padding:4px 10px; background:#dc3545; color:white; border:none; border-radius:5px; cursor:pointer; font-size:12px;">
+            Remover
+          </button>
+        `;
+
+        grid.appendChild(card);
+      });
+    }
+    function removerFavorito(titulo) {
+      let favoritos = JSON.parse(localStorage.getItem("favoritos")) || [];
+      favoritos = favoritos.filter(livro => livro.titulo !== titulo);
+      localStorage.setItem("favoritos", JSON.stringify(favoritos));
+      mostrarFavoritos(); // atualiza a grade
     }
   </script>
 </body>
