@@ -824,9 +824,10 @@
   },
   {
     "autor": "Holly Jackson",
-    "caracteristica": "suspense",
-    "sinopse": "0",
-    "tema": "Investigação adolescente de um crime não resolvido",
+    "caracteristica": "romance",
+    "disponivel": true,
+    "sinopse": "A história segue a vida de Pippa Fitz-Amobi, uma estudante que se torna obcecada por resolver o caso de um assassinato que ocorreu em sua cidade natal. Com uma narrativa tensa e emocionante, o livro explora temas como obsessão, verdade e justiça.",
+    "tema": "Romance de época",
     "titulo": "Boa Garota, Segredo Mortal"
   },
   {
