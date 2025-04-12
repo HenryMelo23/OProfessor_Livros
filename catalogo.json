@@ -688,9 +688,10 @@
   },
   {
     "autor": "Harlan Coben",
-    "caracteristica": "suspense",
-    "sinopse": "0",
-    "tema": "Investigação pessoal com ação e reviravoltas",
+    "caracteristica": "romance",
+    "disponivel": true,
+    "sinopse": "A história segue a vida de Win, um personagem complexo e enigmático que aparece em vários livros de Coben. Win é um vigilante que usa sua riqueza e habilidades para proteger aqueles que ama e punir aqueles que fizeram mal.",
+    "tema": "Romance de época",
     "titulo": "Win"
   },
   {
