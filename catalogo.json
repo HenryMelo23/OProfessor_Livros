@@ -680,9 +680,10 @@
   },
   {
     "autor": "Harlan Coben",
-    "caracteristica": "suspense",
-    "sinopse": "0",
-    "tema": "Suspense envolvendo o desaparecimento de uma pessoa próxima",
+    "caracteristica": "romance",
+    "disponivel": true,
+    "sinopse": "A história segue a vida de Will Klein, que retorna à sua cidade natal para visitar sua família após o desaparecimento de sua irmã Julie. Will logo descobre que o FBI está investigando seu irmão, Ken, por possível envolvimento no desaparecimento.",
+    "tema": "Romance de época",
     "titulo": "Sem Deixar Rastros"
   },
   {
