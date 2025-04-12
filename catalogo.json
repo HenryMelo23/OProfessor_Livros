@@ -704,9 +704,10 @@
   },
   {
     "autor": "Kim Edwards",
-    "caracteristica": "drama",
-    "sinopse": "0",
-    "tema": "Decisões impactantes e seus efeitos ao longo dos anos",
+    "caracteristica": "romance",
+    "disponivel": true,
+    "sinopse": "A história segue a vida de Caroline Gill, uma jovem que trabalha em um laboratório de fotografia e se torna obcecada por uma misteriosa caixa de fotografias antigas. À medida que ela investiga a história por trás das fotos, descobre segredos e histórias de uma família que podem estar ligadas à sua própria vida.",
+    "tema": "Romance de época",
     "titulo": "O Guardião de Memórias"
   },
   {
