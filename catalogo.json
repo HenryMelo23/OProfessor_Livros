@@ -791,10 +791,11 @@
     "titulo": "A Guardiã da Minha Irmã"
   },
   {
-    "autor": "Talia Hibbert",
+    "autor": "Talia Hibbert\n",
     "caracteristica": "romance",
-    "sinopse": "0",
-    "tema": "Romance e superação pessoal",
+    "disponivel": true,
+    "sinopse": "A história segue a vida de Chloe Brown, uma jovem que decide criar uma lista de coisas que quer fazer antes de completar 30 anos. Quando ela conhece Redford \"Red\" Morgan, um vizinho carrancudo e tatuado, Chloe começa a questionar suas próprias expectativas e desejos.",
+    "tema": "Romance de época",
     "titulo": "Acorda Pra Vida, Chloe Brown"
   },
   {
