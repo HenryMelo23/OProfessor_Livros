@@ -712,9 +712,10 @@
   },
   {
     "autor": "Jay Kopelman",
-    "caracteristica": "biografia",
-    "sinopse": "0",
-    "tema": "Resgate de um cão durante a guerra do Iraque",
+    "caracteristica": "romance",
+    "disponivel": true,
+    "sinopse": "A história segue a experiência do Tenente-Coronel Jay Kopelman, um fuzileiro naval americano que serviu no Iraque. O livro é baseado em sua própria experiência e explora temas como guerra, liderança e a importância dos relacionamentos humanos.",
+    "tema": "Romance de época",
     "titulo": "De Bagdá com Muito Amor"
   },
   {
