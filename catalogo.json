@@ -720,9 +720,10 @@
   },
   {
     "autor": "John Flanagan",
-    "caracteristica": "aventura",
-    "sinopse": "0",
-    "tema": "Jovens guerreiros em treinamento e aventuras épicas",
+    "caracteristica": "romance",
+    "disponivel": true,
+    "sinopse": "A série segue a história de Hal Mikkelson, um jovem que vive em uma tribo de navegadores e guerreiros chamados Heronianos. Hal precisa provar sua habilidade e coragem para se tornar um verdadeiro Heroniano e liderar sua tribo.",
+    "tema": "Romance de época",
     "titulo": "Brotherband"
   },
   {
