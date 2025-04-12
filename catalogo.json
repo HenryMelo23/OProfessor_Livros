@@ -783,10 +783,11 @@
     "titulo": "A Vez da Minha Vida"
   },
   {
-    "autor": "Jodi Picoult",
-    "caracteristica": "drama",
-    "sinopse": "0",
-    "tema": "Drama familiar e dilemas médicos",
+    "autor": "Jodi Picoult\n",
+    "caracteristica": "romance",
+    "disponivel": true,
+    "sinopse": "A história segue a vida de Kate, uma jovem com leucemia, e sua irmã Anna, que foi geneticamente selecionada para ser doadora de órgãos para Kate. Quando Anna decide processar seus pais por direitos sobre seu próprio corpo, a família é forçada a confrontar questões profundas sobre amor, sacrifício e responsabilidade.",
+    "tema": "Romance de época",
     "titulo": "A Guardiã da Minha Irmã"
   },
   {
