@@ -696,9 +696,10 @@
   },
   {
     "autor": "Harlan Coben",
-    "caracteristica": "suspense",
-    "sinopse": "0",
-    "tema": "Segredos do passado e mistérios envolvendo identidade",
+    "caracteristica": "romance",
+    "disponivel": true,
+    "sinopse": "A história segue a vida de Jack, um homem que testemunha um crime enquanto está em uma plataforma de trem. No entanto, quando ele tenta ajudar a vítima, descobre que ela não está mais lá.",
+    "tema": "Romance de época",
     "titulo": "Apenas Um Olhar"
   },
   {
