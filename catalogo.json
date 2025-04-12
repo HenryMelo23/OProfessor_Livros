@@ -737,8 +737,9 @@
   {
     "autor": "E. L. James",
     "caracteristica": "romance",
-    "sinopse": "0",
-    "tema": "Relacionamento sensual e complexo entre dois protagonistas",
+    "disponivel": true,
+    "sinopse": "A história segue a vida de Anastasia Steele, uma jovem universitária que entrevista o empresário rico e misterioso Christian Grey. À medida que eles se conhecem, Ana se sente atraída por Christian, mas também começa a descobrir seus segredos e desejos.",
+    "tema": "Romance de época",
     "titulo": "Cinquenta Tons de Cinza"
   },
   {
