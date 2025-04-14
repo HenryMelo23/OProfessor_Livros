@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contato</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('https://raw.githubusercontent.com/HenryMelo23/OProfessor_Livros/Professor-1.1.5/imagens/planof.png');
+      background-size: cover;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-position: center top;
+      color: white;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 80px auto 40px auto;
+      background: rgba(0, 0, 0, 0.7);
+      padding: 20px;
+      border-radius: 12px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    select, input, textarea, label {
+      display: block;
+      width: 90%;
+      margin-bottom: 5px;
+      font-size: 16px;
+      padding: 10px 1px;
+      border-radius: 6px;
+      border: none;
+    }
+
+    button {
+      background-color: #25D366;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    button:hover {
+      background-color: #1ebe5b;
+    }
+
+    .opcao-contato {
+      display: none;
+    }
+
+    /* SIDEBAR DESKTOP */
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 180px;
+      background-color: #343a40;
+      padding-top: 60px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    .sidebar a {
+      padding: 15px 10px;
+      text-decoration: none;
+      color: white;
+      width: 100%;
+      text-align: center;
+      transition: background 0.3s;
+      font-weight: bold;
+    }
+
+    .sidebar a:hover {
+      background-color: #495057;
+    }
+
+    @media (min-width: 768px) {
+      body {
+        margin-left: 180px;
+      }
+    }
+
+    /* NAVBAR MOBILE */
+    .mobile-navbar {
+      display: none;
+    }
+
+    @media (max-width: 768px) {
+      .sidebar {
+        display: none !important;
+      }
+
+      .mobile-navbar {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 60px;
+        background-color: #222;
+        color: white;
+        z-index: 9999;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+      }
+
+      .mobile-navbar a {
+        color: white;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: bold;
+      }
+
+      body {
+        padding-top: 70px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- SIDEBAR (DESKTOP) -->
+  <div class="sidebar">
+    <a href="index.html">Início</a>
+    <a href="estante.html">Estante</a>
+    <a href="contato.html">Contato</a>
+    <a href="#">Informações</a>
+    <a href="https://www.instagram.com/seuluiz_livros/" target="_blank">Instagram</a>
+  </div>
+
+  <!-- NAVBAR (MOBILE) -->
+  <nav class="mobile-navbar">
+    <a href="index.html">Início</a>
+    <a href="estante.html">Estante</a>
+    <a href="contato.html">Contato</a>
+    <a href="https://www.instagram.com/seuluiz_livros/" target="_blank">Instagram</a>
+    <a href="#">Informações</a>
+  </nav>
+
+  <!-- FORMULÁRIO -->
+  <div class="container">
+    <h1>📞 Fale Conosco</h1>
+
+    <label for="motivo">Motivo do Contato:</label>
+    <select id="motivo" onchange="atualizarFormulario()">
+      <option value="">Selecione</option>
+      <option value="livro">Quero um livro que não está no site</option>
+      <option value="feedback">Feedback para o site</option>
+    </select>
+
+    <div id="form-livro" class="opcao-contato">
+      <label>Título do livro:</label>
+      <input type="text" id="tituloLivro">
+
+      <label>Autor do livro:</label>
+      <input type="text" id="autorLivro">
+
+      <label>Gênero do livro:</label>
+      <input type="text" id="generoLivro">
+
+      <label><input type="checkbox" id="aceitaSemelhante"> Aceito algo semelhante</label>
+
+      <button onclick="enviarLivro()">📨 Enviar</button>
+    </div>
+    <div id="form-feedback" class="opcao-contato">
+      <label>Avaliação do site:</label>
+      <div id="estrelas" style="font-size: 28px; margin: 10px 0; text-align: center;">
+        <span onclick="avaliar(1)">☆</span>
+        <span onclick="avaliar(2)">☆</span>
+        <span onclick="avaliar(3)">☆</span>
+        <span onclick="avaliar(4)">☆</span>
+        <span onclick="avaliar(5)">☆</span>
+      </div>
+    
+      <label>Comentário:</label>
+      <textarea id="comentarioFeedback" rows="4" placeholder="Digite sua opinião..." style="resize: none;"></textarea>
+    
+      <button onclick="enviarFeedback()">📩 Enviar Feedback</button>
+    </div>
+  </div>
+
+  <script>
+    function atualizarFormulario() {
+      const motivo = document.getElementById("motivo").value;
+      document.querySelectorAll(".opcao-contato").forEach(div => div.style.display = "none");
+
+      if (motivo === "livro") {
+        document.getElementById("form-livro").style.display = "block";
+      }
+      if (motivo === "feedback") {
+        document.getElementById("form-feedback").style.display = "block";
+      }
+    }
+
+    function enviarLivro() {
+      const titulo = document.getElementById("tituloLivro").value.trim();
+      const autor = document.getElementById("autorLivro").value.trim();
+      const genero = document.getElementById("generoLivro").value.trim();
+      const aceita = document.getElementById("aceitaSemelhante").checked;
+
+      if (!titulo || !autor || !genero) {
+        alert("Por favor, preencha todos os campos.");
+        return;
+      }
+
+      const msg = `Olá Luis Carlos , Estou procurando "${titulo}" do autor ${autor} do gênero ${genero}. ${aceita ? "Caso tenha algo semelhante, aceito também." : "Estou procurando especificamente esse, não pretendo outros."}`;
+      const link = `https://wa.me/556198325347?text=${encodeURIComponent(msg)}`;
+      window.open(link, "_blank");
+    }
+    let nota = 0;
+
+    function avaliar(valor) {
+      nota = valor;
+      const estrelas = document.querySelectorAll("#estrelas span");
+      estrelas.forEach((estrela, i) => {
+        estrela.textContent = i < valor ? "★" : "☆";
+      });
+    }
+    function enviarFeedback() {
+      const comentario = document.getElementById("comentarioFeedback").value.trim();
+
+      if (nota === 0 || comentario === "") {
+        alert("Por favor, selecione uma nota e escreva seu comentário.");
+        return;
+      }
+
+      const msg = `Olá Luis Henrique, gostaria de deixar meu feedback sobre o site:\n\n⭐ Avaliação: ${nota} estrela(s)\n💬 Comentário: ${comentario}`;
+      const link = `https://wa.me/5561995948789?text=${encodeURIComponent(msg)}`;
+      window.open(link, "_blank");
+    }
+  </script>
+
+</body>
+</html>
