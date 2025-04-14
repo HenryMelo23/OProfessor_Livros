@@ -1321,9 +1321,10 @@
   },
   {
     "autor": "Napoleon Hill",
-    "caracteristica": "autoajuda",
-    "sinopse": "0",
-    "tema": "Clássico sobre desenvolvimento pessoal e conquista de riqueza.",
+    "caracteristica": "negócios",
+    "disponivel": true,
+    "sinopse": "Um dos maiores clássicos da literatura de desenvolvimento pessoal e financeiro. Napoleon Hill revela os princípios mentais que moldam o sucesso e a riqueza, com ensinamentos atemporais que seguem transformando vidas ao redor do mundo.",
+    "tema": "Estratégias para conquistar a liberdade financeira e sucesso pessoal.",
     "titulo": "Quem Pensa Enriquece"
   },
   {
