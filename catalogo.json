@@ -1297,8 +1297,9 @@
   },
   {
     "autor": "Paulo Vieira",
-    "caracteristica": "autoajuda",
-    "sinopse": "0",
+    "caracteristica": "negócios",
+    "disponivel": true,
+    "sinopse": "Um guia transformador para quem busca prosperidade com propósito. Em Criação de Riqueza, Paulo Vieira revela os princípios que moldam a mentalidade financeira de pessoas bem-sucedidas, mostrando como desenvolver hábitos e atitudes que abrem caminho para a abundância em todas as áreas da vida.",
     "tema": "Estratégias para conquistar a liberdade financeira e sucesso pessoal.",
     "titulo": "Criação de Riqueza"
   },
