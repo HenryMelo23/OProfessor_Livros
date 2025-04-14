@@ -1314,8 +1314,9 @@
   {
     "autor": "Mauro Halfeld",
     "caracteristica": "negócios",
-    "sinopse": "0",
-    "tema": "Dicas práticas para aplicar dinheiro e alcançar segurança financeira.",
+    "disponivel": true,
+    "sinopse": "Um guia essencial para quem quer investir com segurança e inteligência. Com uma linguagem acessível e orientações práticas, Mauro Halfeld mostra como tomar boas decisões financeiras e construir um futuro sólido, mesmo começando do zero.",
+    "tema": "Estratégias para conquistar a liberdade financeira e sucesso pessoal.",
     "titulo": "Investimento"
   },
   {
