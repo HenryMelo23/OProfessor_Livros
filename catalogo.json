@@ -1537,9 +1537,10 @@
   },
   {
     "autor": "Da Chen",
-    "caracteristica": "ficção",
-    "sinopse": "0",
-    "tema": "drama histórico",
+    "caracteristica": "Romance literário",
+    "disponivel": true,
+    "sinopse": "Em uma pequena vila rural na China, um jovem chamado Liang cresce em meio à beleza natural da montanha e do rio. À medida que ele se torna um homem, Liang enfrenta desafios e transformações que o levam a questionar sua identidade e seu lugar no mundo. Com a ajuda de amigos e familiares, Liang navega por um mundo em constante mudança e descobre a importância da tradição, da família e da conexão com a natureza.",
+    "tema": "",
     "titulo": "A Montanha e o Rio"
   },
   {
