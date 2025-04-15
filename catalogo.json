@@ -1369,9 +1369,10 @@
   },
   {
     "autor": "Cora Carmack",
-    "caracteristica": "romance",
-    "sinopse": "0",
-    "tema": "Romance leve com humor sobre encarar o passado e se permitir amar.",
+    "caracteristica": "Romance e ficção",
+    "disponivel": true,
+    "sinopse": "Max, uma jovem com um estilo único e uma vida secreta, se vê em apuros quando seus pais a visitam na faculdade e exigem conhecer o futuro genro. Para evitar problemas, ela pede ajuda a Cade, um desconhecido que aceita se passar por seu namorado por 24 horas.",
+    "tema": "",
     "titulo": "Fingindo"
   },
   {
