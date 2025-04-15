@@ -1353,9 +1353,10 @@
   },
   {
     "autor": "Jamie McGuire",
-    "caracteristica": "romance",
-    "sinopse": "0",
-    "tema": "Romance universitário com drama e tensão emocional.",
+    "caracteristica": "Romance",
+    "disponivel": true,
+    "sinopse": "Abby é uma jovem independente e forte que está tentando superar um passado traumático, enquanto Travis é um lutador de MMA com uma reputação de bad boy. Apesar de suas diferenças, eles se sentem atraídos um pelo outro e começam um relacionamento apaixonado e tumultuado.",
+    "tema": "",
     "titulo": "Belo Desastre"
   },
   {
