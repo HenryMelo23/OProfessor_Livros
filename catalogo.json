@@ -1481,9 +1481,10 @@
   },
   {
     "autor": "John Grisham",
-    "caracteristica": "ficção",
-    "sinopse": "0",
-    "tema": "suspense jurídico",
+    "caracteristica": "Drama jurídico",
+    "disponivel": true,
+    "sinopse": "Um homem é libertado da prisão após cumprir uma pena de 12 anos por um crime que não cometeu. Ele retorna à sua cidade natal em busca de justiça e redenção, mas logo descobre que a verdade sobre o seu passado é mais complexa do que imaginava. Com a ajuda de um advogado determinado, ele luta para limpar seu nome e encontrar justiça, enquanto também enfrenta os desafios de reconstruir sua vida e se reintegrar à sociedade.",
+    "tema": "",
     "titulo": "Tempo de Perdoar"
   },
   {
