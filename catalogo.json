@@ -1337,9 +1337,10 @@
   },
   {
     "autor": "Ian Caldwell",
-    "caracteristica": "suspense",
-    "sinopse": "0",
-    "tema": "Suspense literário envolvendo códigos antigos e conspirações.",
+    "caracteristica": "Romance e mistério",
+    "disponivel": true,
+    "sinopse": "A história segue dois estudantes universitários, Tom Sullivan e Paul Harris, que descobrem um antigo livro chamado \"Hypnerotomachia Poliphili\", que contém enigmas e símbolos que precisam ser decifrados.",
+    "tema": "",
     "titulo": "O Enigma do Quatro"
   },
   {
