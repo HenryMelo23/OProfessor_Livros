@@ -1329,9 +1329,10 @@
   },
   {
     "autor": "Tim Weiner",
-    "caracteristica": "história",
-    "sinopse": "0",
-    "tema": "História crítica da CIA e dos bastidores da inteligência americana.",
+    "caracteristica": "História",
+    "disponivel": true,
+    "sinopse": "Weiner apresenta uma visão detalhada e bem documentada das principais operações e eventos que marcaram a história da CIA, incluindo a Guerra Fria, a invasão da Baía dos Porcos, o caso Watergate e os ataques de 11 de setembro. O autor também explora as consequências das ações da CIA e como elas afetaram a política externa dos EUA.",
+    "tema": "História, política internacional e espionagem",
     "titulo": "Legado de Cinzas"
   },
   {
