@@ -1545,9 +1545,10 @@
   },
   {
     "autor": "Jennifer Brown",
-    "caracteristica": "ficção",
-    "sinopse": "0",
-    "tema": "drama juvenil",
+    "caracteristica": "Drama",
+    "disponivel": true,
+    "sinopse": "Após o namorado abrir fogo na escola, Valerie é forçada a lidar com a culpa e a responsabilidade por ter ajudado a criar uma lista negra que ele usou para escolher seus alvos. Enquanto se recupera do trauma, Valerie precisa enfrentar seus fantasmas e encontrar um caminho para o auto-conhecimento e o perdão.",
+    "tema": "",
     "titulo": "A Lista Negra"
   }
 ]
