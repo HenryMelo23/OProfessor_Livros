@@ -1433,9 +1433,10 @@
   },
   {
     "autor": "John Grisham",
-    "caracteristica": "ficção",
-    "sinopse": "0",
-    "tema": "suspense jurídico",
+    "caracteristica": "Romance de suspense jurídico",
+    "disponivel": true,
+    "sinopse": "Um caso complexo e emocional coloca à prova a busca por justiça e a moralidade de um advogado. Com sua habilidade e determinação, ele enfrenta desafios e obstáculos para alcançar a verdade e fazer justiça. Um romance emocionante e reflexivo que explora as complexidades do sistema judiciário e a natureza humana.",
+    "tema": "",
     "titulo": "Justiça a Qualquer Preço"
   },
   {
