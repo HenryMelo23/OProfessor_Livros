@@ -1489,9 +1489,10 @@
   },
   {
     "autor": "John Grisham",
-    "caracteristica": "ficção",
-    "sinopse": "0",
-    "tema": "suspense jurídico",
+    "caracteristica": "Suspense  jurídico",
+    "disponivel": true,
+    "sinopse": "Uma família rica e influente é abalada por uma disputa judicial que ameaça destruir sua fortuna e sua reputação. Um jovem advogado é contratado para ajudar a família a proteger seus interesses, mas logo descobre que a verdade sobre a família e sua fortuna é mais complexa e obscura do que imaginava. Com a ajuda de um investigador determinado, ele luta para descobrir a verdade e proteger a família, enquanto também enfrenta os desafios de lidar com a riqueza e o poder.",
+    "tema": "",
     "titulo": "A Herança"
   },
   {
