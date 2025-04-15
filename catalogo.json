@@ -1513,9 +1513,10 @@
   },
   {
     "autor": "Izabel Gomes",
-    "caracteristica": "ficção",
-    "sinopse": "0",
-    "tema": "romance",
+    "caracteristica": "Romance espiritual e auto-ajuda",
+    "disponivel": true,
+    "sinopse": "O livro segue a jornada de uma personagem que se encontra em uma encruzilhada da vida, questionando seus valores e propósitos. À medida que ela se aprofunda em sua busca por significado, ela descobre que a presença de um anjo ao seu lado a ajuda a encontrar respostas e a superar desafios. Com uma narrativa emocional e reflexiva, o livro explora temas como a fé, a esperança e a transformação pessoal.",
+    "tema": "",
     "titulo": "Quando o Anjo Mora ao Lado"
   },
   {
