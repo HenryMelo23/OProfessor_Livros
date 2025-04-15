@@ -1409,9 +1409,10 @@
   },
   {
     "autor": "Augusto Cury",
-    "caracteristica": "autoajuda",
-    "sinopse": "0",
-    "tema": "autoajuda",
+    "caracteristica": "Literatura brasileira, auto-ajuda",
+    "disponivel": true,
+    "sinopse": "Quando uma crise de pânico interrompe sua carreira de neurocirurgião, Alan é forçado a confrontar seus medos e fragilidades. À medida que ele luta para entender a origem de sua doença, ele precisa questionar suas certezas e aprender a se reconstruir como ser humano. Uma jornada emocional e profunda sobre a busca por felicidade e autoconhecimento.",
+    "tema": "",
     "titulo": "Felicidade Roubada"
   },
   {
