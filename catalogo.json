@@ -1529,9 +1529,10 @@
   },
   {
     "autor": "Georges Ohnet",
-    "caracteristica": "ficção",
-    "sinopse": "0",
-    "tema": "romance",
+    "caracteristica": "Drama romântico",
+    "disponivel": true,
+    "sinopse": "Em um mundo de aristocracia e privilégios, Claire de Beaulieu, uma bela e orgulhosa jovem, vê sua família à beira da ruína após a morte do pai. Prometida ao primo, o duque de Bligny, um homem superficial e interesseiro, Claire descobre que ele planeja abandoná-la para se casar com Athenais, uma jovem burguesa rica, para pagar suas dívidas de jogo. Ferida e humilhada, Claire decide se vingar se casando com Philippe Derblay, um engenheiro e dono de uma usina siderúrgica, apenas para provar ao duque que ela é desejada.",
+    "tema": "",
     "titulo": "Amor & Orgulho"
   },
   {
