@@ -1521,9 +1521,10 @@
   },
   {
     "autor": "Thrity Umrigar",
-    "caracteristica": "ficção",
-    "sinopse": "0",
-    "tema": "drama",
+    "caracteristica": "Romance literário e drama familiar",
+    "disponivel": true,
+    "sinopse": "O livro segue a história de uma família indiana que se estabelece em Nova York e enfrenta desafios culturais e pessoais. A narrativa é contada através da perspectiva de uma mãe que luta para manter sua família unida enquanto enfrenta a perda de seu marido e a adaptação à vida nos Estados Unidos. Com uma prosa emocional e poética, o livro explora temas como a identidade cultural, a memória e a capacidade de superar adversidades.",
+    "tema": "",
     "titulo": "A Doçura do Mundo"
   },
   {
