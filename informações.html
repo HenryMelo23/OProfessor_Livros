@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Informações - O Professor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.html"> <!-- apenas para manter consistência visual -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-image: url('https://raw.githubusercontent.com/HenryMelo23/OProfessor_Livros/Professor-1.1.5/imagens/planof.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            text-align: justify;
+            color: white;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+        }
+
+        .conteudo {
+            max-width: 800px;
+            margin: 80px auto 0 auto;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+        }
+
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 180px;
+            background-color: #343a40;
+            padding-top: 60px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .sidebar a {
+            padding: 15px 10px;
+            text-decoration: none;
+            color: white;
+            width: 100%;
+            text-align: center;
+            transition: background 0.3s;
+            font-weight: bold;
+        }
+
+        .sidebar a:hover {
+            background-color: #495057;
+        }
+
+        .mobile-navbar {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .sidebar {
+                display: none !important;
+            }
+
+            .mobile-navbar {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                height: 60px;
+                background-color: #222;
+                color: white;
+                z-index: 9999;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+            }
+
+            .mobile-navbar a {
+                color: white;
+                text-decoration: none;
+                font-size: 14px;
+                font-weight: bold;
+            }
+
+            body {
+                padding-top: 80px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <a href="index.html">Início</a>
+        <a href="estante.html">Estante</a>
+        <a href="Contato.html">Contato</a>
+        <a href="informações.html">Informações</a>
+        <a href="#" onclick="mostrarFavoritos()">Favoritos ❤️</a>
+        <a href="https://www.instagram.com/seuluiz_livros/" target="_blank">Instagram</a>
+    </div>
+
+    <nav class="mobile-navbar">
+        <a href="index.html">Início</a>
+        <a href="estante.html">Estante</a>
+        <a href="Contato.html">Contato</a>
+        <a href="informações.html">Informações</a>
+        <a href="https://www.instagram.com/seuluiz_livros/" target="_blank">Instagram</a>
+    </nav>
+
+    <div class="conteudo">
+        <h1>📖 Sobre o Projeto "O Professor"</h1>
+        <p>
+            Este site nasceu do desejo genuíno de compartilhar conhecimento, histórias e oportunidades através de livros usados. 
+            Criado com carinho pelo senhor Luiz Carlos e seu neto, o projeto “O Professor” visa tornar a leitura acessível, fomentar a cultura do reaproveitamento e valorizar o acervo literário que tantas vezes fica esquecido nas estantes.
+        </p>
+        <p>
+            Cada livro aqui representa não apenas uma história em suas páginas, mas também uma história de vida por trás da iniciativa: um trabalho familiar, um legado de amor pelo saber e o compromisso em impactar positivamente a vida das pessoas.
+        </p>
+        <p>
+            Acreditamos que todo conhecimento deve circular. Por isso, reunimos neste catálogo títulos variados, organizados cuidadosamente para que você encontre o que busca com facilidade. Sejam bem-vindos a essa estante viva de memórias, sonhos e aprendizados.
+        </p>
+        <p>
+            Obrigado por fazer parte desta história. 📚👴❤️
+        </p>
+    </div>
+</body>
+</html>
