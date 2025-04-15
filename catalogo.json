@@ -1385,9 +1385,10 @@
   },
   {
     "autor": "AuthenticGames",
-    "caracteristica": "aventura",
-    "sinopse": "0",
-    "tema": "Aventura baseada em Minecraft com batalhas épicas e lições sobre amizade.",
+    "caracteristica": "Literatura, ficção e literatura juvenil",
+    "disponivel": true,
+    "sinopse": "o livro \"A Batalha Contra Ender Dragon\" do AuthenticGames é uma obra que se passa no universo do Minecraft e narra as aventuras de um personagem que enfrenta o Ender Dragon, um dos principais chefes do jogo.",
+    "tema": "",
     "titulo": "A Batalha Contra Ender Dragon"
   },
   {
