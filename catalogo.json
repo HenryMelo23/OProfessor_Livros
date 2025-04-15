@@ -1457,9 +1457,10 @@
   },
   {
     "autor": "John Grisham",
-    "caracteristica": "ficção",
-    "sinopse": "0",
-    "tema": "suspense jurídico",
+    "caracteristica": "thriller jurídico",
+    "disponivel": true,
+    "sinopse": "Um advogado experiente e respeitado é contratado para defender um cliente em um caso de assassinato que pode mudar sua vida para sempre. À medida que o caso se desenrola, o advogado enfrenta desafios e obstáculos, incluindo a pressão da mídia e a oposição ferrenha da promotoria. Com sua habilidade e determinação, ele luta para provar a inocência de seu cliente e alcançar a justiça, enquanto também enfrenta seus próprios demônios pessoais.",
+    "tema": "",
     "titulo": "Cartada Final"
   },
   {
