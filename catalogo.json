@@ -1425,9 +1425,10 @@
   },
   {
     "autor": "J.R.R. Tolkien",
-    "caracteristica": "ficção",
-    "sinopse": "0",
-    "tema": "fantasia",
+    "caracteristica": "Fantasia",
+    "disponivel": true,
+    "sinopse": "Em 'O Hobbit', o hobbit Bilbo Baggins é recrutado pelo mago Gandalf e um grupo de anões para ajudar a recuperar o tesouro dos anões, roubado pelo dragão Smaug. Em uma jornada épica, Bilbo enfrenta desafios e perigos, desde encontros com trolls e goblins até a descoberta de um anel misterioso que pode mudar o curso da história. Com sua inteligência e coragem, Bilbo prova ser mais do que um simples hobbit, e sua aventura se torna uma jornada de autoconhecimento e crescimento.",
+    "tema": "",
     "titulo": "O Hobbit"
   },
   {
