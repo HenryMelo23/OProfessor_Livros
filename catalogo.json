@@ -1417,9 +1417,10 @@
   },
   {
     "autor": "Augusto Cury",
-    "caracteristica": "motivacional",
-    "sinopse": "0",
-    "tema": "autoajuda",
+    "caracteristica": "Auto-ajuda",
+    "disponivel": true,
+    "sinopse": "Em '12 Semanas para Mudar de Vida', Augusto Cury apresenta um programa prático e inspirador para transformar sua vida em apenas três meses. Com base em sua extensa pesquisa em psicologia, Cury desenvolve um guia dividido em 12 semanas, cada uma focada em uma área específica da vida pessoal e profissional.",
+    "tema": "",
     "titulo": "12 Semanas Para Mudar de Vida"
   },
   {
