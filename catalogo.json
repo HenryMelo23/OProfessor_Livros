@@ -1345,9 +1345,10 @@
   },
   {
     "autor": "Paulo Vieira",
-    "caracteristica": "autoajuda",
-    "sinopse": "0",
-    "tema": "Desenvolvimento pessoal e profissional através de métodos de coaching.",
+    "caracteristica": "autoajuda e gestão",
+    "disponivel": true,
+    "sinopse": "A obra de Paulo Vieira é conhecida por sua abordagem prática e acessível, oferecendo ferramentas e técnicas para que os leitores possam aplicar o coaching em suas vidas pessoais e profissionais. O livro \"Coaching Integral Sistêmico\" é uma referência para aqueles que buscam uma abordagem mais profunda e integral para o desenvolvimento pessoal e profissional.",
+    "tema": "",
     "titulo": "Coaching Integral Sistêmico"
   },
   {
