@@ -1393,9 +1393,10 @@
   },
   {
     "autor": "Helen DeWitt",
-    "caracteristica": "drama",
-    "sinopse": "0",
-    "tema": "Busca de um menino por seu pai enquanto desenvolve inteligência e autoconhecimento.",
+    "caracteristica": "Romance",
+    "disponivel": true,
+    "sinopse": "\"O Último Samurai\" é um romance de Helen DeWitt que conta a história de Sybil, uma jovem que se torna obcecada pela figura do samurai e pela cultura japonesa. Ela se muda para o Japão com seu filho e começa a trabalhar como acompanhante de um homem idoso que é um ex-samurai.",
+    "tema": "",
     "titulo": "O Último Samurai"
   },
   {
