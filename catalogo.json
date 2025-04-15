@@ -1465,9 +1465,10 @@
   },
   {
     "autor": "John Grisham",
-    "caracteristica": "ficção",
-    "sinopse": "0",
-    "tema": "suspense jurídico",
+    "caracteristica": "thriller jurídico",
+    "disponivel": true,
+    "sinopse": "Um advogado é contratado para defender um cliente em um caso que envolve uma grande empresa e um segredo obscuro. À medida que o caso se desenrola, o advogado descobre que a verdade é mais complexa e moralmente ambígua do que imaginava. Ele precisa tomar uma decisão difícil entre sua lealdade ao cliente e sua obrigação de fazer justiça, enquanto também enfrenta pressões e ameaças de todos os lados.",
+    "tema": "",
     "titulo": "O Dilema"
   },
   {
