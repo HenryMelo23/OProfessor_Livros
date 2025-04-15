@@ -1505,9 +1505,10 @@
   },
   {
     "autor": "Augusto Cury",
-    "caracteristica": "autoajuda",
-    "sinopse": "0",
-    "tema": "psicologia",
+    "caracteristica": "Psicologia e desenvolvimento pessoal",
+    "disponivel": true,
+    "sinopse": "O livro apresenta uma abordagem inovadora sobre a inteligência humana, argumentando que ela é composta por várias habilidades e funções que trabalham juntas para nos permitir pensar, aprender e se adaptar. O autor explora como a inteligência multifocal pode ser aplicada em diversas áreas da vida, incluindo a educação, a psicologia e a gestão de estresse. Com uma abordagem prática e acessível, o livro oferece ferramentas e estratégias para desenvolver a inteligência multifocal e melhorar a qualidade de vida.",
+    "tema": "",
     "titulo": "Inteligência Multifocal"
   },
   {
