@@ -1401,9 +1401,10 @@
   },
   {
     "autor": "James Dashner",
-    "caracteristica": "ficção",
-    "sinopse": "0",
-    "tema": "ficção científica",
+    "caracteristica": "Romance, mistério, aventura e suspense",
+    "disponivel": true,
+    "sinopse": "Thomas acorda em um lugar desconhecido sem memória de seu passado. Preso em um labirinto mortal com outros jovens, ele precisa encontrar uma saída antes que seja tarde demais. Com criaturas letais e aliados incertos, Thomas enfrenta um desafio que pode ser sua única chance de sobrevivência.",
+    "tema": "",
     "titulo": "Maze Runner Correr ou Morrer"
   },
   {
