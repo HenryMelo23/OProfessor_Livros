@@ -1441,9 +1441,10 @@
   },
   {
     "autor": "John Grisham",
-    "caracteristica": "ficção",
-    "sinopse": "0",
-    "tema": "suspense jurídico",
+    "caracteristica": "Thriller jurídico",
+    "disponivel": true,
+    "sinopse": "Em uma pequena cidade do Mississippi, um caso chocante abala a comunidade e desafia as fronteiras da lei e da justiça. Um advogado local, Jake Brigance, é contratado para defender um pai que busca justiça para sua filha. À medida que o caso se desenrola, Jake enfrenta uma oposição ferrenha e desafios éticos complexos. Com sua habilidade e determinação, ele luta para alcançar a verdade e fazer justiça, enquanto também enfrenta as consequências pessoais e profissionais de sua decisão.",
+    "tema": "",
     "titulo": "Tempo de Matar"
   },
   {
