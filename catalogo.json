@@ -1449,9 +1449,10 @@
   },
   {
     "autor": "John Grisham",
-    "caracteristica": "ficção",
-    "sinopse": "0",
-    "tema": "suspense jurídico",
+    "caracteristica": "thriller jurídico",
+    "disponivel": true,
+    "sinopse": "Um advogado é contratado para defender um cliente em um caso que envolve uma grande empresa e um segredo obscuro. À medida que o caso se desenrola, o advogado descobre que a verdade é mais complexa e perigosa do que imaginava. Com sua habilidade e determinação, ele luta para alcançar a justiça e proteger seu cliente, enquanto também enfrenta ameaças e desafios pessoais.",
+    "tema": "",
     "titulo": "Acerto de Contas"
   },
   {
