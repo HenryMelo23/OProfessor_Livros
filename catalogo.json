@@ -1497,9 +1497,10 @@
   },
   {
     "autor": "Laurentino Gomes",
-    "caracteristica": "história",
-    "sinopse": "0",
-    "tema": "história",
+    "caracteristica": "História não-ficcional",
+    "disponivel": true,
+    "sinopse": "Em 1808, a família real portuguesa foge de Napoleão e se estabelece no Rio de Janeiro, marcando um momento crucial na história do Brasil. O livro narra os eventos que levaram a essa transferência, as consequências para o Brasil e Portugal, e como essa mudança afetou a formação da nação brasileira. Com base em pesquisas rigorosas e fontes históricas, o autor recria a atmosfera da época e oferece uma visão detalhada desse período importante da história brasileira.",
+    "tema": "",
     "titulo": "1808"
   },
   {
