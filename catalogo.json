@@ -1561,9 +1561,10 @@
   },
   {
     "autor": "J.K. Rowling",
-    "caracteristica": "fantasia",
-    "sinopse": "0",
-    "tema": "Descoberta de um mundo mágico e identidade pessoal",
+    "caracteristica": "Fantasia e aventura",
+    "disponivel": true,
+    "sinopse": "Harry Potter é um menino órfão que descobre que é um bruxo e começa a frequentar a Escola de Magia e Bruxaria de Hogwarts. Lá, ele faz amigos como Ron Weasley e Hermione Granger e se envolve em uma aventura para descobrir a verdade sobre a Pedra Filosofal, um objeto poderoso que está sendo escondido na escola. Harry precisa enfrentar o malvado Lord Voldemort, que matou os pais de Harry e agora está tentando retornar ao poder.",
+    "tema": "",
     "titulo": "Harry Potter e a Pedra Filosofal"
   },
   {
