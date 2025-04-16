@@ -1757,9 +1757,10 @@
   },
   {
     "autor": "Walter Isaacson",
-    "caracteristica": "biografia",
-    "sinopse": "0",
-    "tema": "História das mentes por trás da revolução digital",
+    "caracteristica": "Não-ficção e Biografia",
+    "disponivel": true,
+    "sinopse": "Desde Ada Lovelace, considerada a primeira programadora do mundo, até os visionários da era digital, como Steve Jobs e Bill Gates, \"Os Inovadores\" conta a história dos indivíduos que criaram a revolução digital. O livro explora como a colaboração, a criatividade e a inovação permitiram que esses indivíduos desenvolvessem tecnologias que mudaram o mundo. Isaacson apresenta uma narrativa envolvente que destaca a importância da parceria, da experimentação e da visão para criar algo novo e revolucionário.",
+    "tema": "",
     "titulo": "Os Inovadores"
   },
   {
