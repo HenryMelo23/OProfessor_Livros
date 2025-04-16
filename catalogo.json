@@ -1750,9 +1750,10 @@
   },
   {
     "autor": "Gabriel García Márquez",
-    "caracteristica": "ficcao",
-    "sinopse": "0",
-    "tema": "Destino, memória e história de uma família",
+    "caracteristica": "Romance mágico-realista e Ficção literária",
+    "disponivel": true,
+    "sinopse": "m Macondo, uma cidade fictícia na Colômbia, a família Buendía vive uma série de eventos mágicos e trágicos que se repetem ao longo de gerações. O romance segue a história de José Arcadio Buendía e sua esposa, Úrsula, e seus descendentes, que lutam contra a solidão, o amor, a morte e o destino. Através de uma narrativa rica e poética, García Márquez explora temas como a história, a cultura, a família e a condição humana.",
+    "tema": "",
     "titulo": "Cem Anos de Solidão"
   },
   {
