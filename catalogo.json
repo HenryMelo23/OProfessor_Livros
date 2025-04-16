@@ -1737,9 +1737,10 @@
   },
   {
     "autor": "Michael Matthews",
-    "caracteristica": "saude",
-    "sinopse": "0",
-    "tema": "Programa de treino e alimentação para definição corporal",
+    "caracteristica": "Treinamento físico",
+    "disponivel": true,
+    "sinopse": "Este livro oferece um guia prático e científico para ajudar as mulheres a alcançar seus objetivos de condicionamento físico, seja ganhar massa muscular, perder gordura ou melhorar a saúde geral. Michael Matthews apresenta programas de treinamento e nutrição personalizados, baseados em evidências científicas, para ajudar as mulheres a alcançar seus objetivos de forma segura e eficaz. O livro aborda temas específicos para mulheres, como a perda de gordura, o ganho de massa muscular e a melhoria da saúde óssea.",
+    "tema": "",
     "titulo": "Malhar, Secar, Definir (Para Mulheres)"
   },
   {
