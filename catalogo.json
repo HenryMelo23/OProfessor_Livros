@@ -1560,251 +1560,251 @@
     "titulo": "Nosferatu"
   },
   {
-    "autor": "J.K. Rowling",
-    "caracteristica": "fantasia",
-    "disponivel": true,
-    "sinopse": "0",
-    "tema": "Descoberta de um mundo mágico e identidade pessoal",
-    "titulo": "Harry Potter e a Pedra Filosofal"
-  },
-  {
-    "autor": "Conn Iggulden",
-    "caracteristica": "historico",
-    "disponivel": true,
-    "sinopse": "0",
-    "tema": "Ascensão ao poder e estratégia política",
-    "titulo": "O Imperador A Morte e Reis"
-  },
-  {
-    "autor": "Conn Iggulden",
-    "caracteristica": "historico",
-    "disponivel": true,
-    "sinopse": "0",
-    "tema": "Conflitos militares e honra pessoal",
-    "titulo": "O Imperador Campos de Espadas"
-  },
-  {
-    "autor": "Conn Iggulden",
-    "caracteristica": "historico",
-    "disponivel": true,
-    "sinopse": "0",
-    "tema": "Conquista e lealdade em tempos de guerra",
-    "titulo": "O Imperador Os Deuses da Guerra"
-  },
-  {
-    "autor": "Mary Shelley, Bram Stoker e Robert Louis Stevenson",
-    "caracteristica": "terror",
-    "disponivel": true,
-    "sinopse": "0",
-    "tema": "Dualidade humana e monstros interiores",
-    "titulo": "Livro Único Frankenstein, Drácula e O Médico e o Monstro"
-  },
-  {
-    "autor": "Armando Lucas Correa",
-    "caracteristica": "drama",
-    "disponivel": true,
-    "sinopse": "0",
-    "tema": "Memória, guerra e identidade familiar",
-    "titulo": "A Filha Esquecida"
-  },
-  {
-    "autor": "Armando Lucas Correa",
-    "caracteristica": "drama",
-    "disponivel": true,
-    "sinopse": "0",
-    "tema": "Refugiados judeus e o impacto do nazismo",
-    "titulo": "A Garota Alemã"
-  },
-  {
-    "autor": "Gayle Forman",
-    "caracteristica": "romance",
-    "disponivel": true,
-    "sinopse": "0",
-    "tema": "Reconciliação e amadurecimento emocional",
-    "titulo": "Para Onde Ela Foi"
-  },
-  {
-    "autor": "Robert Galbraith",
-    "caracteristica": "suspense",
-    "disponivel": true,
-    "sinopse": "0",
-    "tema": "Investigação de assassinato e celebridade",
-    "titulo": "O Chamado do Cuco"
-  },
-  {
-    "autor": "A.J. Barros",
-    "caracteristica": "suspense",
-    "disponivel": true,
-    "sinopse": "0",
-    "tema": "Segredos históricos e sociedades secretas",
-    "titulo": "O Enigma de Compostela"
-  },
-  {
-    "autor": "Napoleon Hill",
-    "caracteristica": "autoajuda",
-    "disponivel": true,
-    "sinopse": "0",
-    "tema": "Filosofia de sucesso pessoal e profissional",
-    "titulo": "As 16 Leis do Sucesso"
-  },
-  {
-    "autor": "Nassim Nicholas Taleb",
-    "caracteristica": "filosofia",
-    "disponivel": true,
-    "sinopse": "0",
-    "tema": "Como se beneficiar do caos e da incerteza",
-    "titulo": "Antifrágil"
-  },
-  {
-    "autor": "Taylor Adams",
-    "caracteristica": "suspense",
-    "disponivel": true,
-    "sinopse": "0",
-    "tema": "Sobrevivência e decisões extremas",
-    "titulo": "Sem Saída"
-  },
-  {
-    "autor": "Karin Slaughter",
-    "caracteristica": "suspense",
-    "disponivel": true,
-    "sinopse": "0",
-    "tema": "Segredos conjugais e psicopatia",
-    "titulo": "Esposa Perfeita"
-  },
-  {
-    "autor": "Amir Levine e Rachel Heller",
-    "caracteristica": "psicologia",
-    "disponivel": true,
-    "sinopse": "0",
-    "tema": "Teoria do apego e relacionamentos afetivos",
-    "titulo": "Apegados"
-  },
-  {
-    "autor": "Charlie Donlea",
-    "caracteristica": "suspense",
-    "disponivel": true,
-    "sinopse": "0",
-    "tema": "Investigação criminal e trauma do passado",
-    "titulo": "Procure nas Cinzas"
-  },
-  {
-    "autor": "George R.R. Martin",
-    "caracteristica": "fantasia",
-    "disponivel": true,
-    "sinopse": "0",
-    "tema": "Ambição, poder e traição em um mundo medieval",
-    "titulo": "O Festim dos Corvos"
-  },
-  {
-    "autor": "George R.R. Martin",
-    "caracteristica": "fantasia",
-    "disponivel": true,
-    "sinopse": "0",
-    "tema": "Lutas pelo trono e magia crescente",
-    "titulo": "A Dança dos Dragões"
-  },
-  {
-    "autor": "George R.R. Martin",
-    "caracteristica": "fantasia",
-    "disponivel": true,
-    "sinopse": "0",
-    "tema": "Guerras civis e reviravoltas políticas",
-    "titulo": "A Tormenta de Espadas"
-  },
-  {
-    "autor": "George R.R. Martin",
-    "caracteristica": "fantasia",
-    "disponivel": true,
-    "sinopse": "0",
-    "tema": "Jogos de poder e conflitos entre casas nobres",
-    "titulo": "A Guerra dos Tronos"
-  },
-  {
-    "autor": "Nnedi Okorafor",
-    "caracteristica": "fantasia",
-    "disponivel": true,
-    "sinopse": "0",
-    "tema": "Descoberta da magia e identidade cultural",
-    "titulo": "Bruxa Akata"
-  },
-  {
-    "autor": "John C. Maxwell",
-    "caracteristica": "autoajuda",
-    "disponivel": true,
-    "sinopse": "0",
-    "tema": "Influência e liderança em qualquer posição",
-    "titulo": "O Líder 360°"
-  },
-  {
-    "autor": "Maurício Sita",
-    "caracteristica": "negocios",
-    "disponivel": true,
-    "sinopse": "0",
-    "tema": "Atitudes e estratégias para empreender com sucesso",
-    "titulo": "Empreendedor Total"
-  },
-  {
-    "autor": "Greer Hendricks",
-    "caracteristica": "suspense",
-    "disponivel": true,
-    "sinopse": "0",
-    "tema": "Relacionamentos abusivos e identidade feminina",
-    "titulo": "A Mulher Entre Nós"
-  },
-  {
-    "autor": "Chris Mooney",
-    "caracteristica": "suspense",
-    "disponivel": true,
-    "sinopse": "0",
-    "tema": "Investigação de sequestros e crimes",
-    "titulo": "Desaparecidos"
-  },
-  {
-    "autor": "Michael Matthews",
-    "caracteristica": "saude",
-    "disponivel": true,
-    "sinopse": "0",
-    "tema": "Programa de treino e alimentação para definição corporal",
-    "titulo": "Malhar, Secar, Definir (Para Mulheres)"
-  },
-  {
-    "autor": "Michael Matthews",
-    "caracteristica": "saude",
-    "disponivel": true,
-    "sinopse": "0",
-    "tema": "Plano de treino eficaz para força e definição",
-    "titulo": "Malhar, Secar, Definir"
-  },
-  {
-    "autor": "Gabriel García Márquez",
-    "caracteristica": "ficcao",
-    "disponivel": true,
-    "sinopse": "0",
-    "tema": "Destino, memória e história de uma família",
-    "titulo": "Cem Anos de Solidão"
-  },
-  {
-    "autor": "Walter Isaacson",
-    "caracteristica": "biografia",
-    "disponivel": true,
-    "sinopse": "0",
-    "tema": "História das mentes por trás da revolução digital",
-    "titulo": "Os Inovadores"
-  },
-  {
-    "autor": "Beverly Jenkins",
-    "caracteristica": "romance",
-    "disponivel": true,
-    "sinopse": "0",
-    "tema": "Racismo, amor e superação no século XIX",
-    "titulo": "Ventos de Mudança"
-  },
-  {
-    "autor": "Patricia Highsmith",
-    "caracteristica": "suspense",
-    "disponivel": true,
-    "sinopse": "0",
-    "tema": "Identidade, inveja e crime",
-    "titulo": "O Talentoso Ripley"
-  }
+  "autor": "J.K. Rowling",
+  "caracteristica": "fantasia",
+  
+  "sinopse": "0",
+  "tema": "Descoberta de um mundo mágico e identidade pessoal",
+  "titulo": "Harry Potter e a Pedra Filosofal"
+},
+{
+  "autor": "Conn Iggulden",
+  "caracteristica": "historico",
+  
+  "sinopse": "0",
+  "tema": "Ascensão ao poder e estratégia política",
+  "titulo": "O Imperador A Morte e Reis"
+},
+{
+  "autor": "Conn Iggulden",
+  "caracteristica": "historico",
+  
+  "sinopse": "0",
+  "tema": "Conflitos militares e honra pessoal",
+  "titulo": "O Imperador Campos de Espadas"
+},
+{
+  "autor": "Conn Iggulden",
+  "caracteristica": "historico",
+  
+  "sinopse": "0",
+  "tema": "Conquista e lealdade em tempos de guerra",
+  "titulo": "O Imperador Os Deuses da Guerra"
+},
+{
+  "autor": "Mary Shelley, Bram Stoker e Robert Louis Stevenson",
+  "caracteristica": "terror",
+  
+  "sinopse": "0",
+  "tema": "Dualidade humana e monstros interiores",
+  "titulo": "Livro Único Frankenstein, Drácula e O Médico e o Monstro"
+},
+{
+  "autor": "Armando Lucas Correa",
+  "caracteristica": "drama",
+  
+  "sinopse": "0",
+  "tema": "Memória, guerra e identidade familiar",
+  "titulo": "A Filha Esquecida"
+},
+{
+  "autor": "Armando Lucas Correa",
+  "caracteristica": "drama",
+  
+  "sinopse": "0",
+  "tema": "Refugiados judeus e o impacto do nazismo",
+  "titulo": "A Garota Alemã"
+},
+{
+  "autor": "Gayle Forman",
+  "caracteristica": "romance",
+  
+  "sinopse": "0",
+  "tema": "Reconciliação e amadurecimento emocional",
+  "titulo": "Para Onde Ela Foi"
+},
+{
+  "autor": "Robert Galbraith",
+  "caracteristica": "suspense",
+  
+  "sinopse": "0",
+  "tema": "Investigação de assassinato e celebridade",
+  "titulo": "O Chamado do Cuco"
+},
+{
+  "autor": "A.J. Barros",
+  "caracteristica": "suspense",
+  
+  "sinopse": "0",
+  "tema": "Segredos históricos e sociedades secretas",
+  "titulo": "O Enigma de Compostela"
+},
+{
+  "autor": "Napoleon Hill",
+  "caracteristica": "autoajuda",
+  
+  "sinopse": "0",
+  "tema": "Filosofia de sucesso pessoal e profissional",
+  "titulo": "As 16 Leis do Sucesso"
+},
+{
+  "autor": "Nassim Nicholas Taleb",
+  "caracteristica": "filosofia",
+  
+  "sinopse": "0",
+  "tema": "Como se beneficiar do caos e da incerteza",
+  "titulo": "Antifrágil"
+},
+{
+  "autor": "Taylor Adams",
+  "caracteristica": "suspense",
+  
+  "sinopse": "0",
+  "tema": "Sobrevivência e decisões extremas",
+  "titulo": "Sem Saída"
+},
+{
+  "autor": "Karin Slaughter",
+  "caracteristica": "suspense",
+  
+  "sinopse": "0",
+  "tema": "Segredos conjugais e psicopatia",
+  "titulo": "Esposa Perfeita"
+},
+{
+  "autor": "Amir Levine e Rachel Heller",
+  "caracteristica": "psicologia",
+  
+  "sinopse": "0",
+  "tema": "Teoria do apego e relacionamentos afetivos",
+  "titulo": "Apegados"
+},
+{
+  "autor": "Charlie Donlea",
+  "caracteristica": "suspense",
+  
+  "sinopse": "0",
+  "tema": "Investigação criminal e trauma do passado",
+  "titulo": "Procure nas Cinzas"
+},
+{
+  "autor": "George R.R. Martin",
+  "caracteristica": "fantasia",
+  
+  "sinopse": "0",
+  "tema": "Ambição, poder e traição em um mundo medieval",
+  "titulo": "O Festim dos Corvos"
+},
+{
+  "autor": "George R.R. Martin",
+  "caracteristica": "fantasia",
+  
+  "sinopse": "0",
+  "tema": "Lutas pelo trono e magia crescente",
+  "titulo": "A Dança dos Dragões"
+},
+{
+  "autor": "George R.R. Martin",
+  "caracteristica": "fantasia",
+  
+  "sinopse": "0",
+  "tema": "Guerras civis e reviravoltas políticas",
+  "titulo": "A Tormenta de Espadas"
+},
+{
+  "autor": "George R.R. Martin",
+  "caracteristica": "fantasia",
+  
+  "sinopse": "0",
+  "tema": "Jogos de poder e conflitos entre casas nobres",
+  "titulo": "A Guerra dos Tronos"
+},
+{
+  "autor": "Nnedi Okorafor",
+  "caracteristica": "fantasia",
+  
+  "sinopse": "0",
+  "tema": "Descoberta da magia e identidade cultural",
+  "titulo": "Bruxa Akata"
+},
+{
+  "autor": "John C. Maxwell",
+  "caracteristica": "autoajuda",
+  
+  "sinopse": "0",
+  "tema": "Influência e liderança em qualquer posição",
+  "titulo": "O Líder 360°"
+},
+{
+  "autor": "Maurício Sita",
+  "caracteristica": "negocios",
+  
+  "sinopse": "0",
+  "tema": "Atitudes e estratégias para empreender com sucesso",
+  "titulo": "Empreendedor Total"
+},
+{
+  "autor": "Greer Hendricks",
+  "caracteristica": "suspense",
+  
+  "sinopse": "0",
+  "tema": "Relacionamentos abusivos e identidade feminina",
+  "titulo": "A Mulher Entre Nós"
+},
+{
+  "autor": "Chris Mooney",
+  "caracteristica": "suspense",
+  
+  "sinopse": "0",
+  "tema": "Investigação de sequestros e crimes",
+  "titulo": "Desaparecidos"
+},
+{
+  "autor": "Michael Matthews",
+  "caracteristica": "saude",
+  
+  "sinopse": "0",
+  "tema": "Programa de treino e alimentação para definição corporal",
+  "titulo": "Malhar, Secar, Definir (Para Mulheres)"
+},
+{
+  "autor": "Michael Matthews",
+  "caracteristica": "saude",
+  
+  "sinopse": "0",
+  "tema": "Plano de treino eficaz para força e definição",
+  "titulo": "Malhar, Secar, Definir"
+},
+{
+  "autor": "Gabriel García Márquez",
+  "caracteristica": "ficcao",
+  
+  "sinopse": "0",
+  "tema": "Destino, memória e história de uma família",
+  "titulo": "Cem Anos de Solidão"
+},
+{
+  "autor": "Walter Isaacson",
+  "caracteristica": "biografia",
+  
+  "sinopse": "0",
+  "tema": "História das mentes por trás da revolução digital",
+  "titulo": "Os Inovadores"
+},
+{
+  "autor": "Beverly Jenkins",
+  "caracteristica": "romance",
+  
+  "sinopse": "0",
+  "tema": "Racismo, amor e superação no século XIX",
+  "titulo": "Ventos de Mudança"
+},
+{
+  "autor": "Patricia Highsmith",
+  "caracteristica": "suspense",
+  
+  "sinopse": "0",
+  "tema": "Identidade, inveja e crime",
+  "titulo": "O Talentoso Ripley"
+}
 ]
