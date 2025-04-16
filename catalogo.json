@@ -1701,9 +1701,10 @@
   },
   {
     "autor": "Nnedi Okorafor",
-    "caracteristica": "fantasia",
-    "sinopse": "0",
-    "tema": "Descoberta da magia e identidade cultural",
+    "caracteristica": "Fantasia e magia",
+    "disponivel": true,
+    "sinopse": "Sunny é uma jovem albina nigeriana que é levada para os Estados Unidos por sua família. Lá, ela descobre que tem poderes mágicos e é uma 'Ekpili', uma bruxa com habilidades especiais. Sunny precisa aprender a controlar seus poderes e navegar em um mundo de magia e perigo, enquanto também lida com as complexidades de sua identidade e cultura.",
+    "tema": "",
     "titulo": "Bruxa Akata"
   },
   {
