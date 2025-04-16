@@ -1743,9 +1743,10 @@
   },
   {
     "autor": "Michael Matthews",
-    "caracteristica": "saude",
-    "sinopse": "0",
-    "tema": "Plano de treino eficaz para força e definição",
+    "caracteristica": "Treinamento físico",
+    "disponivel": true,
+    "sinopse": "Este livro oferece um guia prático e científico para ajudar os leitores a alcançar seus objetivos de condicionamento físico, seja ganhar massa muscular, perder gordura ou melhorar a performance atlética. Michael Matthews apresenta programas de treinamento e nutrição personalizados, baseados em evidências científicas, para ajudar os leitores a alcançar seus objetivos de forma segura e eficaz.",
+    "tema": "",
     "titulo": "Malhar, Secar, Definir"
   },
   {
