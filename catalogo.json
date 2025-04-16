@@ -1618,9 +1618,10 @@
   },
   {
     "autor": "Robert Galbraith",
-    "caracteristica": "suspense",
-    "sinopse": "0",
-    "tema": "Investigação de assassinato e celebridade",
+    "caracteristica": "Mistério",
+    "disponivel": true,
+    "sinopse": "O livro segue a história de Cormoran Strike, um detetive particular que investiga o caso de Lula Landry, uma modelo que caiu de um prédio em Londres. Strike é um veterano de guerra que perdeu uma perna em uma explosão e agora luta para manter seu negócio de detetive particular. Com a ajuda de sua secretária, Robin Ellacott, Strike começa a investigar o caso e descobre que nada é como parece. À medida que a investigação avança, Strike precisa lidar com seus próprios demônios e trabalhar para descobrir a verdade por trás da morte de Lula.",
+    "tema": "",
     "titulo": "O Chamado do Cuco"
   },
   {
