@@ -1662,5 +1662,782 @@
     "sinopse": "Tom Ripley é um jovem carismático e manipulador que se faz passar por Dickie Greenleaf, um playboy rico e charmoso. Quando conhece Dickie em um bar de jazz em Nova York, Tom se fascina pela vida luxuosa e despreocupada do jovem e decide assumir sua identidade. À medida que Tom se aprofunda na vida de Dickie, ele se vê cada vez mais envolvido em uma teia de mentiras, fraudes e assassinatos, levando a uma espiral de eventos que desafiam a moralidade e a sanidade de Tom.",
     "tema": "",
     "titulo": "O Talentoso Ripley"
+  },
+  {
+    "autor": "James Dashner",
+    "caracteristica": "ficcao",
+    "sinopse": "0",
+    "tema": "Sobrevivência e mistério em um ambiente controlado",
+    "titulo": "Maze Runner Correr ou Morrer"
+  },
+  {
+    "autor": "Marcos H.N. Rossi",
+    "caracteristica": "autoajuda",
+    "sinopse": "0",
+    "tema": "Superação pessoal e inspiração de vida",
+    "titulo": "Bread & Joy"
+  },
+  {
+    "autor": "Jennie Rooney",
+    "caracteristica": "suspense",
+    "sinopse": "0",
+    "tema": "Espionagem, lealdade e guerra fria",
+    "titulo": "A Espiã Vermelha"
+  },
+  {
+    "autor": "Lisa Gardner",
+    "caracteristica": "suspense",
+    "sinopse": "0",
+    "tema": "Investigações policiais e assassinatos brutais",
+    "titulo": "Sangue na Neve"
+  },
+  {
+    "autor": "John Flanagan",
+    "caracteristica": "aventura",
+    "sinopse": "0",
+    "tema": "Missões navais e companheirismo juvenil",
+    "titulo": "Brotherband 2"
+  },
+  {
+    "autor": "Eduardo Spohr",
+    "caracteristica": "fantasia",
+    "sinopse": "0",
+    "tema": "Batalhas celestiais e mitologias antigas",
+    "titulo": "Filhos do Éden Herdeiros de Atlântida"
+  },
+  {
+    "autor": "Jonathan Stroud",
+    "caracteristica": "fantasia",
+    "sinopse": "0",
+    "tema": "Magia, demônios e conspirações",
+    "titulo": "O Portão de Ptolomeu"
+  },
+  {
+    "autor": "Marisha Pessl",
+    "caracteristica": "suspense",
+    "sinopse": "0",
+    "tema": "Jornalismo investigativo e segredos obscuros",
+    "titulo": "Filme Noturno"
+  },
+  {
+    "autor": "Stephen King",
+    "caracteristica": "terror",
+    "sinopse": "0",
+    "tema": "Distúrbios do sono e realidade distorcida",
+    "titulo": "Insônia"
+  },
+  {
+    "autor": "Sir Arthur Conan Doyle",
+    "caracteristica": "suspense",
+    "sinopse": "0",
+    "tema": "Investigação e raciocínio dedutivo",
+    "titulo": "Sherlock Holmes"
+  },
+  {
+    "autor": "Cindy Jacobs",
+    "caracteristica": "religiao",
+    "sinopse": "0",
+    "tema": "Práticas ocultas e discernimento espiritual",
+    "titulo": "Desmascarando o Ocultismo"
+  },
+  {
+    "autor": "Walter Isaacson",
+    "caracteristica": "ficcao",
+    "sinopse": "0",
+    "tema": "Invasões, identidade e consequências tecnológicas",
+    "titulo": "Os Inovadores"
+  },
+  {
+    "autor": "Stephen King",
+    "caracteristica": "biografia",
+    "sinopse": "0",
+    "tema": "Reflexões sobre o processo criativo na escrita",
+    "titulo": "Sobre a Escrita"
+  },
+  {
+    "autor": "Dr. Cláudio Ambrósio",
+    "caracteristica": "saude",
+    "sinopse": "0",
+    "tema": "Longevidade e qualidade de vida",
+    "titulo": "E Se Você Viver Mais de 100 Anos"
+  },
+  {
+    "autor": "Elder",
+    "caracteristica": "negocios",
+    "sinopse": "0",
+    "tema": "Investimentos e disciplina financeira",
+    "titulo": "Como se Transformar em um Operador e um Investidor de Sucesso"
+  },
+  {
+    "autor": "Donald Trump",
+    "caracteristica": "negocios",
+    "sinopse": "0",
+    "tema": "Motivação financeira e empreendedorismo",
+    "titulo": "Nós Queremos que Você Fique Rico"
+  },
+  {
+    "autor": "Roberto Justus",
+    "caracteristica": "biografia",
+    "sinopse": "0",
+    "tema": "Carreira, disciplina e visão empreendedora",
+    "titulo": "Construindo uma Vida"
+  },
+  {
+    "autor": "Paulo Vieira",
+    "caracteristica": "autoajuda",
+    "sinopse": "0",
+    "tema": "Alcance de metas e desenvolvimento pessoal",
+    "titulo": "Poder e Alta Performance"
+  },
+  {
+    "autor": "Augusto Cury",
+    "caracteristica": "psicologia",
+    "sinopse": "0",
+    "tema": "Controle emocional e inteligência emocional",
+    "titulo": "Gestão da Emoção"
+  },
+  {
+    "autor": "Jaque Diniz",
+    "caracteristica": "autoajuda",
+    "sinopse": "0",
+    "tema": "Motivação, fé e realização de objetivos",
+    "titulo": "Transformando Sonhos em Realidade"
+  },
+  {
+    "autor": "Cezar Souza",
+    "caracteristica": "autoajuda",
+    "sinopse": "0",
+    "tema": "Potencial humano e ambição pessoal",
+    "titulo": "Você é do Tamanho dos Seus Sonhos"
+  },
+  {
+    "autor": "Abraham H. Maslow",
+    "caracteristica": "psicologia",
+    "sinopse": "0",
+    "tema": "Realização pessoal e autoconhecimento",
+    "titulo": "O Diário de Negócios de Maslow"
+  },
+  {
+    "autor": "Gary Keller",
+    "caracteristica": "negocios",
+    "sinopse": "0",
+    "tema": "Foco e produtividade máxima",
+    "titulo": "A Única Coisa"
+  },
+  {
+    "autor": "Adam Grant",
+    "caracteristica": "negocios",
+    "sinopse": "0",
+    "tema": "Generosidade e sucesso profissional",
+    "titulo": "Dar e Receber"
+  },
+  {
+    "autor": "Pam Grout",
+    "caracteristica": "espiritualidade",
+    "sinopse": "0",
+    "tema": "Energia mental e poder da intenção",
+    "titulo": "Energia ao Quadrado"
+  },
+  {
+    "autor": "Anne Holt",
+    "caracteristica": "suspense",
+    "sinopse": "0",
+    "tema": "Investigação de crime em local isolado",
+    "titulo": "1222"
+  },
+  {
+    "autor": "Yann Martel",
+    "caracteristica": "ficcao",
+    "sinopse": "0",
+    "tema": "Sobrevivência e espiritualidade em alto-mar",
+    "titulo": "As Aventuras de Pi"
+  },
+  {
+    "autor": "Kathryn Lasky",
+    "caracteristica": "fantasia",
+    "sinopse": "0",
+    "tema": "Corujas guerreiras e destino heroico",
+    "titulo": "A Lenda dos Guardiões A Captura"
+  },
+  {
+    "autor": "James Bowen",
+    "caracteristica": "biografia",
+    "sinopse": "0",
+    "tema": "Amizade entre um homem em recuperação e seu gato",
+    "titulo": "Um Gato Chamado BOB"
+  },
+  {
+    "autor": "Michael Morpurgo",
+    "caracteristica": "drama",
+    "sinopse": "0",
+    "tema": "Segredos, guerra e amadurecimento",
+    "titulo": "Sombra"
+  },
+  {
+    "autor": "Ruth Ware",
+    "caracteristica": "suspense",
+    "sinopse": "0",
+    "tema": "Mistério familiar e herança sombria",
+    "titulo": "A Morte da Sra. Westaway"
+  },
+  {
+    "autor": "Pascal Mercier",
+    "caracteristica": "filosofia",
+    "sinopse": "0",
+    "tema": "Identidade, memória e busca por sentido",
+    "titulo": "Trem Noturno pra Lisboa"
+  },
+  {
+    "autor": "Ken Follett",
+    "caracteristica": "drama",
+    "sinopse": "0",
+    "tema": "Ambição, poder e traição na elite financeira",
+    "titulo": "Uma Fortuna Perigosa"
+  },
+  {
+    "autor": "Jojo Moyes",
+    "caracteristica": "romance",
+    "sinopse": "0",
+    "tema": "Relacionamento improvável e dilemas emocionais",
+    "titulo": "Como Eu Era Antes de Você"
+  },
+  {
+    "autor": "Alyson Noël",
+    "caracteristica": "fantasia",
+    "sinopse": "0",
+    "tema": "Imortalidade e amor sobrenatural",
+    "titulo": "Os Imortais (Para Sempre)"
+  },
+  {
+    "autor": "Neil Veles",
+    "caracteristica": "religiao",
+    "sinopse": "0",
+    "tema": "Fé cristã e redenção por meio do sofrimento",
+    "titulo": "Por Suas Chagas"
+  },
+  {
+    "autor": "Rainbow Rowell",
+    "caracteristica": "ficcao",
+    "sinopse": "0",
+    "tema": "Fandom, amadurecimento e descoberta pessoal",
+    "titulo": "Fangirl"
+  },
+  {
+    "autor": "John Sack",
+    "caracteristica": "suspense",
+    "sinopse": "0",
+    "tema": "Conspiração religiosa e investigações secretas",
+    "titulo": "A Conspiração Franciscana"
+  },
+  {
+    "autor": "Carlos Castañeda",
+    "caracteristica": "espiritualidade",
+    "sinopse": "0",
+    "tema": "Exploração de mundos ocultos e consciência",
+    "titulo": "A Verba do Diabo"
+  },
+  {
+    "autor": "Ann Leckie",
+    "caracteristica": "ficcao",
+    "sinopse": "0",
+    "tema": "Justiça intergaláctica e identidade artificial",
+    "titulo": "Justiça Ancilar"
+  },
+  {
+    "autor": "A.J. Finn",
+    "caracteristica": "suspense",
+    "sinopse": "0",
+    "tema": "Agorafobia e segredos de vizinhança",
+    "titulo": "Mulher na Janela"
+  },
+  {
+    "autor": "Neal Stephenson",
+    "caracteristica": "ficcao",
+    "sinopse": "0",
+    "tema": "Tecnologia, paranoia e sociedade moderna",
+    "titulo": "Nevasca"
+  },
+  {
+    "autor": "Cesar Bravo",
+    "caracteristica": "terror",
+    "sinopse": "0",
+    "tema": "Mistério e violência no interior do Brasil",
+    "titulo": "Ultra Cargem"
+  },
+  {
+    "autor": "Marissa Meyer",
+    "caracteristica": "ficcao",
+    "sinopse": "0",
+    "tema": "Poderes especiais e moralidade distorcida",
+    "titulo": "Renegados"
+  },
+  {
+    "autor": "C.J. Tudor",
+    "caracteristica": "suspense",
+    "sinopse": "0",
+    "tema": "Segredos de infância e crimes no presente",
+    "titulo": "O Homem de Giz"
+  },
+  {
+    "autor": "Stephen King",
+    "caracteristica": "drama",
+    "sinopse": "0",
+    "tema": "Milagre sobrenatural em prisão",
+    "titulo": "À Espera de um Milagre"
+  },
+  {
+    "autor": "Karin Slaughter",
+    "caracteristica": "suspense",
+    "sinopse": "0",
+    "tema": "Crimes brutais e tensões pessoais",
+    "titulo": "Tríptico"
+  },
+  {
+    "autor": "Charlaine Harris",
+    "caracteristica": "fantasia",
+    "sinopse": "0",
+    "tema": "Vampiros e romance no sul dos EUA",
+    "titulo": "Morto Até o Anoitecer"
+  },
+  {
+    "autor": "Isabel Allende",
+    "caracteristica": "fantasia",
+    "sinopse": "0",
+    "tema": "Aventura, ecologia e descobertas místicas",
+    "titulo": "A Cidade das Feras"
+  },
+  {
+    "autor": "Sara Gruen",
+    "caracteristica": "drama",
+    "sinopse": "0",
+    "tema": "Romance e sobrevivência em um circo itinerante",
+    "titulo": "Água para Elefantes"
+  },
+  {
+    "autor": "Gary Namie",
+    "caracteristica": "psicologia",
+    "sinopse": "0",
+    "tema": "Assédio moral no ambiente profissional",
+    "titulo": "Bullying no Trabalho"
+  },
+  {
+    "autor": "Ademir Demarchi",
+    "caracteristica": "ficcao",
+    "sinopse": "0",
+    "tema": "Narrativas experimentais e crítica social",
+    "titulo": "Espantalhos"
+  },
+  {
+    "autor": "Kurt Cobain",
+    "caracteristica": "biografia",
+    "sinopse": "0",
+    "tema": "Pensamentos íntimos e angústias de um ícone do rock",
+    "titulo": "Diários"
+  },
+  {
+    "autor": "Junior Rostirola",
+    "caracteristica": "religiao",
+    "sinopse": "0",
+    "tema": "Reflexões cristãs e espiritualidade cotidiana",
+    "titulo": "Café com Deus Pai"
+  },
+  {
+    "autor": "Elizabeth Rudnick",
+    "caracteristica": "fantasia",
+    "sinopse": "0",
+    "tema": "Amor e redenção em uma fábula clássica",
+    "titulo": "Bela e a Fera"
+  },
+  {
+    "autor": "Annabel Lyon",
+    "caracteristica": "historico",
+    "sinopse": "0",
+    "tema": "Mentoria filosófica e política na Grécia antiga",
+    "titulo": "O Filósofo + O Imperador"
+  },
+  {
+    "autor": "Philip Pullman",
+    "caracteristica": "fantasia",
+    "sinopse": "0",
+    "tema": "Universos paralelos e destino mágico",
+    "titulo": "A Bússola de Ouro"
+  },
+  {
+    "autor": "Alex Michaelides",
+    "caracteristica": "suspense",
+    "sinopse": "0",
+    "tema": "Mistério psicológico e silêncio perturbador",
+    "titulo": "A Paciência Silenciosa"
+  },
+  {
+    "autor": "Cirque du Soleil",
+    "caracteristica": "arte",
+    "sinopse": "0",
+    "tema": "Inovação artística e espetáculo teatral moderno",
+    "titulo": "A Reinvenção do Espetáculo"
+  },
+  {
+    "autor": "Barbara Gancia",
+    "caracteristica": "biografia",
+    "sinopse": "0",
+    "tema": "Dependência química e superação pessoal",
+    "titulo": "A Saideira"
+  },
+  {
+    "autor": "Guido de Camargo Potier",
+    "caracteristica": "ciencia",
+    "sinopse": "0",
+    "tema": "Fenômenos atmosféricos e proteção elétrica",
+    "titulo": "Física dos Raios & Engenharia de Proteção"
+  },
+  {
+    "autor": "Stephen King e Peter Straub",
+    "caracteristica": "fantasia",
+    "sinopse": "0",
+    "tema": "Viagens entre mundos e luta contra o mal",
+    "titulo": "O Talismã"
+  },
+  {
+    "autor": "Ana Beatriz Brandão",
+    "caracteristica": "fantasia",
+    "sinopse": "0",
+    "tema": "Segredos sombrios e conexões sobrenaturais",
+    "titulo": "Sob a Luz da Escuridão"
+  },
+  {
+    "autor": "Robert Harris",
+    "caracteristica": "suspense",
+    "sinopse": "0",
+    "tema": "Política, segredos e conspiração moderna",
+    "titulo": "O Fantasma"
+  },
+  {
+    "autor": "Jo Nesbo",
+    "caracteristica": "suspense",
+    "sinopse": "0",
+    "tema": "Crime organizado e investigações policiais",
+    "titulo": "O Redentor"
+  },
+  {
+    "autor": "Kristina Ohlsson",
+    "caracteristica": "suspense",
+    "sinopse": "0",
+    "tema": "Desaparecimentos infantis e mistério",
+    "titulo": "Indesejadas"
+  },
+  {
+    "autor": "Barbara Delinsky",
+    "caracteristica": "drama",
+    "sinopse": "0",
+    "tema": "Descobertas familiares e identidade pessoal",
+    "titulo": "Impressões Digitais"
+  },
+  {
+    "autor": "João Nunes Maia",
+    "caracteristica": "espiritualidade",
+    "sinopse": "0",
+    "tema": "Mediunidade e evolução espiritual",
+    "titulo": "Iniciação Virgem Astral"
+  },
+  {
+    "autor": "Maria Dueñas",
+    "caracteristica": "drama",
+    "sinopse": "0",
+    "tema": "Guerra civil e recomeços através da costura",
+    "titulo": "O Tempo Entre Costuras"
+  },
+  {
+    "autor": "Julie de Lucca",
+    "caracteristica": "romance",
+    "sinopse": "0",
+    "tema": "Amor em meio a conflitos emocionais",
+    "titulo": "Ahmat"
+  },
+  {
+    "autor": "Curtis Jobling",
+    "caracteristica": "fantasia",
+    "sinopse": "0",
+    "tema": "Transformações e lutas entre criaturas lendárias",
+    "titulo": "Wereworld (A Origem do Lobo)"
+  },
+  {
+    "autor": "Oral Roberts",
+    "caracteristica": "religiao",
+    "sinopse": "0",
+    "tema": "Fé e perseverança na missão espiritual",
+    "titulo": "Ainda Fazendo o Impossível"
+  },
+  {
+    "autor": "Wayne Jacobsen",
+    "caracteristica": "religiao",
+    "sinopse": "0",
+    "tema": "Crítica à religiosidade institucional",
+    "titulo": "Por que Você Não Quer Mais Ir à Igreja"
+  },
+  {
+    "autor": "Stephenie Perkins",
+    "caracteristica": "romance",
+    "sinopse": "0",
+    "tema": "Primeiros amores e descobertas em Paris",
+    "titulo": "Anna e o Beijo Francês"
+  },
+  {
+    "autor": "Scott Turow",
+    "caracteristica": "suspense",
+    "sinopse": "0",
+    "tema": "Crimes e questões de identidade familiar",
+    "titulo": "Idênticos"
+  },
+  {
+    "autor": "Maria Dueñas",
+    "caracteristica": "drama",
+    "sinopse": "0",
+    "tema": "Esperança e novos começos após perdas",
+    "titulo": "A Melhor História Está por Vir"
+  },
+  {
+    "autor": "Lars Kepler",
+    "caracteristica": "suspense",
+    "sinopse": "0",
+    "tema": "Hipnose, assassinatos e mente humana",
+    "titulo": "O Hipnotista"
+  },
+  {
+    "autor": "Stephen E. Ambrose",
+    "caracteristica": "historico",
+    "sinopse": "0",
+    "tema": "Irmandade e coragem durante a Segunda Guerra Mundial",
+    "titulo": "Band of Brothers"
+  },
+  {
+    "autor": "Bispo Rodovalho",
+    "caracteristica": "religiao",
+    "sinopse": "0",
+    "tema": "Diálogo entre ciência e espiritualidade",
+    "titulo": "Ciência e Fé"
+  },
+  {
+    "autor": "Joe Hill",
+    "caracteristica": "terror",
+    "sinopse": "0",
+    "tema": "Assombração moderna e trauma psicológico",
+    "titulo": "Fantasma do Século XX"
+  },
+  {
+    "autor": "Torben Grael",
+    "caracteristica": "biografia",
+    "sinopse": "0",
+    "tema": "Vida e conquistas de um dos maiores velejadores do Brasil",
+    "titulo": "Lobos do Mar"
+  },
+  {
+    "autor": "Ernest Hemingway",
+    "caracteristica": "memorias",
+    "sinopse": "0",
+    "tema": "Reflexões e experiências do autor em Paris",
+    "titulo": "Paris é uma Festa"
+  },
+  {
+    "autor": "Henry Miller",
+    "caracteristica": "ficcao",
+    "sinopse": "0",
+    "tema": "Erotismo, liberdade e vida boêmia",
+    "titulo": "Trópico de Capricórnio"
+  },
+  {
+    "autor": "Isabel Allende",
+    "caracteristica": "romance",
+    "sinopse": "0",
+    "tema": "Paixão, música e identidade cultural",
+    "titulo": "De Amor e de Samba"
+  },
+  {
+    "autor": "Lily Graham",
+    "caracteristica": "suspense",
+    "sinopse": "0",
+    "tema": "Mistérios escondidos em uma livraria parisiense",
+    "titulo": "O Segredo da Livraria de Paris"
+  },
+  {
+    "autor": "William P. Young",
+    "caracteristica": "religiao",
+    "sinopse": "0",
+    "tema": "Fé, redenção e descoberta espiritual",
+    "titulo": "A Travessia"
+  },
+  {
+    "autor": "Daniel Mastral",
+    "caracteristica": "suspense",
+    "sinopse": "0",
+    "tema": "Combate espiritual e mistérios sobrenaturais",
+    "titulo": "Águas Turvas"
+  },
+  {
+    "autor": "John Burnham",
+    "caracteristica": "romance",
+    "sinopse": "0",
+    "tema": "Amor proibido entre mundos diferentes",
+    "titulo": "A Plebeia"
+  },
+  {
+    "autor": "Mantak Chia",
+    "caracteristica": "saude",
+    "sinopse": "0",
+    "tema": "Cura energética e práticas taoístas para órgãos internos",
+    "titulo": "Chi Nei Tsang"
+  },
+  {
+    "autor": "David Baldacci",
+    "caracteristica": "suspense",
+    "sinopse": "0",
+    "tema": "Conspiração política e segredos de Estado",
+    "titulo": "Toda a Verdade"
+  },
+  {
+    "autor": "Hal Elrod",
+    "caracteristica": "autoajuda",
+    "sinopse": "0",
+    "tema": "Hábitos matinais para transformar sua vida",
+    "titulo": "O Milagre da Manhã"
+  },
+  {
+    "autor": "Gordon Dahlquist",
+    "caracteristica": "fantasia",
+    "sinopse": "0",
+    "tema": "Segredos alquímicos e sociedades ocultas",
+    "titulo": "O Volume Negro"
+  },
+  {
+    "autor": "Lauren Oliver",
+    "caracteristica": "suspense",
+    "sinopse": "0",
+    "tema": "Competição extrema e sobrevivência adolescente",
+    "titulo": "Pânico"
+  },
+  {
+    "autor": "Conn Iggulden",
+    "caracteristica": "historico",
+    "sinopse": "0",
+    "tema": "Ascensão ao poder e estratégia política",
+    "titulo": "O Imperador A Morte e Reis"
+  },
+  {
+    "autor": "Conn Iggulden",
+    "caracteristica": "historico",
+    "sinopse": "0",
+    "tema": "Conflitos militares e honra pessoal",
+    "titulo": "O Imperador Campos de Espadas"
+  },
+  {
+    "autor": "Conn Iggulden",
+    "caracteristica": "historico",
+    "sinopse": "0",
+    "tema": "Conquista e lealdade em tempos de guerra",
+    "titulo": "O Imperador Os Deuses da Guerra"
+  },
+  {
+    "autor": "Mary Shelley, Bram Stoker e Robert Louis Stevenson",
+    "caracteristica": "terror",
+    "sinopse": "0",
+    "tema": "Dualidade humana e monstros interiores",
+    "titulo": "Livro Único Frankenstein, Drácula e O Médico e o Monstro"
+  },
+  {
+    "autor": "Armando Lucas Correa",
+    "caracteristica": "drama",
+    "sinopse": "0",
+    "tema": "Memória, guerra e identidade familiar",
+    "titulo": "A Filha Esquecida"
+  },
+  {
+    "autor": "Armando Lucas Correa",
+    "caracteristica": "drama",
+    "sinopse": "0",
+    "tema": "Refugiados judeus e o impacto do nazismo",
+    "titulo": "A Garota Alemã"
+  },
+  {
+    "autor": "Gayle Forman",
+    "caracteristica": "romance",
+    "sinopse": "0",
+    "tema": "Reconciliação e amadurecimento emocional",
+    "titulo": "Para Onde Ela Foi"
+  },
+  {
+    "autor": "A.J. Barros",
+    "caracteristica": "suspense",
+    "sinopse": "0",
+    "tema": "Segredos históricos e sociedades secretas",
+    "titulo": "O Enigma de Compostela"
+  },
+  {
+    "autor": "Napoleon Hill",
+    "caracteristica": "autoajuda",
+    "sinopse": "0",
+    "tema": "Filosofia de sucesso pessoal e profissional",
+    "titulo": "As 16 Leis do Sucesso"
+  },
+  {
+    "autor": "Nassim Nicholas Taleb",
+    "caracteristica": "filosofia",
+    "sinopse": "0",
+    "tema": "Como se beneficiar do caos e da incerteza",
+    "titulo": "Antifrágil"
+  },
+  {
+    "autor": "Taylor Adams",
+    "caracteristica": "suspense",
+    "sinopse": "0",
+    "tema": "Sobrevivência e decisões extremas",
+    "titulo": "Sem Saída"
+  },
+  {
+    "autor": "Karin Slaughter",
+    "caracteristica": "suspense",
+    "sinopse": "0",
+    "tema": "Segredos conjugais e psicopatia",
+    "titulo": "Esposa Perfeita"
+  },
+  {
+    "autor": "Amir Levine e Rachel Heller",
+    "caracteristica": "psicologia",
+    "sinopse": "0",
+    "tema": "Teoria do apego e relacionamentos afetivos",
+    "titulo": "Apegados"
+  },
+  {
+    "autor": "Charlie Donlea",
+    "caracteristica": "suspense",
+    "sinopse": "0",
+    "tema": "Investigação criminal e trauma do passado",
+    "titulo": "Procure nas Cinzas"
+  },
+  {
+    "autor": "George R.R. Martin",
+    "caracteristica": "fantasia",
+    "sinopse": "0",
+    "tema": "Ambição, poder e traição em um mundo medieval",
+    "titulo": "O Festim dos Corvos"
+  },
+  {
+    "autor": "George R.R. Martin",
+    "caracteristica": "fantasia",
+    "sinopse": "0",
+    "tema": "Lutas pelo trono e magia crescente",
+    "titulo": "A Dança dos Dragões"
+  },
+  {
+    "autor": "George R.R. Martin",
+    "caracteristica": "fantasia",
+    "sinopse": "0",
+    "tema": "Guerras civis e reviravoltas políticas",
+    "titulo": "A Tormenta de Espadas"
+  },
+  {
+    "autor": "George R.R. Martin",
+    "caracteristica": "fantasia",
+    "sinopse": "0",
+    "tema": "Jogos de poder e conflitos entre casas nobres",
+    "titulo": "A Guerra dos Tronos"
   }
 ]
