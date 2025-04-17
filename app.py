@@ -24,9 +24,16 @@ def buscar():
     termo_normalizado = normalizar(termo)
     catalogo = carregar_catalogo()
 
-    # 1. Buscar por título exato (após normalizar)
-    for livro in catalogo:
-        if termo_normalizado == normalizar(livro.get('titulo', '')):
+    # 1. Buscar por título que contenha o termo (parcial e normalizado)
+    livros_encontrados = [
+        livro for livro in catalogo
+        if termo_normalizado in normalizar(livro.get('titulo', ''))
+    ]
+
+    if livros_encontrados:
+        # Se encontrar apenas um livro, retorna como detalhe
+        if len(livros_encontrados) == 1:
+            livro = livros_encontrados[0]
             imagem = f"/imagens/{livro['titulo']}.png"
             return jsonify({
                 "tipo": "livro",
@@ -35,6 +42,19 @@ def buscar():
                 "sinopse": livro.get('sinopse', ''),
                 "disponivel": livro.get('disponivel', False),
                 "imagem": imagem
+            })
+        else:
+            return jsonify({
+                "tipo": "lista",
+                "termo": termo,
+                "livros": [
+                    {
+                        "titulo": livro['titulo'],
+                        "autor": livro['autor'],
+                        "disponivel": livro.get('disponivel', False)
+                    }
+                    for livro in livros_encontrados
+                ]
             })
 
     # 2. Buscar por autor (parcial e normalizado)
@@ -56,7 +76,6 @@ def buscar():
         })
 
     return jsonify({"erro": "Nenhum resultado encontrado"}), 404
-
 
 @app.route('/imagens/<path:filename>')
 def imagens(filename):
