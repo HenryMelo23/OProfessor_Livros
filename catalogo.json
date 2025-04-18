@@ -1753,7 +1753,8 @@
   {
     "autor": "Stephen King",
     "caracteristica": "biografia",
-    "sinopse": "0",
+    "disponivel": true,
+    "sinopse": "\"Sobre a Escrita\" é um livro essencial para qualquer pessoa interessada no misterioso e fascinante mundo da criação literária. Neste livro, o mestre do terror, Stephen King, abre seu caderno de anotações e compartilha suas experiências e insights sobre a arte de escrever. Com seu estilo direto e cativante, King leva os leitores em uma jornada pela sua própria carreira, oferecendo dicas práticas, conselhos inspiradores e revelações surpreendentes sobre o processo criativo. De plot twists a bloqueios de escritor, King aborda todos os aspectos da escrita, revelando os segredos por trás de seu sucesso e compartilhando lições valiosas que ele aprendeu ao longo do caminho. Seja você um escritor experiente ou um aspirante, \"Sobre a Escrita\" é um guia indispensável e estimulante para ajudar você a melhorar seu ofício e se apaixonar ainda mais pela magia das palavras.",
     "tema": "Reflexões sobre o processo criativo na escrita",
     "titulo": "Sobre a Escrita"
   },
