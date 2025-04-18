@@ -1401,10 +1401,10 @@
   },
   {
     "autor": "James Dashner",
-    "caracteristica": "Romance, mistério, aventura e suspense",
+    "caracteristica": "ficcao",
     "disponivel": true,
-    "sinopse": "Thomas acorda em um lugar desconhecido sem memória de seu passado. Preso em um labirinto mortal com outros jovens, ele precisa encontrar uma saída antes que seja tarde demais. Com criaturas letais e aliados incertos, Thomas enfrenta um desafio que pode ser sua única chance de sobrevivência.",
-    "tema": "",
+    "sinopse": "Thomas acorda em um lugar desconhecido, cercado por muros gigantes e sem lembrar quem é. Ao seu redor, outros jovens tentam sobreviver enquanto procuram uma saída de um labirinto que muda todos os dias. A cada passo, o mistério se aprofunda — e a única certeza é que nada ali é por acaso.",
+    "tema": "Sobrevivência e mistério em um ambiente controlado",
     "titulo": "Maze Runner Correr ou Morrer"
   },
   {
@@ -2440,12 +2440,12 @@
     "tema": "Jogos de poder e conflitos entre casas nobres",
     "titulo": "A Guerra dos Tronos"
   },
-{
-  "autor": "Francesca Marciano",
-  "caracteristica": "drama",
-  "sinopse": "0",
-  "tema": "Memórias familiares e redescoberta pessoal",
-  "titulo": "Casa Rossa"
+  {
+    "autor": "Francesca Marciano",
+    "caracteristica": "drama",
+    "sinopse": "0",
+    "tema": "Memórias familiares e redescoberta pessoal",
+    "titulo": "Casa Rossa"
   },
   {
     "autor": "Yves de La Taille",
