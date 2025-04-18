@@ -1769,7 +1769,8 @@
   {
     "autor": "Elder",
     "caracteristica": "negocios",
-    "sinopse": "0",
+    "disponivel": true,
+    "sinopse": "\"Descubra os segredos para se tornar um operador e investidor de sucesso com Elder, um expert no assunto. Em 'Como se Transformar em um Operador e um Investidor de Sucesso', Elder revela suas estratégias comprovadas e táticas eficazes para navegar no mundo dos investimentos e do mercado financeiro. Aprenda as habilidades que o transformarão em um operador hábil e um investidor sábio, e descubra como tomar o controle de seu futuro financeiro. Com dicas práticas e conselhos valiosos, este livro é um guia indispensável para quem deseja alcançar o sucesso financeiro e construir um patrimônio sólido. Siga os passos de Elder e descubra o poder de se tornar um operador e investidor de elite.\"",
     "tema": "Investimentos e disciplina financeira",
     "titulo": "Como se Transformar em um Operador e um Investidor de Sucesso"
   },
