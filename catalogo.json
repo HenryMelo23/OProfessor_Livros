@@ -1722,7 +1722,8 @@
   {
     "autor": "Stephen King",
     "caracteristica": "terror",
-    "sinopse": "0",
+    "disponivel": true,
+    "sinopse": "Em \"Insônia\", Ralph Roberts é um homem comum que começa a sofrer de noites cada vez mais curtas — até que o sono simplesmente o abandona. Mas a verdadeira inquietação começa quando ele passa a enxergar coisas que ninguém mais vê: auras, figuras misteriosas e uma realidade escondida por trás do mundo cotidiano. Conforme a insônia se aprofunda, Ralph se vê no centro de uma batalha entre forças invisíveis que podem decidir o destino de muitas vidas. Um suspense sobrenatural que mistura o real com o fantástico, tocando em temas como envelhecimento, perda e o poder de escolhas silenciosas.",
     "tema": "Distúrbios do sono e realidade distorcida",
     "titulo": "Insônia"
   },
