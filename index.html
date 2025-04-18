@@ -43,6 +43,14 @@
             body {
                 margin-left: 180px;
             }
+            .subtitulo {
+                color: white;
+                font-size: 18px;
+                text-align: center;
+                margin-top: -10px;
+                margin-bottom: 20px;
+            }
+
         }
         .favorito-icone {
             position: absolute;
@@ -229,11 +237,20 @@
         body {
             padding-top: 70px; /* espaço para a navbar não cobrir o conteúdo */
         }
+        .subtitulo {
+            color: white;
+            font-size: 18px;
+            text-align: center;
+            margin-top: -10px;
+            margin-bottom: 20px;
+        }
         }
     </style>
 </head>
 <body>
-    <h1> 📚O Professor👴</h1>
+    <h1 class="logo">📚 O Professor 👴</h1>
+    <p class="subtitulo">venda de livros usados</p>
+
     <input type="text" id="titulo" placeholder="Digite o título do livro">
     <button onclick="buscarLivro()">Buscar</button>
     <div id="contador-livros">Temos disponíveis: ...</div>
@@ -241,10 +258,9 @@
     <div id="resultado"></div>
 
     <div class="sidebar">
-        <a href="index.html">Início</a>
         <a href="estante.html">Estante</a>
         <a href="Contato.html">Contato</a>
-        <a href="informações.html">Informações</a>
+        <a href="#">Informações</a>
         <a href="#" onclick="mostrarFavoritos()">Favoritos ❤️</a>
         <a href="https://www.instagram.com/seuluiz_livros/" target="_blank">Instagram</a>
     </div>
@@ -252,9 +268,9 @@
         <a href="index.html">Início</a>
         <a href="estante.html">Estante</a>
         <a href="Contato.html">Contato</a>
-        <a href="informações.html">Informações</a>
-        <a href="https://www.instagram.com/seuluiz_livros/" target="_blank">Instagram</a>
         
+        <a href="https://www.instagram.com/seuluiz_livros/" target="_blank">Instagram</a>
+        <a href="#">Informações</a>
       </nav>
 
     <script>
