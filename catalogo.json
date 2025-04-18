@@ -1689,9 +1689,10 @@
   },
   {
     "autor": "John Flanagan",
-    "caracteristica": "aventura",
-    "sinopse": "0",
-    "tema": "Missões navais e companheirismo juvenil",
+    "caracteristica": "",
+    "disponivel": true,
+    "sinopse": "Após a vitória em seu primeiro desafio, a turma de jovens guerreiros da Brotherband enfrenta uma nova missão: navegar em mares traiçoeiros e enfrentar inimigos perigosos. Com coragem e amizade, eles devem lutar para proteger sua honra e conquistar novos feitos, enquanto as aventuras os levam a territórios desconhecidos.",
+    "tema": "",
     "titulo": "Brotherband 2"
   },
   {
