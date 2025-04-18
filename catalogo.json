@@ -1802,7 +1802,8 @@
   {
     "autor": "Jaque Diniz",
     "caracteristica": "autoajuda",
-    "sinopse": "0",
+    "disponivel": true,
+    "sinopse": "O livro \"Transformando Sonhos em Realidade\" aborda a questão de como os sonhos e objetivos pessoais podem ser transformados em realidades concretas e alcançáveis. Através de histórias de sucesso e experiências, o autor oferece dicas e estratégias para superar obstáculos e alcançar metas significativas. O livro também explora a importância da autoconfiança, do planejamento e da perseverança na realização de sonhos.",
     "tema": "Motivação, fé e realização de objetivos",
     "titulo": "Transformando Sonhos em Realidade"
   },
