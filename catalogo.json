@@ -1730,7 +1730,8 @@
   {
     "autor": "Sir Arthur Conan Doyle",
     "caracteristica": "suspense",
-    "sinopse": "0",
+    "disponivel": true,
+    "sinopse": "Sherlock Holmes é uma coleção de histórias de mistério clássicas e emocionantes escritas por Sir Arthur Conan Doyle. Acompanhando o lendário detetive Sherlock Holmes e seu parceiro, Dr. Watson, enquanto eles navegam por mistérios intrincados e misteriosos em Londres vitoriana. Com sua mente aguçada, habilidades de observação aguçadas e habilidade de resolver crimes, Sherlock Holmes deixa poucos mistérios não resolvidos. De crimes passionais a assassinatos enigmáticos, cada história o levará a uma jornada cheia de suspense, onde a lógica e a inteligência vencem no final. Junte-se a eles em suas aventuras cheias de suspense e descubra o mundo fascinante do maior detetive de todos os tempos!",
     "tema": "Investigação e raciocínio dedutivo",
     "titulo": "Sherlock Holmes"
   },
