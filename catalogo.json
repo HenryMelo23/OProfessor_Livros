@@ -1730,15 +1730,15 @@
   {
     "autor": "Sir Arthur Conan Doyle",
     "caracteristica": "suspense",
-    "disponivel": true,
-    "sinopse": "Sherlock Holmes é o detetive mais famoso da literatura, conhecido por sua inteligência afiada, olhar clínico e métodos dedutivos únicos. Ao lado de seu fiel amigo e cronista, Dr. Watson, ele desvenda mistérios complexos que vão desde crimes brutais até enigmas aparentemente impossíveis. Ambientadas na Londres vitoriana, as histórias misturam suspense, raciocínio lógico e personagens marcantes, criando uma atmosfera envolvente que conquistou leitores por gerações. Cada caso é um quebra-cabeça — e Holmes sempre encontra a peça que falta.",
+    "sinopse": "0",
     "tema": "Investigação e raciocínio dedutivo",
     "titulo": "Sherlock Holmes"
   },
   {
     "autor": "Cindy Jacobs",
     "caracteristica": "religiao",
-    "sinopse": "0",
+    "disponivel": true,
+    "sinopse": "Em \"Desmascarando o Ocultismo\", Cindy Jacobs oferece uma visão clara e direta sobre as influências ocultas que, segundo ela, afetam a vida espiritual e emocional das pessoas. Com base em sua experiência como intercessora e líder cristã, ela aborda práticas espirituais perigosas, ensina como identificá-las e compartilha orientações para viver em liberdade e proteção espiritual. É um guia voltado para quem busca discernimento, fortalecimento da fé e ferramentas para enfrentar batalhas espirituais com sabedoria e autoridade.",
     "tema": "Práticas ocultas e discernimento espiritual",
     "titulo": "Desmascarando o Ocultismo"
   },
