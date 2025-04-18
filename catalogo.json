@@ -1794,7 +1794,8 @@
   {
     "autor": "Augusto Cury",
     "caracteristica": "psicologia",
-    "sinopse": "0",
+    "disponivel": true,
+    "sinopse": "Este livro aborda o tema da gestão da emoção, discutendo como as emoções influenciam nosso comportamento e desempenho na vida cotidiana. O autor apresenta técnicas e estratégias para gerenciar e controlar as emoções de forma efectiva, permitindo que os leitores alcancem metas pessoais e profissionais com maior sucesso. O livro também aborda questões relacionadas ao autoconhecimento e self-awareness, como reconhecer e gerenciar nosso próprio estado emocional. Com uma abordagem objetiva e científica, o autor apresenta soluções práticas e eficazes para superar os desafios da gestão emocional.",
     "tema": "Controle emocional e inteligência emocional",
     "titulo": "Gestão da Emoção"
   },
