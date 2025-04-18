@@ -1664,10 +1664,18 @@
     "titulo": "O Talentoso Ripley"
   },
   {
-    "autor": "Marcos H.N. Rossi",
-    "caracteristica": "autoajuda",
+    "autor": "James Dashner",
+    "caracteristica": "ficcao",
     "sinopse": "0",
-    "tema": "Superação pessoal e inspiração de vida",
+    "tema": "Sobrevivência e mistério em um ambiente controlado",
+    "titulo": "Maze Runner Correr ou Morrer"
+  },
+  {
+    "autor": "Marcos H.N. Rossi",
+    "caracteristica": "ficcao",
+    "disponivel": true,
+    "sinopse": "Em um mundo onde o sabor e a memória se entrelaçam, um padeiro e um garoto de espírito inquieto se encontram por acaso — ou destino. Entre fornadas e conversas, nasce uma jornada silenciosa de descobertas, onde o pão é só o começo e a alegria pode estar onde menos se espera.",
+    "tema": "Sobrevivência e mistério em um ambiente controlado",
     "titulo": "Bread & Joy"
   },
   {
