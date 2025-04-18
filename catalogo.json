@@ -1778,7 +1778,8 @@
   {
     "autor": "Roberto Justus",
     "caracteristica": "biografia",
-    "sinopse": "0",
+    "disponivel": true,
+    "sinopse": "Neste livro, Roberto Justus compartilha suas reflexões e aprendizagens sobre a construção de uma vida plena e satisfatória. Através de histórias e exemplos pessoais, ele mostra como podemos criar um ambiente propício para o crescimento e desenvolvimento pessoal, além de construir relacionamentos mais profundos e significativos com os nossos seres queridos. Com passagens inspiradoras e práticas úteis, \"Construindo Uma Vida\" é um companheiro constante na jornada de autoconhecimento e melhoria pessoal.",
     "tema": "Carreira, disciplina e visão empreendedora",
     "titulo": "Construindo uma Vida"
   },
