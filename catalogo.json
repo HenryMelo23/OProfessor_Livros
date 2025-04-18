@@ -1680,9 +1680,10 @@
   },
   {
     "autor": "Jennie Rooney",
-    "caracteristica": "suspense",
-    "sinopse": "0",
-    "tema": "Espionagem, lealdade e guerra fria",
+    "caracteristica": "ficcao",
+    "disponivel": true,
+    "sinopse": "Quando o passado bate à porta, uma senhora aparentemente comum se vê no centro de uma investigação inesperada. Entre memórias da juventude e segredos bem guardados, surge a história de uma mulher que amou, escolheu e viveu intensamente — mesmo que isso tenha mudado o curso da história.",
+    "tema": "Sobrevivência e mistério em um ambiente controlado",
     "titulo": "A Espiã Vermelha"
   },
   {
