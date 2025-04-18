@@ -1714,7 +1714,8 @@
   {
     "autor": "Marisha Pessl",
     "caracteristica": "suspense",
-    "sinopse": "0",
+    "disponivel": true,
+    "sinopse": "Em \"Noturno\", um jornalista investigativo mergulha no mistério da morte de Ashley Cordova, filha de uma lendária e reclusa cineasta cult. Conforme ele vasculha o passado sombrio da família Cordova, descobre uma teia de segredos, obsessões e eventos estranhamente conectados ao mundo obscuro do cinema e da mente humana. O livro mistura suspense psicológico, investigação e toques de terror, em uma narrativa que brinca com o que é real e o que pode ser pura ilusão. Intenso, atmosférico e cheio de reviravoltas, é um convite para os cantos mais sombrios da curiosidade humana.",
     "tema": "Jornalismo investigativo e segredos obscuros",
     "titulo": "Filme Noturno"
   },
