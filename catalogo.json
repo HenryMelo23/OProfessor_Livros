@@ -1730,7 +1730,8 @@
   {
     "autor": "Sir Arthur Conan Doyle",
     "caracteristica": "suspense",
-    "sinopse": "0",
+    "disponivel": true,
+    "sinopse": "Sherlock Holmes é o detetive mais famoso da literatura, conhecido por sua inteligência afiada, olhar clínico e métodos dedutivos únicos. Ao lado de seu fiel amigo e cronista, Dr. Watson, ele desvenda mistérios complexos que vão desde crimes brutais até enigmas aparentemente impossíveis. Ambientadas na Londres vitoriana, as histórias misturam suspense, raciocínio lógico e personagens marcantes, criando uma atmosfera envolvente que conquistou leitores por gerações. Cada caso é um quebra-cabeça — e Holmes sempre encontra a peça que falta.",
     "tema": "Investigação e raciocínio dedutivo",
     "titulo": "Sherlock Holmes"
   },
