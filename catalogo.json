@@ -1688,9 +1688,10 @@
   },
   {
     "autor": "Lisa Gardner",
-    "caracteristica": "suspense",
-    "sinopse": "0",
-    "tema": "Investigações policiais e assassinatos brutais",
+    "caracteristica": "ficcao",
+    "disponivel": true,
+    "sinopse": "Em uma casa isolada, uma cena brutal e silenciosa. Uma garotinha sobrevive. Uma detetive entra em um caso cheio de perguntas e poucas respostas. À medida que as pistas se desenrolam, surge um mistério denso, onde nada é o que parece — e o passado pode ser a chave para entender tudo.",
+    "tema": "Sobrevivência e mistério em um ambiente controlado",
     "titulo": "Sangue na Neve"
   },
   {
