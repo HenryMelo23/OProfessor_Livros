@@ -254,6 +254,8 @@
     <input type="text" id="titulo" placeholder="Digite o título do livro">
     <button onclick="buscarLivro()">Buscar</button>
     <div id="contador-livros">Temos disponíveis: ...</div>
+    <div id="recomendados" style="display:none; margin-bottom: 30px;"></div>
+
 
     <div id="resultado"></div>
 
@@ -277,6 +279,8 @@
         async function buscarLivro() {
         const termo = document.getElementById("titulo").value.trim();
         const resultado = document.getElementById("resultado");
+        document.getElementById("recomendados").style.display = "none";
+
 
         if (!termo) {
             resultado.innerHTML = "<p>Digite o título ou o nome do autor.</p>";
@@ -393,7 +397,7 @@
         // Quando a página carregar
         window.onload = function () {
             contarLivrosDisponiveis();
-
+            mostrarRecomendados();
             // Se tiver ?titulo= na URL, já busca direto
             const params = new URLSearchParams(window.location.search);
             const titulo = params.get("titulo");
@@ -482,6 +486,60 @@
             localStorage.setItem("favoritos", JSON.stringify(favoritos));
             mostrarFavoritos(); // atualiza a grade
         }
+        async function mostrarRecomendados() {
+            const campoBusca = document.getElementById("titulo");
+            const recomendados = document.getElementById("recomendados");
+
+            const favoritos = JSON.parse(localStorage.getItem("favoritos")) || [];
+
+            if (favoritos.length === 0 || campoBusca.value.trim() !== "") {
+                recomendados.style.display = "none";
+                return;
+            }
+
+            try {
+                const resposta = await fetch("https://oprofessor-livros.onrender.com/catalogo");
+                const catalogo = await resposta.json();
+
+                const generosFavoritos = favoritos.map(l => l.caracteristica?.toLowerCase()).filter(Boolean);
+                const generosUnicos = [...new Set(generosFavoritos)];
+
+                const recomendadosFiltrados = catalogo.filter(livro =>
+                    livro.disponivel &&
+                    !favoritos.some(fav => fav.titulo === livro.titulo) &&
+                    generosUnicos.includes(livro.caracteristica?.toLowerCase())
+                );
+
+                const embaralhados = recomendadosFiltrados.sort(() => Math.random() - 0.5);
+                const quatro = embaralhados.slice(0, 4);
+
+                if (quatro.length === 0) {
+                    recomendados.style.display = "none";
+                    return;
+                }
+
+                recomendados.style.display = "block";
+                recomendados.innerHTML = `
+                    <h2 style="color:white; margin-bottom: 15px;">📚 Recomendados para você</h2>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 20px; justify-content:center;">
+                        ${quatro.map(livro => {
+                            const imagem = `https://raw.githubusercontent.com/HenryMelo23/OProfessor_Livros/Professor-1.1.5/imagens/${encodeURIComponent(livro.titulo)}.png`;
+                            const link = `index.html?titulo=${encodeURIComponent(livro.titulo)}`;
+                            return `
+                                <a href="${link}" style="text-decoration:none; color:white; text-align:center;">
+                                    <img src="${imagem}" alt="${livro.titulo}" style="width:100%; max-width:120px; border-radius:8px; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+                                    <div style="margin-top:6px; font-size:14px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">${livro.titulo}</div>
+                                </a>
+                            `;
+                        }).join("")}
+                    </div>
+                `;
+            } catch (erro) {
+                console.error("Erro ao buscar recomendações:", erro);
+                recomendados.style.display = "none";
+            }
+        }
+
 
     </script>
 </body>
