@@ -24,40 +24,35 @@ def buscar():
     termo_normalizado = normalizar(termo)
     catalogo = carregar_catalogo()
 
-    # Busca parcial (contendo o termo em qualquer parte do título)
+    def termo_em_qualquer_parte(titulo):
+        return termo_normalizado in normalizar(titulo)
+
+    # Encontrar todos os livros cujo título contenha o termo
     livros_encontrados = [
         livro for livro in catalogo
-        if termo_normalizado in normalizar(livro.get('titulo', ''))
+        if termo_em_qualquer_parte(livro.get('titulo', ''))
     ]
 
     if livros_encontrados:
-        # Sempre retorna lista se mais de um resultado for compatível
-        if len(livros_encontrados) == 1:
-            livro = livros_encontrados[0]
-            imagem = f"/imagens/{livro['titulo']}.png"
-            return jsonify({
-                "tipo": "livro",
-                "titulo": livro['titulo'],
-                "autor": livro['autor'],
-                "sinopse": livro.get('sinopse', ''),
-                "disponivel": livro.get('disponivel', False),
-                "imagem": imagem
-            })
-        else:
-            return jsonify({
-                "tipo": "lista",
-                "termo": termo,
-                "livros": sorted([
-                    {
-                        "titulo": livro['titulo'],
-                        "autor": livro['autor'],
-                        "disponivel": livro.get('disponivel', False)
-                    }
-                    for livro in livros_encontrados
-                ], key=lambda l: l['titulo'])  # ordena alfabeticamente
-            })
+        # Selecionar o livro com o título mais curto e mais próximo do termo
+        livro_mais_relevante = min(
+            livros_encontrados,
+            key=lambda l: (
+                len(normalizar(l['titulo'])),
+                normalizar(l['titulo'])
+            )
+        )
+        imagem = f"/imagens/{livro_mais_relevante['titulo']}.png"
+        return jsonify({
+            "tipo": "livro",
+            "titulo": livro_mais_relevante['titulo'],
+            "autor": livro_mais_relevante['autor'],
+            "sinopse": livro_mais_relevante.get('sinopse', ''),
+            "disponivel": livro_mais_relevante.get('disponivel', False),
+            "imagem": imagem
+        })
 
-    # Busca por autor
+    # Se não encontrou por título, tenta buscar por autor
     livros_do_autor = [
         {
             "titulo": livro['titulo'],
