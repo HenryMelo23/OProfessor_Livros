@@ -6,7 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
+        
         @media (min-width: 768px) {
+            #icone-carrinho-wrapper {
+                position: fixed;
+                top: 60px; /* Aumentado para descer todo o bloco */
+                right: 25px;
+                background-color: #007bff;
+                padding: 10px;
+                border-radius: 50%;
+                box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 60px;
+                height: 60px;
+                z-index: 10000;
+                cursor: pointer;
+            }
+            #icone-carrinho {
+                width: 28px;
+                height: auto;
+                margin-top: auto; /* valor negativo sobe a imagem */
+            }
 
             p {
                 white-space: pre-wrap;
@@ -211,6 +233,28 @@
         .sidebar {
             display: none !important;
         }
+        #icone-carrinho-wrapper {
+            position: fixed;
+            top: 95px; /* No mobile, desce um pouco mais para não encostar na navbar */
+            right: 15px;
+            background-color: #007bff;
+            padding: 10px;
+            border-radius: 50%;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            z-index: 10000;
+            cursor: pointer;
+        }
+        #icone-carrinho {
+            width: 28px;
+            height: auto;
+            margin-top: -1px; /* valor negativo sobe a imagem */
+        }
+
 
         .mobile-navbar {
             display: flex;
@@ -248,6 +292,24 @@
     </style>
 </head>
 <body>
+    <div id="painel-carrinho" style="display:none; position:fixed; top:100px; right:20px; width:300px; max-height:400px; overflow-y:auto;
+        background:white; border-radius:10px; box-shadow:0 4px 12px rgba(0,0,0,0.3); padding:15px; z-index:10001;">
+        <h3 style="margin-top:0;">📚 Seu Carrinho</h3>
+        <div id="lista-carrinho"></div>
+        <button onclick="finalizarPedido()" style="margin-top: 15px; width:100%; background-color:#25D366; color:white; padding:10px; border:none; border-radius:6px; font-weight:bold;">
+            Finalizar pedido via WhatsApp
+        </button>
+    </div>
+
+    <div id="icone-carrinho-wrapper" style="display: none; position: fixed; z-index: 10000; cursor: pointer;">
+        <img id="icone-carrinho" src="icone-carrinho.png" alt="Carrinho" style="width: 40px;">
+        <div id="contador-carrinho"
+             style="position: absolute; top: -8px; right: -8px; background-color: red; color: white;
+                    font-size: 12px; font-weight: bold; border-radius: 50%; width: 20px; height: 20px;
+                    display: flex; align-items: center; justify-content: center; box-shadow: 0 0 4px rgba(0,0,0,0.5);">
+        </div>
+    </div>
+
     <h1 class="logo">📚 O Professor 👴</h1>
     <p class="subtitulo">venda de livros usados</p>
 
@@ -264,14 +326,14 @@
         <a href="Contato.html">Contato</a>
         <a href="#">Informações</a>
         <a href="#" onclick="mostrarFavoritos()">Favoritos ❤️</a>
-        <a href="https://www.instagram.com/oprofessor_livros/" target="_blank">Instagram</a>
+        <a href="https://www.instagram.com/seuluiz_livros/" target="_blank">Instagram</a>
     </div>
     <nav class="mobile-navbar">
         <a href="index.html">Início</a>
         <a href="estante.html">Estante</a>
         <a href="Contato.html">Contato</a>
         
-        <a href="https://www.instagram.com/oprofessor_livros/" target="_blank">Instagram</a>
+        <a href="https://www.instagram.com/seuluiz_livros/" target="_blank">Instagram</a>
         <a href="#">Informações</a>
       </nav>
 
@@ -320,11 +382,12 @@
                     </button>
 
 
-                    <div id="whatsapp">
-                        <a href="https://wa.me/5561995948789?text=${mensagemWhatsApp}" target="_blank">
-                            Entrar em contato via WhatsApp
-                        </a>
+                    <div>
+                        <button onclick='adicionarAoCarrinho(${JSON.stringify(livroObj)})'>
+                            Adicionar ao carrinho
+                        </button>
                     </div>
+
                 `;
                 // Checar se já está favoritado ao carregar
                 const favoritos = JSON.parse(localStorage.getItem("favoritos")) || [];
@@ -398,6 +461,8 @@
         window.onload = function () {
             contarLivrosDisponiveis();
             mostrarRecomendados();
+            atualizarIconeCarrinho();
+
             // Se tiver ?titulo= na URL, já busca direto
             const params = new URLSearchParams(window.location.search);
             const titulo = params.get("titulo");
@@ -500,7 +565,6 @@
             try {
                 const resposta = await fetch("https://oprofessor-livros.onrender.com/catalogo");
                 const catalogo = await resposta.json();
-
                 const generosFavoritos = favoritos.map(l => l.caracteristica?.toLowerCase()).filter(Boolean);
                 const generosUnicos = [...new Set(generosFavoritos)];
 
@@ -539,6 +603,90 @@
                 recomendados.style.display = "none";
             }
         }
+        function atualizarIconeCarrinho() {
+        const carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+        const wrapper = document.getElementById("icone-carrinho-wrapper");
+        const contador = document.getElementById("contador-carrinho");
+
+        if (carrinho.length > 0) {
+            wrapper.style.display = "block";
+            contador.innerText = carrinho.length;
+        } else {
+            wrapper.style.display = "none";
+        }
+    }
+
+    function adicionarAoCarrinho(livro) {
+        let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+        if (!carrinho.some(l => l.titulo === livro.titulo)) {
+            carrinho.push(livro);
+            localStorage.setItem("carrinho", JSON.stringify(carrinho));
+            atualizarIconeCarrinho();
+        } else {
+            alert("Esse livro já está no carrinho.");
+        }
+    }
+
+    
+    document.getElementById("icone-carrinho-wrapper").addEventListener("click", function () {
+        const carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+        const painel = document.getElementById("painel-carrinho");
+        const lista = document.getElementById("lista-carrinho");
+
+        if (carrinho.length === 0) {
+            painel.style.display = "none";
+            return;
+        }
+
+        lista.innerHTML = ""; // limpa antes de popular
+
+        carrinho.forEach((livro, index) => {
+            const imagem = `https://raw.githubusercontent.com/HenryMelo23/OProfessor_Livros/Professor-1.1.5/imagens/${encodeURIComponent(livro.titulo)}.png`;
+
+            const item = document.createElement("div");
+            item.style.display = "flex";
+            item.style.alignItems = "center";
+            item.style.marginBottom = "10px";
+
+            item.innerHTML = `
+                <img src="${imagem}" alt="${livro.titulo}" style="width:40px; height:auto; border-radius:5px; margin-right:10px;">
+                <span style="flex:1;">${livro.titulo}</span>
+                <button onclick="removerDoCarrinho(${index})" style="background:none; border:none; color:red; font-size:16px; font-weight:bold; cursor:pointer;">✖</button>
+            `;
+
+            lista.appendChild(item);
+        });
+
+        painel.style.display = "block";
+    });
+    function removerDoCarrinho(index) {
+        let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+        carrinho.splice(index, 1);
+        localStorage.setItem("carrinho", JSON.stringify(carrinho));
+        atualizarIconeCarrinho();
+        document.getElementById("painel-carrinho").style.display = "none"; // fecha e reabre para atualizar
+        document.getElementById("icone-carrinho-wrapper").click();
+    }
+    function finalizarPedido() {
+        const carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+        if (carrinho.length === 0) return;
+
+        const livrosFormatados = carrinho.map(l => `- "${l.titulo}"`).join('\n');
+        const mensagem = encodeURIComponent(
+            `Olá! Tenho interesse nos seguintes livros:\n${livrosFormatados}\nVocê pode me dar mais informações?`
+        );
+        window.open(`https://wa.me/5561995948789?text=${mensagem}`, "_blank");
+    }
+    document.addEventListener("click", function (event) {
+        const painel = document.getElementById("painel-carrinho");
+        const wrapper = document.getElementById("icone-carrinho-wrapper");
+
+        if (!painel.contains(event.target) && !wrapper.contains(event.target)) {
+            painel.style.display = "none";
+        }
+    });
+
+
 
 
     </script>

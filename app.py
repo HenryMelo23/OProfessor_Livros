@@ -24,14 +24,14 @@ def buscar():
     termo_normalizado = normalizar(termo)
     catalogo = carregar_catalogo()
 
-    # 1. Buscar por título que contenha o termo (parcial e normalizado)
+    # Busca parcial (contendo o termo em qualquer parte do título)
     livros_encontrados = [
         livro for livro in catalogo
         if termo_normalizado in normalizar(livro.get('titulo', ''))
     ]
 
     if livros_encontrados:
-        # Se encontrar apenas um livro, retorna como detalhe
+        # Sempre retorna lista se mais de um resultado for compatível
         if len(livros_encontrados) == 1:
             livro = livros_encontrados[0]
             imagem = f"/imagens/{livro['titulo']}.png"
@@ -47,17 +47,17 @@ def buscar():
             return jsonify({
                 "tipo": "lista",
                 "termo": termo,
-                "livros": [
+                "livros": sorted([
                     {
                         "titulo": livro['titulo'],
                         "autor": livro['autor'],
                         "disponivel": livro.get('disponivel', False)
                     }
                     for livro in livros_encontrados
-                ]
+                ], key=lambda l: l['titulo'])  # ordena alfabeticamente
             })
 
-    # 2. Buscar por autor (parcial e normalizado)
+    # Busca por autor
     livros_do_autor = [
         {
             "titulo": livro['titulo'],
