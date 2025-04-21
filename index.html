@@ -681,7 +681,11 @@
         const painel = document.getElementById("painel-carrinho");
         const wrapper = document.getElementById("icone-carrinho-wrapper");
 
-        if (!painel.contains(event.target) && !wrapper.contains(event.target)) {
+        // Verifica se o clique foi fora do painel e não é no botão de remover
+        const clicouFora = !painel.contains(event.target) && !wrapper.contains(event.target);
+        const ehBotaoRemover = event.target.closest("button")?.onclick?.toString()?.includes("removerDoCarrinho");
+
+        if (clicouFora && !ehBotaoRemover) {
             painel.style.display = "none";
         }
     });
