@@ -16,6 +16,33 @@
 
       min-height: 100vh;
     }
+    .botao-carrinho {
+      position: absolute;
+      right: 8px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 28px;
+      height: 28px;
+      font-size: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    }
+    .botao-carrinho.remover-do-carrinho {
+      background-color: #dc3545 !important; /* vermelho */
+      color: white !important;              /* texto branco */
+      font-size: 20px;
+    }
+
+    .livro-wrapper {
+      position: relative;
+    }
     .botao-favoritos {
       background-color: #dc3545;
       color: white;
@@ -237,8 +264,8 @@
     <a href="index.html">Início</a>
     <a href="estante.html">Estante</a>
     <a href="Contato.html">Contato</a>
-    <a href="informações.html">Informações</a>
     <a href="https://www.instagram.com/seuluiz_livros/" target="_blank">Instagram</a>
+    <a href="#">Informações</a>
   </nav>
 
 
@@ -246,8 +273,7 @@
     <a href="index.html">Início</a>
     <a href="estante.html">Estante</a>
     <a href="Contato.html">Contato</a>
-    <a href="informações.html">Informações</a>
-    <a href="#" onclick="mostrarFavoritos()">Favoritos ❤️</a>
+    <a href="#">Informações</a>
     <a href="https://www.instagram.com/seuluiz_livros/" target="_blank">Instagram</a>
   </div>
 
@@ -306,11 +332,22 @@
         container.innerHTML = livrosFiltrados.map(livro => {
           const imagem = `https://raw.githubusercontent.com/HenryMelo23/OProfessor_Livros/Professor-1.1.5/imagens/${encodeURIComponent(livro.titulo)}.png`;
           const link = `index.html?titulo=${encodeURIComponent(livro.titulo)}`;
+
+          const carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+          const jaNoCarrinho = carrinho.some(l => l.titulo === livro.titulo);
+
+          const botaoCarrinho = jaNoCarrinho
+            ? `<button class="botao-carrinho remover-do-carrinho" onclick='removerDoCarrinho("${livro.titulo}")'>×</button>`
+            : `<button class="botao-carrinho" onclick='adicionarAoCarrinho(${JSON.stringify(livro)})'>+</button>`;
+
           return `
-            <a href="${link}" class="livro">
-              <img src="${imagem}" alt="${livro.titulo}">
-              <div class="titulo" title="${livro.titulo}">${livro.titulo}</div>
-            </a>
+            <div class="livro-wrapper">
+              ${botaoCarrinho}
+              <a href="${link}" class="livro">
+                <img src="${imagem}" alt="${livro.titulo}">
+                <div class="titulo" title="${livro.titulo}">${livro.titulo}</div>
+              </a>
+            </div>
           `;
         }).join('');
 
@@ -378,6 +415,23 @@
       localStorage.setItem("favoritos", JSON.stringify(favoritos));
       mostrarFavoritos(); // atualiza a grade
     }
+    function adicionarAoCarrinho(livro) {
+      let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+      if (!carrinho.some(l => l.titulo === livro.titulo)) {
+        carrinho.push(livro);
+        localStorage.setItem("carrinho", JSON.stringify(carrinho));
+        mostrarLivros('todos'); // atualiza visualmente
+      } else {
+        alert("Esse livro já está no carrinho.");
+      }
+    }
+    function removerDoCarrinho(titulo) {
+      let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+      carrinho = carrinho.filter(livro => livro.titulo !== titulo);
+      localStorage.setItem("carrinho", JSON.stringify(carrinho));
+      mostrarLivros('todos'); // recarrega visualmente
+    }
+
   </script>
 </body>
 </html>
