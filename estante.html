@@ -16,6 +16,37 @@
 
       min-height: 100vh;
     }
+    .imagem-wrapper {
+      display: flex;
+      justify-content: center;
+    }
+
+    .img-container {
+      position: relative;
+      display: inline-block;
+    }
+
+    .img-container img {
+      display: block;
+      width: 100%;
+      max-width: 120px;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    .preco-tag {
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      background-color: #28a745;
+      color: white;
+      padding: 4px 10px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: bold;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
     .botao-carrinho {
       position: absolute;
       right: 8px;
@@ -339,16 +370,36 @@
           const botaoCarrinho = jaNoCarrinho
             ? `<button class="botao-carrinho remover-do-carrinho" onclick='removerDoCarrinho("${livro.titulo}")'>×</button>`
             : `<button class="botao-carrinho" onclick='adicionarAoCarrinho(${JSON.stringify(livro)})'>+</button>`;
+            let precoFormatado = "";
 
-          return `
-            <div class="livro-wrapper">
-              ${botaoCarrinho}
-              <a href="${link}" class="livro">
-                <img src="${imagem}" alt="${livro.titulo}">
-                <div class="titulo" title="${livro.titulo}">${livro.titulo}</div>
-              </a>
-            </div>
-          `;
+            if (livro.preco) {
+              const precoLimpo = livro.preco.replace("R$", "").replace(",", ".").trim();
+              const precoNumero = parseFloat(precoLimpo);
+
+              if (!isNaN(precoNumero)) {
+                precoFormatado = `<div class="preco-tag">R$ ${precoNumero.toFixed(2).replace(".", ",")}</div>`;
+              }
+            }
+            console.log("Livro:", livro);
+            const precoTag = livro.preco
+              
+              ? `<div class="preco-tag">R$ ${parseFloat(livro.preco).toFixed(2)}</div>`
+              : "";
+
+            return `
+              <div class="livro-wrapper">
+                ${botaoCarrinho}
+                <a href="${link}" class="livro">
+                  <div class="imagem-wrapper">
+                    <div class="img-container">
+                      <img src="${imagem}" alt="${livro.titulo}">
+                      ${precoFormatado}
+                    </div>
+                  </div>
+                  <div class="titulo" title="${livro.titulo}">${livro.titulo}</div>
+                </a>
+              </div>
+            `;
         }).join('');
 
       } catch (erro) {
