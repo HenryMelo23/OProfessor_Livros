@@ -233,6 +233,18 @@
         .sidebar {
             display: none !important;
         }
+        .botao-carrinho {
+        top: 8px; /* Garante que ele não fique fora da imagem */
+        right: 8px;
+        width: 26px;
+        height: 26px;
+        font-size: 18px;
+        }
+        .livro-wrapper {
+        position: relative;
+        max-width: 140px;
+        margin: auto;
+        }
         #icone-carrinho-wrapper {
             position: fixed;
             top: 95px; /* No mobile, desce um pouco mais para não encostar na navbar */
@@ -362,7 +374,8 @@
                     titulo: dados.titulo,
                     autor: dados.autor,
                     sinopse: dados.sinopse,
-                    disponivel: dados.disponivel
+                    disponivel: dados.disponivel,
+                    preco: dados.preco  // valor de exemplo
                 };
 
                 resultado.innerHTML = `
@@ -638,10 +651,13 @@
             return;
         }
 
+        let total = 0;
         lista.innerHTML = ""; // limpa antes de popular
 
         carrinho.forEach((livro, index) => {
             const imagem = `https://raw.githubusercontent.com/HenryMelo23/OProfessor_Livros/Professor-1.1.5/imagens/${encodeURIComponent(livro.titulo)}.png`;
+            const preco = parseFloat(livro.preco.replace("R$", "").replace(",", ".")) || 0;
+            total += preco;
 
             const item = document.createElement("div");
             item.style.display = "flex";
@@ -650,12 +666,22 @@
 
             item.innerHTML = `
                 <img src="${imagem}" alt="${livro.titulo}" style="width:40px; height:auto; border-radius:5px; margin-right:10px;">
-                <span style="flex:1;">${livro.titulo}</span>
+                <div style="flex:1;">
+                    <div>${livro.titulo}</div>
+                    <div style="font-size: 14px; color: gray;">R$ ${preco.toFixed(2)}</div>
+                </div>
                 <button onclick="removerDoCarrinho(${index})" style="background:none; border:none; color:red; font-size:16px; font-weight:bold; cursor:pointer;">✖</button>
             `;
 
             lista.appendChild(item);
         });
+
+        // Exibir total no final
+        const totalDiv = document.createElement("div");
+        totalDiv.style.marginTop = "15px";
+        totalDiv.style.fontWeight = "bold";
+        totalDiv.innerText = `Total: R$ ${total.toFixed(2)}`;
+        lista.appendChild(totalDiv);
 
         painel.style.display = "block";
     });
