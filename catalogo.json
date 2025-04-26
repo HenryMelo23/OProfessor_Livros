@@ -236,7 +236,7 @@
   {
     "autor": "Lois Lowry",
     "caracteristica": "ficção",
-    "disponivel": true,
+    "disponivel": false,
     "sinopse": "Em uma sociedade onde a perfeição é exigida a qualquer custo, Kira, uma jovem com uma habilidade única, luta para encontrar seu lugar. Cercada por segredos e regras rígidas, ela descobre que seu dom pode mudar tudo ao seu redor. Uma distopia poderosa sobre coragem, escolhas e a verdadeira força que vem de dentro.",
     "tema": "Distopia / Fantasia",
     "titulo": "A Escolhida",
@@ -456,7 +456,7 @@
     "sinopse": "Em uma história cheia de magia e aventura, um menino descobre um mundo fantástico ao parar no 13º andar do prédio onde mora. Com uma mistura de fantasia, curiosidade e descoberta, o livro leva os jovens leitores em uma jornada emocionante, explorando temas como imaginação, criatividade e a busca por novos mundos.",
     "tema": "Fantasia / Ficção juvenil",
     "titulo": "A Máquina Fantabulástica",
-    "preco": "R$37,73"
+    "preco": "R$20,73"
   },
   {
     "autor": "Luis Fernando Verissimo",
@@ -987,7 +987,7 @@
     "sinopse": "O livro segue a história de sete homens que planejam assassinar um famoso cantor de reggae, Bob Marley, e como esse evento impacta a vida de várias pessoas ao longo de décadas. Com uma narrativa não linear e múltiplos pontos de vista, o romance explora temas como violência, política, identidade e cultura.",
     "tema": "Conspirações políticas e violência na Jamaica pós-tentativa de assassinato de Bob Marley",
     "titulo": "Breve História de Sete Assassinatos",
-    "preco": "R$35,98"
+    "preco": "R$20,98"
   },
   {
     "autor": "Luciano Subirá",
@@ -1253,7 +1253,7 @@
   {
     "autor": "Becca Fitzpatrick",
     "caracteristica": "fantasia",
-    "disponivel": true,
+    "disponivel": false,
     "sinopse": "A história segue a protagonista, Nora, e seu relacionamento com Patch, um misterioso e atraente anjo caído. À medida que Nora se aproxima de Patch, ela descobre segredos sombrios sobre seu passado e sua verdadeira natureza.",
     "tema": "Anjos, romance e mistério",
     "titulo": "Sussurro",
@@ -1266,7 +1266,7 @@
     "sinopse": "O livro apresenta uma coleção de histórias, fábulas e ensinamentos que ilustram virtudes como honestidade, coragem, compaixão e responsabilidade. Bennett argumenta que essas virtudes são essenciais para a formação de caráter e para a construção de uma sociedade mais justa e harmoniosa.",
     "tema": "Ética e valores morais",
     "titulo": "O Livro das Virtudes",
-    "preco": "R$40,95"
+    "preco": "R$23,95"
   },
   {
     "autor": "Alice Oseman",
@@ -1275,7 +1275,7 @@
     "sinopse": "\"Heartstopper Vol. 2\" de Alice Oseman é o segundo volume da série de graphic novels que segue a história de Charlie Spring e Nick Nelson, dois meninos que se conhecem na escola e começam a desenvolver uma relação romântica.",
     "tema": "Relacionamentos LGBTQ+ e amadurecimento",
     "titulo": "Heartstopper Vol 2",
-    "preco": "R$16,09"
+    "preco": "R$25,09"
   },
   {
     "autor": "Chico de Assis",
@@ -1523,7 +1523,7 @@
   {
     "autor": "Jamie McGuire",
     "caracteristica": "Romance",
-    "disponivel": true,
+    "disponivel": false,
     "sinopse": "Abby é uma jovem independente e forte que está tentando superar um passado traumático, enquanto Travis é um lutador de MMA com uma reputação de bad boy. Apesar de suas diferenças, eles se sentem atraídos um pelo outro e começam um relacionamento apaixonado e tumultuado.",
     "tema": "",
     "titulo": "Belo Desastre",
@@ -1761,7 +1761,7 @@
     "sinopse": "Harry Potter é um menino órfão que descobre que é um bruxo e começa a frequentar a Escola de Magia e Bruxaria de Hogwarts. Lá, ele faz amigos como Ron Weasley e Hermione Granger e se envolve em uma aventura para descobrir a verdade sobre a Pedra Filosofal, um objeto poderoso que está sendo escondido na escola. Harry precisa enfrentar o malvado Lord Voldemort, que matou os pais de Harry e agora está tentando retornar ao poder.",
     "tema": "",
     "titulo": "Harry Potter e a Pedra Filosofal",
-    "preco": "R$46,80"
+    "preco": "R$28,80"
   },
   {
     "autor": "Robert Galbraith",
@@ -1851,7 +1851,7 @@
     "sinopse": "Em \"Os Inovadores\", Walter Isaacson leva os leitores a uma jornada épica através da história da inovação, revelando as histórias fascinantes dos homens e mulheres que revolucionaram o mundo da tecnologia. Desde os primeiros dias do Vale do Silício até à era atual de inteligência artificial, Isaacson explora as mentes geniais que moldaram nosso mundo digital.  Descubra as histórias intimas e inspiradoras de inventores e empreendedores que desafiaram as probabilidades e mudam a nossa forma de viver. \"Os Inovadores\" é um tributo às mentes brilhantes que ousaram sonhar e construir o futuro.  Um livro fascinante que não pode parar de ler, \"Os Inovadores\" é a leitura obrigatória para qualquer um que queira saber como os pioneiros da tecnologia moldaram nosso mundo e imaginaram o amanhã.",
     "tema": "Invasões, identidade e consequências tecnológicas",
     "titulo": "Os Inovadores",
-    "preco": "R$34,35"
+    "preco": "R$18,35"
   },
   {
     "autor": "Beverly Jenkins",
@@ -2058,7 +2058,7 @@
     "tema": "Foco e produtividade máxima",
     "titulo": "A Única Coisa",
     "disponivel": true,
-    "preco": "R$39,20"
+    "preco": "R$22,20"
   },
   {
     "autor": "Adam Grant",
@@ -2247,7 +2247,7 @@
     "tema": "Poderes especiais e moralidade distorcida",
     "titulo": "Renegados",
     "disponivel": true,
-    "preco": "R$34,81"
+    "preco": "R$26,81"
   },
   {
     "autor": "C.J. Tudor",
@@ -2292,7 +2292,7 @@
     "tema": "Aventura, ecologia e descobertas místicas",
     "titulo": "A Cidade das Feras",
     "disponivel": true,
-    "preco": "R$30,13"
+    "preco": "R$21,13"
   },
   {
     "autor": "Sara Gruen",
@@ -2337,7 +2337,7 @@
     "tema": "Reflexões cristãs e espiritualidade cotidiana",
     "titulo": "Café com Deus Pai",
     "disponivel": true,
-    "preco": "R$33,20"
+    "preco": "R$15,20"
   },
   {
     "autor": "Elizabeth Rudnick",
@@ -2499,7 +2499,7 @@
     "tema": "Fé e perseverança na missão espiritual",
     "titulo": "Ainda Fazendo o Impossível",
     "disponivel": true,
-    "preco": "R$30,71"
+    "preco": "R$27,71"
   },
   {
     "autor": "Wayne Jacobsen",
@@ -2778,7 +2778,7 @@
     "tema": "Como se beneficiar do caos e da incerteza",
     "titulo": "Antifrágil",
     "disponivel": true,
-    "preco": "R$37,41"
+    "preco": "R$28,41"
   },
   {
     "autor": "Taylor Adams",
@@ -3033,13 +3033,13 @@
     "preco": "R$15,44"
   },
   {
-    "autor": "Kurt Cobain",
+    "autor": "Charles R. Cross",
     "caracteristica": "biografia",
     "sinopse": "\"A Construção do Mito\" é um livro intenso e profundo escrito por Kurt Cobain, uma figura lendária no mundo da música. Neste trabalho íntimo e revelador, Cobain leva os leitores em uma jornada através dos bastidores de sua ascensão à fama, explorando as forças que moldaram sua arte e sua vida. Entre bastidores e confissões pessoais, Cobain revela os segredos por trás de sua criação e como se tornou um dos artistas mais influentes de sua geração. Este livro é um convite a um tour pelos pensamentos e visões do mundo deste ícone do rock, que desafiará suas percepções sobre fama, arte e a construção de mitos modernos. Sem spoilers, esta sinopse deixa claro que o livro é uma oportunidade única de conhecer a mente brilhante por trás de músicas que se tornaram clássicos.",
     "tema": "A construção da imagem e lenda de um ícone do rock",
     "titulo": "A Construção do Mito",
     "disponivel": true,
-    "preco": "R$33,34"
+    "preco": "R$21,34"
   },
   {
     "autor": "Maya Banks",
@@ -3102,7 +3102,7 @@
     "tema": "Casos intrigantes e retorno do famoso detetive",
     "titulo": "O Retorno de Sherlock Holmes",
     "disponivel": true,
-    "preco": "R$58,50"
+    "preco": "R$22,50"
   },
   {
     "autor": "Annick Cojean",
@@ -3138,7 +3138,7 @@
     "sinopse": "Em um mundo onde a verdade é escondida e a sobrevivência está em jogo, uma jovem mulher descobrirá o verdadeiro significado do amor e do ódio. 'The Heart of Betrayal' é uma emocionante jornada de descoberta de si mesma, onde a protagonista é forçada a navegar por um labirinto de segredos e perigos, enquanto seu coração é arrastado para a guerra entre dois reinos. Com sua vida e seus leais amigos em risco, ela deve desvendar as mentiras do passado e encontrar o caminho para casa. Mas, acima de tudo, ela deve descobrir o poder do seu próprio coração. 'The Heart of Betrayal' é o segundo volume das Crônicas de Amor e Ódio, uma série inesquecível que vai deixar você sem fôlego até a última página. Prepare-se para ser encantado e surpreendido!",
     "tema": "0",
     "titulo": "The Heart of Betrayal (Crônicas de amor e ódio)",
-    "preco": "R$56,16"
+    "preco": "R$31,16"
   },
   {
     "autor": "F. Scott Fitzgerald",
@@ -3282,7 +3282,7 @@
     "sinopse": "Em Segredos Mortais, um thriller policial arrebatador escrito por Robert Bryndza, prepare-se para descobrir a verdade por trás de um segredo mortal. Quando o corpo de uma jovem é descoberto em circunstâncias misteriosas, a detetive Erika Foster é chamada para resolver o caso. À medida que ela mergulha mais fundo na investigação, Erika se depara com uma teia de segredos e mentiras que ameaçam não apenas sua carreira, mas também sua vida. Com sua determinação e habilidades de investigação afiadas, Erika está disposta a tudo para descobrir a verdade, mesmo que isso signifique desafiar seus superiores e colocar em risco tudo o que conhece. Em uma corrida contra o tempo, Erika precisa desvendar o mistério antes que mais vidas sejam ceifadas e o segredo mortal seja revelado.",
     "tema": "0",
     "titulo": "Segredos Mortais",
-    "preco": "R$51,19"
+    "preco": "R$28,19"
   },
   {
     "autor": "Flávio Monteiro da Costa",
@@ -3525,7 +3525,7 @@
     "sinopse": "Em uma Londres do século XXI imersa em mistério e intrigas políticas, um jovem tradutor é recrutado para uma tarefa sigilosa. Ele é o único capaz de decifrar uma antiga linguagem e revelar os segredos por trás de um texto enigmático que pode mudar o curso da história. 'A Terceira Tradução' é um thriller intelectual que leva o leitor em uma jornada frenética através de segredos antigos, onde cada palavra pode ser uma pista ou uma armadilha mortal.",
     "tema": "0",
     "titulo": "A Terceira Tradução",
-    "preco": "R$37,15"
+    "preco": "R$18,15"
   },
   {
     "autor": "Agnaldo Cardoso",
@@ -3624,7 +3624,7 @@
     "sinopse": "Bem-vindo ao O Estranho Mundo de Jack, um livro escrito pela mente criativa de Tim Burton. Entre neste mundo estranho e maravilhoso, onde o inusitado é comum e o normal é incomum. Conheça Jack, um jovem que se sente fora do lugar em seu próprio mundo, mas descobre um portal para um reino mágico e surreal. Com seu estilo único e visão peculiar, Jack se aventura neste novo mundo, desvendando segredos e encontrando criaturas bizarras e encantadoras. À medida que explora este estranho novo mundo, Jack descobre mais sobre si mesmo e sobre o poder da imaginação. Mas, o que será que espreita nas sombras? O Estranho Mundo de Jack é uma jornada inesquecível através de um reino de sonhos e pesadelos, onde a realidade é flexível e a criatividade é a chave para sobreviver. Junte-se a Jack nesta aventura surreal e descubra um mundo onde a loucura é a norma.",
     "tema": "0",
     "titulo": "O Estranho Mundo de Jack",
-    "preco": "R$30,77"
+    "preco": "R$29,77"
   },
   {
     "autor": "Thomas H. Cook",
@@ -3678,7 +3678,7 @@
     "sinopse": "Em um mundo de fantasia, onde a magia e os seres mitológicos existem, uma perigosa e poderosa relíquia foi perdida por séculos. Agora, ela foi redescoberta. O nome dela é O Anel. O pequeno hobbit Frodo Bolseiro é confiado à perigosa missão de levar o Anel até a Terra da Sombra, onde reside o maligno Senhor do Escuro. Com a ajuda de um mágico, um guerreiro e um hobbit ladrão, Frodo deve passar por terrenos traiçoeiros, enfrentar criaturas sinistras e desafiar os poderes das trevas, para garantir que o Anel não caia em mãos erradas. Mas, ele não sabe que há olhos o observando em sua jornada. Um livro de aventura, amizade e coragem, que irá capturá-lo em um mundo de fantasia inesquecível.",
     "tema": "0",
     "titulo": "Senhor dos Anéis (A Sociedade do Anel)",
-    "preco": "R$17,97"
+    "preco": "R$29,97"
   },
   {
     "autor": "J.R.R. Tolkien",
@@ -3687,7 +3687,7 @@
     "sinopse": "Em um mundo de fantasia repleto de magia e perigos, a jornada de Frodo e seus fiéis companheiros continua em \"O Senhor dos Anéis: As Duas Torres\". Enquanto o grupo se aproxima cada vez mais da terra maligna de Mordor, onde o poderoso Anel deve ser destruído, eles se deparam com novos desafios e inimigos formidáveis. Mas, com a ajuda de amigos improváveis e forças misteriosas, eles se unem para enfrentar o mal crescente.  Com a descoberta de que há duas torres em guerra, a trama se desenrola em uma corrida contra o tempo para impedir que o inimigo domine toda a Terra Média. Os heróis devem reunir coragem e sabedoria para ultrapassar as armadilhas e enigmáticas provações que os aguardam.  Mas, o que eles ainda não sabem é que o destino de toda a humanidade repousa nas suas mãos, e a batalha final pela sobrevivência irá testar os limites de sua lealdade e coragem.  Uma história épica de amizade, coragem e o poder do destino, \"O Senhor dos Anéis: As Duas Torres\" é uma viagem inesquecível que deixará o leitor em suspense até a última página. Prepare-se para uma aventura inigualável!",
     "tema": "0",
     "titulo": "Senhor dos Anéis (As Duas Torres)",
-    "preco": "R$16,32"
+    "preco": "R$27,32"
   },
   {
     "autor": "J.R.R. Tolkien",
@@ -3696,6 +3696,6 @@
     "sinopse": "Em uma terra de fantasia, onde a escuridão ameaça engolir o mundo, surge o épico conclusionamento da trilogia Senhor dos Anéis. O Retorno do Rei é uma jornada heróica de amizade e coragem, que leva os leitores ao coração da Batalha pelo Destino de Middle Earth.  O anel do Poder, forjado pelos Deuses Antigos, foi encontrado pelo hobbit Frodo, que agora está prestes a ser testado além de seus limites. Com a ajuda do mágico Gandalf, do fiel guerreiro Aragorn e de seus leais companions, Frodo deve enfrentar os poderes do mal do Senhor das Trevas, Sauron.  Mas, à medida que as forças do bem se reúnem, a esperança parece diminua, pois o inimigo cresce mais forte. O destino de toda a Terra Média depende do sucesso da missão de Frodo, mas os perigos e traições são muitos.  Em um final emocionante, a coragem e a determinação de um grupo improvável de heróis podem salvar o mundo ou condená-lo para sempre. Descubra o desfecho desta trilogia clássica e amada, que continua a encantar gerações por gerações.  O Retorno do Rei é uma obra-prima inesquecível de fantasia e aventura, que deixará os leitores hipnotizados até a última página.",
     "tema": "0",
     "titulo": "Senhor dos Anéis (O Retorno do Rei)",
-    "preco": "R$25,95"
+    "preco": "R$28,95"
   }
 ]
