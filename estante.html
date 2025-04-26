@@ -372,8 +372,9 @@
             : `<button class="botao-carrinho" onclick='adicionarAoCarrinho(${JSON.stringify(livro)})'>+</button>`;
             let precoFormatado = "";
 
-            if (livro.preco) {
-              const precoLimpo = livro.preco.replace("R$", "").replace(",", ".").trim();
+            if (livro.preco != null) {  // verifica se não é null ou undefined
+              const precoTexto = String(livro.preco);  // força ser string
+              const precoLimpo = precoTexto.replace("R$", "").replace(",", ".").trim();
               const precoNumero = parseFloat(precoLimpo);
 
               if (!isNaN(precoNumero)) {
@@ -381,7 +382,10 @@
               }
             }
             console.log("Livro:", livro);
-            
+            const precoTag = livro.preco
+              
+              ? `<div class="preco-tag">R$ ${parseFloat(livro.preco).toFixed(2)}</div>`
+              : "";
 
             return `
               <div class="livro-wrapper">
