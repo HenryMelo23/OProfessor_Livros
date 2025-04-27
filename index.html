@@ -8,7 +8,6 @@
     <style>
         
         @media (min-width: 768px) {
-
             #icone-carrinho-wrapper {
                 position: fixed;
                 top: 60px; /* Aumentado para descer todo o bloco */
@@ -66,7 +65,6 @@
             body {
                 margin-left: 180px;
             }
-
             .subtitulo {
                 color: white;
                 font-size: 18px;
@@ -124,9 +122,7 @@
             margin: 0;
             text-align: center;
 
-
-            background-image: url('https://raw.githubusercontent.com/HenryMelo23/OProfessor_Livros/main/imagens/planof.png');
-
+            background-image: url('https://raw.githubusercontent.com/HenryMelo23/OProfessor_Livros/Professor-1.1.5/imagens/planof.png');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -237,7 +233,6 @@
         .sidebar {
             display: none !important;
         }
-
         .botao-carrinho {
         top: 8px; /* Garante que ele não fique fora da imagem */
         right: 8px;
@@ -298,7 +293,6 @@
         body {
             padding-top: 70px; /* espaço para a navbar não cobrir o conteúdo */
         }
-
         .subtitulo {
             color: white;
             font-size: 18px;
@@ -306,7 +300,6 @@
             margin-top: -10px;
             margin-bottom: 20px;
         }
-
         }
     </style>
 </head>
@@ -342,7 +335,6 @@
 
     <div class="sidebar">
         <a href="estante.html">Estante</a>
-
         <a href="Contato.html">Contato</a>
         <a href="#">Informações</a>
         <a href="#" onclick="mostrarFavoritos()">Favoritos ❤️</a>
@@ -351,15 +343,14 @@
     <nav class="mobile-navbar">
         <a href="index.html">Início</a>
         <a href="estante.html">Estante</a>
-
         <a href="Contato.html">Contato</a>
+        
         <a href="https://www.instagram.com/seuluiz_livros/" target="_blank">Instagram</a>
         <a href="#">Informações</a>
       </nav>
 
     <script>
         async function buscarLivro() {
-
         const termo = document.getElementById("titulo").value.trim();
         const resultado = document.getElementById("resultado");
         document.getElementById("recomendados").style.display = "none";
@@ -376,7 +367,7 @@
 
             if (resposta.ok && dados.tipo === "livro") {
                 const cor = dados.disponivel ? 'disponivel' : 'indisponivel';
-                const imagem = `https://raw.githubusercontent.com/HenryMelo23/OProfessor_Livros/main/imagens/${encodeURIComponent(dados.titulo)}.png`;
+                const imagem = `https://raw.githubusercontent.com/HenryMelo23/OProfessor_Livros/Professor-1.1.5/imagens/${encodeURIComponent(dados.titulo)}.png`;
                 const mensagemWhatsApp = encodeURIComponent(`Olá! Tenho interesse no livro "${dados.titulo}". Poderia me dar mais informações?`);
 
                 const livroObj = {
@@ -441,7 +432,7 @@
 
             } else if (resposta.ok && dados.tipo === "autor") {
                 resultado.innerHTML = `<h2>Livros de ${dados.autor}</h2>` + dados.livros.map(livro => {
-                    const imagem = `https://raw.githubusercontent.com/HenryMelo23/OProfessor_Livros/main/imagens/${encodeURIComponent(livro.titulo)}.png`;
+                    const imagem = `https://raw.githubusercontent.com/HenryMelo23/OProfessor_Livros/Professor-1.1.5/imagens/${encodeURIComponent(livro.titulo)}.png`;
                     const cor = livro.disponivel ? 'disponivel' : 'indisponivel';
                     const mensagemWhatsApp = encodeURIComponent(`Olá! Tenho interesse no livro "${livro.titulo}". Poderia me dar mais informações?`);
 
@@ -456,7 +447,6 @@
                                     WhatsApp
                                 </a>
                             </div>
-
                         </div>
                     `;
                 }).join('');
@@ -467,9 +457,7 @@
             console.error("Erro ao buscar:", erro);
             resultado.innerHTML = "<p class='indisponivel'>Erro ao buscar o livro ou autor.</p>";
         }
-
     }
-
 
         async function contarLivrosDisponiveis() {
             try {
@@ -485,10 +473,8 @@
         // Quando a página carregar
         window.onload = function () {
             contarLivrosDisponiveis();
-
             mostrarRecomendados();
             atualizarIconeCarrinho();
-
 
             // Se tiver ?titulo= na URL, já busca direto
             const params = new URLSearchParams(window.location.search);
@@ -506,7 +492,6 @@
                 buscarLivro();
             }
         });
-
 
         function adicionarAosFavoritos(livro) {
             let favoritos = JSON.parse(localStorage.getItem("favoritos")) || [];
@@ -551,7 +536,7 @@
             });
 
             favoritos.forEach(livro => {
-                const imagem = `https://raw.githubusercontent.com/HenryMelo23/OProfessor_Livros/main/imagens/${encodeURIComponent(livro.titulo)}.png`;
+                const imagem = `https://raw.githubusercontent.com/HenryMelo23/OProfessor_Livros/Professor-1.1.5/imagens/${encodeURIComponent(livro.titulo)}.png`;
                 const link = `index.html?titulo=${encodeURIComponent(livro.titulo)}`;
 
                 const card = document.createElement("div");
@@ -615,7 +600,7 @@
                     <h2 style="color:white; margin-bottom: 15px;">📚 Recomendados para você</h2>
                     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 20px; justify-content:center;">
                         ${quatro.map(livro => {
-                            const imagem = `https://raw.githubusercontent.com/HenryMelo23/OProfessor_Livros/main/imagens/${encodeURIComponent(livro.titulo)}.png`;
+                            const imagem = `https://raw.githubusercontent.com/HenryMelo23/OProfessor_Livros/Professor-1.1.5/imagens/${encodeURIComponent(livro.titulo)}.png`;
                             const link = `index.html?titulo=${encodeURIComponent(livro.titulo)}`;
                             return `
                                 <a href="${link}" style="text-decoration:none; color:white; text-align:center;">
@@ -632,17 +617,20 @@
             }
         }
         function atualizarIconeCarrinho() {
-        const carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
-        const wrapper = document.getElementById("icone-carrinho-wrapper");
-        const contador = document.getElementById("contador-carrinho");
+            const carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+            const wrapper = document.getElementById("icone-carrinho-wrapper");
+            const contador = document.getElementById("contador-carrinho");
 
-        if (carrinho.length > 0) {
-            wrapper.style.display = "block";
-            contador.innerText = carrinho.length;
-        } else {
-            wrapper.style.display = "none";
+            if (carrinho.length > 0) {
+                wrapper.style.display = "block";
+                contador.innerText = carrinho.length;
+
+                // GARANTIR que o clique funcione:
+                wrapper.onclick = abrirCarrinho;  // <-- aqui é o segredo
+            } else {
+                wrapper.style.display = "none";
+            }
         }
-    }
 
     function adicionarAoCarrinho(livro) {
         let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
@@ -656,7 +644,52 @@
     }
 
     
-    document.getElementById("icone-carrinho-wrapper").addEventListener("click", function () {
+        window.addEventListener('DOMContentLoaded', function() {
+        document.getElementById("icone-carrinho-wrapper").atualizarIconeCarrinho("click", function () {
+            const carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+            const painel = document.getElementById("painel-carrinho");
+            const lista = document.getElementById("lista-carrinho");
+
+            if (carrinho.length === 0) {
+                painel.style.display = "none";
+                return;
+            }
+
+            let total = 0;
+            lista.innerHTML = ""; // limpa antes de popular
+
+            carrinho.forEach((livro, index) => {
+                const imagem = `https://raw.githubusercontent.com/HenryMelo23/OProfessor_Livros/Professor-1.1.5/imagens/${encodeURIComponent(livro.titulo)}.png`;
+                const preco = parseFloat(livro.preco.replace("R$", "").replace(",", ".")) || 0;
+                total += preco;
+
+                const item = document.createElement("div");
+                item.style.display = "flex";
+                item.style.alignItems = "center";
+                item.style.marginBottom = "10px";
+
+                item.innerHTML = `
+                    <img src="${imagem}" alt="${livro.titulo}" style="width:40px; height:auto; border-radius:5px; margin-right:10px;">
+                    <div style="flex:1;">
+                        <div>${livro.titulo}</div>
+                        <div style="font-size: 14px; color: gray;">R$ ${preco.toFixed(2)}</div>
+                    </div>
+                    <button onclick="removerDoCarrinho(${index})" style="background:none; border:none; color:red; font-size:16px; font-weight:bold; cursor:pointer;">✖</button>
+                `;
+
+                lista.appendChild(item);
+            });
+
+            const totalDiv = document.createElement("div");
+            totalDiv.style.marginTop = "15px";
+            totalDiv.style.fontWeight = "bold";
+            totalDiv.innerText = `Total: R$ ${total.toFixed(2)}`;
+            lista.appendChild(totalDiv);
+
+            painel.style.display = "block";
+        });
+    });
+    function abrirCarrinho() {
         const carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
         const painel = document.getElementById("painel-carrinho");
         const lista = document.getElementById("lista-carrinho");
@@ -670,7 +703,7 @@
         lista.innerHTML = ""; // limpa antes de popular
 
         carrinho.forEach((livro, index) => {
-            const imagem = `https://raw.githubusercontent.com/HenryMelo23/OProfessor_Livros/main/imagens/${encodeURIComponent(livro.titulo)}.png`;
+            const imagem = `https://raw.githubusercontent.com/HenryMelo23/OProfessor_Livros/Professor-1.1.5/imagens/${encodeURIComponent(livro.titulo)}.png`;
             const preco = parseFloat(livro.preco.replace("R$", "").replace(",", ".")) || 0;
             total += preco;
 
@@ -691,7 +724,6 @@
             lista.appendChild(item);
         });
 
-        // Exibir total no final
         const totalDiv = document.createElement("div");
         totalDiv.style.marginTop = "15px";
         totalDiv.style.fontWeight = "bold";
@@ -699,7 +731,8 @@
         lista.appendChild(totalDiv);
 
         painel.style.display = "block";
-    });
+    }
+
     function removerDoCarrinho(index) {
         let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
         carrinho.splice(index, 1);
@@ -730,7 +763,6 @@
             painel.style.display = "none";
         }
     });
-
 
 
 
