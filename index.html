@@ -304,14 +304,14 @@
     </style>
 </head>
 <body>
-    <div id="painel-carrinho" style="display:none; position:fixed; top:100px; right:20px; width:300px; max-height:400px; overflow-y:auto;
-        background:white; border-radius:10px; box-shadow:0 4px 12px rgba(0,0,0,0.3); padding:15px; z-index:10001;">
-        <h3 style="margin-top:0;">📚 Seu Carrinho</h3>
-        <div id="lista-carrinho"></div>
-        <button onclick="finalizarPedido()" style="margin-top: 15px; width:100%; background-color:#25D366; color:white; padding:10px; border:none; border-radius:6px; font-weight:bold;">
-            Finalizar pedido via WhatsApp
+    <div id="painel-carrinho" style="display:none; position:fixed; top:0; right:0; height:100%; width:300px; background:#f0f0f0; box-shadow:-2px 0 10px rgba(0,0,0,0.3); padding:20px; z-index:10001; overflow-y:auto; transition: transform 0.3s ease; transform: translateX(100%);">
+        <h2 style="margin-top:0; color:#333;">📚 Seu Carrinho</h2>
+        <div id="lista-carrinho" style="margin-top:20px;"></div>
+        <button onclick="finalizarPedido()" style="margin-top: 20px; width: 100%; background-color: #25D366; color: white; padding: 12px; border: none; border-radius: 8px; font-weight: bold; font-size: 16px;">
+          Confirmar Pedido
         </button>
-    </div>
+      </div>
+      
 
     <div id="icone-carrinho-wrapper" style="display: none; position: fixed; z-index: 10000; cursor: pointer;">
         <img id="icone-carrinho" src="icone-carrinho.png" alt="Carrinho" style="width: 40px;">
@@ -625,8 +625,8 @@
                 wrapper.style.display = "block";
                 contador.innerText = carrinho.length;
 
-                // GARANTIR que o clique funcione:
-                wrapper.onclick = abrirCarrinho;  // <-- aqui é o segredo
+                
+                document.getElementById("icone-carrinho-wrapper").onclick = abrirCarrinho;
             } else {
                 wrapper.style.display = "none";
             }
@@ -690,48 +690,35 @@
         });
     });
     function abrirCarrinho() {
-        const carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
-        const painel = document.getElementById("painel-carrinho");
-        const lista = document.getElementById("lista-carrinho");
+    const painel = document.getElementById("painel-carrinho");
+    const lista = document.getElementById("lista-carrinho");
+    const carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
 
-        if (carrinho.length === 0) {
-            painel.style.display = "none";
-            return;
-        }
+    lista.innerHTML = ""; // Limpa antes de popular
 
-        let total = 0;
-        lista.innerHTML = ""; // limpa antes de popular
+    carrinho.forEach(livro => {
+        const imagem = `https://raw.githubusercontent.com/HenryMelo23/OProfessor_Livros/Professor-1.1.5/imagens/${encodeURIComponent(livro.titulo)}.png`;
 
-        carrinho.forEach((livro, index) => {
-            const imagem = `https://raw.githubusercontent.com/HenryMelo23/OProfessor_Livros/Professor-1.1.5/imagens/${encodeURIComponent(livro.titulo)}.png`;
-            const preco = parseFloat(livro.preco.replace("R$", "").replace(",", ".")) || 0;
-            total += preco;
+        const item = document.createElement("div");
+        item.style.display = "flex";
+        item.style.alignItems = "center";
+        item.style.marginBottom = "15px";
 
-            const item = document.createElement("div");
-            item.style.display = "flex";
-            item.style.alignItems = "center";
-            item.style.marginBottom = "10px";
+        item.innerHTML = `
+            <img src="${imagem}" alt="${livro.titulo}" style="width:50px; height:auto; border-radius:8px; margin-right:12px;">
+            <div style="flex:1;">
+                <div style="font-weight:bold;">${livro.titulo}</div>
+            </div>
+        `;
 
-            item.innerHTML = `
-                <img src="${imagem}" alt="${livro.titulo}" style="width:40px; height:auto; border-radius:5px; margin-right:10px;">
-                <div style="flex:1;">
-                    <div>${livro.titulo}</div>
-                    <div style="font-size: 14px; color: gray;">R$ ${preco.toFixed(2)}</div>
-                </div>
-                <button onclick="removerDoCarrinho(${index})" style="background:none; border:none; color:red; font-size:16px; font-weight:bold; cursor:pointer;">✖</button>
-            `;
+        lista.appendChild(item);
+    });
 
-            lista.appendChild(item);
-        });
-
-        const totalDiv = document.createElement("div");
-        totalDiv.style.marginTop = "15px";
-        totalDiv.style.fontWeight = "bold";
-        totalDiv.innerText = `Total: R$ ${total.toFixed(2)}`;
-        lista.appendChild(totalDiv);
-
-        painel.style.display = "block";
-    }
+    painel.style.display = "block";
+    setTimeout(() => {
+        painel.style.transform = "translateX(0%)";
+    }, 10);
+}
 
     function removerDoCarrinho(index) {
         let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
@@ -753,14 +740,13 @@
     }
     document.addEventListener("click", function (event) {
         const painel = document.getElementById("painel-carrinho");
-        const wrapper = document.getElementById("icone-carrinho-wrapper");
+        const iconeCarrinho = document.getElementById("icone-carrinho-wrapper");
 
-        // Verifica se o clique foi fora do painel e não é no botão de remover
-        const clicouFora = !painel.contains(event.target) && !wrapper.contains(event.target);
-        const ehBotaoRemover = event.target.closest("button")?.onclick?.toString()?.includes("removerDoCarrinho");
-
-        if (clicouFora && !ehBotaoRemover) {
-            painel.style.display = "none";
+        if (!painel.contains(event.target) && !iconeCarrinho.contains(event.target)) {
+            painel.style.transform = "translateX(100%)";
+            setTimeout(() => {
+                painel.style.display = "none";
+            }, 300);
         }
     });
 
