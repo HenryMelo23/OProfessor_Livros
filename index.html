@@ -6,11 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
+        
         @media (min-width: 768px) {
 
-            h1 {
-                text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.7);
+            #icone-carrinho-wrapper {
+                position: fixed;
+                top: 60px; /* Aumentado para descer todo o bloco */
+                right: 25px;
+                background-color: #007bff;
+                padding: 10px;
+                border-radius: 50%;
+                box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 60px;
+                height: 60px;
+                z-index: 10000;
+                cursor: pointer;
             }
+            #icone-carrinho {
+                width: 28px;
+                height: auto;
+                margin-top: auto; /* valor negativo sobe a imagem */
+            }
+
             p {
                 white-space: pre-wrap;
                 text-align: justify;
@@ -46,6 +66,42 @@
             body {
                 margin-left: 180px;
             }
+
+            .subtitulo {
+                color: white;
+                font-size: 18px;
+                text-align: center;
+                margin-top: -10px;
+                margin-bottom: 20px;
+            }
+
+        }
+        .favorito-icone {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: transparent;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            outline: none;
+            padding: 0;
+            line-height: 1;
+            width: auto;
+            height: auto;
+            display: inline-block;
+        }
+
+        .favorito-icone:focus {
+            outline: none;
+            box-shadow: none;
+        }
+
+        .favorito-icone:hover {
+            background: none;
+        }
+        #resultado {
+            position: relative; /* necessário para posicionar o botão dentro dele */
         }
 
         #contador-livros {
@@ -61,14 +117,16 @@
         * {
             box-sizing: border-box;
         }
-
+        
         body {
             font-family: Arial, sans-serif;
             padding: 20px;
             margin: 0;
             text-align: center;
 
-            background-image: url('https://raw.githubusercontent.com/HenryMelo23/OProfessor_Livros/Professor-1.1.1/imagens/planof.png');
+
+            background-image: url('https://raw.githubusercontent.com/HenryMelo23/OProfessor_Livros/Professor-1.1.5/imagens/planof.png');
+
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -78,7 +136,12 @@
         h1 {
             font-size: 24px;
             margin-bottom: 20px;
+            
         }
+        h1 {
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            }
 
         input, button {
             font-size: 16px;
@@ -175,6 +238,41 @@
             display: none !important;
         }
 
+        .botao-carrinho {
+        top: 8px; /* Garante que ele não fique fora da imagem */
+        right: 8px;
+        width: 26px;
+        height: 26px;
+        font-size: 18px;
+        }
+        .livro-wrapper {
+        position: relative;
+        max-width: 140px;
+        margin: auto;
+        }
+        #icone-carrinho-wrapper {
+            position: fixed;
+            top: 95px; /* No mobile, desce um pouco mais para não encostar na navbar */
+            right: 15px;
+            background-color: #007bff;
+            padding: 10px;
+            border-radius: 50%;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            z-index: 10000;
+            cursor: pointer;
+        }
+        #icone-carrinho {
+            width: 28px;
+            height: auto;
+            margin-top: -1px; /* valor negativo sobe a imagem */
+        }
+
+
         .mobile-navbar {
             display: flex;
             justify-content: space-around;
@@ -200,73 +298,178 @@
         body {
             padding-top: 70px; /* espaço para a navbar não cobrir o conteúdo */
         }
+
+        .subtitulo {
+            color: white;
+            font-size: 18px;
+            text-align: center;
+            margin-top: -10px;
+            margin-bottom: 20px;
+        }
+
         }
     </style>
 </head>
 <body>
-    <h1> 📚O Professor👴</h1>
+    <div id="painel-carrinho" style="display:none; position:fixed; top:100px; right:20px; width:300px; max-height:400px; overflow-y:auto;
+        background:white; border-radius:10px; box-shadow:0 4px 12px rgba(0,0,0,0.3); padding:15px; z-index:10001;">
+        <h3 style="margin-top:0;">📚 Seu Carrinho</h3>
+        <div id="lista-carrinho"></div>
+        <button onclick="finalizarPedido()" style="margin-top: 15px; width:100%; background-color:#25D366; color:white; padding:10px; border:none; border-radius:6px; font-weight:bold;">
+            Finalizar pedido via WhatsApp
+        </button>
+    </div>
+
+    <div id="icone-carrinho-wrapper" style="display: none; position: fixed; z-index: 10000; cursor: pointer;">
+        <img id="icone-carrinho" src="icone-carrinho.png" alt="Carrinho" style="width: 40px;">
+        <div id="contador-carrinho"
+             style="position: absolute; top: -8px; right: -8px; background-color: red; color: white;
+                    font-size: 12px; font-weight: bold; border-radius: 50%; width: 20px; height: 20px;
+                    display: flex; align-items: center; justify-content: center; box-shadow: 0 0 4px rgba(0,0,0,0.5);">
+        </div>
+    </div>
+
+    <h1 class="logo">📚 O Professor 👴</h1>
+    <p class="subtitulo">venda de livros usados</p>
+
     <input type="text" id="titulo" placeholder="Digite o título do livro">
     <button onclick="buscarLivro()">Buscar</button>
     <div id="contador-livros">Temos disponíveis: ...</div>
+    <div id="recomendados" style="display:none; margin-bottom: 30px;"></div>
+
 
     <div id="resultado"></div>
 
     <div class="sidebar">
         <a href="estante.html">Estante</a>
-        <a href="#">Contato</a>
+
+        <a href="Contato.html">Contato</a>
         <a href="#">Informações</a>
+        <a href="#" onclick="mostrarFavoritos()">Favoritos ❤️</a>
         <a href="https://www.instagram.com/seuluiz_livros/" target="_blank">Instagram</a>
     </div>
     <nav class="mobile-navbar">
         <a href="index.html">Início</a>
         <a href="estante.html">Estante</a>
-        <a href="https://wa.me/5561995948789" target="_blank">Contato</a>
+
+        <a href="Contato.html">Contato</a>
         <a href="https://www.instagram.com/seuluiz_livros/" target="_blank">Instagram</a>
         <a href="#">Informações</a>
       </nav>
 
     <script>
         async function buscarLivro() {
-            const titulo = document.getElementById("titulo").value;
-            const resultado = document.getElementById("resultado");
 
-            if (!titulo) {
-                resultado.innerHTML = "<p>Digite o título de um livro.</p>";
-                return;
-            }
+        const termo = document.getElementById("titulo").value.trim();
+        const resultado = document.getElementById("resultado");
+        document.getElementById("recomendados").style.display = "none";
 
-            const url = `https://oprofessor-livros.onrender.com/buscar?titulo=${encodeURIComponent(titulo)}`;
 
-            try {
-                const resposta = await fetch(url);
-                const dados = await resposta.json();
+        if (!termo) {
+            resultado.innerHTML = "<p>Digite o título ou o nome do autor.</p>";
+            return;
+        }
 
-                if (dados.titulo) {
-                    const cor = dados.disponivel ? 'disponivel' : 'indisponivel';
-                    const imagem = `https://raw.githubusercontent.com/HenryMelo23/OProfessor_Livros/Professor-1.1.3/imagens/${encodeURIComponent(dados.titulo)}.png`;
-                    const mensagemWhatsApp = encodeURIComponent(`Olá! Tenho interesse no livro "${dados.titulo}". Poderia me dar mais informações?`);
+        try {
+            const resposta = await fetch(`https://oprofessor-livros.onrender.com/buscar?titulo=${encodeURIComponent(termo)}`);
+            const dados = await resposta.json();
 
-                    resultado.innerHTML = `
-                        <img src="${imagem}" alt="${dados.titulo}">
-                        <h2>${dados.titulo}</h2>
-                        <p><strong>Autor:</strong> ${dados.autor}</p>
-                        <p><strong>Sinopse:</strong> ${dados.sinopse || 'Sinopse não disponível.'}</p>
-                        <p class="${cor}">${dados.disponivel ? 'Disponível' : 'Indisponível'}</p>
+            if (resposta.ok && dados.tipo === "livro") {
+                const cor = dados.disponivel ? 'disponivel' : 'indisponivel';
+                const imagem = `https://raw.githubusercontent.com/HenryMelo23/OProfessor_Livros/Professor-1.1.5/imagens/${encodeURIComponent(dados.titulo)}.png`;
+                const mensagemWhatsApp = encodeURIComponent(`Olá! Tenho interesse no livro "${dados.titulo}". Poderia me dar mais informações?`);
 
-                        <div id="whatsapp">
-                            <a href="https://wa.me/5561995948789?text=${mensagemWhatsApp}" target="_blank">
-                                Entrar em contato via WhatsApp
-                            </a>
+                const livroObj = {
+                    titulo: dados.titulo,
+                    autor: dados.autor,
+                    sinopse: dados.sinopse,
+                    disponivel: dados.disponivel,
+                    preco: dados.preco  // valor de exemplo
+                };
+
+                resultado.innerHTML = `
+                    <img src="${imagem}" alt="${dados.titulo}">
+                    <h2>${dados.titulo}</h2>
+                    <p><strong>Autor:</strong> ${dados.autor}</p>
+                    <p><strong>Sinopse:</strong> ${dados.sinopse || 'Sinopse não disponível.'}</p>
+                    <p class="${cor}">${dados.disponivel ? 'Disponível' : 'Indisponível'}</p>
+
+                    <button id="favoritar-btn"
+                        class="favorito-icone"
+                        data-titulo="${dados.titulo}"
+                        data-autor="${dados.autor}"
+                        data-sinopse="${dados.sinopse}"
+                        data-disponivel="${dados.disponivel}">
+                        🤍
+                    </button>
+
+
+                    <div>
+                        <button onclick='adicionarAoCarrinho(${JSON.stringify(livroObj)})'>
+                            Adicionar ao carrinho
+                        </button>
+                    </div>
+
+                `;
+                // Checar se já está favoritado ao carregar
+                const favoritos = JSON.parse(localStorage.getItem("favoritos")) || [];
+                const jaFavorito = favoritos.some(l => l.titulo === dados.titulo);
+                document.getElementById("favoritar-btn").innerText = jaFavorito ? "❤️" : "🤍";
+
+                document.getElementById("favoritar-btn").addEventListener("click", function () {
+                    const btn = this;
+                    const livro = {
+                        titulo: btn.dataset.titulo,
+                        autor: btn.dataset.autor,
+                        sinopse: btn.dataset.sinopse,
+                        disponivel: btn.dataset.disponivel === "true"
+                    };
+
+                    let favoritos = JSON.parse(localStorage.getItem("favoritos")) || [];
+                    const index = favoritos.findIndex(l => l.titulo === livro.titulo);
+
+                    if (index === -1) {
+                        favoritos.push(livro);
+                        btn.innerText = "❤️";
+                    } else {
+                        favoritos.splice(index, 1);
+                        btn.innerText = "🤍";
+                    }
+
+                    localStorage.setItem("favoritos", JSON.stringify(favoritos));
+                });
+
+            } else if (resposta.ok && dados.tipo === "autor") {
+                resultado.innerHTML = `<h2>Livros de ${dados.autor}</h2>` + dados.livros.map(livro => {
+                    const imagem = `https://raw.githubusercontent.com/HenryMelo23/OProfessor_Livros/Professor-1.1.5/imagens/${encodeURIComponent(livro.titulo)}.png`;
+                    const cor = livro.disponivel ? 'disponivel' : 'indisponivel';
+                    const mensagemWhatsApp = encodeURIComponent(`Olá! Tenho interesse no livro "${livro.titulo}". Poderia me dar mais informações?`);
+
+                    return `
+                        <div style="margin-bottom: 30px;">
+                            <img src="${imagem}" alt="${livro.titulo}">
+                            <h3>${livro.titulo}</h3>
+                            <p><strong>Autor:</strong> ${livro.autor}</p>
+                            <p class="${cor}">${livro.disponivel ? 'Disponível' : 'Indisponível'}</p>
+                            <div>
+                                <a href="https://wa.me/5561995948789?text=${mensagemWhatsApp}" target="_blank" style="background-color:#25D366;padding:10px 15px;border-radius:8px;color:white;text-decoration:none;font-weight:bold;">
+                                    WhatsApp
+                                </a>
+                            </div>
+
                         </div>
                     `;
-                } else {
-                    resultado.innerHTML = "<p class='indisponivel'>Livro não encontrado ou indisponível.</p>";
-                }
-            } catch (erro) {
-                resultado.innerHTML = "<p class='indisponivel'>Erro ao buscar o livro.</p>";
-                console.error(erro);
+                }).join('');
+            } else {
+                resultado.innerHTML = "<p class='indisponivel'>Nenhum resultado encontrado.</p>";
             }
+        } catch (erro) {
+            console.error("Erro ao buscar:", erro);
+            resultado.innerHTML = "<p class='indisponivel'>Erro ao buscar o livro ou autor.</p>";
         }
+
+    }
+
 
         async function contarLivrosDisponiveis() {
             try {
@@ -282,6 +485,10 @@
         // Quando a página carregar
         window.onload = function () {
             contarLivrosDisponiveis();
+
+            mostrarRecomendados();
+            atualizarIconeCarrinho();
+
 
             // Se tiver ?titulo= na URL, já busca direto
             const params = new URLSearchParams(window.location.search);
@@ -299,6 +506,235 @@
                 buscarLivro();
             }
         });
+
+
+        function adicionarAosFavoritos(livro) {
+            let favoritos = JSON.parse(localStorage.getItem("favoritos")) || [];
+            const existe = favoritos.some(l => l.titulo === livro.titulo);
+            if (!existe) {
+                favoritos.push(livro);
+                localStorage.setItem("favoritos", JSON.stringify(favoritos));
+                alert("Livro adicionado aos favoritos!");
+            } else {
+                alert("Este livro já está nos favoritos.");
+            }
+        }
+
+        function mostrarFavoritos() {
+            const favoritos = JSON.parse(localStorage.getItem("favoritos")) || [];
+            const resultado = document.getElementById("resultado");
+
+            if (favoritos.length === 0) {
+                resultado.innerHTML = "<p style='color:white;'>Você ainda não favoritou nenhum livro.</p>";
+                return;
+            }
+
+            resultado.style.backgroundColor = "transparent";
+            resultado.style.boxShadow = "none";
+            resultado.style.padding = "0";
+            resultado.innerHTML = `
+                <h2 style="color:white; margin-bottom: 20px;">📚 Seus Favoritos</h2>
+                <div id="grid-favoritos" class="livros-grid"></div>
+            `;
+
+            const grid = document.getElementById("grid-favoritos");
+
+            // Aplicar estilo diretamente no elemento
+            Object.assign(grid.style, {
+                display: "grid",
+                gridTemplateColumns: "repeat(auto-fit, minmax(120px, 1fr))",
+                gap: "20px",
+                padding: "20px",
+                borderRadius: "15px",
+                backgroundColor: "rgba(0, 0, 0, 0.5)", // cinza translúcido
+                boxShadow: "0 4px 10px rgba(0,0,0,0.8)"
+            });
+
+            favoritos.forEach(livro => {
+                const imagem = `https://raw.githubusercontent.com/HenryMelo23/OProfessor_Livros/Professor-1.1.5/imagens/${encodeURIComponent(livro.titulo)}.png`;
+                const link = `index.html?titulo=${encodeURIComponent(livro.titulo)}`;
+
+                const card = document.createElement("div");
+                card.className = "livro";
+                card.style.textAlign = "center";
+                card.style.textDecoration = "none";
+
+                card.innerHTML = `
+                    <img src="${imagem}" alt="${livro.titulo}" style="width:100%; max-width:120px; border-radius:8px; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+                    <div style="color:white; font-size:14px; margin-top:6px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;" title="${livro.titulo}">
+                        ${livro.titulo}
+                    </div>
+                    <button onclick="removerFavorito('${livro.titulo}')" style="margin-top:5px; padding:4px 10px; background:#dc3545; color:white; border:none; border-radius:5px; cursor:pointer; font-size:12px;">
+                        Remover
+                    </button>
+                `;
+            
+
+                grid.appendChild(card);
+            });
+        }
+        function removerFavorito(titulo) {
+            let favoritos = JSON.parse(localStorage.getItem("favoritos")) || [];
+            favoritos = favoritos.filter(livro => livro.titulo !== titulo);
+            localStorage.setItem("favoritos", JSON.stringify(favoritos));
+            mostrarFavoritos(); // atualiza a grade
+        }
+        async function mostrarRecomendados() {
+            const campoBusca = document.getElementById("titulo");
+            const recomendados = document.getElementById("recomendados");
+
+            const favoritos = JSON.parse(localStorage.getItem("favoritos")) || [];
+
+            if (favoritos.length === 0 || campoBusca.value.trim() !== "") {
+                recomendados.style.display = "none";
+                return;
+            }
+
+            try {
+                const resposta = await fetch("https://oprofessor-livros.onrender.com/catalogo");
+                const catalogo = await resposta.json();
+                const generosFavoritos = favoritos.map(l => l.caracteristica?.toLowerCase()).filter(Boolean);
+                const generosUnicos = [...new Set(generosFavoritos)];
+
+                const recomendadosFiltrados = catalogo.filter(livro =>
+                    livro.disponivel &&
+                    !favoritos.some(fav => fav.titulo === livro.titulo) &&
+                    generosUnicos.includes(livro.caracteristica?.toLowerCase())
+                );
+
+                const embaralhados = recomendadosFiltrados.sort(() => Math.random() - 0.5);
+                const quatro = embaralhados.slice(0, 4);
+
+                if (quatro.length === 0) {
+                    recomendados.style.display = "none";
+                    return;
+                }
+
+                recomendados.style.display = "block";
+                recomendados.innerHTML = `
+                    <h2 style="color:white; margin-bottom: 15px;">📚 Recomendados para você</h2>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 20px; justify-content:center;">
+                        ${quatro.map(livro => {
+                            const imagem = `https://raw.githubusercontent.com/HenryMelo23/OProfessor_Livros/Professor-1.1.5/imagens/${encodeURIComponent(livro.titulo)}.png`;
+                            const link = `index.html?titulo=${encodeURIComponent(livro.titulo)}`;
+                            return `
+                                <a href="${link}" style="text-decoration:none; color:white; text-align:center;">
+                                    <img src="${imagem}" alt="${livro.titulo}" style="width:100%; max-width:120px; border-radius:8px; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+                                    <div style="margin-top:6px; font-size:14px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">${livro.titulo}</div>
+                                </a>
+                            `;
+                        }).join("")}
+                    </div>
+                `;
+            } catch (erro) {
+                console.error("Erro ao buscar recomendações:", erro);
+                recomendados.style.display = "none";
+            }
+        }
+        function atualizarIconeCarrinho() {
+        const carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+        const wrapper = document.getElementById("icone-carrinho-wrapper");
+        const contador = document.getElementById("contador-carrinho");
+
+        if (carrinho.length > 0) {
+            wrapper.style.display = "block";
+            contador.innerText = carrinho.length;
+        } else {
+            wrapper.style.display = "none";
+        }
+    }
+
+    function adicionarAoCarrinho(livro) {
+        let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+        if (!carrinho.some(l => l.titulo === livro.titulo)) {
+            carrinho.push(livro);
+            localStorage.setItem("carrinho", JSON.stringify(carrinho));
+            atualizarIconeCarrinho();
+        } else {
+            alert("Esse livro já está no carrinho.");
+        }
+    }
+
+    
+    document.getElementById("icone-carrinho-wrapper").addEventListener("click", function () {
+        const carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+        const painel = document.getElementById("painel-carrinho");
+        const lista = document.getElementById("lista-carrinho");
+
+        if (carrinho.length === 0) {
+            painel.style.display = "none";
+            return;
+        }
+
+        let total = 0;
+        lista.innerHTML = ""; // limpa antes de popular
+
+        carrinho.forEach((livro, index) => {
+            const imagem = `https://raw.githubusercontent.com/HenryMelo23/OProfessor_Livros/Professor-1.1.5/imagens/${encodeURIComponent(livro.titulo)}.png`;
+            const preco = parseFloat(livro.preco.replace("R$", "").replace(",", ".")) || 0;
+            total += preco;
+
+            const item = document.createElement("div");
+            item.style.display = "flex";
+            item.style.alignItems = "center";
+            item.style.marginBottom = "10px";
+
+            item.innerHTML = `
+                <img src="${imagem}" alt="${livro.titulo}" style="width:40px; height:auto; border-radius:5px; margin-right:10px;">
+                <div style="flex:1;">
+                    <div>${livro.titulo}</div>
+                    <div style="font-size: 14px; color: gray;">R$ ${preco.toFixed(2)}</div>
+                </div>
+                <button onclick="removerDoCarrinho(${index})" style="background:none; border:none; color:red; font-size:16px; font-weight:bold; cursor:pointer;">✖</button>
+            `;
+
+            lista.appendChild(item);
+        });
+
+        // Exibir total no final
+        const totalDiv = document.createElement("div");
+        totalDiv.style.marginTop = "15px";
+        totalDiv.style.fontWeight = "bold";
+        totalDiv.innerText = `Total: R$ ${total.toFixed(2)}`;
+        lista.appendChild(totalDiv);
+
+        painel.style.display = "block";
+    });
+    function removerDoCarrinho(index) {
+        let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+        carrinho.splice(index, 1);
+        localStorage.setItem("carrinho", JSON.stringify(carrinho));
+        atualizarIconeCarrinho();
+        document.getElementById("painel-carrinho").style.display = "none"; // fecha e reabre para atualizar
+        document.getElementById("icone-carrinho-wrapper").click();
+    }
+    function finalizarPedido() {
+        const carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+        if (carrinho.length === 0) return;
+
+        const livrosFormatados = carrinho.map(l => `- "${l.titulo}"`).join('\n');
+        const mensagem = encodeURIComponent(
+            `Olá! Tenho interesse nos seguintes livros:\n${livrosFormatados}\nVocê pode me dar mais informações?`
+        );
+        window.open(`https://wa.me/5561995948789?text=${mensagem}`, "_blank");
+    }
+    document.addEventListener("click", function (event) {
+        const painel = document.getElementById("painel-carrinho");
+        const wrapper = document.getElementById("icone-carrinho-wrapper");
+
+        // Verifica se o clique foi fora do painel e não é no botão de remover
+        const clicouFora = !painel.contains(event.target) && !wrapper.contains(event.target);
+        const ehBotaoRemover = event.target.closest("button")?.onclick?.toString()?.includes("removerDoCarrinho");
+
+        if (clicouFora && !ehBotaoRemover) {
+            painel.style.display = "none";
+        }
+    });
+
+
+
+
+
     </script>
 </body>
 </html>

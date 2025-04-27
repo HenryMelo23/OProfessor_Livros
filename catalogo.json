@@ -2,8 +2,8 @@
   {
     "autor": "Machado de Assis",
     "disponivel": true,
-    "preco": 17.37,
-    "sinopse": "Dom Casmurro tem jeito nao a geovaninha come pao",
+    "preco": "R$17,25",
+    "sinopse": "Dom Casmurro conta a história de Bento Santiago (Bentinho), apelidado de Dom Casmurro por ser calado e introvertido. Na adolescência, apaixona-se por Capítu, abandonando o seminário e, com ele, os desígnios traçados por sua mãe, Dona Glória, para que se tornasse padre. Casam-se e tudo corre bem, até o amor se tornar ciúme e desconfiança. É esta a grande questão que magistralmente Dom Casmurro expõe ao longo de 148 capítulos: a dúvida que paira ao longo de toda a obra sobre a possibilidade de traição de Capítu, agravada pela extraordinária semelhança do filho de ambos, Ezequiel, com o grande amigo de Bentinho, Escobar.",
     "titulo": "Dom Casmurro"
   },
   {
@@ -540,8 +540,8 @@
   {
     "autor": "Victor Hugo",
     "caracteristica": "drama",
-    "disponivel": true,
-    "preco": "R$45,98",
+    "disponivel": false,
+    "preco": "R$20,98",
     "sinopse": "A história segue a vida de Jean Valjean, um homem que busca redenção e uma nova chance de vida após uma experiência traumática. Ele se envolve em uma série de eventos que o levam a conhecer personagens complexos e fascinantes, incluindo uma jovem mulher e sua filha, que se tornam centrais em sua jornada.",
     "tema": "Clássico / Justiça social",
     "titulo": "Os Miseráveis"
@@ -3696,4 +3696,6 @@
     "tema": "0",
     "titulo": "Senhor dos Anéis (O Retorno do Rei)"
   }
+
 ]
+
