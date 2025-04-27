@@ -125,7 +125,7 @@
             text-align: center;
 
 
-            background-image: url('https://raw.githubusercontent.com/HenryMelo23/OProfessor_Livros/Professor-1.1.5/imagens/planof.png');
+            background-image: url('https://raw.githubusercontent.com/HenryMelo23/OProfessor_Livros/main/imagens/planof.png');
 
             background-size: cover;
             background-position: center;
@@ -441,7 +441,7 @@
 
             } else if (resposta.ok && dados.tipo === "autor") {
                 resultado.innerHTML = `<h2>Livros de ${dados.autor}</h2>` + dados.livros.map(livro => {
-                    const imagem = `https://raw.githubusercontent.com/HenryMelo23/OProfessor_Livros/Professor-1.1.5/imagens/${encodeURIComponent(livro.titulo)}.png`;
+                    const imagem = `https://raw.githubusercontent.com/HenryMelo23/OProfessor_Livros/main/imagens/${encodeURIComponent(livro.titulo)}.png`;
                     const cor = livro.disponivel ? 'disponivel' : 'indisponivel';
                     const mensagemWhatsApp = encodeURIComponent(`Olá! Tenho interesse no livro "${livro.titulo}". Poderia me dar mais informações?`);
 
@@ -551,7 +551,7 @@
             });
 
             favoritos.forEach(livro => {
-                const imagem = `https://raw.githubusercontent.com/HenryMelo23/OProfessor_Livros/Professor-1.1.5/imagens/${encodeURIComponent(livro.titulo)}.png`;
+                const imagem = `https://raw.githubusercontent.com/HenryMelo23/OProfessor_Livros/main/imagens/${encodeURIComponent(livro.titulo)}.png`;
                 const link = `index.html?titulo=${encodeURIComponent(livro.titulo)}`;
 
                 const card = document.createElement("div");
@@ -615,7 +615,7 @@
                     <h2 style="color:white; margin-bottom: 15px;">📚 Recomendados para você</h2>
                     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 20px; justify-content:center;">
                         ${quatro.map(livro => {
-                            const imagem = `https://raw.githubusercontent.com/HenryMelo23/OProfessor_Livros/Professor-1.1.5/imagens/${encodeURIComponent(livro.titulo)}.png`;
+                            const imagem = `https://raw.githubusercontent.com/HenryMelo23/OProfessor_Livros/main/imagens/${encodeURIComponent(livro.titulo)}.png`;
                             const link = `index.html?titulo=${encodeURIComponent(livro.titulo)}`;
                             return `
                                 <a href="${link}" style="text-decoration:none; color:white; text-align:center;">
@@ -670,7 +670,7 @@
         lista.innerHTML = ""; // limpa antes de popular
 
         carrinho.forEach((livro, index) => {
-            const imagem = `https://raw.githubusercontent.com/HenryMelo23/OProfessor_Livros/Professor-1.1.5/imagens/${encodeURIComponent(livro.titulo)}.png`;
+            const imagem = `https://raw.githubusercontent.com/HenryMelo23/OProfessor_Livros/main/imagens/${encodeURIComponent(livro.titulo)}.png`;
             const preco = parseFloat(livro.preco.replace("R$", "").replace(",", ".")) || 0;
             total += preco;
 
