@@ -540,8 +540,8 @@
   {
     "autor": "Victor Hugo",
     "caracteristica": "drama",
-    "disponivel": true,
-    "preco": "R$45,98",
+    "disponivel": false,
+    "preco": "R$20,98",
     "sinopse": "A história segue a vida de Jean Valjean, um homem que busca redenção e uma nova chance de vida após uma experiência traumática. Ele se envolve em uma série de eventos que o levam a conhecer personagens complexos e fascinantes, incluindo uma jovem mulher e sua filha, que se tornam centrais em sua jornada.",
     "tema": "Clássico / Justiça social",
     "titulo": "Os Miseráveis"
