@@ -8,6 +8,7 @@
     <style>
         
         @media (min-width: 768px) {
+
             #icone-carrinho-wrapper {
                 position: fixed;
                 top: 60px; /* Aumentado para descer todo o bloco */
@@ -65,6 +66,7 @@
             body {
                 margin-left: 180px;
             }
+
             .subtitulo {
                 color: white;
                 font-size: 18px;
@@ -122,7 +124,9 @@
             margin: 0;
             text-align: center;
 
+
             background-image: url('https://raw.githubusercontent.com/HenryMelo23/OProfessor_Livros/Professor-1.1.5/imagens/planof.png');
+
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -233,6 +237,7 @@
         .sidebar {
             display: none !important;
         }
+
         .botao-carrinho {
         top: 8px; /* Garante que ele não fique fora da imagem */
         right: 8px;
@@ -293,6 +298,7 @@
         body {
             padding-top: 70px; /* espaço para a navbar não cobrir o conteúdo */
         }
+
         .subtitulo {
             color: white;
             font-size: 18px;
@@ -300,6 +306,7 @@
             margin-top: -10px;
             margin-bottom: 20px;
         }
+
         }
     </style>
 </head>
@@ -335,6 +342,7 @@
 
     <div class="sidebar">
         <a href="estante.html">Estante</a>
+
         <a href="Contato.html">Contato</a>
         <a href="#">Informações</a>
         <a href="#" onclick="mostrarFavoritos()">Favoritos ❤️</a>
@@ -343,14 +351,15 @@
     <nav class="mobile-navbar">
         <a href="index.html">Início</a>
         <a href="estante.html">Estante</a>
+
         <a href="Contato.html">Contato</a>
-        
         <a href="https://www.instagram.com/seuluiz_livros/" target="_blank">Instagram</a>
         <a href="#">Informações</a>
       </nav>
 
     <script>
         async function buscarLivro() {
+
         const termo = document.getElementById("titulo").value.trim();
         const resultado = document.getElementById("resultado");
         document.getElementById("recomendados").style.display = "none";
@@ -447,6 +456,7 @@
                                     WhatsApp
                                 </a>
                             </div>
+
                         </div>
                     `;
                 }).join('');
@@ -457,7 +467,9 @@
             console.error("Erro ao buscar:", erro);
             resultado.innerHTML = "<p class='indisponivel'>Erro ao buscar o livro ou autor.</p>";
         }
+
     }
+
 
         async function contarLivrosDisponiveis() {
             try {
@@ -473,8 +485,10 @@
         // Quando a página carregar
         window.onload = function () {
             contarLivrosDisponiveis();
+
             mostrarRecomendados();
             atualizarIconeCarrinho();
+
 
             // Se tiver ?titulo= na URL, já busca direto
             const params = new URLSearchParams(window.location.search);
@@ -492,6 +506,7 @@
                 buscarLivro();
             }
         });
+
 
         function adicionarAosFavoritos(livro) {
             let favoritos = JSON.parse(localStorage.getItem("favoritos")) || [];
@@ -715,6 +730,7 @@
             painel.style.display = "none";
         }
     });
+
 
 
 

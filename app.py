@@ -86,7 +86,6 @@ def contar_disponiveis():
 def obter_catalogo():
     catalogo = carregar_catalogo()
     return jsonify(catalogo)
-
 @app.route('/todos', methods=['GET'])
 def listar_todos():
     catalogo = carregar_catalogo()
@@ -116,8 +115,6 @@ def atualizar_livro():
         json.dump(catalogo, f, ensure_ascii=False, indent=2)
 
     return jsonify({'mensagem': 'Livro atualizado com sucesso'})
-
-
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=10000)
