@@ -351,19 +351,28 @@
 
     <script>
         async function buscarLivro() {
-        const termo = document.getElementById("titulo").value.trim();
-        const resultado = document.getElementById("resultado");
-        document.getElementById("recomendados").style.display = "none";
+
+            const termo = document.getElementById("titulo").value.trim();
+            const resultado = document.getElementById("resultado");
+            document.getElementById("recomendados").style.display = "none";
+
+            if (!termo) {
+                resultado.innerHTML = "<p>Digite o título ou o nome do autor.</p>";
+                return;
+            }
 
 
-        if (!termo) {
-            resultado.innerHTML = "<p>Digite o título ou o nome do autor.</p>";
-            return;
-        }
+            try {
+                // Primeiro buscamos o livro
+                const resposta = await fetch(`https://oprofessor-livros.onrender.com/buscar?titulo=${encodeURIComponent(termo)}`);
+                const dados = await resposta.json();
 
-        try {
-            const resposta = await fetch(`https://oprofessor-livros.onrender.com/buscar?titulo=${encodeURIComponent(termo)}`);
-            const dados = await resposta.json();
+                // Agora buscamos o catálogo completo para achar o preço
+                const respostaCatalogo = await fetch("https://oprofessor-livros.onrender.com/catalogo");
+                const catalogo = await respostaCatalogo.json();
+                const livroCatalogo = catalogo.find(l => l.titulo === dados.titulo);
+
+                const preco = livroCatalogo ? livroCatalogo.preco : null;
 
             if (resposta.ok && dados.tipo === "livro") {
                 const cor = dados.disponivel ? 'disponivel' : 'indisponivel';
@@ -375,7 +384,7 @@
                     autor: dados.autor,
                     sinopse: dados.sinopse,
                     disponivel: dados.disponivel,
-                    preco: dados.preco  // valor de exemplo
+                    preco: preco  // valor de exemplo
                 };
 
                 resultado.innerHTML = `
@@ -395,7 +404,10 @@
                     </button>
 
 
-                    <div>
+                    <div style="margin-top: 20px;">
+                        <div style="font-weight: bold; font-size: 18px; color: green; margin-bottom: 10px;">
+                            R$ ${parseFloat(String(preco).replace("R$", "").replace(",", ".")).toFixed(2)}
+                        </div>
                         <button onclick='adicionarAoCarrinho(${JSON.stringify(livroObj)})'>
                             Adicionar ao carrinho
                         </button>
@@ -713,7 +725,6 @@
             const item = document.createElement("div");
             item.style.display = "flex";
             item.style.alignItems = "center";
-            item.style.justifyContent = "space-between"; /* Alinha corretamente sem esmagar */
             item.style.marginBottom = "15px";
 
             item.innerHTML = `
@@ -724,8 +735,13 @@
                         ✖
                     </button>
                 </div>
-                <div style="flex-grow:1; overflow:hidden;">
+
+                <div style="display:flex; flex-direction:column; align-items:flex-start;">
                     <div style="font-weight:bold; color:white;">${livro.titulo}</div>
+                    <div style="color:lightgray; font-size:14px; margin-top:4px;">
+                        R$ ${preco.toFixed(2)}
+                    </div>
+
                 </div>
             `;
 
@@ -734,11 +750,23 @@
         });
 
 
+        //  Aqui adicionamos o TOTAL 
+        const totalDiv = document.createElement("div");
+        totalDiv.style.marginTop = "20px";
+        totalDiv.style.marginBottom = "10px";
+        totalDiv.style.fontWeight = "bold";
+        totalDiv.style.color = "white";
+        totalDiv.style.fontSize = "18px";
+        totalDiv.innerText = `Total: R$ ${total.toFixed(2)}`;
+        lista.appendChild(totalDiv);
+
+
         painel.style.display = "block";
         setTimeout(() => {
             painel.style.transform = "translateX(0%)";
         }, 10);
     }
+
 
     function removerDoCarrinho(index) {
         let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
