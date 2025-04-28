@@ -351,6 +351,7 @@
 
     <script>
         async function buscarLivro() {
+
             const termo = document.getElementById("titulo").value.trim();
             const resultado = document.getElementById("resultado");
             document.getElementById("recomendados").style.display = "none";
@@ -359,6 +360,7 @@
                 resultado.innerHTML = "<p>Digite o título ou o nome do autor.</p>";
                 return;
             }
+
 
             try {
                 // Primeiro buscamos o livro
@@ -733,18 +735,22 @@
                         ✖
                     </button>
                 </div>
+
                 <div style="display:flex; flex-direction:column; align-items:flex-start;">
                     <div style="font-weight:bold; color:white;">${livro.titulo}</div>
                     <div style="color:lightgray; font-size:14px; margin-top:4px;">
                         R$ ${preco.toFixed(2)}
                     </div>
+
                 </div>
             `;
+
 
             lista.appendChild(item);
         });
 
-        // 🔥 Aqui adicionamos o TOTAL 🔥
+
+        //  Aqui adicionamos o TOTAL 
         const totalDiv = document.createElement("div");
         totalDiv.style.marginTop = "20px";
         totalDiv.style.marginBottom = "10px";
@@ -753,6 +759,7 @@
         totalDiv.style.fontSize = "18px";
         totalDiv.innerText = `Total: R$ ${total.toFixed(2)}`;
         lista.appendChild(totalDiv);
+
 
         painel.style.display = "block";
         setTimeout(() => {
