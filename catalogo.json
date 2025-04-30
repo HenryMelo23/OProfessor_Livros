@@ -3695,6 +3695,55 @@
     "sinopse": "Em uma terra de fantasia, onde a escuridão ameaça engolir o mundo, surge o épico conclusionamento da trilogia Senhor dos Anéis. O Retorno do Rei é uma jornada heróica de amizade e coragem, que leva os leitores ao coração da Batalha pelo Destino de Middle Earth.  O anel do Poder, forjado pelos Deuses Antigos, foi encontrado pelo hobbit Frodo, que agora está prestes a ser testado além de seus limites. Com a ajuda do mágico Gandalf, do fiel guerreiro Aragorn e de seus leais companions, Frodo deve enfrentar os poderes do mal do Senhor das Trevas, Sauron.  Mas, à medida que as forças do bem se reúnem, a esperança parece diminua, pois o inimigo cresce mais forte. O destino de toda a Terra Média depende do sucesso da missão de Frodo, mas os perigos e traições são muitos.  Em um final emocionante, a coragem e a determinação de um grupo improvável de heróis podem salvar o mundo ou condená-lo para sempre. Descubra o desfecho desta trilogia clássica e amada, que continua a encantar gerações por gerações.  O Retorno do Rei é uma obra-prima inesquecível de fantasia e aventura, que deixará os leitores hipnotizados até a última página.",
     "tema": "0",
     "titulo": "Senhor dos Anéis (O Retorno do Rei)"
+  },
+  {
+    "autor": "John Green",
+    "caracteristica": "drama",
+    "sinopse": "0",
+    "tema": "descoberta pessoal e amadurecimento",
+    "titulo": "Quem é Você, Alasca?"
+  },
+  {
+    "autor": "James Dashner",
+    "caracteristica": "suspense",
+    "sinopse": "0",
+    "tema": "sobrevivência e resistência em cenários pós-apocalípticos",
+    "titulo": "Maze Runner: A Prova de Fogo"
+  },
+  {
+    "autor": "E. L. James",
+    "caracteristica": "romance",
+    "sinopse": "0",
+    "tema": "relações intensas e autodescoberta emocional",
+    "titulo": "Cinquenta Tons Mais Escuros"
+  },
+  {
+    "autor": "Dennis Lehane",
+    "caracteristica": "suspense",
+    "sinopse": "0",
+    "tema": "reconstrução emocional e justiça pessoal",
+    "titulo": "Depois da Queda"
+  },
+  {
+    "autor": "Benjamin Graham",
+    "caracteristica": "negocios",
+    "sinopse": "0",
+    "tema": "filosofia de investimentos e finanças pessoais",
+    "titulo": "O Investidor Inteligente"
+  },
+  {
+    "autor": "Anne Frank",
+    "caracteristica": "biografia",
+    "sinopse": "0",
+    "tema": "memória histórica e resiliência humana",
+    "titulo": "O Diário de Anne Frank"
+  },
+  {
+    "autor": "Herman Melville",
+    "caracteristica": "aventura",
+    "sinopse": "0",
+    "tema": "obsessão, destino e conflito homem versus natureza",
+    "titulo": "Moby Dick"
   }
 
 ]
