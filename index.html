@@ -72,8 +72,45 @@
                 margin-top: -10px;
                 margin-bottom: 20px;
             }
-
+            
         }
+        #grid-recomendados {
+            display: grid !important;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #495057;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(208, 208, 208, 0.2);
+        }
+
+        #grid-recomendados .item-livro {
+            display: block;
+            text-align: center;
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+        }
+
+        #grid-recomendados .item-livro img {
+            width: 100%;
+            max-width: 120px;
+            border-radius: 8px;
+            margin: 0 auto;
+            display: block;
+        }
+
+        #grid-recomendados .titulo-livro {
+            margin-top: 6px;
+            font-size: 14px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+
+        
         .favorito-icone {
             position: absolute;
             top: 10px;
@@ -211,19 +248,25 @@
         }
 
         @media (max-width: 500px) {
-            h1 {
-                font-size: 20px;
+            .livro img {
+                max-width: 100px;
             }
 
-            input, button {
-                font-size: 15px;
+            .remover-btn {
+                font-size: 11px;
+                padding: 4px 8px;
+            }
+
+            .livro-titulo {
+                font-size: 13px;
+            }
+
+            .livros-grid {
+                gap: 12px;
                 padding: 10px;
             }
-
-            #resultado {
-                padding: 15px;
-            }
         }
+
         /* NAVBAR MOBILE */
         .mobile-navbar {
         display: none;
@@ -334,10 +377,12 @@
     <div id="resultado"></div>
 
     <div class="sidebar">
+        <a href="index.html">Início</a>
         <a href="estante.html">Estante</a>
         <a href="Contato.html">Contato</a>
         <a href="#">Informações</a>
-        <a href="#" onclick="mostrarFavoritos()">Favoritos ❤️</a>
+        <a href="favoritos.html">Favoritos ❤️</a>
+
         <a href="https://www.instagram.com/oprofessor_livros/" target="_blank">Instagram</a>
     </div>
     <nav class="mobile-navbar">
@@ -465,11 +510,15 @@
             } else {
                 resultado.innerHTML = "<p class='indisponivel'>Nenhum resultado encontrado.</p>";
             }
-        } catch (erro) {
-            console.error("Erro ao buscar:", erro);
-            resultado.innerHTML = "<p class='indisponivel'>Erro ao buscar o livro ou autor.</p>";
-        }
-    }
+                } catch (erro) {
+                    console.error("Erro ao buscar:", erro);
+                    resultado.innerHTML = "<p class='indisponivel'>Erro ao buscar o livro ou autor.</p>";
+                }
+
+                if (document.getElementById("resultado").innerHTML.trim() !== "") {
+                        document.getElementById("recomendados").style.display = "none";
+                    }
+     }
 
         async function contarLivrosDisponiveis() {
             try {
@@ -485,18 +534,17 @@
         // Quando a página carregar
         window.onload = function () {
             contarLivrosDisponiveis();
-            mostrarRecomendados();
             atualizarIconeCarrinho();
 
-            // Se tiver ?titulo= na URL, já busca direto
             const params = new URLSearchParams(window.location.search);
             const titulo = params.get("titulo");
             if (titulo) {
                 document.getElementById("titulo").value = titulo;
                 buscarLivro();
+            } else {
+                mostrarRecomendados();
             }
         };
-
         // Detecta ENTER no campo de texto
         document.getElementById("titulo").addEventListener("keydown", function (event) {
             if (event.key === "Enter") {
@@ -577,12 +625,10 @@
             mostrarFavoritos(); // atualiza a grade
         }
         async function mostrarRecomendados() {
-            const campoBusca = document.getElementById("titulo");
             const recomendados = document.getElementById("recomendados");
+            const campoBusca = document.getElementById("titulo");
 
-            const favoritos = JSON.parse(localStorage.getItem("favoritos")) || [];
-
-            if (favoritos.length === 0 || campoBusca.value.trim() !== "") {
+            if (campoBusca.value.trim() !== "") {
                 recomendados.style.display = "none";
                 return;
             }
@@ -590,19 +636,45 @@
             try {
                 const resposta = await fetch("https://oprofessor-livros.onrender.com/catalogo");
                 const catalogo = await resposta.json();
-                const generosFavoritos = favoritos.map(l => l.caracteristica?.toLowerCase()).filter(Boolean);
-                const generosUnicos = [...new Set(generosFavoritos)];
+                const favoritos = JSON.parse(localStorage.getItem("favoritos")) || [];
 
-                const recomendadosFiltrados = catalogo.filter(livro =>
-                    livro.disponivel &&
-                    !favoritos.some(fav => fav.titulo === livro.titulo) &&
-                    generosUnicos.includes(livro.caracteristica?.toLowerCase())
-                );
+                let sugeridos = [];
 
-                const embaralhados = recomendadosFiltrados.sort(() => Math.random() - 0.5);
-                const quatro = embaralhados.slice(0, 4);
+                if (favoritos.length > 0) {
+                    const generosFavoritos = favoritos
+                        .map(l => l.caracteristica)
+                        .filter(Boolean);
 
-                if (quatro.length === 0) {
+                    // Evita duplicatas
+                    const generosUnicos = [...new Set(generosFavoritos.map(g => g.toLowerCase().trim()))];
+
+                    sugeridos = catalogo.filter(livro =>
+                        livro.disponivel &&
+                        generosUnicos.includes((livro.caracteristica || "").toLowerCase().trim()) &&
+                        !favoritos.some(f => f.titulo === livro.titulo)
+                    );
+                }
+
+                // Se não encontrou o suficiente, preenche com livros aleatórios
+                if (sugeridos.length < 4) {
+                    const restantes = catalogo.filter(livro =>
+                        livro.disponivel &&
+                        !favoritos.some(f => f.titulo === livro.titulo) &&
+                        !sugeridos.some(s => s.titulo === livro.titulo)
+                    );
+
+                    // Embaralhar
+                    for (let i = restantes.length - 1; i > 0; i--) {
+                        const j = Math.floor(Math.random() * (i + 1));
+                        [restantes[i], restantes[j]] = [restantes[j], restantes[i]];
+                    }
+
+                    sugeridos = sugeridos.concat(restantes.slice(0, 4 - sugeridos.length));
+                }
+
+                sugeridos = sugeridos.slice(0, 4); // no máximo 4
+
+                if (sugeridos.length === 0) {
                     recomendados.style.display = "none";
                     return;
                 }
@@ -610,14 +682,14 @@
                 recomendados.style.display = "block";
                 recomendados.innerHTML = `
                     <h2 style="color:white; margin-bottom: 15px;">📚 Recomendados para você</h2>
-                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 20px; justify-content:center;">
-                        ${quatro.map(livro => {
+                    <div id="grid-recomendados">
+                        ${sugeridos.map(livro => {
                             const imagem = `https://raw.githubusercontent.com/HenryMelo23/OProfessor_Livros/Professor-1.1.5/imagens/${encodeURIComponent(livro.titulo)}.png`;
                             const link = `index.html?titulo=${encodeURIComponent(livro.titulo)}`;
                             return `
-                                <a href="${link}" style="text-decoration:none; color:white; text-align:center;">
-                                    <img src="${imagem}" alt="${livro.titulo}" style="width:100%; max-width:120px; border-radius:8px; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
-                                    <div style="margin-top:6px; font-size:14px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">${livro.titulo}</div>
+                                <a href="${link}" class="item-livro">
+                                    <img src="${imagem}" alt="${livro.titulo}">
+                                    <div class="titulo-livro">${livro.titulo}</div>
                                 </a>
                             `;
                         }).join("")}
@@ -628,6 +700,9 @@
                 recomendados.style.display = "none";
             }
         }
+
+
+
         function atualizarIconeCarrinho() {
             const carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
             const wrapper = document.getElementById("icone-carrinho-wrapper");
