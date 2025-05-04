@@ -2,33 +2,27 @@
   {
     "autor": "Machado de Assis",
     "disponivel": true,
-    "preco": "R$13,80",
+    "preco": "R$17,25",
     "sinopse": "Dom Casmurro conta a história de Bento Santiago (Bentinho), apelidado de Dom Casmurro por ser calado e introvertido. Na adolescência, apaixona-se por Capítu, abandonando o seminário e, com ele, os desígnios traçados por sua mãe, Dona Glória, para que se tornasse padre. Casam-se e tudo corre bem, até o amor se tornar ciúme e desconfiança. É esta a grande questão que magistralmente Dom Casmurro expõe ao longo de 148 capítulos: a dúvida que paira ao longo de toda a obra sobre a possibilidade de traição de Capítu, agravada pela extraordinária semelhança do filho de ambos, Ezequiel, com o grande amigo de Bentinho, Escobar.",
-    "titulo": "Dom Casmurro",
-    "combo_id": "combo_1746318139",
-    "combo_desconto": 20
+    "titulo": "Dom Casmurro"
   },
   {
     "autor": "George Orwell",
     "caracteristica": "ficção",
     "disponivel": false,
-    "preco": "R$16,30",
+    "preco": "R$20,38",
     "sinopse": "1984 é um famoso romance inglês escrito pelo autor modernista George Orwell. Publicado pela primeira vez em 1949, ele conta a história de Winston Smith, um cidadão inserido em um contexto de repressão. Ele vive na Inglaterra de 1984, chamada de Oceânia. Nesse regime totalitarista, todos são vigiados pelo Grande Irmão.",
     "tema": "Distopia",
-    "titulo": "1984",
-    "combo_id": "combo_1746318139",
-    "combo_desconto": 20
+    "titulo": "1984"
   },
   {
     "autor": "Jane Hawking",
     "caracteristica": "biografia",
     "disponivel": true,
-    "preco": "R$12,21",
+    "preco": "R$15,26",
     "sinopse": "Baseado na história de Stephen Hawking, o filme expõe como o astrofísico fez descobertas relevantes para o mundo da ciência, inclusive relacionadas ao tempo. Também retrata seu romance com Jane Wilde, uma estudante de Cambridge que viria a se tornar sua esposa. Aos 21 anos de idade, Hawking descobriu que sofria de uma doença motora degenerativa, mas isso não o impediu de se tornar um dos maiores cientistas da atualidade.",
     "tema": "Biografia / Drama",
-    "titulo": "A teoria de Tudo",
-    "combo_id": "combo_1746318139",
-    "combo_desconto": 20
+    "titulo": "A teoria de Tudo"
   },
   {
     "autor": "Josh Malerman",
@@ -3705,50 +3699,64 @@
   {
     "autor": "John Green",
     "caracteristica": "drama",
-    "sinopse": "0",
+    "sinopse": "\"Quem é Você, Alasca?\" é uma história de crescimento e descoberta pessoal contada através dos olhos do protagonista Miles Halter. Um jovem curiosamente obsessivo por últimas palavras, que deixa sua vida monótona para trás e vai estudar num internato em busca de um novo começo. Lá, ele se depara com novos amigos, novos desafios e uma misteriosa garota de nome Alasca, que irá mudar para sempre a sua vida. Em meio a um turbilhão de emoções e acontecimentos inesperados, Miles discovers que há muito mais por trás das aparências, e que a resposta para a pergunta \"Quem é você, Alasca?\" pode ser mais profunda e intrigante do que jamais imaginou.",
     "tema": "descoberta pessoal e amadurecimento",
-    "titulo": "Quem é Você, Alasca?"
+    "titulo": "Quem é Você, Alasca",
+    "disponivel": true,
+    "preco": "R$16,38"
   },
   {
     "autor": "James Dashner",
     "caracteristica": "suspense",
-    "sinopse": "0",
+    "sinopse": "Em um mundo pós-apocalíptico, Thomas e seus amigos são forçados a enfrentar uma nova e terrível realidade. Depois de escapar da labirinto mortal, eles agora têm que sobreviver em um ambiente desconhecido e hostil, cheio de obstáculos e perigos imprevistos. Com o perigo sempre à espreita, eles precisam navegar por um terreno incendiado, enfrentando desafios que vão testar não apenas sua coragem, mas também a força de sua amizade. 'Maze Runner: A Prova de Fogo' é uma emocionante jornada de sobrevivência que vai deixar você sem fôlego até a última página. Prepare-se para um thrill ride inesquecível!",
     "tema": "sobrevivência e resistência em cenários pós-apocalípticos",
-    "titulo": "Maze Runner: A Prova de Fogo"
+    "titulo": "Maze Runner A Prova de Fogo",
+    "disponivel": true,
+    "preco": "R$26,46"
   },
   {
     "autor": "E. L. James",
     "caracteristica": "romance",
-    "sinopse": "0",
+    "sinopse": "Cinquenta Tons Mais Escuros é a segunda parte da trilogia erótica que vai deixar você sem fôlego. Depois de conhecer o misterioso e sedutor Christian Grey, Anastasia Steele mergulha mais fundo num mundo de prazeres intensos e descoberta de si mesma. Com seu passado obscuro e sua paixão dominadora, Christian apresenta a Ana um estilo de vida que ela jamais imaginou. Mas quando a relação entre eles se complica, Ana precisa descobrir até onde está disposta a ir e o que realmente quer do futuro. Com cenas intensas e cheias de tensão sexual, este livro é uma viagem ao mundo do BDSM, explorando os limites entre amor e dor, prazer e sofrimento. Prepare-se para uma jornada inesquecível, onde a curiosidade e a excitação vão levá-lo(a) a virar cada página com ainda mais desejo.",
     "tema": "relações intensas e autodescoberta emocional",
-    "titulo": "Cinquenta Tons Mais Escuros"
+    "titulo": "Cinquenta Tons Mais Escuros",
+    "disponivel": true,
+    "preco": "R$21,08"
   },
   {
     "autor": "Dennis Lehane",
     "caracteristica": "suspense",
-    "sinopse": "0",
+    "sinopse": "Em um futuro distópico, onde a sociedade foi destruída e o mundo não é mais o mesmo, 'Depois da Queda' conta a história de uma mulher chamada Michelle, que vive em meio às ruínas de uma civilização esquecida. Quando uma figura misteriosa chega em sua vida, trazendo lembranças de um passado que ela tenta desesperadamente deixar para trás, Michelle é forçada a enfrentar seus medos e embarcar em uma jornada perigosa, cheia de segredos e revelações chocantes. Em um mundo onde a sobrevivência é o maior desafio, ela descobrirá que nem todos são quem parecem ser e que a verdade pode ser a coisa mais perigosa de todas. 'Depois da Queda' é um thriller emocionante que irá capturá-lo desde as primeiras páginas e não o deixará ir até que a última seja virada.",
     "tema": "reconstrução emocional e justiça pessoal",
-    "titulo": "Depois da Queda"
+    "titulo": "Depois da Queda",
+    "disponivel": true,
+    "preco": "R$21,60"
   },
   {
     "autor": "Benjamin Graham",
     "caracteristica": "negocios",
-    "sinopse": "0",
+    "sinopse": "\"O Investidor Inteligente\" de Benjamin Graham é o guia definitivo para investir com sabedoria e segurança. Considerado a autoridade em investimento de valor, Graham apresenta uma abordagem prática e acessível para tomar decisões financeiras inteligentes. Neste livro, você descobrirá os princípios que guiam os investidores de sucesso e aprenderá a avaliar empresas, identificar oportunidades e construir um portfólio sólido. Com um estilo direto e exemplos concretos, Graham oferece um mapa do caminho para navegar no mundo dos investimentos, ajudando-o a proteger e fazer crescer seu patrimônio. Descubra porque \"O Investidor Inteligente\" é um clássico cult e inspire-se para tomar o controle de seu futuro financeiro.",
     "tema": "filosofia de investimentos e finanças pessoais",
-    "titulo": "O Investidor Inteligente"
+    "titulo": "O Investidor Inteligente",
+    "disponivel": true,
+    "preco": "R$31,09"
   },
   {
     "autor": "Anne Frank",
     "caracteristica": "biografia",
-    "sinopse": "0",
+    "sinopse": "Em um mundo dilacerado pela Segunda Guerra Mundial, surge o comovente diário de uma jovem judia chamada Anne Frank. Escondida com sua família em Amsterdã, Anne registra seus pensamentos e experiências durante dois anos, enquanto os nazistas ameaçam a vida dos judeus na Europa. \n\nEm seu diário, Anne revela seu sonho de se tornar uma escritora e seu desejo por um mundo melhor. Ela descreve suas emoções, medos e anseios na adolescência, assim como suas observações sobre a natureza humana, tudo isso dentro do contexto da perseguição e do terror. \n\nCom sua prosa poética e sua perspectiva única, Anne Frank nos brinda com um testemunho tocante sobre a força do espírito humano, que resistiu mesmo nas circunstâncias mais adversas. Seu diário se tornou um símbolo de esperança e coragem, um lembrete eterno da importância de proteger os valores da liberdade e da tolerância. \n\nUm livro intenso e emocionante, \"O Diário de Anne Frank\" continua a encantar e inspirar gerações, despertando curiosidade e simpatia pela vida desta jovem, whose voz se elevou além das páginas, ecoando através do tempo.",
     "tema": "memória histórica e resiliência humana",
-    "titulo": "O Diário de Anne Frank"
+    "titulo": "O Diário de Anne Frank",
+    "disponivel": true,
+    "preco": "R$18,23"
   },
   {
     "autor": "Herman Melville",
     "caracteristica": "aventura",
-    "sinopse": "0",
+    "sinopse": "\"Moby Dick\" é uma épica aventura marítima contada através dos olhos de Ismael, um jovem marinheiro que se junta à tripulação do veleiro Pequod, liderado pelo misterioso Capitão Ahab. Ahab é obcecado por uma enorme baleia chamada Moby Dick, que lhe tirou a perna em um confronto anterior.\n\nEm sua obsessiva busca de vingança, Ahab leva a tripulação em uma perigosa jornada pelos oceanos do mundo, enfrentando tempestades, perigos e mistérios. Ao longo da viagem, Ismael aprende as artes da caça à baleia e as complexidades da vida no mar.\n\nMas à medida que a viagem se desenrola, ele descobre segredos sombrios sobre o Capitão Ahab e a lendária baleia branca que o leva a questionar a razão de sua própria existência. Com uma narrativa emocionante e personagens inesquecíveis, \"Moby Dick\" é uma história intemporal de obsessão, sobrevivência e o poder misterioso e imprevisível do oceano.\n\nPrepare-se para uma viagem inesquecível que irá deixá-lo na beira do seu assento até a última página!",
     "tema": "obsessão, destino e conflito homem versus natureza",
-    "titulo": "Moby Dick"
+    "titulo": "Moby Dick",
+    "disponivel": true,
+    "preco": "R$21,50"
   }
 ]
