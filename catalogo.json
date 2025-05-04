@@ -2,27 +2,33 @@
   {
     "autor": "Machado de Assis",
     "disponivel": true,
-    "preco": "R$17,25",
+    "preco": "R$13,80",
     "sinopse": "Dom Casmurro conta a história de Bento Santiago (Bentinho), apelidado de Dom Casmurro por ser calado e introvertido. Na adolescência, apaixona-se por Capítu, abandonando o seminário e, com ele, os desígnios traçados por sua mãe, Dona Glória, para que se tornasse padre. Casam-se e tudo corre bem, até o amor se tornar ciúme e desconfiança. É esta a grande questão que magistralmente Dom Casmurro expõe ao longo de 148 capítulos: a dúvida que paira ao longo de toda a obra sobre a possibilidade de traição de Capítu, agravada pela extraordinária semelhança do filho de ambos, Ezequiel, com o grande amigo de Bentinho, Escobar.",
-    "titulo": "Dom Casmurro"
+    "titulo": "Dom Casmurro",
+    "combo_id": "combo_1746318139",
+    "combo_desconto": 20
   },
   {
     "autor": "George Orwell",
     "caracteristica": "ficção",
     "disponivel": false,
-    "preco": "R$20,38",
+    "preco": "R$16,30",
     "sinopse": "1984 é um famoso romance inglês escrito pelo autor modernista George Orwell. Publicado pela primeira vez em 1949, ele conta a história de Winston Smith, um cidadão inserido em um contexto de repressão. Ele vive na Inglaterra de 1984, chamada de Oceânia. Nesse regime totalitarista, todos são vigiados pelo Grande Irmão.",
     "tema": "Distopia",
-    "titulo": "1984"
+    "titulo": "1984",
+    "combo_id": "combo_1746318139",
+    "combo_desconto": 20
   },
   {
     "autor": "Jane Hawking",
     "caracteristica": "biografia",
     "disponivel": true,
-    "preco": "R$15,26",
+    "preco": "R$12,21",
     "sinopse": "Baseado na história de Stephen Hawking, o filme expõe como o astrofísico fez descobertas relevantes para o mundo da ciência, inclusive relacionadas ao tempo. Também retrata seu romance com Jane Wilde, uma estudante de Cambridge que viria a se tornar sua esposa. Aos 21 anos de idade, Hawking descobriu que sofria de uma doença motora degenerativa, mas isso não o impediu de se tornar um dos maiores cientistas da atualidade.",
     "tema": "Biografia / Drama",
-    "titulo": "A teoria de Tudo"
+    "titulo": "A teoria de Tudo",
+    "combo_id": "combo_1746318139",
+    "combo_desconto": 20
   },
   {
     "autor": "Josh Malerman",
@@ -3745,6 +3751,4 @@
     "tema": "obsessão, destino e conflito homem versus natureza",
     "titulo": "Moby Dick"
   }
-
 ]
-
