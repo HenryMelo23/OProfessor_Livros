@@ -21,5 +21,16 @@
       }
     ],
     "desconto": 10
+  },
+  {
+    "combo": [
+      {
+        "titulo": "Bird Box",
+        "autor": "Josh Malerman",
+        "preco_original": "R$14,38",
+        "preco": "R$7,19"
+      }
+    ],
+    "desconto": 50
   }
 ]
