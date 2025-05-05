@@ -34,6 +34,31 @@
       border-radius: 8px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.2);
     }
+    .genero.genero-promocoes {
+      background-color: #28a745;
+      color: white;
+      text-decoration: none;
+    }
+
+    .genero.genero-promocoes:hover {
+      background-color: #218838;
+      text-decoration: none;
+      
+    }
+    
+
+    .genero.genero-favoritos {
+      background-color: #dc3545; /* vermelho */
+      color: white;
+      text-decoration: none;
+    }
+
+    .genero.genero-favoritos:hover {
+      background-color: #c82333;
+      text-decoration: none;
+    }
+
+
 
     .preco-tag {
       position: absolute;
@@ -346,10 +371,12 @@
 
   <div class="generos-container" id="generos">
     <div class="genero genero-todos" onclick="mostrarLivros('todos')">Todos</div>
-    <a href="favoritos.html" class="genero favorito-botao">Favoritos ❤️</a>
+    <a href="favoritos.html" class="genero genero-favoritos">Favoritos ❤️</a>
 
 
-    
+
+    <a href="promocoes.html" class="genero genero-promocoes">Promoções💚</a>
+
     <div class="genero" onclick="mostrarLivros('romance')">Romance</div>
     <div class="genero" onclick="mostrarLivros('ficção')">Ficção</div>
     <div class="genero" onclick="mostrarLivros('terror')">Terror</div>

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Combos em Promoção</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('https://raw.githubusercontent.com/HenryMelo23/OProfessor_Livros/main/imagens/planof.png');
+      background-size: cover;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-position: center top;
+      min-height: 100vh;
+      margin-left: 180px;
+      color: white;
+    }
+
+    h1 {
+      text-align: center;
+      margin: 30px 0 10px;
+    }
+
+    .combo {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      border-radius: 12px;
+      margin: 40px auto 60px;;
+      max-width: 1000px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+
+    .combo-desconto {
+      text-align: center;
+      font-size: 18px;
+      font-weight: bold;
+      color: #28a745;
+      margin-bottom: 10px;
+    }
+
+    .livros-combo {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .livro {
+      text-align: center;
+      max-width: 140px;
+    }
+
+    .livro img {
+      width: 100%;
+      max-width: 120px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    .livro .titulo {
+      font-size: 14px;
+      margin-top: 4px;
+    }
+
+    .preco-original {
+      text-decoration: line-through;
+      color: #ccc;
+      font-size: 13px;
+    }
+
+    .preco-desconto {
+      color: #ffc107;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .combo-total {
+      margin-top: 15px;
+      text-align: center;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 180px;
+      background-color: #343a40;
+      padding-top: 60px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    .sidebar a {
+      padding: 15px 10px;
+      text-decoration: none;
+      color: white;
+      width: 100%;
+      text-align: center;
+      transition: background 0.3s;
+      font-weight: bold;
+    }
+
+    .sidebar a:hover {
+      background-color: #495057;
+    }
+
+    .mobile-navbar {
+      display: none;
+    }
+    .livro {
+    text-decoration: none !important;
+    color: white !important;
+    }
+
+    .livro:hover .titulo {
+    text-decoration: underline;
+    }
+
+    .livro .titulo {
+    color: white;
+    }
+
+
+    @media (max-width: 768px) {
+      body {
+        padding-top: 70px;
+        margin-left: 0;
+        background-color: #111;
+      }
+
+      .sidebar {
+        display: none !important;
+      }
+
+      .mobile-navbar {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 60px;
+        background-color: #222;
+        color: white;
+        z-index: 9999;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+      }
+
+      .mobile-navbar a {
+        color: white;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: bold;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- NAVBAR MOBILE -->
+  <nav class="mobile-navbar">
+    <a href="index.html">Início</a>
+    <a href="estante.html">Estante</a>
+    <a href="Contato.html">Contato</a>
+    <a href="https://www.instagram.com/seuluiz_livros/" target="_blank">Instagram</a>
+    <a href="#">Informações</a>
+  </nav>
+
+  <!-- SIDEBAR DESKTOP -->
+  <div class="sidebar">
+    <a href="index.html">Início</a>
+    <a href="estante.html">Estante</a>
+    <a href="Contato.html">Contato</a>
+    <a href="#">Informações</a>
+    <a href="https://www.instagram.com/seuluiz_livros/" target="_blank">Instagram</a>
+  </div>
+
+  <h1>📦 Combos em Promoção</h1>
+  <div id="promocoes-container"></div>
+
+  <script>
+    async function carregarCombos() {
+      try {
+        const resposta = await fetch("https://raw.githubusercontent.com/HenryMelo23/OProfessor_Livros/main/combos.json");
+        const dados = await resposta.json();
+        const container = document.getElementById("promocoes-container");
+
+        container.innerHTML = dados.map((combo, index) => {
+          let totalOriginal = 0;
+          let totalDesconto = 0;
+
+          const livrosHTML = combo.combo.map(livro => {
+            const precoOriginal = parseFloat(livro.preco_original.replace("R$", "").replace(",", "."));
+            const precoDesconto = parseFloat(livro.preco.replace("R$", "").replace(",", "."));
+            totalOriginal += precoOriginal;
+            totalDesconto += precoDesconto;
+
+            const tituloEncoded = encodeURIComponent(livro.titulo);
+
+            return `
+                <a href="index.html?titulo=${tituloEncoded}" class="livro">
+                <img src="https://raw.githubusercontent.com/HenryMelo23/OProfessor_Livros/main/imagens/${tituloEncoded}.png" alt="${livro.titulo}">
+                <div class="titulo">${livro.titulo}</div>
+                <div class="preco-original">R$ ${precoOriginal.toFixed(2).replace('.', ',')}</div>
+                <div class="preco-desconto">R$ ${precoDesconto.toFixed(2).replace('.', ',')}</div>
+                </a>
+            `;
+            }).join("");
+
+
+            return `
+                <div class="combo">
+                    <div class="combo-desconto">📦 Combo ${index + 1} – ${combo.desconto}% de desconto</div>
+                    <div class="livros-combo">${livrosHTML}</div>
+                    <div class="combo-total">
+                    De <span class="preco-original">R$ ${totalOriginal.toFixed(2).replace('.', ',')}</span>
+                    por <span class="preco-desconto">R$ ${totalDesconto.toFixed(2).replace('.', ',')}</span>
+                    </div>
+                    <div style="text-align: center; margin-top: 10px;">
+                    <button onclick='adicionarComboAoCarrinho(${JSON.stringify(combo.combo)})' style="padding: 10px 20px; background-color: #007bff; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: bold;">
+                        Adicionar Combo ao Carrinho
+                    </button>
+                    <p style="color: #ccc; font-size: 12px; margin-top: 8px;">💡 Valor apenas para a compra do combo</p>
+                    </div>
+                </div>
+                `;
+
+        }).join("");
+
+      } catch (erro) {
+        console.error("Erro ao carregar combos:", erro);
+        document.getElementById("promocoes-container").innerHTML = "<p style='color:white; text-align:center;'>Erro ao carregar combos.</p>";
+      }
+    }
+    function adicionarComboAoCarrinho(livros) {
+        let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+
+        livros.forEach(livro => {
+        const precoTexto = String(livro.preco).replace("R$", "").replace(",", ".").trim();
+        const precoDesconto = parseFloat(precoTexto);
+
+        const item = {
+            titulo: livro.titulo,
+            preco: precoDesconto
+        };
+
+        const jaExiste = carrinho.some(l => l.titulo === item.titulo);
+        if (!jaExiste) {
+            carrinho.push(item);
+        }
+        });
+
+        localStorage.setItem("carrinho", JSON.stringify(carrinho));
+
+        if (typeof atualizarIconeCarrinho === "function") {
+        atualizarIconeCarrinho();
+        }
+
+        alert("Combo adicionado ao carrinho!");
+    }
+    carregarCombos();
+  </script>
+</body>
+</html>
