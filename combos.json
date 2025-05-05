@@ -27,5 +27,16 @@
       }
     ],
     "desconto": 50
+  },
+  {
+    "combo": [
+      {
+        "titulo": "Extraordinário",
+        "autor": "R. J. Palacio",
+        "preco_original": "R$18,00",
+        "preco": "R$16,20"
+      }
+    ],
+    "desconto": 10
   }
 ]
