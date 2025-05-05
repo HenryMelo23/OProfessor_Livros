@@ -38,5 +38,16 @@
       }
     ],
     "desconto": 10
+  },
+  {
+    "combo": [
+      {
+        "titulo": "Jogador N°1",
+        "autor": "Ernest Cline",
+        "preco_original": "R$15,50",
+        "preco": "R$1,55"
+      }
+    ],
+    "desconto": 90
   }
 ]
