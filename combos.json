@@ -1,1 +1,19 @@
-[]
+[
+  {
+    "combo": [
+      {
+        "titulo": "1984",
+        "autor": "George Orwell",
+        "preco_original": "R$20,38",
+        "preco": "R$14,27"
+      },
+      {
+        "titulo": "A Revolução dos Bichos",
+        "autor": "George Orwell",
+        "preco_original": "R$17,90",
+        "preco": "R$12,53"
+      }
+    ],
+    "desconto": 30
+  }
+]
