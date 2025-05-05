@@ -3983,5 +3983,14 @@
     "titulo": "O Temor do Sábio",
     "disponivel": true,
     "preco": "R$25,66"
+  },
+  {
+    "autor": "George Orwell",
+    "caracteristica": "romance",
+    "sinopse": "Em uma fazenda inglesa, um grupo de animais insatisfeitos com a dominação humana decide se rebelar e tomar o controle do local, sonhando com um mundo onde possam viver livres e iguais. Liderados por dois porcos inteligentes, eles estabelecem uma nova ordem baseada nos princípios da igualdade e da justiça. Mas, à medida que o tempo passa, os ideais revolucionários vão se tornando cada vez mais distorcidos e a Fazenda Solar se transforma em um lugar de tirania e opressão. 'A Revolução dos Bichos' é uma alegoria poderosa que explora a natureza do poder e seus efeitos na sociedade, questionando os custos morais da busca pelo controle e pela autoridade. Em um mundo onde a linha entre humanos e animais parece cada vez mais tênue, até onde os animais seriam capazes de ir em sua luta por liberdade?",
+    "tema": "crítica política por meio de uma fábula sobre revolução e poder",
+    "titulo": "A Revolução dos Bichos",
+    "disponivel": true,
+    "preco": "R$17,90"
   }
 ]
