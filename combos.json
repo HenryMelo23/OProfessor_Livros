@@ -16,4 +16,15 @@
     ],
     "desconto": 30
   }
+  {
+    "combo": [
+      {
+        "titulo": "Quem é Você, Alasca",
+        "autor": "John Green",
+        "preco_original": "R$16,38",
+        "preco": "R$13,10"
+      },
+    ],
+    "desconto": 20
+  }
 ]
