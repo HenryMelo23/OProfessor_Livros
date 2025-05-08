@@ -15,34 +15,5 @@
       }
     ],
     "desconto": 30
-  },
-  {
-    "combo": [
-      {
-        "titulo": "Crepúsculo",
-        "autor": "Stephenie Meyer",
-        "preco_original": "R$18,09",
-        "preco": "R$13,57"
-      },
-      {
-        "titulo": "Lua Nova",
-        "autor": "Stephenie Meyer",
-        "preco_original": "R$17,34",
-        "preco": "R$13,00"
-      },
-      {
-        "titulo": "Amanhecer",
-        "autor": "Stephenie Meyer",
-        "preco_original": "R$19,14",
-        "preco": "R$14,36"
-      },
-      {
-        "titulo": "Eclipse",
-        "autor": "Stephenie Meyer",
-        "preco_original": "R$19,22",
-        "preco": "R$14,41"
-      }
-    ],
-    "desconto": 25
   }
 ]
