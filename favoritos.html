@@ -188,7 +188,8 @@
             }
 
             favoritos.slice(0, 6).forEach(livro => {
-                const imagem = `https://raw.githubusercontent.com/HenryMelo23/OProfessor_Livros/Professor-1.1.5/imagens/${encodeURIComponent(livro.titulo)}.png`;
+                const imagem = `https://ik.imagekit.io/Hermes/${livro.titulo.replace(/ /g, '%20')}.png`;
+
                 const link = `index.html?titulo=${encodeURIComponent(livro.titulo)}`;
 
                 const card = document.createElement("div");
