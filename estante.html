@@ -423,47 +423,51 @@
         container.style.display = "grid";
 
         container.innerHTML = livrosFiltrados.map(livro => {
-          const imagem = `https://raw.githubusercontent.com/HenryMelo23/OProfessor_Livros/main/imagens/${encodeURIComponent(livro.titulo)}.png`;
-          const link = `index.html?titulo=${encodeURIComponent(livro.titulo)}`;
+          // Substitui apenas os espaços por %20 e mantém & intacto
+          const imagem = `https://ik.imagekit.io/Hermes/${livro.titulo.replace(/ /g, '%20')}.png`;
+
+          const link = `index.html?titulo=${livro.titulo.replace(/ /g, '%20')}`;
 
           const carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
           const jaNoCarrinho = carrinho.some(l => l.titulo === livro.titulo);
 
           const botaoCarrinho = jaNoCarrinho
-            ? `<button class="botao-carrinho remover-do-carrinho" onclick='removerDoCarrinho("${livro.titulo}")'>×</button>`
-            : `<button class="botao-carrinho" onclick='adicionarAoCarrinho(${JSON.stringify(livro)})'>+</button>`;
-            let precoFormatado = "";
+              ? `<button class="botao-carrinho remover-do-carrinho" onclick='removerDoCarrinho("${livro.titulo}")'>×</button>`
+              : `<button class="botao-carrinho" onclick='adicionarAoCarrinho(${JSON.stringify(livro)})'>+</button>`;
 
-            if (livro.preco != null) {  // verifica se não é null ou undefined
+          let precoFormatado = "";
+
+          if (livro.preco != null) {  // verifica se não é null ou undefined
               const precoTexto = String(livro.preco);  // força ser string
               const precoLimpo = precoTexto.replace("R$", "").replace(",", ".").trim();
               const precoNumero = parseFloat(precoLimpo);
 
               if (!isNaN(precoNumero)) {
-                precoFormatado = `<div class="preco-tag">R$ ${precoNumero.toFixed(2).replace(".", ",")}</div>`;
+                  precoFormatado = `<div class="preco-tag">R$ ${precoNumero.toFixed(2).replace(".", ",")}</div>`;
               }
-            }
-            console.log("Livro:", livro);
-            const precoTag = livro.preco
-              
+          }
+
+          console.log("Livro:", livro);
+          const precoTag = livro.preco
               ? `<div class="preco-tag">R$ ${parseFloat(livro.preco).toFixed(2)}</div>`
               : "";
 
-            return `
-              <div class="livro-wrapper">
-                ${botaoCarrinho}
-                <a href="${link}" class="livro">
-                  <div class="imagem-wrapper">
-                    <div class="img-container">
-                      <img src="${imagem}" alt="${livro.titulo}">
-                      ${precoFormatado}
-                    </div>
+          return `
+            <div class="livro-wrapper">
+              ${botaoCarrinho}
+              <a href="${link}" class="livro">
+                <div class="imagem-wrapper">
+                  <div class="img-container">
+                    <img src="${imagem}" alt="${livro.titulo}">
+                    ${precoFormatado}
                   </div>
-                  <div class="titulo" title="${livro.titulo}">${livro.titulo}</div>
-                </a>
-              </div>
-            `;
-        }).join('');
+                </div>
+                <div class="titulo" title="${livro.titulo}">${livro.titulo}</div>
+              </a>
+            </div>
+          `;
+      }).join('');
+
 
       } catch (erro) {
         console.error("Erro ao carregar os livros:", erro);
@@ -492,7 +496,8 @@
       
 
       favoritos.forEach(livro => {
-        const imagem = `https://raw.githubusercontent.com/HenryMelo23/OProfessor_Livros/main/imagens/${encodeURIComponent(livro.titulo)}.png`;
+        const imagem = `https://ik.imagekit.io/Hermes/${livro.titulo.replace(/ /g, '%20')}.png`;
+
         const link = `index.html?titulo=${encodeURIComponent(livro.titulo)}`;
 
         const card = document.createElement("div");
@@ -537,7 +542,9 @@
       localStorage.setItem("carrinho", JSON.stringify(carrinho));
       mostrarLivros(generoAtual); // recarrega visualmente
     }
+    
 
   </script>
+  
 </body>
 </html>
