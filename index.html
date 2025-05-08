@@ -492,7 +492,8 @@
 
             } else if (resposta.ok && dados.tipo === "autor") {
                 resultado.innerHTML = `<h2>Livros de ${dados.autor}</h2>` + dados.livros.map(livro => {
-                    const imagem = `https://raw.githubusercontent.com/HenryMelo23/OProfessor_Livros/main/imagens/${encodeURIComponent(livro.titulo)}.png`;
+                    const imagem = `https://ik.imagekit.io/Hermes/${livro.titulo.replace(/ /g, '%20')}.png`;
+
                     const cor = livro.disponivel ? 'disponivel' : 'indisponivel';
                     const mensagemWhatsApp = encodeURIComponent(`Olá! Tenho interesse no livro "${livro.titulo}". Poderia me dar mais informações?`);
 
@@ -599,7 +600,8 @@
             });
 
             favoritos.forEach(livro => {
-                const imagem = `https://raw.githubusercontent.com/HenryMelo23/OProfessor_Livros/main/imagens/${encodeURIComponent(livro.titulo)}.png`;
+                const imagem = `https://ik.imagekit.io/Hermes/${livro.titulo.replace(/ /g, '%20')}.png`;
+
                 const link = `index.html?titulo=${encodeURIComponent(livro.titulo)}`;
 
                 const card = document.createElement("div");
@@ -687,7 +689,8 @@
                     <h2 style="color:white; margin-bottom: 15px;">📚 Recomendados para você</h2>
                     <div id="grid-recomendados">
                         ${sugeridos.map(livro => {
-                            const imagem = `https://raw.githubusercontent.com/HenryMelo23/OProfessor_Livros/main/imagens/${encodeURIComponent(livro.titulo)}.png`;
+                            const imagem = `https://ik.imagekit.io/Hermes/${livro.titulo.replace(/ /g, '%20')}.png`;
+
                             const link = `index.html?titulo=${encodeURIComponent(livro.titulo)}`;
                             return `
                                 <a href="${link}" class="item-livro">
@@ -749,7 +752,8 @@
             lista.innerHTML = ""; // limpa antes de popular
 
             carrinho.forEach((livro, index) => {
-                const imagem = `https://raw.githubusercontent.com/HenryMelo23/OProfessor_Livros/main/imagens/${encodeURIComponent(livro.titulo)}.png`;
+                const imagem = `https://ik.imagekit.io/Hermes/${livro.titulo.replace(/ /g, '%20')}.png`;
+
                 const preco = parseFloat(livro.preco.replace("R$", "").replace(",", ".")) || 0;
                 total += preco;
 
@@ -790,7 +794,8 @@
         let total = 0; // Acumula o valor total dos livros
 
         carrinho.forEach(livro => {
-            const imagem = `https://raw.githubusercontent.com/HenryMelo23/OProfessor_Livros/main/imagens/${encodeURIComponent(livro.titulo)}.png`;
+            const imagem = `https://ik.imagekit.io/Hermes/${livro.titulo.replace(/ /g, '%20')}.png`;
+
 
             // Tratamento de preço seguro
             let preco = 0;
