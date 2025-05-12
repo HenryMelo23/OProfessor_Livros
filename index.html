@@ -17,10 +17,10 @@
                 position: fixed;
                 top: 60px; /* Aumentado para descer todo o bloco */
                 right: 25px;
-                background-color: #007bff;
+                background-color: #2d3779;
                 padding: 10px;
                 border-radius: 50%;
-                box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -36,6 +36,7 @@
             }
 
             p {
+                font-family: "ChauPhilomeneOne";
                 white-space: pre-wrap;
                 text-align: justify;
             }
@@ -53,43 +54,60 @@
             
         }
         #grid-recomendados {
-            display: grid !important;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
-            max-width: 600px;
-            margin: 0 auto;
+            display: flex !important;
+            overflow-x: auto;
+            gap: 40px;
             padding: 20px;
-            background: #495057;
-            border-radius: 10px;
-            box-shadow: 0 10px 20px rgba(208, 208, 208, 0.2);
-        }
-
-        #grid-recomendados .item-livro {
-            display: block;
-            text-align: center;
-            color: rgb(255, 255, 255);
-            text-decoration: none;
-        }
-
-        #grid-recomendados .item-livro img {
-            width: 100%;
-            max-width: 120px;
-            border-radius: 8px;
+            max-width: 60%;
             margin: 0 auto;
-            display: block;
+            background: #2c1800da;
+            border-radius: 10px;
+            box-shadow: 0 0px 10px rgba(0, 0, 0, 0.795);
+            scroll-snap-type: x mandatory;
         }
 
-        #grid-recomendados .titulo-livro {
-            margin-top: 6px;
-            font-size: 14px;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            display: block;          /* Garante comportamento de bloco */
-            max-width: 120px;        /* Igual à imagem do livro */
-            margin-left: auto;
-            margin-right: auto;
-        }
+    #grid-recomendados .item-livro {
+        flex: 0 0 auto;
+        text-align: center;
+        color: white;
+        text-decoration: none;
+        scroll-snap-align: start;
+        width: 120px;
+    }
+
+    #grid-recomendados .item-livro img {
+        width: 120%;
+        max-width: 200px;
+        border-radius: 8px;
+        margin: 0 auto;
+        display: block;
+        box-shadow: 0 0 30px black;
+    }
+
+    #grid-recomendados .titulo-livro {
+        margin-top: 6px;
+        font-size: 14px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 120px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #grid-recomendados .grid-titulo {
+        flex: 0 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        width: 160px;
+        margin-right: 10px;
+        scroll-snap-align: start;
+    }
+
 
         
         .favorito-icone {
@@ -209,7 +227,7 @@
         .botao-busca {
             position: absolute;
             top: 41%;
-            right: 0.8px;
+            right: 0.01px;
             transform: translateY(-50%);
             width: 48px;
             height: 48px;
@@ -355,7 +373,7 @@
     </style>
 </head>
 <body>
-    <div id="painel-carrinho" style="display:none; position:fixed; top:0; right:0; height:100%; width:300px; background:#333333; box-shadow:-2px 0 10px rgba(0,0,0,0.3); padding:20px; z-index:10001; overflow-y:auto; transition: transform 0.3s ease; transform: translateX(100%);">
+    <div id="painel-carrinho" style="display:none; position:fixed; top:0; right:0; height:100%; width:300px; background:#271300; box-shadow:-2px 0 10px rgba(0,0,0,0.3); padding:20px; z-index:10001; overflow-y:auto; transition: transform 0.3s ease; transform: translateX(100%);">
         <h2 style="margin-top:0; color:#ffffff;">📚 Seu Carrinho</h2>
         <div id="lista-carrinho" style="margin-top:20px;"></div>
         <button onclick="finalizarPedido()" style="margin-top: 20px; width: 100%; background-color: #25D366; color: white; padding: 12px; border: none; border-radius: 8px; font-weight: bold; font-size: 16px;">
@@ -374,7 +392,8 @@
     </div>
 
     <h1 class="logo">O PROFESSOR</h1>
-    <p class="subtitulo">venda de livros usados</p>
+    <p class="subtitulo">Venda de livros</p>
+    <p class="subtitulo">novos, usados e semi-novos</p>
 
     <div class="barra-pesquisa">
         <input type="text" id="titulo" placeholder="Digite o título do livro">
@@ -386,13 +405,30 @@
     <div id="contador-livros">Temos disponíveis: ...</div>
     <div id="recomendados" style="display:none; margin-bottom: 30px;"></div>
 
+    <div id="botao-todos-livros" style="display: flex; justify-content: center; margin-top: 10vw;">
+        <a href="estante.html" style="
+          background-color: #2d3779;
+          color: white;
+          padding: 32px 48px;
+          border-radius: 999px;
+          text-decoration: none;
+          font-weight: bold;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+          transition: background-color 0.3s ease;
+        " onmouseover="this.style.backgroundColor='#1f285c'" onmouseout="this.style.backgroundColor='#2d3779'">
+          TODOS OS LIVROS
+        </a>
+      </div>
+      
+      
 
-    <div id="resultado"></div>
+    <div id="resultado" style="display: none;"></div>
 
     
 
     <script>
         async function buscarLivro() {
+            document.getElementById("botao-todos-livros").style.display = "none";
 
             const termo = document.getElementById("titulo").value.trim();
             const resultado = document.getElementById("resultado");
@@ -456,6 +492,7 @@
                     </div>
 
                 `;
+                resultado.style.display = 'block';
                 // Checar se já está favoritado ao carregar
                 const favoritos = JSON.parse(localStorage.getItem("favoritos")) || [];
                 const jaFavorito = favoritos.some(l => l.titulo === dados.titulo);
@@ -655,7 +692,7 @@
                 }
 
                 // Se não encontrou o suficiente, preenche com livros aleatórios
-                if (sugeridos.length < 4) {
+                if (sugeridos.length < 6) {
                     const restantes = catalogo.filter(livro =>
                         livro.disponivel &&
                         !favoritos.some(f => f.titulo === livro.titulo) &&
@@ -668,10 +705,10 @@
                         [restantes[i], restantes[j]] = [restantes[j], restantes[i]];
                     }
 
-                    sugeridos = sugeridos.concat(restantes.slice(0, 4 - sugeridos.length));
+                    sugeridos = sugeridos.concat(restantes.slice(0, 6 - sugeridos.length));
                 }
 
-                sugeridos = sugeridos.slice(0, 4); // no máximo 4
+                sugeridos = sugeridos.slice(0, 6); // no máximo 4
 
                 if (sugeridos.length === 0) {
                     recomendados.style.display = "none";
