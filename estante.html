@@ -8,7 +8,7 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-image: url('https://raw.githubusercontent.com/HenryMelo23/OProfessor_Livros/main/imagens/planof.png');
+      background-image: url('https://ik.imagekit.io/Hermes/planof.png');
       background-size: cover;
       background-attachment: fixed;
       background-repeat: no-repeat;
@@ -34,6 +34,56 @@
       border-radius: 8px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.2);
     }
+    .genero.genero-promocoes {
+      background-color: #28a745;
+      color: white;
+      text-decoration: none;
+    }
+
+    .genero.genero-promocoes:hover {
+      background-color: #218838;
+      text-decoration: none;
+      
+    }
+    
+
+    .genero.genero-favoritos {
+      background-color: #dc3545; /* vermelho */
+      color: white;
+      text-decoration: none;
+    }
+
+    .genero.genero-favoritos:hover {
+      background-color: #c82333;
+      text-decoration: none;
+    }
+    #botao-voltar {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #2d3779;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s ease-in-out;
+  }
+
+  #botao-voltar:hover {
+    transform: scale(1.1);
+  }
+
+  #botao-voltar img {
+    width: 60%;
+    height: auto;
+    pointer-events: none;
+  }
+
+
 
     .preco-tag {
       position: absolute;
@@ -155,34 +205,6 @@
       text-overflow: ellipsis;
     }
 
-    .sidebar {
-      position: fixed;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 180px;
-      background-color: #343a40;
-      padding-top: 60px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      z-index: 1000;
-    }
-
-    .sidebar a {
-      padding: 15px 10px;
-      text-decoration: none;
-      color: white;
-      width: 100%;
-      text-align: center;
-      transition: background 0.3s;
-      font-weight: bold;
-    }
-
-    .sidebar a:hover {
-      background-color: #495057;
-    }
-
     body {
       margin-left: 180px;
     }
@@ -200,34 +222,6 @@
           padding: 0;
           overflow-x: hidden;
           background-color: #111;
-        }
-
-        /* Oculta sidebar no mobile */
-        .sidebar {
-          display: none !important;
-        }
-
-        /* Navbar superior para mobile */
-        .mobile-navbar {
-          display: flex;
-          justify-content: space-around;
-          align-items: center;
-          position: fixed;
-          top: 0;
-          left: 0;
-          right: 0;
-          height: 60px;
-          background-color: #222;
-          color: white;
-          z-index: 9999;
-          box-shadow: 0 2px 8px rgba(0,0,0,0.3);
-        }
-
-        .mobile-navbar a {
-          color: white;
-          text-decoration: none;
-          font-size: 14px;
-          font-weight: bold;
         }
 
         body {
@@ -268,7 +262,7 @@
         .livro {
           width: 100%;
           max-width: 140px;
-          background-color: #1c1c1c;
+          background-color: #1e0e04;
           padding: 10px;
           border-radius: 10px;
           text-align: center;
@@ -284,35 +278,60 @@
           font-size: 14px;
           color: white;
         }
+        .livros-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+          gap: 20px;
+          padding: 20px;
+          border-radius: 15px;
+          background-color: rgba(0, 0, 0, 0.5);
+          box-shadow: 0 4px 10px rgba(0,0,0,0.8);
+        }
+
+        /* Responsividade para celulares */
+        @media (max-width: 500px) {
+          .livros-grid {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            padding: 10px;
+          }
+
+          .livros-grid img {
+            max-width: 100px;
+          }
+
+          .livros-grid button {
+            font-size: 11px;
+            padding: 4px 8px;
+          }
+
+          .livros-grid .livro-titulo {
+            font-size: 13px;
+          }
+        }
+        
+
+
       }
     
 
   </style>
 </head>
 <body>
-  <!-- NAVBAR MOBILE -->
-  <nav class="mobile-navbar">
-    <a href="index.html">Início</a>
-    <a href="estante.html">Estante</a>
-    <a href="Contato.html">Contato</a>
-    <a href="https://www.instagram.com/seuluiz_livros/" target="_blank">Instagram</a>
-    <a href="#">Informações</a>
-  </nav>
-
-
-  <div class="sidebar">
-    <a href="index.html">Início</a>
-    <a href="estante.html">Estante</a>
-    <a href="Contato.html">Contato</a>
-    <a href="#">Informações</a>
-    <a href="https://www.instagram.com/seuluiz_livros/" target="_blank">Instagram</a>
-  </div>
 
   <h1>📚 Gêneros Literários</h1>
+    <a href="index.html" id="botao-voltar">
+    <img src="https://ik.imagekit.io/Hermes/botao-voltar.png?updatedAt=1747178729800" alt="Voltar">
+  </a>
 
   <div class="generos-container" id="generos">
     <div class="genero genero-todos" onclick="mostrarLivros('todos')">Todos</div>
-    <button onclick="mostrarFavoritos()" class="botao-favoritos">Favoritos ❤️</button>
+    <a href="favoritos.html" class="genero genero-favoritos">Favoritos ❤️</a>
+
+
+
+    <a href="promocoes.html" class="genero genero-promocoes">Promoções💚</a>
+
     <div class="genero" onclick="mostrarLivros('romance')">Romance</div>
     <div class="genero" onclick="mostrarLivros('ficção')">Ficção</div>
     <div class="genero" onclick="mostrarLivros('terror')">Terror</div>
@@ -359,47 +378,51 @@
         container.style.display = "grid";
 
         container.innerHTML = livrosFiltrados.map(livro => {
-          const imagem = `https://raw.githubusercontent.com/HenryMelo23/OProfessor_Livros/main/imagens/${encodeURIComponent(livro.titulo)}.png`;
-          const link = `index.html?titulo=${encodeURIComponent(livro.titulo)}`;
+          // Substitui apenas os espaços por %20 e mantém & intacto
+          const imagem = `https://ik.imagekit.io/Hermes/${livro.titulo.replace(/ /g, '%20')}.png`;
+
+          const link = `index.html?titulo=${livro.titulo.replace(/ /g, '%20')}`;
 
           const carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
           const jaNoCarrinho = carrinho.some(l => l.titulo === livro.titulo);
 
           const botaoCarrinho = jaNoCarrinho
-            ? `<button class="botao-carrinho remover-do-carrinho" onclick='removerDoCarrinho("${livro.titulo}")'>×</button>`
-            : `<button class="botao-carrinho" onclick='adicionarAoCarrinho(${JSON.stringify(livro)})'>+</button>`;
-            let precoFormatado = "";
+              ? `<button class="botao-carrinho remover-do-carrinho" onclick='removerDoCarrinho("${livro.titulo}")'>×</button>`
+              : `<button class="botao-carrinho" onclick='adicionarAoCarrinho(${JSON.stringify(livro)})'>+</button>`;
 
-            if (livro.preco != null) {  // verifica se não é null ou undefined
+          let precoFormatado = "";
+
+          if (livro.preco != null) {  // verifica se não é null ou undefined
               const precoTexto = String(livro.preco);  // força ser string
               const precoLimpo = precoTexto.replace("R$", "").replace(",", ".").trim();
               const precoNumero = parseFloat(precoLimpo);
 
               if (!isNaN(precoNumero)) {
-                precoFormatado = `<div class="preco-tag">R$ ${precoNumero.toFixed(2).replace(".", ",")}</div>`;
+                  precoFormatado = `<div class="preco-tag">R$ ${precoNumero.toFixed(2).replace(".", ",")}</div>`;
               }
-            }
-            console.log("Livro:", livro);
-            const precoTag = livro.preco
-              
+          }
+
+          console.log("Livro:", livro);
+          const precoTag = livro.preco
               ? `<div class="preco-tag">R$ ${parseFloat(livro.preco).toFixed(2)}</div>`
               : "";
 
-            return `
-              <div class="livro-wrapper">
-                ${botaoCarrinho}
-                <a href="${link}" class="livro">
-                  <div class="imagem-wrapper">
-                    <div class="img-container">
-                      <img src="${imagem}" alt="${livro.titulo}">
-                      ${precoFormatado}
-                    </div>
+          return `
+            <div class="livro-wrapper">
+              ${botaoCarrinho}
+              <a href="${link}" class="livro">
+                <div class="imagem-wrapper">
+                  <div class="img-container">
+                    <img src="${imagem}" alt="${livro.titulo}">
+                    ${precoFormatado}
                   </div>
-                  <div class="titulo" title="${livro.titulo}">${livro.titulo}</div>
-                </a>
-              </div>
-            `;
-        }).join('');
+                </div>
+                <div class="titulo" title="${livro.titulo}">${livro.titulo}</div>
+              </a>
+            </div>
+          `;
+      }).join('');
+
 
       } catch (erro) {
         console.error("Erro ao carregar os livros:", erro);
@@ -425,18 +448,11 @@
 
       const grid = document.getElementById("grid-favoritos");
 
-      Object.assign(grid.style, {
-        display: "grid",
-        gridTemplateColumns: "repeat(auto-fit, minmax(120px, 1fr))",
-        gap: "20px",
-        padding: "20px",
-        borderRadius: "15px",
-        backgroundColor: "rgba(0, 0, 0, 0.5)",
-        boxShadow: "0 4px 10px rgba(0,0,0,0.8)"
-      });
+      
 
       favoritos.forEach(livro => {
-        const imagem = `https://raw.githubusercontent.com/HenryMelo23/OProfessor_Livros/main/imagens/${encodeURIComponent(livro.titulo)}.png`;
+        const imagem = `https://ik.imagekit.io/Hermes/${livro.titulo.replace(/ /g, '%20')}.png`;
+
         const link = `index.html?titulo=${encodeURIComponent(livro.titulo)}`;
 
         const card = document.createElement("div");
@@ -481,7 +497,9 @@
       localStorage.setItem("carrinho", JSON.stringify(carrinho));
       mostrarLivros(generoAtual); // recarrega visualmente
     }
+    
 
   </script>
+  
 </body>
 </html>
