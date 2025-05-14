@@ -39,6 +39,7 @@
                 font-family: "ChauPhilomeneOne";
                 white-space: pre-wrap;
                 text-align: justify;
+                color: white;
             }
 
             body {
@@ -52,6 +53,39 @@
                 margin-bottom: clamp(12px, 2vh, 24px);
             }
             
+        }
+        #barra-inferior {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #2d3779;
+            padding: 8px 10px;
+            z-index: 9999;
+            box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.4);
+        }
+
+        .conteudo-footer {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .links-footer a {
+            color: white;
+            margin-left: 20px;
+            font-size: 14px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .links-footer a:hover {
+            color: #aabbee;
+        }
+
+        #titulo-livros{
+            color: white;
         }
     
     #recomendados{
@@ -143,9 +177,7 @@
         .favorito-icone:hover {
             background: none;
         }
-        #resultado {
-            position: relative; /* necessário para posicionar o botão dentro dele */
-        }
+        
 
         #contador-livros {
             position: fixed;
@@ -247,17 +279,26 @@
             box-shadow: 0 2px 6px rgba(0,0,0,0.3);
             transition: background 0.3s;
         }
+        .botao-busca img.icone-lupa {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: auto;
+            pointer-events: none; /* garante que o clique atinja o botão, não a imagem */
+        }
+
 
         .botao-busca:hover {
             background-color: #3d4cb1;
         }
 
         #resultado {
+            position: relative; /* necessário para posicionar o botão dentro dele */
             margin-top: 30px;
             max-width: 600px;
             margin-left: auto;
             margin-right: auto;
-            background-color: white;
+            background-color: rgb(63, 31, 6);
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -305,8 +346,29 @@
         #botao-todos-livros {
             display: flex;
             justify-content: center;
-            margin-top: 9vw; /* padrão: telas grandes */
+            margin-top: 6vw; /* padrão: telas grandes */
         }
+        #icone-instagram {
+            position: fixed;
+            bottom: 50px; /* Acima da barra azul */
+            right: 20px;
+            z-index: 10000;
+            display: block;
+            transition: transform 0.2s;
+        }
+
+        #icone-instagram img {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+            transition: transform 0.2s;
+        }
+
+        #icone-instagram:hover img {
+            transform: scale(1.1);
+        }
+
 
         @media (max-width: 1399px) {
             #botao-todos-livros {
@@ -317,6 +379,10 @@
             margin-top: 0vh; 
             margin-bottom: 0px;
             }
+            #barra-inferior {
+            padding: 1px 10px;
+            
+        }
         }
 
 
@@ -430,15 +496,8 @@
             }
         }
 
-        /* NAVBAR MOBILE */
-        .mobile-navbar {
-        display: none;
-        }
 
         @media (max-width: 768px) {
-        .sidebar {
-            display: none !important;
-        }
         .botao-carrinho {
         top: 8px; /* Garante que ele não fique fora da imagem */
         right: 8px;
@@ -496,7 +555,7 @@
           Confirmar Pedido
         </button>
       </div>
-      
+    
 
     <div id="icone-carrinho-wrapper" style="display: none; position: fixed; z-index: 10000; cursor: pointer;">
         <img id="icone-carrinho" src="icone-carrinho.png" alt="Carrinho" style="width: 40px;">
@@ -513,7 +572,10 @@
 
     <div class="barra-pesquisa">
         <input type="text" id="titulo" placeholder="Digite o título do livro">
-        <button class="botao-busca" onclick="buscarLivro()"></button>
+        <button class="botao-busca" onclick="buscarLivro()">
+            <img src="https://ik.imagekit.io/Hermes/lupa.png?updatedAt=1747177608666" alt="Buscar" class="icone-lupa">
+        </button>
+
       </div>
       
 
@@ -534,13 +596,24 @@
         " onmouseover="this.style.backgroundColor='#1f285c'" onmouseout="this.style.backgroundColor='#2d3779'">
           TODOS OS LIVROS
         </a>
-      </div>
+    </div>
       
-      
+    <a href="https://www.instagram.com/oprofessor_livros/" target="_blank" id="icone-instagram">
+        <img src="https://ik.imagekit.io/Hermes/icone-insta.png?updatedAt=1747177610190" alt="Instagram">
+    </a>
+    
 
     <div id="resultado" style="display: none;"></div>
 
-    
+        <footer id="barra-inferior">
+        <div class="conteudo-footer">
+            <div class="links-footer">
+                <a href="Contato.html">Contato</a>
+                <a href="#sobre">Sobre nós</a>
+            </div>
+        </div>
+    </footer>
+
 
     <script>
         async function buscarLivro() {
@@ -570,7 +643,8 @@
 
             if (resposta.ok && dados.tipo === "livro") {
                 const cor = dados.disponivel ? 'disponivel' : 'indisponivel';
-                const imagem = `https://raw.githubusercontent.com/HenryMelo23/OProfessor_Livros/main/imagens/${encodeURIComponent(dados.titulo)}.png`;
+                const imagem = `https://ik.imagekit.io/Hermes/${encodeURIComponent(dados.titulo)}.png`;
+
                 const mensagemWhatsApp = encodeURIComponent(`Olá! Tenho interesse no livro "${dados.titulo}". Poderia me dar mais informações?`);
 
                 const livroObj = {
@@ -583,7 +657,7 @@
 
                 resultado.innerHTML = `
                     <img src="${imagem}" alt="${dados.titulo}">
-                    <h2>${dados.titulo}</h2>
+                    <h2 id="titulo-livros">${dados.titulo}</h2>
                     <p><strong>Autor:</strong> ${dados.autor}</p>
                     <p><strong>Sinopse:</strong> ${dados.sinopse || 'Sinopse não disponível.'}</p>
                     <p class="${cor}">${dados.disponivel ? 'Disponível' : 'Indisponível'}</p>
@@ -602,7 +676,7 @@
                         <div style="font-weight: bold; font-size: 18px; color: green; margin-bottom: 10px;">
                             R$ ${parseFloat(String(preco).replace("R$", "").replace(",", ".")).toFixed(2)}
                         </div>
-                        <button onclick='adicionarAoCarrinho(${JSON.stringify(livroObj)})'>
+                        <button onclick='adicionarAoCarrinho_aba(${JSON.stringify(livroObj)})'>
                             Adicionar ao carrinho
                         </button>
                     </div>
@@ -671,6 +745,8 @@
                     }
      }
 
+
+
         async function contarLivrosDisponiveis() {
             try {
                 const resposta = await fetch("https://oprofessor-livros.onrender.com/contar");
@@ -681,6 +757,10 @@
                 document.getElementById("contador-livros").innerText = `Erro ao carregar contador.`;
             }
         }
+
+
+
+
 
         // Quando a página carregar
         window.onload = function () {
@@ -869,23 +949,23 @@
 
 
 
-        function atualizarIconeCarrinho() {
-            const carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
-            const wrapper = document.getElementById("icone-carrinho-wrapper");
-            const contador = document.getElementById("contador-carrinho");
+    function atualizarIconeCarrinho() {
+        const carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+        const wrapper = document.getElementById("icone-carrinho-wrapper");
+        const contador = document.getElementById("contador-carrinho");
 
-            if (carrinho.length > 0) {
-                wrapper.style.display = "block";
-                contador.innerText = carrinho.length;
+        if (carrinho.length > 0) {
+            wrapper.style.display = "block";
+            contador.innerText = carrinho.length;
 
-                
-                document.getElementById("icone-carrinho-wrapper").onclick = abrirCarrinho;
-            } else {
-                wrapper.style.display = "none";
-            }
+            
+            document.getElementById("icone-carrinho-wrapper").onclick = abrirCarrinho;
+        } else {
+            wrapper.style.display = "none";
         }
+    }
 
-    function adicionarAoCarrinho(livro) {
+    function adicionarAoCarrinho_aba(livro) {
         let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
         if (!carrinho.some(l => l.titulo === livro.titulo)) {
             carrinho.push(livro);
@@ -930,7 +1010,7 @@
                         </div>
                         <div style="font-size: 14px; color: gray;">R$ ${preco.toFixed(2)}</div>
                     </div>
-                    <button onclick="removerDoCarrinho(${index})" style="background:none; border:none; color:red; font-size:16px; font-weight:bold; cursor:pointer;">✖</button>
+                    <button onclick="removerDoCarrinho_aba(${index})" style="background:none; border:none; color:red; font-size:16px; font-weight:bold; cursor:pointer;">✖</button>
                 `;
 
                 lista.appendChild(item);
@@ -973,7 +1053,7 @@
             item.innerHTML = `
                 <div style="position:relative; margin-right:12px;">
                     <img src="${imagem}" alt="${livro.titulo}" style="width:50px; height:auto; border-radius:8px;">
-                    <button onclick="removerDoCarrinho(${carrinho.indexOf(livro)})" 
+                    <button onclick="removerDoCarrinho_aba(${carrinho.indexOf(livro)})" 
                         style="position:absolute; top:45%; left:50%; transform:translate(-50%, -50%); background:none; border:none; color:red; font-size:24px; font-weight:bold; cursor:pointer; padding:0;">
                         ✖
                     </button>
@@ -1011,7 +1091,7 @@
     }
 
 
-    function removerDoCarrinho(index) {
+    function removerDoCarrinho_aba(index) {
         let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
         carrinho.splice(index, 1);
         localStorage.setItem("carrinho", JSON.stringify(carrinho));
