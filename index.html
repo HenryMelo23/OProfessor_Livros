@@ -6,16 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
-        
+        @font-face {
+            font-family: 'ChauPhilomeneOne';
+            src: url('Fontes/ChauPhilomeneOne-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
         @media (min-width: 768px) {
             #icone-carrinho-wrapper {
                 position: fixed;
                 top: 60px; /* Aumentado para descer todo o bloco */
                 right: 25px;
-                background-color: #007bff;
+                background-color: #2d3779;
                 padding: 10px;
                 border-radius: 50%;
-                box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -31,35 +36,10 @@
             }
 
             p {
+                font-family: "ChauPhilomeneOne";
                 white-space: pre-wrap;
                 text-align: justify;
-            }
-            .sidebar {
-                position: fixed;
-                top: 0;
-                left: 0;
-                height: 100%;
-                width: 180px;
-                background-color: #343a40;
-                padding-top: 60px;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                z-index: 1000;
-            }
-
-            .sidebar a {
-                padding: 15px 10px;
-                text-decoration: none;
                 color: white;
-                width: 100%;
-                text-align: center;
-                transition: background 0.3s;
-                font-weight: bold;
-            }
-
-            .sidebar a:hover {
-                background-color: #495057;
             }
 
             body {
@@ -67,51 +47,110 @@
             }
             .subtitulo {
                 color: white;
-                font-size: 18px;
+                font-size: clamp(14px, 1.5vw, 18px);
                 text-align: center;
-                margin-top: -10px;
-                margin-bottom: 20px;
+                margin-top: clamp(-5px, -1vw, -10px);
+                margin-bottom: clamp(12px, 2vh, 24px);
             }
             
         }
-        #grid-recomendados {
-            display: grid !important;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 20px;
-            background: #495057;
-            border-radius: 10px;
-            box-shadow: 0 10px 20px rgba(208, 208, 208, 0.2);
-        }
-
-        #grid-recomendados .item-livro {
-            display: block;
-            text-align: center;
-            color: rgb(255, 255, 255);
-            text-decoration: none;
-        }
-
-        #grid-recomendados .item-livro img {
+        #barra-inferior {
+            position: fixed;
+            bottom: 0;
+            left: 0;
             width: 100%;
-            max-width: 120px;
-            border-radius: 8px;
-            margin: 0 auto;
-            display: block;
+            background-color: #2d3779;
+            padding: 8px 10px;
+            z-index: 9999;
+            box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.4);
         }
 
-        #grid-recomendados .titulo-livro {
-            margin-top: 6px;
-            font-size: 14px;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            display: block;          /* Garante comportamento de bloco */
-            max-width: 120px;        /* Igual à imagem do livro */
-            margin-left: auto;
-            margin-right: auto;
+        .conteudo-footer {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
         }
+
+        .links-footer a {
+            color: white;
+            margin-left: 20px;
+            font-size: 14px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .links-footer a:hover {
+            color: #aabbee;
+        }
+
+        #titulo-livros{
+            color: white;
+        }
+    
+    #recomendados{
+            display:none; 
+            margin-top: 6vh; 
+            margin-bottom: 0px;
+        }
+
+    #grid-recomendados {
+    display: flex !important;
+    overflow-x: auto;
+    gap: clamp(12px, 2vw, 40px);
+    padding: clamp(16px, 2vw, 40px);
+    max-width: 50vw;
+    margin: 0 auto;
+    background: #2c1800da;
+    border-radius: 10px;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.795);
+    scroll-snap-type: x mandatory;
+}
+
+#grid-recomendados .item-livro {
+    flex: 0 0 auto;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    scroll-snap-align: start;
+    width: clamp(70px, 6vw, 130px);
+}
+
+#grid-recomendados .item-livro img {
+    width: 100%;
+    max-width: clamp(80px, 6vw, 140px);
+    border-radius: 8px;
+    margin: 0 auto;
+    display: block;
+    box-shadow: 0 0 30px black;
+}
+
+#grid-recomendados .titulo-livro {
+    margin-top: 6px;
+    font-size: clamp(12px, 1vw, 16px);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: clamp(100px, 10vw, 140px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#grid-recomendados .grid-titulo {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: clamp(14px, 1vw, 20px);
+    font-weight: bold;
+    width: clamp(120px, 8vw, 200px);
+    margin-right: clamp(8px, 1vw, 20px);
+    scroll-snap-align: start;
+}
+
+    
+
 
         
         .favorito-icone {
@@ -138,9 +177,7 @@
         .favorito-icone:hover {
             background: none;
         }
-        #resultado {
-            position: relative; /* necessário para posicionar o botão dentro dele */
-        }
+        
 
         #contador-livros {
             position: fixed;
@@ -151,7 +188,7 @@
             font-size: 16px;
             z-index: 1001;
         }
-
+        
         * {
             box-sizing: border-box;
         }
@@ -170,25 +207,37 @@
         }
 
         h1 {
-            font-size: 24px;
+            font-family: "ChauPhilomeneOne", sans-serif;
+            font-size: 40px;
             margin-bottom: 20px;
-            
-        }
-        h1 {
             color: white;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
             }
 
+
+            /*BAAAARRA de PESQUISA*/
         input, button {
             font-size: 16px;
             padding: 12px;
             margin: 5px 0;
             width: 100%;
-            max-width: 400px;
+            max-width: 700px;
+        }
+        input[type="text"] {
+            border-radius: 30px;
+            border: none;
+            padding-left: 20px;
+            outline: none;
+        }
+        input::placeholder {
+            color: #666;
+            font-style: italic;
         }
 
+
+
         button {
-            background-color: #007bff;
+            background-color: #2d3779;
             color: white;
             border: none;
             border-radius: 6px;
@@ -196,15 +245,60 @@
         }
 
         button:hover {
-            background-color: #0056b3;
+            background-color: rgb(10, 96, 188);
+        }
+
+        .barra-pesquisa {
+            position: relative;
+            max-width: 30vw;
+            margin: 1vw auto;
+        }
+
+        .barra-pesquisa input[type="text"] {
+            width: 100%;
+            padding: 14px 20px;
+            padding-right: 50px; /* espaço para o botão não sobrepor texto */
+            font-size: 16px;
+            border-radius: 30px;
+            border: none;
+            outline: none;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .botao-busca {
+            position: absolute;
+            top: 41%;
+            right: 0.01px;
+            transform: translateY(-50%);
+            width: 48px;
+            height: 48px;
+            background-color: #2d3779;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+            transition: background 0.3s;
+        }
+        .botao-busca img.icone-lupa {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: auto;
+            pointer-events: none; /* garante que o clique atinja o botão, não a imagem */
+        }
+
+
+        .botao-busca:hover {
+            background-color: #3d4cb1;
         }
 
         #resultado {
+            position: relative; /* necessário para posicionar o botão dentro dele */
             margin-top: 30px;
             max-width: 600px;
             margin-left: auto;
             margin-right: auto;
-            background-color: white;
+            background-color: rgb(63, 31, 6);
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -249,8 +343,127 @@
         #whatsapp a:hover {
             background-color: #1ebe5b;
         }
+        #botao-todos-livros {
+            display: flex;
+            justify-content: center;
+            margin-top: 6vw; /* padrão: telas grandes */
+        }
+        #icone-instagram {
+            position: fixed;
+            bottom: 50px; /* Acima da barra azul */
+            right: 20px;
+            z-index: 10000;
+            display: block;
+            transition: transform 0.2s;
+        }
+
+        #icone-instagram img {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+            transition: transform 0.2s;
+        }
+
+        #icone-instagram:hover img {
+            transform: scale(1.1);
+        }
+
+
+        @media (max-width: 1399px) {
+            #botao-todos-livros {
+                margin-top: 2vw;
+            }
+            #recomendados{
+            display:none; 
+            margin-top: 0vh; 
+            margin-bottom: 0px;
+            }
+            #barra-inferior {
+            padding: 1px 10px;
+            
+        }
+        }
+
 
         @media (max-width: 500px) {
+            .livro img {
+                max-width: 100px;
+            }
+            #botao-todos-livros {
+                margin-top: 30vw;
+            }
+            #recomendados{
+                display:none; 
+                margin-top: 90px; 
+                margin-bottom: 0px;
+            }
+
+            .remover-btn {
+                font-size: 11px;
+                padding: 4px 8px;
+            }
+
+            .livro-titulo {
+                font-size: 13px;
+            }
+
+            .livros-grid {
+                gap: 12px;
+                padding: 10px;
+            }
+            .barra-pesquisa {
+                max-width: 90vw;
+                margin: 20px auto;
+            }
+
+            .barra-pesquisa input[type="text"] {
+                padding: 12px 16px;
+                padding-right: 50px;
+                font-size: 14px;
+                border-radius: 25px;
+            }
+
+            .botao-busca {
+                width: 40px;
+                height: 40px;
+                right: 5px;
+            }
+
+            #grid-recomendados {
+                padding: 12px;
+                gap: 4vw;
+                max-width: 90vw;
+            }
+
+            #grid-recomendados .item-livro {
+                width: 28vw;
+            }
+
+            #grid-recomendados .item-livro img {
+                width: 100%;
+                max-width: 100%;
+            }
+
+            #grid-recomendados .titulo-livro {
+                font-size: 12px;
+                max-width: 90px;
+            }
+
+            #grid-recomendados .grid-titulo {
+                font-size: 14px;
+                width: 120px;
+            }
+
+            h1.logo {
+                font-size: 28px;
+            }
+
+            .subtitulo {
+                font-size: 16px;
+                margin-bottom: 10px;
+            }
+
             .livro img {
                 max-width: 100px;
             }
@@ -268,17 +481,23 @@
                 gap: 12px;
                 padding: 10px;
             }
+
+            body {
+                padding-top: 70px;
+            }
+            #contador-livros {
+                position: fixed;
+                top: 15px;
+                right: 20px;
+                color: white;
+                font-weight: bold;
+                font-size: 10px;
+                z-index: 1001;
+            }
         }
 
-        /* NAVBAR MOBILE */
-        .mobile-navbar {
-        display: none;
-        }
 
         @media (max-width: 768px) {
-        .sidebar {
-            display: none !important;
-        }
         .botao-carrinho {
         top: 8px; /* Garante que ele não fique fora da imagem */
         right: 8px;
@@ -295,7 +514,7 @@
             position: fixed;
             top: 95px; /* No mobile, desce um pouco mais para não encostar na navbar */
             right: 15px;
-            background-color: #007bff;
+            background-color: #2d3779;
             padding: 10px;
             border-radius: 50%;
             box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
@@ -314,27 +533,6 @@
         }
 
 
-        .mobile-navbar {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 60px;
-            background-color: #222;
-            color: white;
-            z-index: 9999;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.3);
-        }
-
-        .mobile-navbar a {
-            color: white;
-            text-decoration: none;
-            font-size: 14px;
-            font-weight: bold;
-        }
 
         body {
             padding-top: 70px; /* espaço para a navbar não cobrir o conteúdo */
@@ -350,14 +548,14 @@
     </style>
 </head>
 <body>
-    <div id="painel-carrinho" style="display:none; position:fixed; top:0; right:0; height:100%; width:300px; background:#333333; box-shadow:-2px 0 10px rgba(0,0,0,0.3); padding:20px; z-index:10001; overflow-y:auto; transition: transform 0.3s ease; transform: translateX(100%);">
+    <div id="painel-carrinho" style="display:none; position:fixed; top:0; right:0; height:100%; width:300px; background:#271300; box-shadow:-2px 0 10px rgba(0,0,0,0.3); padding:20px; z-index:10001; overflow-y:auto; transition: transform 0.3s ease; transform: translateX(100%);">
         <h2 style="margin-top:0; color:#ffffff;">📚 Seu Carrinho</h2>
         <div id="lista-carrinho" style="margin-top:20px;"></div>
         <button onclick="finalizarPedido()" style="margin-top: 20px; width: 100%; background-color: #25D366; color: white; padding: 12px; border: none; border-radius: 8px; font-weight: bold; font-size: 16px;">
           Confirmar Pedido
         </button>
       </div>
-      
+    
 
     <div id="icone-carrinho-wrapper" style="display: none; position: fixed; z-index: 10000; cursor: pointer;">
         <img id="icone-carrinho" src="icone-carrinho.png" alt="Carrinho" style="width: 40px;">
@@ -368,37 +566,58 @@
         </div>
     </div>
 
-    <h1 class="logo">📚 O Professor 👴</h1>
-    <p class="subtitulo">venda de livros usados</p>
+    <h1 class="logo">O PROFESSOR</h1>
+    <p class="subtitulo">Venda de livros</p>
+    <p class="subtitulo">novos, usados e semi-novos</p>
 
-    <input type="text" id="titulo" placeholder="Digite o título do livro">
-    <button onclick="buscarLivro()">Buscar</button>
+    <div class="barra-pesquisa">
+        <input type="text" id="titulo" placeholder="Digite o título do livro">
+        <button class="botao-busca" onclick="buscarLivro()">
+            <img src="https://ik.imagekit.io/Hermes/lupa.png?updatedAt=1747177608666" alt="Buscar" class="icone-lupa">
+        </button>
+
+      </div>
+      
+
+    
     <div id="contador-livros">Temos disponíveis: ...</div>
-    <div id="recomendados" style="display:none; margin-bottom: 30px;"></div>
+    <div id="recomendados" ></div>
 
-
-    <div id="resultado"></div>
-
-    <div class="sidebar">
-        <a href="index.html">Início</a>
-        <a href="estante.html">Estante</a>
-        <a href="Contato.html">Contato</a>
-        <a href="#">Informações</a>
-        <a href="favoritos.html">Favoritos ❤️</a>
-
-        <a href="https://www.instagram.com/oprofessor_livros/" target="_blank">Instagram</a>
+    <div id="botao-todos-livros">
+        <a href="estante.html" style="
+          background-color: #2d3779;
+          color: white;
+          padding: 32px 48px;
+          border-radius: 999px;
+          text-decoration: none;
+          font-weight: bold;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+          transition: background-color 0.3s ease;
+        " onmouseover="this.style.backgroundColor='#1f285c'" onmouseout="this.style.backgroundColor='#2d3779'">
+          TODOS OS LIVROS
+        </a>
     </div>
-    <nav class="mobile-navbar">
-        <a href="index.html">Início</a>
-        <a href="estante.html">Estante</a>
-        <a href="Contato.html">Contato</a>
-        
-        <a href="https://www.instagram.com/oprofessor_livros/" target="_blank">Instagram</a>
-        <a href="#">Informações</a>
-      </nav>
+      
+    <a href="https://www.instagram.com/oprofessor_livros/" target="_blank" id="icone-instagram">
+        <img src="https://ik.imagekit.io/Hermes/icone-insta.png?updatedAt=1747177610190" alt="Instagram">
+    </a>
+    
+
+    <div id="resultado" style="display: none;"></div>
+
+        <footer id="barra-inferior">
+        <div class="conteudo-footer">
+            <div class="links-footer">
+                <a href="Contato.html">Contato</a>
+                <a href="#sobre">Sobre nós</a>
+            </div>
+        </div>
+    </footer>
+
 
     <script>
         async function buscarLivro() {
+            document.getElementById("botao-todos-livros").style.display = "none";
 
             const termo = document.getElementById("titulo").value.trim();
             const resultado = document.getElementById("resultado");
@@ -424,7 +643,8 @@
 
             if (resposta.ok && dados.tipo === "livro") {
                 const cor = dados.disponivel ? 'disponivel' : 'indisponivel';
-                const imagem = `https://raw.githubusercontent.com/HenryMelo23/OProfessor_Livros/main/imagens/${encodeURIComponent(dados.titulo)}.png`;
+                const imagem = `https://ik.imagekit.io/Hermes/${encodeURIComponent(dados.titulo)}.png`;
+
                 const mensagemWhatsApp = encodeURIComponent(`Olá! Tenho interesse no livro "${dados.titulo}". Poderia me dar mais informações?`);
 
                 const livroObj = {
@@ -437,7 +657,7 @@
 
                 resultado.innerHTML = `
                     <img src="${imagem}" alt="${dados.titulo}">
-                    <h2>${dados.titulo}</h2>
+                    <h2 id="titulo-livros">${dados.titulo}</h2>
                     <p><strong>Autor:</strong> ${dados.autor}</p>
                     <p><strong>Sinopse:</strong> ${dados.sinopse || 'Sinopse não disponível.'}</p>
                     <p class="${cor}">${dados.disponivel ? 'Disponível' : 'Indisponível'}</p>
@@ -456,12 +676,13 @@
                         <div style="font-weight: bold; font-size: 18px; color: green; margin-bottom: 10px;">
                             R$ ${parseFloat(String(preco).replace("R$", "").replace(",", ".")).toFixed(2)}
                         </div>
-                        <button onclick='adicionarAoCarrinho(${JSON.stringify(livroObj)})'>
+                        <button onclick='adicionarAoCarrinho_aba(${JSON.stringify(livroObj)})'>
                             Adicionar ao carrinho
                         </button>
                     </div>
 
                 `;
+                resultado.style.display = 'block';
                 // Checar se já está favoritado ao carregar
                 const favoritos = JSON.parse(localStorage.getItem("favoritos")) || [];
                 const jaFavorito = favoritos.some(l => l.titulo === dados.titulo);
@@ -524,6 +745,8 @@
                     }
      }
 
+
+
         async function contarLivrosDisponiveis() {
             try {
                 const resposta = await fetch("https://oprofessor-livros.onrender.com/contar");
@@ -534,6 +757,10 @@
                 document.getElementById("contador-livros").innerText = `Erro ao carregar contador.`;
             }
         }
+
+
+
+
 
         // Quando a página carregar
         window.onload = function () {
@@ -550,12 +777,25 @@
             }
         };
         // Detecta ENTER no campo de texto
-        document.getElementById("titulo").addEventListener("keydown", function (event) {
+        const campoBusca = document.getElementById("titulo");
+
+        campoBusca.addEventListener("keydown", function (event) {
             if (event.key === "Enter") {
                 event.preventDefault();
                 buscarLivro();
             }
         });
+
+        // NOVO: Escuta alterações no campo para mostrar o grid e botão quando estiver vazio
+        campoBusca.addEventListener("input", function () {
+            const termo = campoBusca.value.trim();
+            if (termo === "") {
+                document.getElementById("resultado").style.display = "none";
+                document.getElementById("botao-todos-livros").style.display = "flex";
+                mostrarRecomendados();
+            }
+        });
+
 
         function adicionarAosFavoritos(livro) {
             let favoritos = JSON.parse(localStorage.getItem("favoritos")) || [];
@@ -661,7 +901,7 @@
                 }
 
                 // Se não encontrou o suficiente, preenche com livros aleatórios
-                if (sugeridos.length < 4) {
+                if (sugeridos.length < 6) {
                     const restantes = catalogo.filter(livro =>
                         livro.disponivel &&
                         !favoritos.some(f => f.titulo === livro.titulo) &&
@@ -674,10 +914,10 @@
                         [restantes[i], restantes[j]] = [restantes[j], restantes[i]];
                     }
 
-                    sugeridos = sugeridos.concat(restantes.slice(0, 4 - sugeridos.length));
+                    sugeridos = sugeridos.concat(restantes.slice(0, 6 - sugeridos.length));
                 }
 
-                sugeridos = sugeridos.slice(0, 4); // no máximo 4
+                sugeridos = sugeridos.slice(0, 6); // no máximo 4
 
                 if (sugeridos.length === 0) {
                     recomendados.style.display = "none";
@@ -709,23 +949,23 @@
 
 
 
-        function atualizarIconeCarrinho() {
-            const carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
-            const wrapper = document.getElementById("icone-carrinho-wrapper");
-            const contador = document.getElementById("contador-carrinho");
+    function atualizarIconeCarrinho() {
+        const carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+        const wrapper = document.getElementById("icone-carrinho-wrapper");
+        const contador = document.getElementById("contador-carrinho");
 
-            if (carrinho.length > 0) {
-                wrapper.style.display = "block";
-                contador.innerText = carrinho.length;
+        if (carrinho.length > 0) {
+            wrapper.style.display = "block";
+            contador.innerText = carrinho.length;
 
-                
-                document.getElementById("icone-carrinho-wrapper").onclick = abrirCarrinho;
-            } else {
-                wrapper.style.display = "none";
-            }
+            
+            document.getElementById("icone-carrinho-wrapper").onclick = abrirCarrinho;
+        } else {
+            wrapper.style.display = "none";
         }
+    }
 
-    function adicionarAoCarrinho(livro) {
+    function adicionarAoCarrinho_aba(livro) {
         let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
         if (!carrinho.some(l => l.titulo === livro.titulo)) {
             carrinho.push(livro);
@@ -770,7 +1010,7 @@
                         </div>
                         <div style="font-size: 14px; color: gray;">R$ ${preco.toFixed(2)}</div>
                     </div>
-                    <button onclick="removerDoCarrinho(${index})" style="background:none; border:none; color:red; font-size:16px; font-weight:bold; cursor:pointer;">✖</button>
+                    <button onclick="removerDoCarrinho_aba(${index})" style="background:none; border:none; color:red; font-size:16px; font-weight:bold; cursor:pointer;">✖</button>
                 `;
 
                 lista.appendChild(item);
@@ -813,7 +1053,7 @@
             item.innerHTML = `
                 <div style="position:relative; margin-right:12px;">
                     <img src="${imagem}" alt="${livro.titulo}" style="width:50px; height:auto; border-radius:8px;">
-                    <button onclick="removerDoCarrinho(${carrinho.indexOf(livro)})" 
+                    <button onclick="removerDoCarrinho_aba(${carrinho.indexOf(livro)})" 
                         style="position:absolute; top:45%; left:50%; transform:translate(-50%, -50%); background:none; border:none; color:red; font-size:24px; font-weight:bold; cursor:pointer; padding:0;">
                         ✖
                     </button>
@@ -851,7 +1091,7 @@
     }
 
 
-    function removerDoCarrinho(index) {
+    function removerDoCarrinho_aba(index) {
         let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
         carrinho.splice(index, 1);
         localStorage.setItem("carrinho", JSON.stringify(carrinho));
