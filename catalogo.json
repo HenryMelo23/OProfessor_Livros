@@ -3823,6 +3823,15 @@
     "data_adicao": "2025-11-23 19:54:52"
   },
   {
+    "titulo": "test2",
+    "autor": "test4",
+    "sinopse": "test2",
+    "tema": "test2",
+    "preco": "111,11",
+    "disponivel": true,
+    "data_adicao": "2025-11-23 20:01:33"
+  },
+  {
     "autor": "Mary E. Pearson",
     "caracteristica": "fantasia",
     "disponivel": true,
