@@ -3816,7 +3816,7 @@
   {
     "titulo": "test1",
     "autor": "test1",
-    "sinopse": "test1",
+    "sinopse": "test 234",
     "tema": "test1",
     "preco": "111,11",
     "disponivel": true,
