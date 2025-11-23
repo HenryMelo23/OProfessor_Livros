@@ -3814,6 +3814,15 @@
     "titulo": "Terapia Cognitiva"
   },
   {
+    "titulo": "test1",
+    "autor": "test1",
+    "sinopse": "test1",
+    "tema": "test1",
+    "preco": "111,11",
+    "disponivel": true,
+    "data_adicao": "2025-11-23 19:54:52"
+  },
+  {
     "autor": "Mary E. Pearson",
     "caracteristica": "fantasia",
     "disponivel": true,
