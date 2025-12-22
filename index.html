@@ -1,0 +1,1137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Catálogo de Livros</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        @font-face {
+            font-family: 'ChauPhilomeneOne';
+            src: url('Fontes/ChauPhilomeneOne-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @media (min-width: 768px) {
+            #icone-carrinho-wrapper {
+                position: fixed;
+                top: 60px; /* Aumentado para descer todo o bloco */
+                right: 25px;
+                background-color: #2d3779;
+                padding: 10px;
+                border-radius: 50%;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 60px;
+                height: 60px;
+                z-index: 10000;
+                cursor: pointer;
+            }
+            #icone-carrinho {
+                width: 28px;
+                height: auto;
+                margin-top: auto; /* valor negativo sobe a imagem */
+            }
+
+            p {
+                font-family: "ChauPhilomeneOne";
+                white-space: pre-wrap;
+                text-align: justify;
+                color: white;
+            }
+
+            body {
+                margin-left: 180px;
+            }
+            .subtitulo {
+                color: white;
+                font-size: clamp(14px, 1.5vw, 18px);
+                text-align: center;
+                margin-top: clamp(-5px, -1vw, -10px);
+                margin-bottom: clamp(12px, 2vh, 24px);
+            }
+            
+        }
+        #barra-inferior {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #2d3779;
+            padding: 8px 10px;
+            z-index: 9999;
+            box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.4);
+        }
+
+        .conteudo-footer {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .links-footer a {
+            color: white;
+            margin-left: 20px;
+            font-size: 14px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .links-footer a:hover {
+            color: #aabbee;
+        }
+
+        #titulo-livros{
+            color: white;
+        }
+    
+    #recomendados{
+            display:none; 
+            margin-top: 6vh; 
+            margin-bottom: 0px;
+        }
+
+    #grid-recomendados {
+    display: flex !important;
+    overflow-x: auto;
+    gap: clamp(12px, 2vw, 40px);
+    padding: clamp(16px, 2vw, 40px);
+    max-width: 50vw;
+    margin: 0 auto;
+    background: #2c1800da;
+    border-radius: 10px;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.795);
+    scroll-snap-type: x mandatory;
+}
+
+#grid-recomendados .item-livro {
+    flex: 0 0 auto;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    scroll-snap-align: start;
+    width: clamp(70px, 6vw, 130px);
+}
+
+#grid-recomendados .item-livro img {
+    width: 100%;
+    max-width: clamp(80px, 6vw, 140px);
+    border-radius: 8px;
+    margin: 0 auto;
+    display: block;
+    box-shadow: 0 0 30px black;
+}
+
+#grid-recomendados .titulo-livro {
+    margin-top: 6px;
+    font-size: clamp(12px, 1vw, 16px);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: clamp(100px, 10vw, 140px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#grid-recomendados .grid-titulo {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: clamp(14px, 1vw, 20px);
+    font-weight: bold;
+    width: clamp(120px, 8vw, 200px);
+    margin-right: clamp(8px, 1vw, 20px);
+    scroll-snap-align: start;
+}
+
+    
+
+
+        
+        .favorito-icone {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: transparent;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            outline: none;
+            padding: 0;
+            line-height: 1;
+            width: auto;
+            height: auto;
+            display: inline-block;
+        }
+
+        .favorito-icone:focus {
+            outline: none;
+            box-shadow: none;
+        }
+
+        .favorito-icone:hover {
+            background: none;
+        }
+        
+
+        #contador-livros {
+            position: fixed;
+            top: 15px;
+            right: 20px;
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+            z-index: 1001;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            margin: 0;
+            text-align: center;
+
+            background-image: url('https://ik.imagekit.io/Hermes/planof.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+        }
+
+        h1 {
+            font-family: "ChauPhilomeneOne", sans-serif;
+            font-size: 40px;
+            margin-bottom: 20px;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            }
+
+
+            /*BAAAARRA de PESQUISA*/
+        input, button {
+            font-size: 16px;
+            padding: 12px;
+            margin: 5px 0;
+            width: 100%;
+            max-width: 700px;
+        }
+        input[type="text"] {
+            border-radius: 30px;
+            border: none;
+            padding-left: 20px;
+            outline: none;
+        }
+        input::placeholder {
+            color: #666;
+            font-style: italic;
+        }
+
+
+
+        button {
+            background-color: #2d3779;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: rgb(10, 96, 188);
+        }
+
+        .barra-pesquisa {
+            position: relative;
+            max-width: 30vw;
+            margin: 1vw auto;
+        }
+
+        .barra-pesquisa input[type="text"] {
+            width: 100%;
+            padding: 14px 20px;
+            padding-right: 50px; /* espaço para o botão não sobrepor texto */
+            font-size: 16px;
+            border-radius: 30px;
+            border: none;
+            outline: none;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .botao-busca {
+            position: absolute;
+            top: 41%;
+            right: 0.01px;
+            transform: translateY(-50%);
+            width: 48px;
+            height: 48px;
+            background-color: #2d3779;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+            transition: background 0.3s;
+        }
+        .botao-busca img.icone-lupa {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: auto;
+            pointer-events: none; /* garante que o clique atinja o botão, não a imagem */
+        }
+
+
+        .botao-busca:hover {
+            background-color: #3d4cb1;
+        }
+
+        #resultado {
+            position: relative; /* necessário para posicionar o botão dentro dele */
+            margin-top: 30px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: rgb(63, 31, 6);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .disponivel {
+            color: green;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        .indisponivel {
+            color: red;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        img {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        #whatsapp {
+            margin-top: 25px;
+        }
+
+        #whatsapp a {
+            background-color: #25D366;
+            color: white;
+            padding: 14px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+
+        #whatsapp a:hover {
+            background-color: #1ebe5b;
+        }
+        #botao-todos-livros {
+            display: flex;
+            justify-content: center;
+            margin-top: 6vw; /* padrão: telas grandes */
+        }
+        #icone-instagram {
+            position: fixed;
+            bottom: 50px; /* Acima da barra azul */
+            right: 20px;
+            z-index: 10000;
+            display: block;
+            transition: transform 0.2s;
+        }
+
+        #icone-instagram img {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+            transition: transform 0.2s;
+        }
+
+        #icone-instagram:hover img {
+            transform: scale(1.1);
+        }
+
+
+        @media (max-width: 1399px) {
+            #botao-todos-livros {
+                margin-top: 2vw;
+            }
+            #recomendados{
+            display:none; 
+            margin-top: 0vh; 
+            margin-bottom: 0px;
+            }
+            #barra-inferior {
+            padding: 1px 10px;
+            
+        }
+        }
+
+
+        @media (max-width: 500px) {
+            .livro img {
+                max-width: 100px;
+            }
+            #botao-todos-livros {
+                margin-top: 30vw;
+            }
+            #recomendados{
+                display:none; 
+                margin-top: 90px; 
+                margin-bottom: 0px;
+            }
+
+            .remover-btn {
+                font-size: 11px;
+                padding: 4px 8px;
+            }
+
+            .livro-titulo {
+                font-size: 13px;
+            }
+
+            .livros-grid {
+                gap: 12px;
+                padding: 10px;
+            }
+            .barra-pesquisa {
+                max-width: 90vw;
+                margin: 20px auto;
+            }
+
+            .barra-pesquisa input[type="text"] {
+                padding: 12px 16px;
+                padding-right: 50px;
+                font-size: 14px;
+                border-radius: 25px;
+            }
+
+            .botao-busca {
+                width: 40px;
+                height: 40px;
+                right: 5px;
+            }
+
+            #grid-recomendados {
+                padding: 12px;
+                gap: 4vw;
+                max-width: 90vw;
+            }
+
+            #grid-recomendados .item-livro {
+                width: 28vw;
+            }
+
+            #grid-recomendados .item-livro img {
+                width: 100%;
+                max-width: 100%;
+            }
+
+            #grid-recomendados .titulo-livro {
+                font-size: 12px;
+                max-width: 90px;
+            }
+
+            #grid-recomendados .grid-titulo {
+                font-size: 14px;
+                width: 120px;
+            }
+
+            h1.logo {
+                font-size: 28px;
+            }
+
+            .subtitulo {
+                font-size: 16px;
+                margin-bottom: 10px;
+            }
+
+            .livro img {
+                max-width: 100px;
+            }
+
+            .remover-btn {
+                font-size: 11px;
+                padding: 4px 8px;
+            }
+
+            .livro-titulo {
+                font-size: 13px;
+            }
+
+            .livros-grid {
+                gap: 12px;
+                padding: 10px;
+            }
+
+            body {
+                padding-top: 70px;
+            }
+            #contador-livros {
+                position: fixed;
+                top: 15px;
+                right: 20px;
+                color: white;
+                font-weight: bold;
+                font-size: 10px;
+                z-index: 1001;
+            }
+        }
+
+
+        @media (max-width: 768px) {
+        .botao-carrinho {
+        top: 8px; /* Garante que ele não fique fora da imagem */
+        right: 8px;
+        width: 26px;
+        height: 26px;
+        font-size: 18px;
+        }
+        p{
+            color: white;
+        }
+        .livro-wrapper {
+        position: relative;
+        max-width: 140px;
+        margin: auto;
+        }
+        #icone-carrinho-wrapper {
+            position: fixed;
+            top: 95px; /* No mobile, desce um pouco mais para não encostar na navbar */
+            right: 15px;
+            background-color: #2d3779;
+            padding: 10px;
+            border-radius: 50%;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            z-index: 10000;
+            cursor: pointer;
+        }
+        #icone-carrinho {
+            width: 28px;
+            height: auto;
+            margin-top: -1px; /* valor negativo sobe a imagem */
+        }
+
+
+
+        body {
+            padding-top: 70px; /* espaço para a navbar não cobrir o conteúdo */
+        }
+        .subtitulo {
+            color: white;
+            font-size: 18px;
+            text-align: center;
+            margin-top: -10px;
+            margin-bottom: 20px;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div id="painel-carrinho" style="display:none; position:fixed; top:0; right:0; height:100%; width:300px; background:#271300; box-shadow:-2px 0 10px rgba(0,0,0,0.3); padding:20px; z-index:10001; overflow-y:auto; transition: transform 0.3s ease; transform: translateX(100%);">
+        <h2 style="margin-top:0; color:#ffffff;">📚 Seu Carrinho</h2>
+        <div id="lista-carrinho" style="margin-top:20px;"></div>
+        <button onclick="finalizarPedido()" style="margin-top: 20px; width: 100%; background-color: #25D366; color: white; padding: 12px; border: none; border-radius: 8px; font-weight: bold; font-size: 16px;">
+          Confirmar Pedido
+        </button>
+      </div>
+    
+
+    <div id="icone-carrinho-wrapper" style="display: none; position: fixed; z-index: 10000; cursor: pointer;">
+        <img id="icone-carrinho" src="icone-carrinho.png" alt="Carrinho" style="width: 40px;">
+        <div id="contador-carrinho"
+             style="position: absolute; top: -8px; right: -8px; background-color: red; color: white;
+                    font-size: 12px; font-weight: bold; border-radius: 50%; width: 20px; height: 20px;
+                    display: flex; align-items: center; justify-content: center; box-shadow: 0 0 4px rgba(0,0,0,0.5);">
+        </div>
+    </div>
+
+    <h1 class="logo">O PROFESSOR</h1>
+    <p class="subtitulo">Venda de livros</p>
+    <p class="subtitulo">novos, usados e semi-novos</p>
+
+    <div class="barra-pesquisa">
+        <input type="text" id="titulo" placeholder="Digite o título do livro">
+        <button class="botao-busca" onclick="buscarLivro()">
+            <img src="https://ik.imagekit.io/Hermes/lupa.png?updatedAt=1747177608666" alt="Buscar" class="icone-lupa">
+        </button>
+
+      </div>
+      
+
+    
+    <div id="contador-livros">Temos disponíveis: ...</div>
+    <div id="recomendados" ></div>
+
+    <div id="botao-todos-livros">
+        <a href="estante.html" style="
+          background-color: #2d3779;
+          color: white;
+          padding: 32px 48px;
+          border-radius: 999px;
+          text-decoration: none;
+          font-weight: bold;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+          transition: background-color 0.3s ease;
+        " onmouseover="this.style.backgroundColor='#1f285c'" onmouseout="this.style.backgroundColor='#2d3779'">
+          TODOS OS LIVROS
+        </a>
+    </div>
+      
+    <a href="https://www.instagram.com/oprofessor_livros/" target="_blank" id="icone-instagram">
+        <img src="https://ik.imagekit.io/Hermes/icone-insta.png?updatedAt=1747177610190" alt="Instagram">
+    </a>
+    
+
+    <div id="resultado" style="display: none;"></div>
+
+        <footer id="barra-inferior">
+        <div class="conteudo-footer">
+            <div class="links-footer">
+                <a href="Contato.html">Contato</a>
+                <a href="#sobre">Sobre nós</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        async function buscarLivro() {
+            document.getElementById("botao-todos-livros").style.display = "none";
+
+            const termo = document.getElementById("titulo").value.trim();
+            const resultado = document.getElementById("resultado");
+            document.getElementById("recomendados").style.display = "none";
+
+            if (!termo) {
+                resultado.innerHTML = "<p>Digite o título ou o nome do autor.</p>";
+                return;
+            }
+
+
+            try {
+                // Primeiro buscamos o livro
+                const resposta = await fetch(`https://oprofessor-livros.onrender.com/buscar?titulo=${encodeURIComponent(termo)}`);
+                const dados = await resposta.json();
+
+                // Agora buscamos o catálogo completo para achar o preço
+                const respostaCatalogo = await fetch("https://oprofessor-livros.onrender.com/catalogo");
+                const catalogo = await respostaCatalogo.json();
+                const livroCatalogo = catalogo.find(l => l.titulo === dados.titulo);
+
+                const preco = livroCatalogo ? livroCatalogo.preco : null;
+
+            if (resposta.ok && dados.tipo === "livro") {
+                const cor = dados.disponivel ? 'disponivel' : 'indisponivel';
+                const imagem = `https://ik.imagekit.io/Hermes/${encodeURIComponent(dados.titulo)}.png`;
+
+                const mensagemWhatsApp = encodeURIComponent(`Olá! Tenho interesse no livro "${dados.titulo}". Poderia me dar mais informações?`);
+
+                const livroObj = {
+                    titulo: dados.titulo,
+                    autor: dados.autor,
+                    sinopse: dados.sinopse,
+                    disponivel: dados.disponivel,
+                    preco: preco  // valor de exemplo
+                };
+
+                resultado.innerHTML = `
+                    <img src="${imagem}" alt="${dados.titulo}">
+                    <h2 id="titulo-livros">${dados.titulo}</h2>
+                    <p><strong>Autor:</strong> ${dados.autor}</p>
+                    <p><strong>Sinopse:</strong> ${dados.sinopse || 'Sinopse não disponível.'}</p>
+                    <p class="${cor}">${dados.disponivel ? 'Disponível' : 'Indisponível'}</p>
+
+                    <button id="favoritar-btn"
+                        class="favorito-icone"
+                        data-titulo="${dados.titulo}"
+                        data-autor="${dados.autor}"
+                        data-sinopse="${dados.sinopse}"
+                        data-disponivel="${dados.disponivel}">
+                        🤍
+                    </button>
+
+
+                    <div style="margin-top: 20px;">
+                        <div style="font-weight: bold; font-size: 18px; color: green; margin-bottom: 10px;">
+                            R$ ${parseFloat(String(preco).replace("R$", "").replace(",", ".")).toFixed(2)}
+                        </div>
+                        <button onclick='adicionarAoCarrinho_aba(${JSON.stringify(livroObj)})'>
+                            Adicionar ao carrinho
+                        </button>
+                    </div>
+
+                `;
+                resultado.style.display = 'block';
+                // Checar se já está favoritado ao carregar
+                const favoritos = JSON.parse(localStorage.getItem("favoritos")) || [];
+                const jaFavorito = favoritos.some(l => l.titulo === dados.titulo);
+                document.getElementById("favoritar-btn").innerText = jaFavorito ? "❤️" : "🤍";
+
+                document.getElementById("favoritar-btn").addEventListener("click", function () {
+                    const btn = this;
+                    const livro = {
+                        titulo: btn.dataset.titulo,
+                        autor: btn.dataset.autor,
+                        sinopse: btn.dataset.sinopse,
+                        disponivel: btn.dataset.disponivel === "true"
+                    };
+
+                    let favoritos = JSON.parse(localStorage.getItem("favoritos")) || [];
+                    const index = favoritos.findIndex(l => l.titulo === livro.titulo);
+
+                    if (index === -1) {
+                        favoritos.push(livro);
+                        btn.innerText = "❤️";
+                    } else {
+                        favoritos.splice(index, 1);
+                        btn.innerText = "🤍";
+                    }
+
+                    localStorage.setItem("favoritos", JSON.stringify(favoritos));
+                });
+
+            } else if (resposta.ok && dados.tipo === "autor") {
+                resultado.innerHTML = `<h2>Livros de ${dados.autor}</h2>` + dados.livros.map(livro => {
+                    const imagem = `https://ik.imagekit.io/Hermes/${livro.titulo.replace(/ /g, '%20')}.png`;
+
+                    const cor = livro.disponivel ? 'disponivel' : 'indisponivel';
+                    const mensagemWhatsApp = encodeURIComponent(`Olá! Tenho interesse no livro "${livro.titulo}". Poderia me dar mais informações?`);
+
+                    return `
+                        <div style="margin-bottom: 30px;">
+                            <img src="${imagem}" alt="${livro.titulo}">
+                            <h3>${livro.titulo}</h3>
+                            <p><strong>Autor:</strong> ${livro.autor}</p>
+                            <p class="${cor}">${livro.disponivel ? 'Disponível' : 'Indisponível'}</p>
+                            <div>
+                                <a href="https://wa.me/5561995948789?text=${mensagemWhatsApp}" target="_blank" style="background-color:#25D366;padding:10px 15px;border-radius:8px;color:white;text-decoration:none;font-weight:bold;">
+                                    WhatsApp
+                                </a>
+                            </div>
+                        </div>
+                    `;
+                }).join('');
+            } else {
+                resultado.innerHTML = "<p class='indisponivel'>Nenhum resultado encontrado.</p>";
+            }
+                } catch (erro) {
+                    console.error("Erro ao buscar:", erro);
+                    resultado.innerHTML = "<p class='indisponivel'>Erro ao buscar o livro ou autor.</p>";
+                }
+
+                if (document.getElementById("resultado").innerHTML.trim() !== "") {
+                        document.getElementById("recomendados").style.display = "none";
+                    }
+     }
+
+
+
+        async function contarLivrosDisponiveis() {
+            try {
+                const resposta = await fetch("https://oprofessor-livros.onrender.com/contar");
+                const dados = await resposta.json();
+                document.getElementById("contador-livros").innerText = `Temos disponíveis: ${dados.total_disponiveis}`;
+            } catch (erro) {
+                console.error("Erro ao contar livros:", erro);
+                document.getElementById("contador-livros").innerText = `Erro ao carregar contador.`;
+            }
+        }
+
+
+
+
+
+        // Quando a página carregar
+        window.onload = function () {
+            contarLivrosDisponiveis();
+            atualizarIconeCarrinho();
+
+            const params = new URLSearchParams(window.location.search);
+            const titulo = params.get("titulo");
+            if (titulo) {
+                document.getElementById("titulo").value = titulo;
+                buscarLivro();
+            } else {
+                mostrarRecomendados();
+            }
+        };
+        // Detecta ENTER no campo de texto
+        const campoBusca = document.getElementById("titulo");
+
+        campoBusca.addEventListener("keydown", function (event) {
+            if (event.key === "Enter") {
+                event.preventDefault();
+                buscarLivro();
+            }
+        });
+
+        // NOVO: Escuta alterações no campo para mostrar o grid e botão quando estiver vazio
+        campoBusca.addEventListener("input", function () {
+            const termo = campoBusca.value.trim();
+            if (termo === "") {
+                document.getElementById("resultado").style.display = "none";
+                document.getElementById("botao-todos-livros").style.display = "flex";
+                mostrarRecomendados();
+            }
+        });
+
+
+        function adicionarAosFavoritos(livro) {
+            let favoritos = JSON.parse(localStorage.getItem("favoritos")) || [];
+            const existe = favoritos.some(l => l.titulo === livro.titulo);
+            if (!existe) {
+                favoritos.push(livro);
+                localStorage.setItem("favoritos", JSON.stringify(favoritos));
+                alert("Livro adicionado aos favoritos!");
+            } else {
+                alert("Este livro já está nos favoritos.");
+            }
+        }
+
+        function mostrarFavoritos() {
+            const favoritos = JSON.parse(localStorage.getItem("favoritos")) || [];
+            const resultado = document.getElementById("resultado");
+
+            if (favoritos.length === 0) {
+                resultado.innerHTML = "<p style='color:white;'>Você ainda não favoritou nenhum livro.</p>";
+                return;
+            }
+
+            resultado.style.backgroundColor = "transparent";
+            resultado.style.boxShadow = "none";
+            resultado.style.padding = "0";
+            resultado.innerHTML = `
+                <h2 style="color:white; margin-bottom: 20px;">📚 Seus Favoritos</h2>
+                <div id="grid-favoritos" class="livros-grid"></div>
+            `;
+
+            const grid = document.getElementById("grid-favoritos");
+
+            // Aplicar estilo diretamente no elemento
+            Object.assign(grid.style, {
+                display: "grid",
+                gridTemplateColumns: "repeat(auto-fit, minmax(120px, 1fr))",
+                gap: "20px",
+                padding: "20px",
+                borderRadius: "15px",
+                backgroundColor: "rgba(0, 0, 0, 0.5)", // cinza translúcido
+                boxShadow: "0 4px 10px rgba(0,0,0,0.8)"
+            });
+
+            favoritos.forEach(livro => {
+                const imagem = `https://ik.imagekit.io/Hermes/${livro.titulo.replace(/ /g, '%20')}.png`;
+
+                const link = `index.html?titulo=${encodeURIComponent(livro.titulo)}`;
+
+                const card = document.createElement("div");
+                card.className = "livro";
+                card.style.textAlign = "center";
+                card.style.textDecoration = "none";
+
+                card.innerHTML = `
+                    <img src="${imagem}" alt="${livro.titulo}" style="width:100%; max-width:120px; border-radius:8px; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+                    <div style="color:white; font-size:14px; margin-top:6px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;" title="${livro.titulo}">
+                        ${livro.titulo}
+                    </div>
+                    <button onclick="removerFavorito('${livro.titulo}')" style="margin-top:5px; padding:4px 10px; background:#dc3545; color:white; border:none; border-radius:5px; cursor:pointer; font-size:12px;">
+                        Remover
+                    </button>
+                `;
+            
+
+                grid.appendChild(card);
+            });
+        }
+        function removerFavorito(titulo) {
+            let favoritos = JSON.parse(localStorage.getItem("favoritos")) || [];
+            favoritos = favoritos.filter(livro => livro.titulo !== titulo);
+            localStorage.setItem("favoritos", JSON.stringify(favoritos));
+            mostrarFavoritos(); // atualiza a grade
+        }
+        async function mostrarRecomendados() {
+            const recomendados = document.getElementById("recomendados");
+            const campoBusca = document.getElementById("titulo");
+
+            if (campoBusca.value.trim() !== "") {
+                recomendados.style.display = "none";
+                return;
+            }
+
+            try {
+                const resposta = await fetch("https://oprofessor-livros.onrender.com/catalogo");
+                const catalogo = await resposta.json();
+                const favoritos = JSON.parse(localStorage.getItem("favoritos")) || [];
+
+                let sugeridos = [];
+
+                if (favoritos.length > 0) {
+                    const generosFavoritos = favoritos
+                        .map(l => l.caracteristica)
+                        .filter(Boolean);
+
+                    // Evita duplicatas
+                    const generosUnicos = [...new Set(generosFavoritos.map(g => g.toLowerCase().trim()))];
+
+                    sugeridos = catalogo.filter(livro =>
+                        livro.disponivel &&
+                        generosUnicos.includes((livro.caracteristica || "").toLowerCase().trim()) &&
+                        !favoritos.some(f => f.titulo === livro.titulo)
+                    );
+                }
+
+                // Se não encontrou o suficiente, preenche com livros aleatórios
+                if (sugeridos.length < 6) {
+                    const restantes = catalogo.filter(livro =>
+                        livro.disponivel &&
+                        !favoritos.some(f => f.titulo === livro.titulo) &&
+                        !sugeridos.some(s => s.titulo === livro.titulo)
+                    );
+
+                    // Embaralhar
+                    for (let i = restantes.length - 1; i > 0; i--) {
+                        const j = Math.floor(Math.random() * (i + 1));
+                        [restantes[i], restantes[j]] = [restantes[j], restantes[i]];
+                    }
+
+                    sugeridos = sugeridos.concat(restantes.slice(0, 6 - sugeridos.length));
+                }
+
+                sugeridos = sugeridos.slice(0, 6); // no máximo 4
+
+                if (sugeridos.length === 0) {
+                    recomendados.style.display = "none";
+                    return;
+                }
+
+                recomendados.style.display = "block";
+                recomendados.innerHTML = `
+                    <h2 style="color:white; margin-bottom: 15px;">📚 Recomendados para você</h2>
+                    <div id="grid-recomendados">
+                        ${sugeridos.map(livro => {
+                            const imagem = `https://ik.imagekit.io/Hermes/${livro.titulo.replace(/ /g, '%20')}.png`;
+
+                            const link = `index.html?titulo=${encodeURIComponent(livro.titulo)}`;
+                            return `
+                                <a href="${link}" class="item-livro">
+                                    <img src="${imagem}" alt="${livro.titulo}">
+                                    <div class="titulo-livro">${livro.titulo}</div>
+                                </a>
+                            `;
+                        }).join("")}
+                    </div>
+                `;
+            } catch (erro) {
+                console.error("Erro ao buscar recomendações:", erro);
+                recomendados.style.display = "none";
+            }
+        }
+
+
+
+    function atualizarIconeCarrinho() {
+        const carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+        const wrapper = document.getElementById("icone-carrinho-wrapper");
+        const contador = document.getElementById("contador-carrinho");
+
+        if (carrinho.length > 0) {
+            wrapper.style.display = "block";
+            contador.innerText = carrinho.length;
+
+            
+            document.getElementById("icone-carrinho-wrapper").onclick = abrirCarrinho;
+        } else {
+            wrapper.style.display = "none";
+        }
+    }
+
+    function adicionarAoCarrinho_aba(livro) {
+        let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+        if (!carrinho.some(l => l.titulo === livro.titulo)) {
+            carrinho.push(livro);
+            localStorage.setItem("carrinho", JSON.stringify(carrinho));
+            atualizarIconeCarrinho();
+        } else {
+            alert("Esse livro já está no carrinho.");
+        }
+    }
+
+    
+        window.addEventListener('DOMContentLoaded', function() {
+        document.getElementById("icone-carrinho-wrapper").atualizarIconeCarrinho("click", function () {
+            const carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+            const painel = document.getElementById("painel-carrinho");
+            const lista = document.getElementById("lista-carrinho");
+
+            if (carrinho.length === 0) {
+                painel.style.display = "none";
+                return;
+            }
+
+            let total = 0;
+            lista.innerHTML = ""; // limpa antes de popular
+
+            carrinho.forEach((livro, index) => {
+                const imagem = `https://ik.imagekit.io/Hermes/${livro.titulo.replace(/ /g, '%20')}.png`;
+
+                const preco = parseFloat(livro.preco.replace("R$", "").replace(",", ".")) || 0;
+                total += preco;
+
+                const item = document.createElement("div");
+                item.style.display = "flex";
+                item.style.alignItems = "center";
+                item.style.marginBottom = "10px";
+
+                item.innerHTML = `
+                    <img src="${imagem}" alt="${livro.titulo}" style="width:40px; height:auto; border-radius:5px; margin-right:10px;">
+                    <div style="flex:1;">
+                        <div style="font-weight:bold; color:white;">
+                            ${livro.titulo}
+                        </div>
+                        <div style="font-size: 14px; color: gray;">R$ ${preco.toFixed(2)}</div>
+                    </div>
+                    <button onclick="removerDoCarrinho_aba(${index})" style="background:none; border:none; color:red; font-size:16px; font-weight:bold; cursor:pointer;">✖</button>
+                `;
+
+                lista.appendChild(item);
+            });
+
+            const totalDiv = document.createElement("div");
+            totalDiv.style.marginTop = "15px";
+            totalDiv.style.fontWeight = "bold";
+            totalDiv.innerText = `Total: R$ ${total.toFixed(2)}`;
+            lista.appendChild(totalDiv);
+
+            painel.style.display = "block";
+        });
+    });
+    function abrirCarrinho() {
+        const painel = document.getElementById("painel-carrinho");
+        const lista = document.getElementById("lista-carrinho");
+        const carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+
+        lista.innerHTML = ""; // Limpa antes de popular
+        let total = 0; // Acumula o valor total dos livros
+
+        carrinho.forEach(livro => {
+            const imagem = `https://ik.imagekit.io/Hermes/${livro.titulo.replace(/ /g, '%20')}.png`;
+
+
+            // Tratamento de preço seguro
+            let preco = 0;
+            if (livro.preco) {
+                const precoTexto = String(livro.preco).replace("R$", "").replace(",", ".").trim();
+                preco = parseFloat(precoTexto) || 0;
+            }
+            total += preco;
+
+            const item = document.createElement("div");
+            item.style.display = "flex";
+            item.style.alignItems = "center";
+            item.style.marginBottom = "15px";
+
+            item.innerHTML = `
+                <div style="position:relative; margin-right:12px;">
+                    <img src="${imagem}" alt="${livro.titulo}" style="width:50px; height:auto; border-radius:8px;">
+                    <button onclick="removerDoCarrinho_aba(${carrinho.indexOf(livro)})" 
+                        style="position:absolute; top:45%; left:50%; transform:translate(-50%, -50%); background:none; border:none; color:red; font-size:24px; font-weight:bold; cursor:pointer; padding:0;">
+                        ✖
+                    </button>
+                </div>
+
+                <div style="display:flex; flex-direction:column; align-items:flex-start;">
+                    <div style="font-weight:bold; color:white;">${livro.titulo}</div>
+                    <div style="color:lightgray; font-size:14px; margin-top:4px;">
+                        R$ ${preco.toFixed(2)}
+                    </div>
+
+                </div>
+            `;
+
+
+            lista.appendChild(item);
+        });
+
+
+        //  Aqui adicionamos o TOTAL 
+        const totalDiv = document.createElement("div");
+        totalDiv.style.marginTop = "20px";
+        totalDiv.style.marginBottom = "10px";
+        totalDiv.style.fontWeight = "bold";
+        totalDiv.style.color = "white";
+        totalDiv.style.fontSize = "18px";
+        totalDiv.innerText = `Total: R$ ${total.toFixed(2)}`;
+        lista.appendChild(totalDiv);
+
+
+        painel.style.display = "block";
+        setTimeout(() => {
+            painel.style.transform = "translateX(0%)";
+        }, 10);
+    }
+
+
+    function removerDoCarrinho_aba(index) {
+        let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+        carrinho.splice(index, 1);
+        localStorage.setItem("carrinho", JSON.stringify(carrinho));
+        atualizarIconeCarrinho();
+        abrirCarrinho(); // <-- apenas reabre o carrinho atualizado, sem fechar o painel
+    }
+    function finalizarPedido() {
+        const carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+        if (carrinho.length === 0) return;
+
+        const livrosFormatados = carrinho.map(l => `- "${l.titulo}"`).join('\n');
+        const mensagem = encodeURIComponent(
+            `Olá! Tenho interesse nos seguintes livros:\n${livrosFormatados}\nVocê pode me dar mais informações?`
+        );
+        window.open(`https://wa.me/5561995948789?text=${mensagem}`, "_blank");
+    }
+    document.addEventListener("click", function (event) {
+        const painel = document.getElementById("painel-carrinho");
+        const iconeCarrinho = document.getElementById("icone-carrinho-wrapper");
+
+        // Se clicar no botão de remover, NÃO fecha o painel
+        if (event.target.closest('button') && event.target.innerText.trim() === "✖") {
+            return; 
+        }
+
+        if (!painel.contains(event.target) && !iconeCarrinho.contains(event.target)) {
+            painel.style.transform = "translateX(100%)";
+            setTimeout(() => {
+                painel.style.display = "none";
+            }, 300);
+        }
+    });
+
+
+
+
+
+    </script>
+</body>
+</html>
